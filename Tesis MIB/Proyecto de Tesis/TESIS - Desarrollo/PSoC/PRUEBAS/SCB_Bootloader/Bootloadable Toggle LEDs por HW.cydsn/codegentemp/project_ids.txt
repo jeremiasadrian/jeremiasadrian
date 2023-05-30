@@ -1,0 +1,12 @@
+D:\ESCRITORIO\Tesis MIB\Proyecto de Tesis\electroestimulador\PSoC\PRUEBAS\SCB_Bootloader\Bootloadable Blinking LED.cydsn\Bootloadable Blinking LED.cyprj|d695fef0-1d34-46f7-9138-590efb694488
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|c86055ae-b096-400e-90c9-2db317ebc9c6
+C:\Users\Jeremias\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|4b496187-8aa1-48cf-8e58-7bdd18d24554
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|7d6c29cb-0ccb-477b-9a2d-ddcc84c8551e
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|1f110070-63d2-4749-8520-bba8eb25e5ad
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|228a7821-f1fa-45aa-beec-e4a51de2d635
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|58f4276a-b6c9-4c6a-aef4-9f2d29610b31
+D:\ESCRITORIO\Tesis MIB\Proyecto de Tesis\electroestimulador\PSoC\PRUEBAS\SCB_Bootloader\UART_Bootloader.cydsn\UART_Bootloader.cyprj|932fc709-201b-4da4-b2cf-9e2542981ab2
+D:\ESCRITORIO\Tesis MIB\Proyecto de Tesis\electroestimulador\PSoC\PRUEBAS\SCB_Bootloader\pruebaCapSense.cydsn\pruebaCapSense.cyprj|c7ec88e3-5d7c-4281-8b0b-0230c7ed43a4
+D:\ESCRITORIO\Tesis MIB\Proyecto de Tesis\electroestimulador\PSoC\PRUEBAS\SCB_Bootloader\Bootloadable Blinking LED_M0.cydsn\Bootloadable Blinking LED_M0.cyprj|cd689747-b08f-417f-b02c-dfd69d7cdd4d
+D:\ESCRITORIO\Tesis MIB\Proyecto de Tesis\electroestimulador\PSoC\PRUEBAS\SCB_Bootloader\Bootloadable Toggle LED_M0_ISR.cydsn\Bootloadable Toggle LED_M0_ISR.cyprj|bc4b7fd2-c141-4dcc-9316-48f931c9825b
+D:\ESCRITORIO\Tesis MIB\Proyecto de Tesis\electroestimulador\PSoC\PRUEBAS\SCB_Bootloader\Bootloadable Toggle LEDs por HW.cydsn\Bootloadable Toggle LEDs por HW.cyprj|8a09e3f4-7d63-48ee-8871-1f04be294eae

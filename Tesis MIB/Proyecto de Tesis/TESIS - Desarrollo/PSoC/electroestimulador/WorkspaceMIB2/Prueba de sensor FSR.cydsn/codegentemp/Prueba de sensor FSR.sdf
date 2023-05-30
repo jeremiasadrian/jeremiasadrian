@@ -1,0 +1,22 @@
+(DELAYFILE
+ (SDFVERSION "IEEE 1497 4.0")
+ (DATE "2022-12-02T23:25:14Z")
+ (DESIGN "Prueba de sensor FSR")
+ (VENDOR "Cypress Semiconductor")
+ (PROGRAM "PSoC Creator")
+ (VERSION " 4.4")
+ (DIVIDER .)
+ (TIMESCALE 1 ns)
+ (CELL
+  (CELLTYPE "Prueba de sensor FSR")
+  (INSTANCE *)
+  (DELAY
+   (ABSOLUTE
+    (INTERCONNECT \\Comp_1\:cy_psoc4_abuf\\.ctb_dsi_comp Vo\(0\).pin_input (6.535:6.535:6.535))
+    (INTERCONNECT Vo\(0\).pad_out Vo\(0\).pad_in (0.000:0.000:0.000))
+    (INTERCONNECT Vo\(0\).pad_out Vo\(0\)_PAD (0.000:0.000:0.000))
+    (INTERCONNECT Vo\(0\)_PAD Vo\(0\).pad_in (0.000:0.000:0.000))
+   )
+  )
+ )
+)

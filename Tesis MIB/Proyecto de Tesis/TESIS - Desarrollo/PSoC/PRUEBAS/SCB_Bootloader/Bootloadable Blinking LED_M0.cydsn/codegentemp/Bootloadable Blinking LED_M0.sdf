@@ -1,0 +1,20 @@
+(DELAYFILE
+ (SDFVERSION "IEEE 1497 4.0")
+ (DATE "2020-12-19T11:16:37Z")
+ (DESIGN "Bootloadable Blinking LED_M0")
+ (VENDOR "Cypress Semiconductor")
+ (PROGRAM "PSoC Creator")
+ (VERSION " 4.4")
+ (DIVIDER .)
+ (TIMESCALE 1 ns)
+ (CELL
+  (CELLTYPE "Bootloadable Blinking LED_M0")
+  (INSTANCE *)
+  (DELAY
+   (ABSOLUTE
+    (INTERCONNECT PinEXT\(0\)_PAD PinEXT\(0\).pad_in (0.000:0.000:0.000))
+    (INTERCONNECT Pin_SW1\(0\)_PAD Pin_SW1\(0\).pad_in (0.000:0.000:0.000))
+   )
+  )
+ )
+)

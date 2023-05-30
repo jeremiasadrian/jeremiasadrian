@@ -1,0 +1,12 @@
+D:\Tesis MIB\Proyecto de Tesis\TESIS - Desarrollo\PSoC\electroestimulador\WorkspaceMIB2\Prueba PWM con TCPWM.cydsn\Prueba PWM con TCPWM.cyprj|e750f156-6474-443f-b5f7-85a8e283c4b7
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|4a2d035c-58f1-414d-94ad-e84a6a757363
+C:\Users\Jeremias\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|c8d4b86a-0cd4-4d9f-9d39-7a3a51eb8188
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|84f16141-64d1-434e-aa4c-d99590800b2d
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|7ab804f8-6d26-43d6-a66e-075c342f8baa
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|47a05df0-4bdb-4435-8c6d-89ba1550f320
+D:\Tesis MIB\Proyecto de Tesis\TESIS - Desarrollo\PSoC\electroestimulador\Pruebas electroestimulador\prueba PWM_UDB.cydsn\prueba PWM_UDB.cyprj|b5244570-f9c5-4266-9871-7f5c672fdcfa
+D:\Tesis MIB\Proyecto de Tesis\TESIS - Desarrollo\PSoC\electroestimulador\WorkspaceMIB2\Generador de Pulsos.cydsn\Generador de Pulsos.cyprj|b174ec21-9731-4463-8e0c-af0fa6683eb0
+D:\Tesis MIB\Proyecto de Tesis\TESIS - Desarrollo\PSoC\electroestimulador\WorkspaceMIB2\Electroestimulador.cydsn\Electroestimulador.cyprj|7dd5ca22-6331-4388-9527-f63df91e7405
+D:\Tesis MIB\Proyecto de Tesis\TESIS - Desarrollo\PSoC\electroestimulador\WorkspaceMIB2\Prueba de sensor FSR.cydsn\Prueba de sensor FSR.cyprj|6f547008-8868-431e-bec6-932eafca031c
+D:\Tesis MIB\Proyecto de Tesis\TESIS - Desarrollo\PSoC\PRUEBAS\SCB_Bootloader\UART_Bootloader.cydsn\UART_Bootloader.cyprj|3940c17e-3270-4d24-a890-09b87bfa1896
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|d9027daf-017c-445b-ad7c-5e11c31a341b

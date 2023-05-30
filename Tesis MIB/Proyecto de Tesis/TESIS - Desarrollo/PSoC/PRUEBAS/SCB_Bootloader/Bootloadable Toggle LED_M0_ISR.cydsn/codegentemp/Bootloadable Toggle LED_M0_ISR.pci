@@ -1,0 +1,7 @@
+# Bootloadable Toggle LED_M0_ISR
+# 2020-11-16 19:12:39Z
+
+set_location "ClockGenBlock" m0s8clockgenblockcell -1 -1 0
+set_io "PinEXT(0)" iocell 1 5
+set_io "Pin_SW1(0)" iocell 0 7
+set_io "PinONB(0)" iocell 1 6

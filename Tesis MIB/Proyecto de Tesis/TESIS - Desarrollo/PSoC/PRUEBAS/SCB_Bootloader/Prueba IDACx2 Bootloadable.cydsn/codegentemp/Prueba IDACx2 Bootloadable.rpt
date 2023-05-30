@@ -1,0 +1,358 @@
+Loading plugins phase: Elapsed time ==> 0s.197ms
+<CYPRESSTAG name="CyDsfit arguments...">
+cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p D:\ESCRITORIO\Tesis MIB\Proyecto de Tesis\electroestimulador\PSoC\PRUEBAS\SCB_Bootloader\Prueba IDACx2 Bootloadable.cydsn\Prueba IDACx2 Bootloadable.cyprj -d CY8C4245AXI-483 -s D:\ESCRITORIO\Tesis MIB\Proyecto de Tesis\electroestimulador\PSoC\PRUEBAS\SCB_Bootloader\Prueba IDACx2 Bootloadable.cydsn\Generated_Source\PSoC4 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
+</CYPRESSTAG>
+<CYPRESSTAG name="Design elaboration results...">
+ADD: fit.M0015: information: One or more rows of flash have been configured to be protected; however, debugging has been enabled in the System DWR Editor. This means that while write restrictions are honored flash rows can still be read via SWD or JTAG. To prevent any ability to read the flash rows, disable debugging in the System DWR Editor.
+ * D:\ESCRITORIO\Tesis MIB\Proyecto de Tesis\electroestimulador\PSoC\PRUEBAS\SCB_Bootloader\Prueba IDACx2 Bootloadable.cydsn\Prueba IDACx2 Bootloadable.cydwr (Chip Protection)
+
+</CYPRESSTAG>
+Elaboration phase: Elapsed time ==> 0s.990ms
+<CYPRESSTAG name="HDL generation results...">
+</CYPRESSTAG>
+HDL generation phase: Elapsed time ==> 0s.047ms
+<CYPRESSTAG name="Synthesis results...">
+
+     | | | | | | |
+   _________________
+  -|               |-
+  -|               |-
+  -|               |-
+  -|    CYPRESS    |-
+  -|               |-
+  -|               |-   Warp Verilog Synthesis Compiler: Version 6.3 IR 41
+  -|               |-   Copyright (C) 1991-2001 Cypress Semiconductor
+   |_______________|
+     | | | | | | |
+
+======================================================================
+Compiling:  Prueba IDACx2 Bootloadable.v
+Program  :   C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\bin\warp.exe
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=D:\ESCRITORIO\Tesis MIB\Proyecto de Tesis\electroestimulador\PSoC\PRUEBAS\SCB_Bootloader\Prueba IDACx2 Bootloadable.cydsn\Prueba IDACx2 Bootloadable.cyprj -dcpsoc3 Prueba IDACx2 Bootloadable.v -verilog
+======================================================================
+
+======================================================================
+Compiling:  Prueba IDACx2 Bootloadable.v
+Program  :   C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\bin\warp.exe
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=D:\ESCRITORIO\Tesis MIB\Proyecto de Tesis\electroestimulador\PSoC\PRUEBAS\SCB_Bootloader\Prueba IDACx2 Bootloadable.cydsn\Prueba IDACx2 Bootloadable.cyprj -dcpsoc3 Prueba IDACx2 Bootloadable.v -verilog
+======================================================================
+
+======================================================================
+Compiling:  Prueba IDACx2 Bootloadable.v
+Program  :   vlogfe
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=D:\ESCRITORIO\Tesis MIB\Proyecto de Tesis\electroestimulador\PSoC\PRUEBAS\SCB_Bootloader\Prueba IDACx2 Bootloadable.cydsn\Prueba IDACx2 Bootloadable.cyprj -dcpsoc3 -verilog Prueba IDACx2 Bootloadable.v
+======================================================================
+
+vlogfe V6.3 IR 41:  Verilog parser
+Thu Nov 26 12:50:09 2020
+
+
+======================================================================
+Compiling:  Prueba IDACx2 Bootloadable.v
+Program  :   vpp
+Options  :    -yv2 -q10 Prueba IDACx2 Bootloadable.v
+======================================================================
+
+vpp V6.3 IR 41:  Verilog Pre-Processor
+Thu Nov 26 12:50:09 2020
+
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\OneTerminal\OneTerminal.v'
+
+vpp:  No errors.
+
+Library 'work' => directory 'lcpsoc3'
+General_symbol_table
+General_symbol_table
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\std.vhd'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\cypress.vhd'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\work\cypress.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\stdlogic\lpmpkg.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
+Using control file 'Prueba IDACx2 Bootloadable.ctl'.
+
+vlogfe:  No errors.
+
+
+======================================================================
+Compiling:  Prueba IDACx2 Bootloadable.v
+Program  :   tovif
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=D:\ESCRITORIO\Tesis MIB\Proyecto de Tesis\electroestimulador\PSoC\PRUEBAS\SCB_Bootloader\Prueba IDACx2 Bootloadable.cydsn\Prueba IDACx2 Bootloadable.cyprj -dcpsoc3 -verilog Prueba IDACx2 Bootloadable.v
+======================================================================
+
+tovif V6.3 IR 41:  High-level synthesis
+Thu Nov 26 12:50:09 2020
+
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\std.vhd'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\cypress.vhd'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\work\cypress.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\stdlogic\lpmpkg.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
+Linking 'D:\ESCRITORIO\Tesis MIB\Proyecto de Tesis\electroestimulador\PSoC\PRUEBAS\SCB_Bootloader\Prueba IDACx2 Bootloadable.cydsn\codegentemp\Prueba IDACx2 Bootloadable.ctl'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\OneTerminal\OneTerminal.v'.
+Linking 'D:\ESCRITORIO\Tesis MIB\Proyecto de Tesis\electroestimulador\PSoC\PRUEBAS\SCB_Bootloader\Prueba IDACx2 Bootloadable.cydsn\codegentemp\Prueba IDACx2 Bootloadable.v'.
+
+tovif:  No errors.
+
+
+======================================================================
+Compiling:  Prueba IDACx2 Bootloadable.v
+Program  :   topld
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=D:\ESCRITORIO\Tesis MIB\Proyecto de Tesis\electroestimulador\PSoC\PRUEBAS\SCB_Bootloader\Prueba IDACx2 Bootloadable.cydsn\Prueba IDACx2 Bootloadable.cyprj -dcpsoc3 -verilog Prueba IDACx2 Bootloadable.v
+======================================================================
+
+topld V6.3 IR 41:  Synthesis and optimization
+Thu Nov 26 12:50:10 2020
+
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\std.vhd'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\cypress.vhd'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\work\cypress.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\stdlogic\lpmpkg.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
+Linking 'D:\ESCRITORIO\Tesis MIB\Proyecto de Tesis\electroestimulador\PSoC\PRUEBAS\SCB_Bootloader\Prueba IDACx2 Bootloadable.cydsn\codegentemp\Prueba IDACx2 Bootloadable.ctl'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\OneTerminal\OneTerminal.v'.
+Linking 'D:\ESCRITORIO\Tesis MIB\Proyecto de Tesis\electroestimulador\PSoC\PRUEBAS\SCB_Bootloader\Prueba IDACx2 Bootloadable.cydsn\codegentemp\Prueba IDACx2 Bootloadable.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\lcpsoc3\stdlogic\cpsoc3.vif'.
+
+----------------------------------------------------------
+Detecting unused logic.
+----------------------------------------------------------
+
+
+
+------------------------------------------------------
+Alias Detection
+------------------------------------------------------
+Aliasing tmpOE__Iout_1_net_0 to \IDAC_2:Net_3\
+Aliasing one to \IDAC_2:Net_3\
+Aliasing tmpOE__Iout_2_net_0 to \IDAC_2:Net_3\
+Aliasing \IDAC_1:Net_3\ to \IDAC_2:Net_3\
+Removing Rhs of wire tmpOE__Iout_1_net_0[4] = \IDAC_2:Net_3\[2]
+Removing Lhs of wire one[10] = tmpOE__Iout_1_net_0[4]
+Removing Lhs of wire tmpOE__Iout_2_net_0[13] = tmpOE__Iout_1_net_0[4]
+Removing Lhs of wire \IDAC_1:Net_3\[19] = tmpOE__Iout_1_net_0[4]
+
+------------------------------------------------------
+Aliased 0 equations, 4 wires.
+------------------------------------------------------
+
+----------------------------------------------------------
+Circuit simplification
+----------------------------------------------------------
+
+Substituting virtuals - pass 1:
+
+
+----------------------------------------------------------
+Circuit simplification results:
+
+	Expanded 0 signals.
+	Turned 0 signals into soft nodes.
+	Maximum default expansion cost was set at 3.
+----------------------------------------------------------
+
+topld:  No errors.
+
+CYPRESS_DIR    : C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp
+Warp Program   : C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\bin\warp.exe
+Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya "-.fftprj=D:\ESCRITORIO\Tesis MIB\Proyecto de Tesis\electroestimulador\PSoC\PRUEBAS\SCB_Bootloader\Prueba IDACx2 Bootloadable.cydsn\Prueba IDACx2 Bootloadable.cyprj" -dcpsoc3 "Prueba IDACx2 Bootloadable.v" -verilog
+</CYPRESSTAG>
+Warp synthesis phase: Elapsed time ==> 0s.458ms
+<CYPRESSTAG name="Fitter results...">
+<CYPRESSTAG name="Fitter startup details...">
+cyp3fit: V4.4.0.80, Family: PSoC3, Started at: Thursday, 26 November 2020 12:50:10
+Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=D:\ESCRITORIO\Tesis MIB\Proyecto de Tesis\electroestimulador\PSoC\PRUEBAS\SCB_Bootloader\Prueba IDACx2 Bootloadable.cydsn\Prueba IDACx2 Bootloadable.cyprj -d CY8C4245AXI-483 Prueba IDACx2 Bootloadable.v -verilog
+</CYPRESSTAG>
+<CYPRESSTAG name="Design parsing">
+Design parsing phase: Elapsed time ==> 0s.010ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Tech Mapping">
+<CYPRESSTAG name="Initial Mapping" icon="FILE_RPT_TECHM">
+<CYPRESSTAG name="Global Clock Selection" icon="FILE_RPT_TECHM">
+<CYPRESSTAG name="UDB Clock/Enable Remapping Results">
+</CYPRESSTAG>
+</CYPRESSTAG>
+<CYPRESSTAG name="Duplicate Macrocell detection">
+</CYPRESSTAG>
+</CYPRESSTAG>
+<CYPRESSTAG name="Duplicate Macrocell detection">
+</CYPRESSTAG>
+Error: mpr.M0014: Resource limit: Maximum number of DAC exceeded (max=2, needed=2). (App=cydsfit)
+Error: mpr.M0014: Resource limit: Maximum number of 8-bit IDAC exceeded (max=1, needed=2). (App=cydsfit)
+<CYPRESSTAG name="Design Equations" icon="FILE_RPT_EQUATION">
+
+------------------------------------------------------------
+Design Equations
+------------------------------------------------------------
+    <CYPRESSTAG name="Pin listing">
+
+    ------------------------------------------------------------
+    Pin listing
+    ------------------------------------------------------------
+
+    Pin : Name = Iout_1(0)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: AUTO
+            Out Sync Option: AUTO
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: HI_Z_ANALOG
+            VTrip: EITHER
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: True
+            Can contain Digital: False
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO Multiplier Index: 0
+            SIO RefSel: VCC_IO
+            Required Capabilities: ANALOG
+            Initial Value: 1
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => Iout_1(0)__PA ,
+            analog_term => Net_77 ,
+            pad => Iout_1(0)_PAD );
+        Properties:
+        {
+        }
+
+    Pin : Name = Iout_2(0)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: AUTO
+            Out Sync Option: AUTO
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: HI_Z_ANALOG
+            VTrip: EITHER
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: True
+            Can contain Digital: False
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO Multiplier Index: 0
+            SIO RefSel: VCC_IO
+            Required Capabilities: ANALOG
+            Initial Value: 1
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => Iout_2(0)__PA ,
+            analog_term => Net_79 ,
+            pad => Iout_2(0)_PAD );
+        Properties:
+        {
+        }
+    </CYPRESSTAG>
+    <CYPRESSTAG name="Macrocell listing" icon="FILE_RPT_EQUATION">
+
+    ------------------------------------------------------------
+    Macrocell listing
+    ------------------------------------------------------------
+
+    MacroCell: Name=__ONE__, Mode=(Combinatorial)
+        Total # of inputs        : 0
+        Total # of product terms : 0
+            Clock Enable: True
+        Main Equation            : 0 pterms
+        !(
+            0
+        );
+        Output = __ONE__ (fanout=2)
+    </CYPRESSTAG>
+    <CYPRESSTAG name="Datapath listing">
+    </CYPRESSTAG>
+    <CYPRESSTAG name="Status register listing">
+    </CYPRESSTAG>
+    <CYPRESSTAG name="StatusI register listing">
+    </CYPRESSTAG>
+    <CYPRESSTAG name="Sync listing">
+    </CYPRESSTAG>
+    <CYPRESSTAG name="Control register listing">
+    </CYPRESSTAG>
+    <CYPRESSTAG name="Count7 listing">
+    </CYPRESSTAG>
+    <CYPRESSTAG name="DRQ listing">
+    </CYPRESSTAG>
+    <CYPRESSTAG name="Interrupt listing">
+    </CYPRESSTAG>
+</CYPRESSTAG>
+<CYPRESSTAG name="Technology mapping summary" expanded>
+
+------------------------------------------------------------
+Technology mapping summary
+------------------------------------------------------------
+
+Resource Type                 : Used : Free :  Max :  % Used
+============================================================
+Digital Clocks                :    0 :    4 :    4 :  0.00 %
+Interrupts                    :    0 :   32 :   32 :  0.00 %
+IO                            :    4 :   32 :   36 : 11.11 %
+Segment LCD                   :    0 :    1 :    1 :  0.00 %
+CapSense                      :    0 :    1 :    1 :  0.00 %
+Die Temp                      :    0 :    1 :    1 :  0.00 %
+Serial Communication (SCB)    :    0 :    2 :    2 :  0.00 %
+Timer/Counter/PWM             :    0 :    4 :    4 :  0.00 %
+UDB                           :      :      :      :        
+  Macrocells                  :    1 :   31 :   32 :  3.13 %
+  Unique P-terms              :    0 :   64 :   64 :  0.00 %
+  Total P-terms               :    0 :      :      :        
+  Datapath Cells              :    0 :    4 :    4 :  0.00 %
+  Status Cells                :    0 :    4 :    4 :  0.00 %
+  Control Cells               :    0 :    4 :    4 :  0.00 %
+Comparator/Opamp              :    0 :    2 :    2 :  0.00 %
+LP Comparator                 :    0 :    2 :    2 :  0.00 %
+SAR ADC                       :    0 :    1 :    1 :  0.00 %
+DAC                           :      :      :      :        
+  7-bit IDAC                  :    0 :    1 :    1 :  0.00 %
+  8-bit IDAC                  :    2 :   -1 :    1 : 200.00 %
+</CYPRESSTAG>
+Technology Mapping: Elapsed time ==> 0s.020ms
+Tech Mapping phase: Elapsed time ==> 0s.054ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Database update...">
+Design database save phase: Elapsed time ==> 0s.201ms
+</CYPRESSTAG>
+cydsfit: Elapsed time ==> 0s.340ms
+</CYPRESSTAG>
+Fitter phase: Elapsed time ==> 0s.341ms
+Fitter phase: Elapsed time ==> 0s.000ms
+Dependency generation phase: Elapsed time ==> 0s.030ms
+Cleanup phase: Elapsed time ==> 0s.000ms

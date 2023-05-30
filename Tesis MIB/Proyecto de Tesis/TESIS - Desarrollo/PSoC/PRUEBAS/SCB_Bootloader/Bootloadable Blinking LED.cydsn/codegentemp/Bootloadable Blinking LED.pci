@@ -1,0 +1,5 @@
+# Bootloadable Blinking LED
+# 2020-11-04 06:29:03Z
+
+set_location "ClockGenBlock" m0s8clockgenblockcell -1 -1 0
+set_io "P1_6(0)" iocell 1 6

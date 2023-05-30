@@ -1,0 +1,10 @@
+# prueba VDAC_Rampa
+# 2020-12-19 11:18:11Z
+
+set_location "ClockGenBlock" m0s8clockgenblockcell -1 -1 0
+set_io "SW1_RAMPA(0)" iocell 0 7
+set_io "Vout(0)" iocell 1 2
+set_io "Vpos(0)" iocell 1 0
+set_io "Vinv(0)" iocell 1 1
+set_location "\IDAC_1:cy_psoc4_idac\" p4csidac8cell -1 -1 0
+set_location "\Opamp1:cy_psoc4_abuf\" p4abufcell -1 -1 0

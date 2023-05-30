@@ -1,0 +1,27 @@
+(DELAYFILE
+ (SDFVERSION "IEEE 1497 4.0")
+ (DATE "2020-11-16T19:12:41Z")
+ (DESIGN "Bootloadable Toggle LED_M0_ISR")
+ (VENDOR "Cypress Semiconductor")
+ (PROGRAM "PSoC Creator")
+ (VERSION " 4.4")
+ (DIVIDER .)
+ (TIMESCALE 1 ns)
+ (CELL
+  (CELLTYPE "Bootloadable Toggle LED_M0_ISR")
+  (INSTANCE *)
+  (DELAY
+   (ABSOLUTE
+    (INTERCONNECT ClockBlock.hfclk Pin_SW1\(0\).in_clock (0.000:0.000:0.000))
+    (INTERCONNECT ClockBlock.hfclk INT_SW1.clock (0.000:0.000:0.000))
+    (INTERCONNECT Pin_SW1.interrupt INT_SW1.interrupt (1.000:1.000:1.000))
+    (INTERCONNECT Pin_SW1\(0\).fb PinEXT\(0\).pin_input (2.914:2.914:2.914))
+    (INTERCONNECT PinEXT\(0\).pad_out PinEXT\(0\).pad_in (0.000:0.000:0.000))
+    (INTERCONNECT PinEXT\(0\).pad_out PinEXT\(0\)_PAD (0.000:0.000:0.000))
+    (INTERCONNECT PinEXT\(0\)_PAD PinEXT\(0\).pad_in (0.000:0.000:0.000))
+    (INTERCONNECT Pin_SW1\(0\)_PAD Pin_SW1\(0\).pad_in (0.000:0.000:0.000))
+    (INTERCONNECT PinONB\(0\)_PAD PinONB\(0\).pad_in (0.000:0.000:0.000))
+   )
+  )
+ )
+)

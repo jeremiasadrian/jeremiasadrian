@@ -1,0 +1,808 @@
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\cckA8ygc.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m0
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 0
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"mainRAMPA.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.ONOFF_RAMPA_Handler,"ax",%progbits
+  20              		.align	2
+  21              		.global	ONOFF_RAMPA_Handler
+  22              		.code	16
+  23              		.thumb_func
+  24              		.type	ONOFF_RAMPA_Handler, %function
+  25              	ONOFF_RAMPA_Handler:
+  26              	.LFB32:
+  27              		.file 1 "mainRAMPA.c"
+   1:mainRAMPA.c   **** /* ========================================
+   2:mainRAMPA.c   ****  *
+   3:mainRAMPA.c   **** Prueba de modulo IDAC combinado con AO para formar una VDAC.
+   4:mainRAMPA.c   ****  *
+   5:mainRAMPA.c   ****  * ========================================*/
+   6:mainRAMPA.c   **** #include "project.h"
+   7:mainRAMPA.c   **** 
+   8:mainRAMPA.c   **** uint8 RampaON=0;
+   9:mainRAMPA.c   **** uint8 I_OUT=0;
+  10:mainRAMPA.c   **** CY_ISR(ONOFF_RAMPA_Handler)
+  11:mainRAMPA.c   **** {
+  28              		.loc 1 11 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32 0000 10B5     		push	{r4, lr}
+  33              		.cfi_def_cfa_offset 8
+  34              		.cfi_offset 4, -8
+  35              		.cfi_offset 14, -4
+  12:mainRAMPA.c   ****     if(RampaON==1)      /* Subrutina de toggle. */
+  36              		.loc 1 12 0
+  37 0002 084B     		ldr	r3, .L4
+  38 0004 1B78     		ldrb	r3, [r3]
+  39 0006 012B     		cmp	r3, #1
+  40 0008 03D1     		bne	.L2
+  13:mainRAMPA.c   ****      RampaON=0;
+  41              		.loc 1 13 0
+  42 000a 0022     		movs	r2, #0
+  43 000c 054B     		ldr	r3, .L4
+  44 000e 1A70     		strb	r2, [r3]
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\cckA8ygc.s 			page 2
+
+
+  45 0010 02E0     		b	.L3
+  46              	.L2:
+  14:mainRAMPA.c   ****     else
+  15:mainRAMPA.c   ****      RampaON=1;
+  47              		.loc 1 15 0
+  48 0012 0122     		movs	r2, #1
+  49 0014 034B     		ldr	r3, .L4
+  50 0016 1A70     		strb	r2, [r3]
+  51              	.L3:
+  16:mainRAMPA.c   ****     SW1_RAMPA_ClearInterrupt();
+  52              		.loc 1 16 0
+  53 0018 FFF7FEFF 		bl	SW1_RAMPA_ClearInterrupt
+  54              	.LVL0:
+  17:mainRAMPA.c   ****     CyDelay(20);        /* Temporización antirebote. */
+  55              		.loc 1 17 0
+  56 001c 1420     		movs	r0, #20
+  57 001e FFF7FEFF 		bl	CyDelay
+  58              	.LVL1:
+  18:mainRAMPA.c   **** }
+  59              		.loc 1 18 0
+  60              		@ sp needed
+  61 0022 10BD     		pop	{r4, pc}
+  62              	.L5:
+  63              		.align	2
+  64              	.L4:
+  65 0024 00000000 		.word	.LANCHOR0
+  66              		.cfi_endproc
+  67              	.LFE32:
+  68              		.size	ONOFF_RAMPA_Handler, .-ONOFF_RAMPA_Handler
+  69              		.section	.text.main,"ax",%progbits
+  70              		.align	2
+  71              		.global	main
+  72              		.code	16
+  73              		.thumb_func
+  74              		.type	main, %function
+  75              	main:
+  76              	.LFB33:
+  19:mainRAMPA.c   **** 
+  20:mainRAMPA.c   **** int main()
+  21:mainRAMPA.c   **** {
+  77              		.loc 1 21 0
+  78              		.cfi_startproc
+  79              		@ Volatile: function does not return.
+  80              		@ args = 0, pretend = 0, frame = 0
+  81              		@ frame_needed = 0, uses_anonymous_args = 0
+  82 0000 10B5     		push	{r4, lr}
+  83              		.cfi_def_cfa_offset 8
+  84              		.cfi_offset 4, -8
+  85              		.cfi_offset 14, -4
+  22:mainRAMPA.c   ****     CyGlobalIntEnable;
+  86              		.loc 1 22 0
+  87              		.syntax divided
+  88              	@ 22 "mainRAMPA.c" 1
+  89 0002 62B6     		CPSIE   i
+  90              	@ 0 "" 2
+  23:mainRAMPA.c   ****     IDAC_1_Start();
+  91              		.loc 1 23 0
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\cckA8ygc.s 			page 3
+
+
+  92              		.thumb
+  93              		.syntax unified
+  94 0004 FFF7FEFF 		bl	IDAC_1_Start
+  95              	.LVL2:
+  24:mainRAMPA.c   ****     Opamp1_Start();
+  96              		.loc 1 24 0
+  97 0008 FFF7FEFF 		bl	Opamp1_Start
+  98              	.LVL3:
+  25:mainRAMPA.c   ****     Opamp1_SetPower(Opamp1_HIGHPOWER);
+  99              		.loc 1 25 0
+ 100 000c 0320     		movs	r0, #3
+ 101 000e FFF7FEFF 		bl	Opamp1_SetPower
+ 102              	.LVL4:
+  26:mainRAMPA.c   ****     ONOFF_RAMPA_StartEx(ONOFF_RAMPA_Handler);
+ 103              		.loc 1 26 0
+ 104 0012 0B48     		ldr	r0, .L10
+ 105 0014 FFF7FEFF 		bl	ONOFF_RAMPA_StartEx
+ 106              	.LVL5:
+ 107              	.L7:
+  27:mainRAMPA.c   ****     while (1)
+  28:mainRAMPA.c   ****     {
+  29:mainRAMPA.c   **** 	 if(RampaON)
+ 108              		.loc 1 29 0
+ 109 0018 0A4B     		ldr	r3, .L10+4
+ 110 001a 1B78     		ldrb	r3, [r3]
+ 111 001c 002B     		cmp	r3, #0
+ 112 001e 07D0     		beq	.L8
+  30:mainRAMPA.c   ****      {
+  31:mainRAMPA.c   ****       I_OUT=I_OUT+5;            /*          */
+ 113              		.loc 1 31 0
+ 114 0020 084B     		ldr	r3, .L10+4
+ 115 0022 5878     		ldrb	r0, [r3, #1]
+ 116 0024 0530     		adds	r0, r0, #5
+ 117 0026 C0B2     		uxtb	r0, r0
+ 118 0028 5870     		strb	r0, [r3, #1]
+  32:mainRAMPA.c   ****       if(I_OUT>255)            /* Cada escalon del VDAC toma 3,45us aprox. */
+  33:mainRAMPA.c   ****        I_OUT=0;                 /* Considerando un clk de 48MHz y clc de inst. a 12MHz */
+  34:mainRAMPA.c   ****       else{}                    /* eso da 83,3ns por instrucción */
+  35:mainRAMPA.c   ****       IDAC_1_SetValue(I_OUT);   /* con lo que los 3,45us pueden traducirse en 41,4 instruc. aprox. 
+ 119              		.loc 1 35 0
+ 120 002a FFF7FEFF 		bl	IDAC_1_SetValue
+ 121              	.LVL6:
+ 122 002e F3E7     		b	.L7
+ 123              	.L8:
+  36:mainRAMPA.c   ****       /*CyDelayUs(1);      Seteando en 1us, la frecuencia es de 1029 Hz */
+  37:mainRAMPA.c   ****      }
+  38:mainRAMPA.c   ****      else
+  39:mainRAMPA.c   ****      {
+  40:mainRAMPA.c   ****       I_OUT=0;
+ 124              		.loc 1 40 0
+ 125 0030 0022     		movs	r2, #0
+ 126 0032 044B     		ldr	r3, .L10+4
+ 127 0034 5A70     		strb	r2, [r3, #1]
+  41:mainRAMPA.c   ****       IDAC_1_SetValue(I_OUT);
+ 128              		.loc 1 41 0
+ 129 0036 0020     		movs	r0, #0
+ 130 0038 FFF7FEFF 		bl	IDAC_1_SetValue
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\cckA8ygc.s 			page 4
+
+
+ 131              	.LVL7:
+ 132 003c ECE7     		b	.L7
+ 133              	.L11:
+ 134 003e C046     		.align	2
+ 135              	.L10:
+ 136 0040 00000000 		.word	ONOFF_RAMPA_Handler
+ 137 0044 00000000 		.word	.LANCHOR0
+ 138              		.cfi_endproc
+ 139              	.LFE33:
+ 140              		.size	main, .-main
+ 141              		.global	I_OUT
+ 142              		.global	RampaON
+ 143              		.bss
+ 144              		.set	.LANCHOR0,. + 0
+ 145              		.type	RampaON, %object
+ 146              		.size	RampaON, 1
+ 147              	RampaON:
+ 148 0000 00       		.space	1
+ 149              		.type	I_OUT, %object
+ 150              		.size	I_OUT, 1
+ 151              	I_OUT:
+ 152 0001 00       		.space	1
+ 153              		.text
+ 154              	.Letext0:
+ 155              		.file 2 "Generated_Source\\PSoC4/SW1_RAMPA.h"
+ 156              		.file 3 "Generated_Source\\PSoC4/CyLib.h"
+ 157              		.file 4 "Generated_Source\\PSoC4/IDAC_1.h"
+ 158              		.file 5 "Generated_Source\\PSoC4/Opamp1.h"
+ 159              		.file 6 "Generated_Source\\PSoC4/ONOFF_RAMPA.h"
+ 160              		.file 7 "Generated_Source\\PSoC4/cytypes.h"
+ 161              		.section	.debug_info,"",%progbits
+ 162              	.Ldebug_info0:
+ 163 0000 A2010000 		.4byte	0x1a2
+ 164 0004 0400     		.2byte	0x4
+ 165 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 166 000a 04       		.byte	0x4
+ 167 000b 01       		.uleb128 0x1
+ 168 000c 04010000 		.4byte	.LASF23
+ 169 0010 0C       		.byte	0xc
+ 170 0011 3C000000 		.4byte	.LASF24
+ 171 0015 B1010000 		.4byte	.LASF25
+ 172 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 173 001d 00000000 		.4byte	0
+ 174 0021 00000000 		.4byte	.Ldebug_line0
+ 175 0025 02       		.uleb128 0x2
+ 176 0026 01       		.byte	0x1
+ 177 0027 06       		.byte	0x6
+ 178 0028 A5010000 		.4byte	.LASF0
+ 179 002c 02       		.uleb128 0x2
+ 180 002d 01       		.byte	0x1
+ 181 002e 08       		.byte	0x8
+ 182 002f 93000000 		.4byte	.LASF1
+ 183 0033 02       		.uleb128 0x2
+ 184 0034 02       		.byte	0x2
+ 185 0035 05       		.byte	0x5
+ 186 0036 D0000000 		.4byte	.LASF2
+ 187 003a 02       		.uleb128 0x2
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\cckA8ygc.s 			page 5
+
+
+ 188 003b 02       		.byte	0x2
+ 189 003c 07       		.byte	0x7
+ 190 003d 92010000 		.4byte	.LASF3
+ 191 0041 02       		.uleb128 0x2
+ 192 0042 04       		.byte	0x4
+ 193 0043 05       		.byte	0x5
+ 194 0044 E7000000 		.4byte	.LASF4
+ 195 0048 02       		.uleb128 0x2
+ 196 0049 04       		.byte	0x4
+ 197 004a 07       		.byte	0x7
+ 198 004b 56000000 		.4byte	.LASF5
+ 199 004f 02       		.uleb128 0x2
+ 200 0050 08       		.byte	0x8
+ 201 0051 05       		.byte	0x5
+ 202 0052 00000000 		.4byte	.LASF6
+ 203 0056 02       		.uleb128 0x2
+ 204 0057 08       		.byte	0x8
+ 205 0058 07       		.byte	0x7
+ 206 0059 68000000 		.4byte	.LASF7
+ 207 005d 03       		.uleb128 0x3
+ 208 005e 04       		.byte	0x4
+ 209 005f 05       		.byte	0x5
+ 210 0060 696E7400 		.ascii	"int\000"
+ 211 0064 02       		.uleb128 0x2
+ 212 0065 04       		.byte	0x4
+ 213 0066 07       		.byte	0x7
+ 214 0067 4B020000 		.4byte	.LASF8
+ 215 006b 04       		.uleb128 0x4
+ 216 006c 50000000 		.4byte	.LASF26
+ 217 0070 07       		.byte	0x7
+ 218 0071 FB01     		.2byte	0x1fb
+ 219 0073 2C000000 		.4byte	0x2c
+ 220 0077 02       		.uleb128 0x2
+ 221 0078 04       		.byte	0x4
+ 222 0079 04       		.byte	0x4
+ 223 007a 45020000 		.4byte	.LASF9
+ 224 007e 02       		.uleb128 0x2
+ 225 007f 08       		.byte	0x8
+ 226 0080 04       		.byte	0x4
+ 227 0081 E0000000 		.4byte	.LASF10
+ 228 0085 02       		.uleb128 0x2
+ 229 0086 01       		.byte	0x1
+ 230 0087 08       		.byte	0x8
+ 231 0088 A1000000 		.4byte	.LASF11
+ 232 008c 02       		.uleb128 0x2
+ 233 008d 08       		.byte	0x8
+ 234 008e 04       		.byte	0x4
+ 235 008f 39020000 		.4byte	.LASF12
+ 236 0093 02       		.uleb128 0x2
+ 237 0094 04       		.byte	0x4
+ 238 0095 07       		.byte	0x7
+ 239 0096 60020000 		.4byte	.LASF13
+ 240 009a 05       		.uleb128 0x5
+ 241 009b F0000000 		.4byte	.LASF27
+ 242 009f 01       		.byte	0x1
+ 243 00a0 0A       		.byte	0xa
+ 244 00a1 00000000 		.4byte	.LFB32
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\cckA8ygc.s 			page 6
+
+
+ 245 00a5 28000000 		.4byte	.LFE32-.LFB32
+ 246 00a9 01       		.uleb128 0x1
+ 247 00aa 9C       		.byte	0x9c
+ 248 00ab C8000000 		.4byte	0xc8
+ 249 00af 06       		.uleb128 0x6
+ 250 00b0 1C000000 		.4byte	.LVL0
+ 251 00b4 58010000 		.4byte	0x158
+ 252 00b8 07       		.uleb128 0x7
+ 253 00b9 22000000 		.4byte	.LVL1
+ 254 00bd 63010000 		.4byte	0x163
+ 255 00c1 08       		.uleb128 0x8
+ 256 00c2 01       		.uleb128 0x1
+ 257 00c3 50       		.byte	0x50
+ 258 00c4 01       		.uleb128 0x1
+ 259 00c5 44       		.byte	0x44
+ 260 00c6 00       		.byte	0
+ 261 00c7 00       		.byte	0
+ 262 00c8 09       		.uleb128 0x9
+ 263 00c9 37000000 		.4byte	.LASF28
+ 264 00cd 01       		.byte	0x1
+ 265 00ce 14       		.byte	0x14
+ 266 00cf 5D000000 		.4byte	0x5d
+ 267 00d3 00000000 		.4byte	.LFB33
+ 268 00d7 48000000 		.4byte	.LFE33-.LFB33
+ 269 00db 01       		.uleb128 0x1
+ 270 00dc 9C       		.byte	0x9c
+ 271 00dd 36010000 		.4byte	0x136
+ 272 00e1 06       		.uleb128 0x6
+ 273 00e2 08000000 		.4byte	.LVL2
+ 274 00e6 6E010000 		.4byte	0x16e
+ 275 00ea 06       		.uleb128 0x6
+ 276 00eb 0C000000 		.4byte	.LVL3
+ 277 00ef 79010000 		.4byte	0x179
+ 278 00f3 0A       		.uleb128 0xa
+ 279 00f4 12000000 		.4byte	.LVL4
+ 280 00f8 84010000 		.4byte	0x184
+ 281 00fc 06010000 		.4byte	0x106
+ 282 0100 08       		.uleb128 0x8
+ 283 0101 01       		.uleb128 0x1
+ 284 0102 50       		.byte	0x50
+ 285 0103 01       		.uleb128 0x1
+ 286 0104 33       		.byte	0x33
+ 287 0105 00       		.byte	0
+ 288 0106 0A       		.uleb128 0xa
+ 289 0107 18000000 		.4byte	.LVL5
+ 290 010b 8F010000 		.4byte	0x18f
+ 291 010f 1D010000 		.4byte	0x11d
+ 292 0113 08       		.uleb128 0x8
+ 293 0114 01       		.uleb128 0x1
+ 294 0115 50       		.byte	0x50
+ 295 0116 05       		.uleb128 0x5
+ 296 0117 03       		.byte	0x3
+ 297 0118 00000000 		.4byte	ONOFF_RAMPA_Handler
+ 298 011c 00       		.byte	0
+ 299 011d 06       		.uleb128 0x6
+ 300 011e 2E000000 		.4byte	.LVL6
+ 301 0122 9A010000 		.4byte	0x19a
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\cckA8ygc.s 			page 7
+
+
+ 302 0126 07       		.uleb128 0x7
+ 303 0127 3C000000 		.4byte	.LVL7
+ 304 012b 9A010000 		.4byte	0x19a
+ 305 012f 08       		.uleb128 0x8
+ 306 0130 01       		.uleb128 0x1
+ 307 0131 50       		.byte	0x50
+ 308 0132 01       		.uleb128 0x1
+ 309 0133 30       		.byte	0x30
+ 310 0134 00       		.byte	0
+ 311 0135 00       		.byte	0
+ 312 0136 0B       		.uleb128 0xb
+ 313 0137 58020000 		.4byte	.LASF14
+ 314 013b 01       		.byte	0x1
+ 315 013c 08       		.byte	0x8
+ 316 013d 6B000000 		.4byte	0x6b
+ 317 0141 05       		.uleb128 0x5
+ 318 0142 03       		.byte	0x3
+ 319 0143 00000000 		.4byte	RampaON
+ 320 0147 0B       		.uleb128 0xb
+ 321 0148 DA000000 		.4byte	.LASF15
+ 322 014c 01       		.byte	0x1
+ 323 014d 09       		.byte	0x9
+ 324 014e 6B000000 		.4byte	0x6b
+ 325 0152 05       		.uleb128 0x5
+ 326 0153 03       		.byte	0x3
+ 327 0154 00000000 		.4byte	I_OUT
+ 328 0158 0C       		.uleb128 0xc
+ 329 0159 1E000000 		.4byte	.LASF16
+ 330 015d 1E000000 		.4byte	.LASF16
+ 331 0161 02       		.byte	0x2
+ 332 0162 39       		.byte	0x39
+ 333 0163 0C       		.uleb128 0xc
+ 334 0164 48000000 		.4byte	.LASF17
+ 335 0168 48000000 		.4byte	.LASF17
+ 336 016c 03       		.byte	0x3
+ 337 016d EC       		.byte	0xec
+ 338 016e 0C       		.uleb128 0xc
+ 339 016f B3000000 		.4byte	.LASF18
+ 340 0173 B3000000 		.4byte	.LASF18
+ 341 0177 04       		.byte	0x4
+ 342 0178 52       		.byte	0x52
+ 343 0179 0C       		.uleb128 0xc
+ 344 017a A6000000 		.4byte	.LASF19
+ 345 017e A6000000 		.4byte	.LASF19
+ 346 0182 05       		.byte	0x5
+ 347 0183 29       		.byte	0x29
+ 348 0184 0C       		.uleb128 0xc
+ 349 0185 C0000000 		.4byte	.LASF20
+ 350 0189 C0000000 		.4byte	.LASF20
+ 351 018d 05       		.byte	0x5
+ 352 018e 2B       		.byte	0x2b
+ 353 018f 0C       		.uleb128 0xc
+ 354 0190 7F000000 		.4byte	.LASF21
+ 355 0194 7F000000 		.4byte	.LASF21
+ 356 0198 06       		.byte	0x6
+ 357 0199 18       		.byte	0x18
+ 358 019a 0C       		.uleb128 0xc
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\cckA8ygc.s 			page 8
+
+
+ 359 019b 0E000000 		.4byte	.LASF22
+ 360 019f 0E000000 		.4byte	.LASF22
+ 361 01a3 04       		.byte	0x4
+ 362 01a4 54       		.byte	0x54
+ 363 01a5 00       		.byte	0
+ 364              		.section	.debug_abbrev,"",%progbits
+ 365              	.Ldebug_abbrev0:
+ 366 0000 01       		.uleb128 0x1
+ 367 0001 11       		.uleb128 0x11
+ 368 0002 01       		.byte	0x1
+ 369 0003 25       		.uleb128 0x25
+ 370 0004 0E       		.uleb128 0xe
+ 371 0005 13       		.uleb128 0x13
+ 372 0006 0B       		.uleb128 0xb
+ 373 0007 03       		.uleb128 0x3
+ 374 0008 0E       		.uleb128 0xe
+ 375 0009 1B       		.uleb128 0x1b
+ 376 000a 0E       		.uleb128 0xe
+ 377 000b 55       		.uleb128 0x55
+ 378 000c 17       		.uleb128 0x17
+ 379 000d 11       		.uleb128 0x11
+ 380 000e 01       		.uleb128 0x1
+ 381 000f 10       		.uleb128 0x10
+ 382 0010 17       		.uleb128 0x17
+ 383 0011 00       		.byte	0
+ 384 0012 00       		.byte	0
+ 385 0013 02       		.uleb128 0x2
+ 386 0014 24       		.uleb128 0x24
+ 387 0015 00       		.byte	0
+ 388 0016 0B       		.uleb128 0xb
+ 389 0017 0B       		.uleb128 0xb
+ 390 0018 3E       		.uleb128 0x3e
+ 391 0019 0B       		.uleb128 0xb
+ 392 001a 03       		.uleb128 0x3
+ 393 001b 0E       		.uleb128 0xe
+ 394 001c 00       		.byte	0
+ 395 001d 00       		.byte	0
+ 396 001e 03       		.uleb128 0x3
+ 397 001f 24       		.uleb128 0x24
+ 398 0020 00       		.byte	0
+ 399 0021 0B       		.uleb128 0xb
+ 400 0022 0B       		.uleb128 0xb
+ 401 0023 3E       		.uleb128 0x3e
+ 402 0024 0B       		.uleb128 0xb
+ 403 0025 03       		.uleb128 0x3
+ 404 0026 08       		.uleb128 0x8
+ 405 0027 00       		.byte	0
+ 406 0028 00       		.byte	0
+ 407 0029 04       		.uleb128 0x4
+ 408 002a 16       		.uleb128 0x16
+ 409 002b 00       		.byte	0
+ 410 002c 03       		.uleb128 0x3
+ 411 002d 0E       		.uleb128 0xe
+ 412 002e 3A       		.uleb128 0x3a
+ 413 002f 0B       		.uleb128 0xb
+ 414 0030 3B       		.uleb128 0x3b
+ 415 0031 05       		.uleb128 0x5
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\cckA8ygc.s 			page 9
+
+
+ 416 0032 49       		.uleb128 0x49
+ 417 0033 13       		.uleb128 0x13
+ 418 0034 00       		.byte	0
+ 419 0035 00       		.byte	0
+ 420 0036 05       		.uleb128 0x5
+ 421 0037 2E       		.uleb128 0x2e
+ 422 0038 01       		.byte	0x1
+ 423 0039 3F       		.uleb128 0x3f
+ 424 003a 19       		.uleb128 0x19
+ 425 003b 03       		.uleb128 0x3
+ 426 003c 0E       		.uleb128 0xe
+ 427 003d 3A       		.uleb128 0x3a
+ 428 003e 0B       		.uleb128 0xb
+ 429 003f 3B       		.uleb128 0x3b
+ 430 0040 0B       		.uleb128 0xb
+ 431 0041 27       		.uleb128 0x27
+ 432 0042 19       		.uleb128 0x19
+ 433 0043 11       		.uleb128 0x11
+ 434 0044 01       		.uleb128 0x1
+ 435 0045 12       		.uleb128 0x12
+ 436 0046 06       		.uleb128 0x6
+ 437 0047 40       		.uleb128 0x40
+ 438 0048 18       		.uleb128 0x18
+ 439 0049 9742     		.uleb128 0x2117
+ 440 004b 19       		.uleb128 0x19
+ 441 004c 01       		.uleb128 0x1
+ 442 004d 13       		.uleb128 0x13
+ 443 004e 00       		.byte	0
+ 444 004f 00       		.byte	0
+ 445 0050 06       		.uleb128 0x6
+ 446 0051 898201   		.uleb128 0x4109
+ 447 0054 00       		.byte	0
+ 448 0055 11       		.uleb128 0x11
+ 449 0056 01       		.uleb128 0x1
+ 450 0057 31       		.uleb128 0x31
+ 451 0058 13       		.uleb128 0x13
+ 452 0059 00       		.byte	0
+ 453 005a 00       		.byte	0
+ 454 005b 07       		.uleb128 0x7
+ 455 005c 898201   		.uleb128 0x4109
+ 456 005f 01       		.byte	0x1
+ 457 0060 11       		.uleb128 0x11
+ 458 0061 01       		.uleb128 0x1
+ 459 0062 31       		.uleb128 0x31
+ 460 0063 13       		.uleb128 0x13
+ 461 0064 00       		.byte	0
+ 462 0065 00       		.byte	0
+ 463 0066 08       		.uleb128 0x8
+ 464 0067 8A8201   		.uleb128 0x410a
+ 465 006a 00       		.byte	0
+ 466 006b 02       		.uleb128 0x2
+ 467 006c 18       		.uleb128 0x18
+ 468 006d 9142     		.uleb128 0x2111
+ 469 006f 18       		.uleb128 0x18
+ 470 0070 00       		.byte	0
+ 471 0071 00       		.byte	0
+ 472 0072 09       		.uleb128 0x9
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\cckA8ygc.s 			page 10
+
+
+ 473 0073 2E       		.uleb128 0x2e
+ 474 0074 01       		.byte	0x1
+ 475 0075 3F       		.uleb128 0x3f
+ 476 0076 19       		.uleb128 0x19
+ 477 0077 03       		.uleb128 0x3
+ 478 0078 0E       		.uleb128 0xe
+ 479 0079 3A       		.uleb128 0x3a
+ 480 007a 0B       		.uleb128 0xb
+ 481 007b 3B       		.uleb128 0x3b
+ 482 007c 0B       		.uleb128 0xb
+ 483 007d 49       		.uleb128 0x49
+ 484 007e 13       		.uleb128 0x13
+ 485 007f 8701     		.uleb128 0x87
+ 486 0081 19       		.uleb128 0x19
+ 487 0082 11       		.uleb128 0x11
+ 488 0083 01       		.uleb128 0x1
+ 489 0084 12       		.uleb128 0x12
+ 490 0085 06       		.uleb128 0x6
+ 491 0086 40       		.uleb128 0x40
+ 492 0087 18       		.uleb128 0x18
+ 493 0088 9742     		.uleb128 0x2117
+ 494 008a 19       		.uleb128 0x19
+ 495 008b 01       		.uleb128 0x1
+ 496 008c 13       		.uleb128 0x13
+ 497 008d 00       		.byte	0
+ 498 008e 00       		.byte	0
+ 499 008f 0A       		.uleb128 0xa
+ 500 0090 898201   		.uleb128 0x4109
+ 501 0093 01       		.byte	0x1
+ 502 0094 11       		.uleb128 0x11
+ 503 0095 01       		.uleb128 0x1
+ 504 0096 31       		.uleb128 0x31
+ 505 0097 13       		.uleb128 0x13
+ 506 0098 01       		.uleb128 0x1
+ 507 0099 13       		.uleb128 0x13
+ 508 009a 00       		.byte	0
+ 509 009b 00       		.byte	0
+ 510 009c 0B       		.uleb128 0xb
+ 511 009d 34       		.uleb128 0x34
+ 512 009e 00       		.byte	0
+ 513 009f 03       		.uleb128 0x3
+ 514 00a0 0E       		.uleb128 0xe
+ 515 00a1 3A       		.uleb128 0x3a
+ 516 00a2 0B       		.uleb128 0xb
+ 517 00a3 3B       		.uleb128 0x3b
+ 518 00a4 0B       		.uleb128 0xb
+ 519 00a5 49       		.uleb128 0x49
+ 520 00a6 13       		.uleb128 0x13
+ 521 00a7 3F       		.uleb128 0x3f
+ 522 00a8 19       		.uleb128 0x19
+ 523 00a9 02       		.uleb128 0x2
+ 524 00aa 18       		.uleb128 0x18
+ 525 00ab 00       		.byte	0
+ 526 00ac 00       		.byte	0
+ 527 00ad 0C       		.uleb128 0xc
+ 528 00ae 2E       		.uleb128 0x2e
+ 529 00af 00       		.byte	0
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\cckA8ygc.s 			page 11
+
+
+ 530 00b0 3F       		.uleb128 0x3f
+ 531 00b1 19       		.uleb128 0x19
+ 532 00b2 3C       		.uleb128 0x3c
+ 533 00b3 19       		.uleb128 0x19
+ 534 00b4 6E       		.uleb128 0x6e
+ 535 00b5 0E       		.uleb128 0xe
+ 536 00b6 03       		.uleb128 0x3
+ 537 00b7 0E       		.uleb128 0xe
+ 538 00b8 3A       		.uleb128 0x3a
+ 539 00b9 0B       		.uleb128 0xb
+ 540 00ba 3B       		.uleb128 0x3b
+ 541 00bb 0B       		.uleb128 0xb
+ 542 00bc 00       		.byte	0
+ 543 00bd 00       		.byte	0
+ 544 00be 00       		.byte	0
+ 545              		.section	.debug_aranges,"",%progbits
+ 546 0000 24000000 		.4byte	0x24
+ 547 0004 0200     		.2byte	0x2
+ 548 0006 00000000 		.4byte	.Ldebug_info0
+ 549 000a 04       		.byte	0x4
+ 550 000b 00       		.byte	0
+ 551 000c 0000     		.2byte	0
+ 552 000e 0000     		.2byte	0
+ 553 0010 00000000 		.4byte	.LFB32
+ 554 0014 28000000 		.4byte	.LFE32-.LFB32
+ 555 0018 00000000 		.4byte	.LFB33
+ 556 001c 48000000 		.4byte	.LFE33-.LFB33
+ 557 0020 00000000 		.4byte	0
+ 558 0024 00000000 		.4byte	0
+ 559              		.section	.debug_ranges,"",%progbits
+ 560              	.Ldebug_ranges0:
+ 561 0000 00000000 		.4byte	.LFB32
+ 562 0004 28000000 		.4byte	.LFE32
+ 563 0008 00000000 		.4byte	.LFB33
+ 564 000c 48000000 		.4byte	.LFE33
+ 565 0010 00000000 		.4byte	0
+ 566 0014 00000000 		.4byte	0
+ 567              		.section	.debug_line,"",%progbits
+ 568              	.Ldebug_line0:
+ 569 0000 BD000000 		.section	.debug_str,"MS",%progbits,1
+ 569      02008900 
+ 569      00000201 
+ 569      FB0E0D00 
+ 569      01010101 
+ 570              	.LASF6:
+ 571 0000 6C6F6E67 		.ascii	"long long int\000"
+ 571      206C6F6E 
+ 571      6720696E 
+ 571      7400
+ 572              	.LASF22:
+ 573 000e 49444143 		.ascii	"IDAC_1_SetValue\000"
+ 573      5F315F53 
+ 573      65745661 
+ 573      6C756500 
+ 574              	.LASF16:
+ 575 001e 5357315F 		.ascii	"SW1_RAMPA_ClearInterrupt\000"
+ 575      52414D50 
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\cckA8ygc.s 			page 12
+
+
+ 575      415F436C 
+ 575      65617249 
+ 575      6E746572 
+ 576              	.LASF28:
+ 577 0037 6D61696E 		.ascii	"main\000"
+ 577      00
+ 578              	.LASF24:
+ 579 003c 6D61696E 		.ascii	"mainRAMPA.c\000"
+ 579      52414D50 
+ 579      412E6300 
+ 580              	.LASF17:
+ 581 0048 43794465 		.ascii	"CyDelay\000"
+ 581      6C617900 
+ 582              	.LASF26:
+ 583 0050 75696E74 		.ascii	"uint8\000"
+ 583      3800
+ 584              	.LASF5:
+ 585 0056 6C6F6E67 		.ascii	"long unsigned int\000"
+ 585      20756E73 
+ 585      69676E65 
+ 585      6420696E 
+ 585      7400
+ 586              	.LASF7:
+ 587 0068 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 587      206C6F6E 
+ 587      6720756E 
+ 587      7369676E 
+ 587      65642069 
+ 588              	.LASF21:
+ 589 007f 4F4E4F46 		.ascii	"ONOFF_RAMPA_StartEx\000"
+ 589      465F5241 
+ 589      4D50415F 
+ 589      53746172 
+ 589      74457800 
+ 590              	.LASF1:
+ 591 0093 756E7369 		.ascii	"unsigned char\000"
+ 591      676E6564 
+ 591      20636861 
+ 591      7200
+ 592              	.LASF11:
+ 593 00a1 63686172 		.ascii	"char\000"
+ 593      00
+ 594              	.LASF19:
+ 595 00a6 4F70616D 		.ascii	"Opamp1_Start\000"
+ 595      70315F53 
+ 595      74617274 
+ 595      00
+ 596              	.LASF18:
+ 597 00b3 49444143 		.ascii	"IDAC_1_Start\000"
+ 597      5F315F53 
+ 597      74617274 
+ 597      00
+ 598              	.LASF20:
+ 599 00c0 4F70616D 		.ascii	"Opamp1_SetPower\000"
+ 599      70315F53 
+ 599      6574506F 
+ 599      77657200 
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\cckA8ygc.s 			page 13
+
+
+ 600              	.LASF2:
+ 601 00d0 73686F72 		.ascii	"short int\000"
+ 601      7420696E 
+ 601      7400
+ 602              	.LASF15:
+ 603 00da 495F4F55 		.ascii	"I_OUT\000"
+ 603      5400
+ 604              	.LASF10:
+ 605 00e0 646F7562 		.ascii	"double\000"
+ 605      6C6500
+ 606              	.LASF4:
+ 607 00e7 6C6F6E67 		.ascii	"long int\000"
+ 607      20696E74 
+ 607      00
+ 608              	.LASF27:
+ 609 00f0 4F4E4F46 		.ascii	"ONOFF_RAMPA_Handler\000"
+ 609      465F5241 
+ 609      4D50415F 
+ 609      48616E64 
+ 609      6C657200 
+ 610              	.LASF23:
+ 611 0104 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 611      43313120 
+ 611      352E342E 
+ 611      31203230 
+ 611      31363036 
+ 612 0137 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 612      20726576 
+ 612      6973696F 
+ 612      6E203233 
+ 612      37373135 
+ 613 016a 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 613      66756E63 
+ 613      74696F6E 
+ 613      2D736563 
+ 613      74696F6E 
+ 614              	.LASF3:
+ 615 0192 73686F72 		.ascii	"short unsigned int\000"
+ 615      7420756E 
+ 615      7369676E 
+ 615      65642069 
+ 615      6E7400
+ 616              	.LASF0:
+ 617 01a5 7369676E 		.ascii	"signed char\000"
+ 617      65642063 
+ 617      68617200 
+ 618              	.LASF25:
+ 619 01b1 443A5C45 		.ascii	"D:\\ESCRITORIO\\Tesis MIB\\Proyecto de Tesis\\elect"
+ 619      53435249 
+ 619      544F5249 
+ 619      4F5C5465 
+ 619      73697320 
+ 620 01e0 726F6573 		.ascii	"roestimulador\\PSoC\\electroestimulador\\Pruebas el"
+ 620      74696D75 
+ 620      6C61646F 
+ 620      725C5053 
+ 620      6F435C65 
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\cckA8ygc.s 			page 14
+
+
+ 621 0210 65637472 		.ascii	"ectroestimulador\\prueba VDAC_Rampa.cydsn\000"
+ 621      6F657374 
+ 621      696D756C 
+ 621      61646F72 
+ 621      5C707275 
+ 622              	.LASF12:
+ 623 0239 6C6F6E67 		.ascii	"long double\000"
+ 623      20646F75 
+ 623      626C6500 
+ 624              	.LASF9:
+ 625 0245 666C6F61 		.ascii	"float\000"
+ 625      7400
+ 626              	.LASF8:
+ 627 024b 756E7369 		.ascii	"unsigned int\000"
+ 627      676E6564 
+ 627      20696E74 
+ 627      00
+ 628              	.LASF14:
+ 629 0258 52616D70 		.ascii	"RampaON\000"
+ 629      614F4E00 
+ 630              	.LASF13:
+ 631 0260 73697A65 		.ascii	"sizetype\000"
+ 631      74797065 
+ 631      00
+ 632              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

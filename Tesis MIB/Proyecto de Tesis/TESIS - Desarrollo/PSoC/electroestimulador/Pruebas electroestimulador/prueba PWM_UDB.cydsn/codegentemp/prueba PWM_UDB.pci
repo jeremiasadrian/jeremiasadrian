@@ -1,0 +1,8 @@
+# prueba PWM_UDB
+# 2020-12-21 21:53:32Z
+
+set_location "ClockGenBlock" m0s8clockgenblockcell -1 -1 0
+set_io "LED_OnB(0)" iocell 1 6
+set_io "Pin_Ext1(0)" iocell 1 0
+set_io "Pin_SWOnB(0)" iocell 0 7
+set_io "Pin_Ext2(0)" iocell 1 1

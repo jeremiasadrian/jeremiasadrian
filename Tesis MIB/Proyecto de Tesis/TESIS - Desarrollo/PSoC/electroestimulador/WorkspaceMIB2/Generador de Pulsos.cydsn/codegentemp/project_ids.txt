@@ -1,0 +1,10 @@
+D:\ESCRITORIO\Tesis MIB\Proyecto de Tesis\electroestimulador\PSoC\electroestimulador\WorkspaceMIB2\Prueba PWM con TCPWM.cydsn\Prueba PWM con TCPWM.cyprj|39e8c598-4c95-4951-b95e-c5b893d367b9
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|291eeaa6-d86a-4435-aca2-f2cfef33b8b6
+C:\Users\Jeremias\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|4d196315-2991-4de9-bee2-9123906af0c8
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|90967130-6722-49d6-b408-4b6ef954ef2a
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|6ec23fec-062f-4e91-b25b-bcd74b0abde1
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|943bae5c-9e9c-4e74-bdb1-58692a67780b
+D:\ESCRITORIO\Tesis MIB\Proyecto de Tesis\electroestimulador\PSoC\electroestimulador\Pruebas electroestimulador\prueba PWM_UDB.cydsn\prueba PWM_UDB.cyprj|d24954ac-535c-4de1-a21e-1c3313a94dc1
+D:\ESCRITORIO\Tesis MIB\Proyecto de Tesis\electroestimulador\PSoC\electroestimulador\WorkspaceMIB2\Generador de Pulsos.cydsn\Generador de Pulsos.cyprj|b9945093-fc54-4d70-aaff-364299034d6b
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\dev\psoc4\PSoC4AnalogDevice\psoc4arch.cydsn\psoc4arch.cyprj|ae9cea53-5be1-4a7a-9f4e-27ded648a724
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|5db135cf-df4c-4412-b2b0-df696b0cdb4c

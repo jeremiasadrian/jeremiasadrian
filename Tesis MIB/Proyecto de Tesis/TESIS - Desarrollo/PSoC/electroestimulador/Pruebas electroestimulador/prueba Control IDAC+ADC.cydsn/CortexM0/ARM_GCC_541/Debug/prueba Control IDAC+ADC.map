@@ -1,0 +1,1244 @@
+Archive member included to satisfy reference by file (symbol)
+
+.\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(IDAC_1.o)
+                              .\CortexM0\ARM_GCC_541\Debug\mainIDAC+ADC.o (IDAC_1_Start)
+.\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+                              .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o (CyIntEnable)
+.\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+                              .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o (CySysWdtIsr)
+.\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(SW1_AMux.o)
+                              .\CortexM0\ARM_GCC_541\Debug\mainIDAC+ADC.o (SW1_AMux_ClearInterrupt)
+.\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(VAR_AMux.o)
+                              .\CortexM0\ARM_GCC_541\Debug\mainIDAC+ADC.o (VAR_AMux_StartEx)
+.\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(AMux_1.o)
+                              .\CortexM0\ARM_GCC_541\Debug\mainIDAC+ADC.o (AMux_1_Start)
+.\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1.o)
+                              .\CortexM0\ARM_GCC_541\Debug\mainIDAC+ADC.o (ADC_1_Start)
+.\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1_INT.o)
+                              .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1.o) (ADC_1_ISR)
+.\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1_IRQ.o)
+                              .\CortexM0\ARM_GCC_541\Debug\mainIDAC+ADC.o (ADC_1_IRQ_Enable)
+.\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(LCD.o)
+                              .\CortexM0\ARM_GCC_541\Debug\mainIDAC+ADC.o (LCD_PrintString)
+.\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(Opamp_1.o)
+                              .\CortexM0\ARM_GCC_541\Debug\mainIDAC+ADC.o (Opamp_1_Start)
+.\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyBootAsmGnu.o)
+                              .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o) (CyDelayCycles)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_udivsi3.o)
+                              .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o) (__aeabi_uidiv)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_divsi3.o)
+                              .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1.o) (__aeabi_idiv)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_dvmd_tls.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_udivsi3.o) (__aeabi_idiv0)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_aeabi_ldivmod.o)
+                              .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1.o) (__aeabi_ldivmod)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_muldi3.o)
+                              .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1.o) (__aeabi_lmul)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(bpabi.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_aeabi_ldivmod.o) (__gnu_ldivmod_helper)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(divsf3.o)
+                              .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1.o) (__aeabi_fdiv)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(mulsf3.o)
+                              .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1.o) (__aeabi_fmul)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(floatsisf.o)
+                              .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1.o) (__aeabi_i2f)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_clzsi2.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(divsf3.o) (__clzsi2)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_divdi3.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(bpabi.o) (__divdi3)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_clzdi2.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_divdi3.o) (__clzdi2)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-errno.o)
+                              .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o (__errno)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o (exit)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o) (_global_impure_ptr)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-init.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o (__libc_init_array)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o (memset)
+
+Allocating common symbols
+Common symbol       size              file
+
+ADC_1_offset        0x2               .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1.o)
+ADC_1_countsPer10Volt
+                    0x4               .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1.o)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crti.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crti.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crti.o
+ .data          0x00000000        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+ .text          0x00000000       0x78 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .ARM.extab     0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .ARM.exidx     0x00000000        0x8 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\mainIDAC+ADC.o
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\mainIDAC+ADC.o
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\cybootloader.o
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\cybootloader.o
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\cybootloader.o
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .data          0x00000000        0x4 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .text._exit    0x00000000        0xc .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .text._sbrk    0x00000000       0x30 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(IDAC_1.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(IDAC_1.o)
+ .text.IDAC_1_Stop
+                0x00000000       0x20 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(IDAC_1.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .bss           0x00000000       0x18 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .text.CySysClkImoStart
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .text.CySysClkImoStop
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .text.CySysClkWriteHfclkDirect
+                0x00000000       0x20 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .text.CySysEnablePumpClock
+                0x00000000       0x38 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .text.CySysClkGetSysclkSource
+                0x00000000       0x1c .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .text.CySysClkWriteSysclkDiv
+                0x00000000       0x30 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .text.CySysLvdDisable
+                0x00000000       0x20 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .text.CySysLvdGetInterruptSource
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .text.CySysLvdClearInterrupt
+                0x00000000        0xc .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .text.CySysGetResetReason
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .text.CyDisableInts
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .text.CyEnableInts
+                0x00000000        0xc .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .text.CyIntGetState
+                0x00000000       0x18 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .text.CyIntDisable
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .text.CyIntSetPending
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .text.CyIntClearPending
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .text.CyIntSetSysVector
+                0x00000000       0x20 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .text.CyIntGetSysVector
+                0x00000000       0x1c .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .text.CyIntGetVector
+                0x00000000       0x20 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .text.CyIntGetPriority
+                0x00000000       0x2c .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .text.CySoftwareReset
+                0x00000000       0x18 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .text.CySysLvdEnable
+                0x00000000       0x44 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .text.CyDelayFreq
+                0x00000000       0x4c .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .text.CySysTickStop
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .text.CySysTickEnableInterrupt
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .text.CySysTickEnable
+                0x00000000       0x18 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .text.CySysTickDisableInterrupt
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .text.CySysTickSetReload
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .text.CySysTickGetReload
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .text.CySysTickGetValue
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .text.CySysTickGetCountFlag
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .text.CySysTickServiceCallbacks
+                0x00000000       0x28 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .text.CySysTickClear
+                0x00000000        0xc .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .text.CySysTickInit
+                0x00000000       0x40 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .text.CySysTickStart
+                0x00000000       0x20 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .text.CySysTickSetCallback
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .text.CySysTickGetCallback
+                0x00000000        0xc .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .text.CyGetUniqueId
+                0x00000000       0x70 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+ .text.CySysClkIloEnabled
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+ .text.CySysClkIloStart
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+ .text.CySysClkIloStartMeasurement
+                0x00000000       0x34 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+ .text.CySysClkIloStopMeasurement
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+ .text.CySysClkIloCompensate
+                0x00000000      0x104 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+ .text.CySysWdtGetEnabledStatus
+                0x00000000       0x24 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+ .text.CySysWdtSetMode
+                0x00000000       0x38 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+ .text.CySysClkLfclkPosedgeRestore
+                0x00000000       0x2c .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+ .text.CySysWdtGetMode
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+ .text.CySysWdtSetClearOnMatch
+                0x00000000       0x34 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+ .text.CySysWdtGetClearOnMatch
+                0x00000000       0x24 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+ .text.CySysWdtEnable
+                0x00000000       0x40 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+ .text.CySysWdtDisable
+                0x00000000       0x44 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+ .text.CySysWdtSetCascade
+                0x00000000       0x34 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+ .text.CySysWdtGetCascade
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+ .text.CySysWdtSetMatch
+                0x00000000       0x38 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+ .text.CySysWdtSetToggleBit
+                0x00000000       0x30 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+ .text.CySysWdtGetToggleBit
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+ .text.CySysWdtGetMatch
+                0x00000000       0x20 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+ .text.CySysWdtGetCount
+                0x00000000       0x3c .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+ .text.CySysClkLfclkPosedgeCatch
+                0x00000000       0x74 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+ .text.CySysClkIloStop
+                0x00000000       0x38 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+ .text.CySysWdtGetInterruptSource
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+ .text.CySysWdtResetCounters
+                0x00000000       0x20 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+ .text.CySysWdtSetInterruptCallback
+                0x00000000       0x20 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+ .text.CySysWdtGetInterruptCallback
+                0x00000000       0x20 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+ .text.CySysWdtEnableCounterIsr
+                0x00000000       0x34 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+ .text.CySysWdtDisableCounterIsr
+                0x00000000       0x28 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+ .text.CySysWatchdogFeed
+                0x00000000       0x60 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+ .text.CySysTimerDelayUntilMatch
+                0x00000000       0x6c .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+ .text.CySysTimerDelay
+                0x00000000       0x3c .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+ .rodata        0x00000000        0xc .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(SW1_AMux.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(SW1_AMux.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(SW1_AMux.o)
+ .text.SW1_AMux_SetDriveMode
+                0x00000000       0x18 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(SW1_AMux.o)
+ .text.SW1_AMux_Write
+                0x00000000       0x18 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(SW1_AMux.o)
+ .text.SW1_AMux_Read
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(SW1_AMux.o)
+ .text.SW1_AMux_ReadDataReg
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(SW1_AMux.o)
+ .text.SW1_AMux_SetInterruptMode
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(SW1_AMux.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(VAR_AMux.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(VAR_AMux.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(VAR_AMux.o)
+ .text.VAR_AMux_Interrupt
+                0x00000000        0x4 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(VAR_AMux.o)
+ .text.VAR_AMux_GetVector
+                0x00000000        0xc .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(VAR_AMux.o)
+ .text.VAR_AMux_GetPriority
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(VAR_AMux.o)
+ .text.VAR_AMux_GetState
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(VAR_AMux.o)
+ .text.VAR_AMux_Start
+                0x00000000       0x1c .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(VAR_AMux.o)
+ .text.VAR_AMux_Stop
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(VAR_AMux.o)
+ .text.VAR_AMux_SetPending
+                0x00000000        0xc .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(VAR_AMux.o)
+ .text.VAR_AMux_ClearPending
+                0x00000000        0xc .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(VAR_AMux.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(AMux_1.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(AMux_1.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1.o)
+ .text.ADC_1_Stop
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1.o)
+ .text.ADC_1_IsEndConversion
+                0x00000000       0x28 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1.o)
+ .text.ADC_1_SetChanMask
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1.o)
+ .text.ADC_1_SetLowLimit
+                0x00000000       0x1c .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1.o)
+ .text.ADC_1_SetHighLimit
+                0x00000000       0x18 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1.o)
+ .text.ADC_1_SetLimitMask
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1.o)
+ .text.ADC_1_SetSatMask
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1.o)
+ .text.ADC_1_SetOffset
+                0x00000000       0x1c .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1.o)
+ .text.ADC_1_SetGain
+                0x00000000       0x1c .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1.o)
+ .text.ADC_1_CountsTo_mVolts
+                0x00000000       0x5c .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1.o)
+ .text.ADC_1_CountsTo_uVolts
+                0x00000000       0x40 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1.o)
+ .text.ADC_1_CountsTo_Volts
+                0x00000000       0x48 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1_INT.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1_INT.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1_INT.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1_IRQ.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1_IRQ.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1_IRQ.o)
+ .text.ADC_1_IRQ_Interrupt
+                0x00000000        0x4 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1_IRQ.o)
+ .text.ADC_1_IRQ_GetVector
+                0x00000000        0xc .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1_IRQ.o)
+ .text.ADC_1_IRQ_GetPriority
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1_IRQ.o)
+ .text.ADC_1_IRQ_GetState
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1_IRQ.o)
+ .text.ADC_1_IRQ_Start
+                0x00000000       0x1c .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1_IRQ.o)
+ .text.ADC_1_IRQ_Stop
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1_IRQ.o)
+ .text.ADC_1_IRQ_SetPending
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1_IRQ.o)
+ .text.ADC_1_IRQ_ClearPending
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1_IRQ.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(LCD.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(LCD.o)
+ .text.LCD_Stop
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(LCD.o)
+ .text.LCD_PrintU32Number
+                0x00000000       0x4c .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(LCD.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(Opamp_1.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(Opamp_1.o)
+ .text.Opamp_1_Stop
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(Opamp_1.o)
+ .text.Opamp_1_PumpControl
+                0x00000000       0x28 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(Opamp_1.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyBootAsmGnu.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyBootAsmGnu.o)
+ .text          0x00000000      0x114 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_udivsi3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_udivsi3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_udivsi3.o)
+ .text          0x00000000      0x1d4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_divsi3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_divsi3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_divsi3.o)
+ .text          0x00000000        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_dvmd_tls.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_dvmd_tls.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_dvmd_tls.o)
+ .text          0x00000000       0x48 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_aeabi_ldivmod.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_aeabi_ldivmod.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_aeabi_ldivmod.o)
+ .text          0x00000000       0x58 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_muldi3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_muldi3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_muldi3.o)
+ .text          0x00000000       0x38 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(bpabi.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(bpabi.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(bpabi.o)
+ .text          0x00000000      0x234 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(divsf3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(divsf3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(divsf3.o)
+ .rodata        0x00000000       0x80 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(divsf3.o)
+ .text          0x00000000      0x228 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(mulsf3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(mulsf3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(mulsf3.o)
+ .rodata        0x00000000       0x40 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(mulsf3.o)
+ .text          0x00000000       0x90 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(floatsisf.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(floatsisf.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(floatsisf.o)
+ .text          0x00000000       0x3c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_clzsi2.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_clzsi2.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_clzsi2.o)
+ .text          0x00000000      0x1bc c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_divdi3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_divdi3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_divdi3.o)
+ .ARM.extab     0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_divdi3.o)
+ .ARM.exidx     0x00000000        0x8 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_divdi3.o)
+ .text          0x00000000       0x18 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_clzdi2.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_clzdi2.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_clzdi2.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-errno.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-errno.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-errno.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o)
+ .text.exit     0x00000000       0x2c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+ .rodata._global_impure_ptr
+                0x00000000        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-init.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-init.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-init.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtend.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtend.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtend.o
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtn.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtn.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+rom              0x00000000         0x00008000         xr
+ram              0x20000000         0x00001000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crti.o
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+START GROUP
+LOAD .\CortexM0\ARM_GCC_541\Debug\mainIDAC+ADC.o
+LOAD .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+LOAD .\CortexM0\ARM_GCC_541\Debug\cybootloader.o
+LOAD .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
+LOAD .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+LOAD .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a
+END GROUP
+START GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a
+END GROUP
+START GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a
+END GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtend.o
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtn.o
+START GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libnosys.a
+END GROUP
+                0x00000000                CY_APPL_ORIGIN = 0x0
+                0x00000080                CY_FLASH_ROW_SIZE = 0x80
+                0x00000001                CY_APPL_NUM = 0x1
+                0x00000001                CY_APPL_MAX = 0x1
+                0x00000040                CY_METADATA_SIZE = 0x40
+                0x00000001                CY_APPL_LOADABLE = 0x1
+                0x00000000                CY_CHECKSUM_EXCLUDE_SIZE = ALIGN (0x0, CY_FLASH_ROW_SIZE)
+                0x00000000                CY_APP_FOR_STACK_AND_COPIER = 0x0
+                [!provide]                PROVIDE (__cy_heap_start, _end)
+                0x00000001                PROVIDE (__cy_region_num, ((__cy_regions_end - __cy_regions) / 0x10))
+                0x20001000                PROVIDE (__cy_stack, (ORIGIN (ram) + LENGTH (ram)))
+                [!provide]                PROVIDE (__cy_heap_end, (__cy_stack - 0x400))
+
+.cybootloader   0x00000000     0x1100
+ *(.cybootloader)
+ .cybootloader  0x00000000     0x1100 .\CortexM0\ARM_GCC_541\Debug\cybootloader.o
+                0x00000000                cy_bootloader
+                0x00001100                appl1_start = CY_APPL_ORIGIN?CY_APPL_ORIGIN:ALIGN (CY_FLASH_ROW_SIZE)
+                0x00004800                appl2_start = (appl1_start + ALIGN ((((LENGTH (rom) - appl1_start) - (0x2 * CY_FLASH_ROW_SIZE)) / 0x2), CY_FLASH_ROW_SIZE))
+                0x00001100                appl_start = (CY_APPL_NUM == 0x1)?appl1_start:appl2_start
+                0x00000000                cy_project_type_bootloader = (appl_start == 0x0)?0x1:0x0
+                0x00000000                cy_project_type_app_for_stack_and_copier = (CY_APP_FOR_STACK_AND_COPIER == 0x1)?0x1:0x0
+
+.text           0x00001100      0xf44
+ CREATE_OBJECT_SYMBOLS
+                0x00001100                PROVIDE (__cy_interrupt_vector, RomVectors)
+ *(.romvectors)
+ .romvectors    0x00001100       0x10 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+                0x00001100                RomVectors
+                0x00000001                ASSERT ((. != __cy_interrupt_vector), No interrupt vector)
+                0x00000001                ASSERT (CY_APPL_ORIGIN?(SIZEOF (.cybootloader) <= CY_APPL_ORIGIN):0x1, Wrong image location)
+                0x00001110                PROVIDE (__cy_reset, Reset)
+ *(.text.Reset)
+ .text.Reset    0x00001110       0x10 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+                0x00001110                Reset
+                0x00000001                ASSERT ((. != __cy_reset), No reset code)
+ *(.psocinit)
+ .psocinit      0x00001120      0x140 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+                0x0000118c                cyfitter_cfg
+                0x00001260                . = MAX (., 0x100)
+ *(.text .text.* .gnu.linkonce.t.*)
+ .text          0x00001260       0x60 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+ .text.VAR_AMux_Handler
+                0x000012c0       0x80 .\CortexM0\ARM_GCC_541\Debug\mainIDAC+ADC.o
+                0x000012c0                VAR_AMux_Handler
+ .text.ADC_1_IRQ_Handler
+                0x00001340       0x3c .\CortexM0\ARM_GCC_541\Debug\mainIDAC+ADC.o
+                0x00001340                ADC_1_IRQ_Handler
+ .text.main     0x0000137c       0x54 .\CortexM0\ARM_GCC_541\Debug\mainIDAC+ADC.o
+                0x0000137c                main
+ .text.cfg_write_bytes32
+                0x000013d0       0x34 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .text.CYMEMZERO
+                0x00001404        0xc .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .text.SetAnalogRoutingPumps
+                0x00001410       0x20 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+                0x00001410                SetAnalogRoutingPumps
+ .text.AnalogSetDefault
+                0x00001430       0x24 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .text.AMux_1_Set
+                0x00001454       0x2c .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+                0x00001454                AMux_1_Set
+ .text.AMux_1_Unset
+                0x00001480       0x30 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+                0x00001480                AMux_1_Unset
+ .text.IntDefaultHandler
+                0x000014b0       0x10 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+                0x000014b0                IntDefaultHandler
+ .text.Start_c  0x000014c0       0x48 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+                0x000014c0                Start_c
+ .text.initialize_psoc
+                0x00001508       0x50 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+                0x00001508                initialize_psoc
+ .text.IDAC_1_Init
+                0x00001558       0x54 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(IDAC_1.o)
+                0x00001558                IDAC_1_Init
+ .text.IDAC_1_Enable
+                0x000015ac       0x2c .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(IDAC_1.o)
+                0x000015ac                IDAC_1_Enable
+ .text.IDAC_1_Start
+                0x000015d8       0x20 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(IDAC_1.o)
+                0x000015d8                IDAC_1_Start
+ .text.IDAC_1_SetValue
+                0x000015f8       0x20 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(IDAC_1.o)
+                0x000015f8                IDAC_1_SetValue
+ .text.CyIntEnable
+                0x00001618       0x14 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+                0x00001618                CyIntEnable
+ .text.CyHalt   0x0000162c        0x4 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+                0x0000162c                CyHalt
+ .text.CyIntSetVector
+                0x00001630       0x24 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+                0x00001630                CyIntSetVector
+ .text.CyIntSetPriority
+                0x00001654       0x4c .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+                0x00001654                CyIntSetPriority
+ .text.CyDelay  0x000016a0       0x30 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+                0x000016a0                CyDelay
+ .text.CyDelayUs
+                0x000016d0       0x14 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+                0x000016d0                CyDelayUs
+ .text.CySysClkWriteImoFreq
+                0x000016e4      0x164 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+                0x000016e4                CySysClkWriteImoFreq
+ .text.CySysWdtLocked
+                0x00001848       0x14 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+ .text.CySysWdtLock
+                0x0000185c       0x1c .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+                0x0000185c                CySysWdtLock
+ .text.CySysWdtUnlock
+                0x00001878       0x30 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+                0x00001878                CySysWdtUnlock
+ .text.CySysWdtClearInterrupt
+                0x000018a8       0x4c .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+                0x000018a8                CySysWdtClearInterrupt
+ .text.CySysWdtIsr
+                0x000018f4       0xa4 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+                0x000018f4                CySysWdtIsr
+ .text.SW1_AMux_ClearInterrupt
+                0x00001998       0x14 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(SW1_AMux.o)
+                0x00001998                SW1_AMux_ClearInterrupt
+ .text.VAR_AMux_SetVector
+                0x000019ac        0xc .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(VAR_AMux.o)
+                0x000019ac                VAR_AMux_SetVector
+ .text.VAR_AMux_SetPriority
+                0x000019b8       0x20 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(VAR_AMux.o)
+                0x000019b8                VAR_AMux_SetPriority
+ .text.VAR_AMux_Enable
+                0x000019d8        0xc .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(VAR_AMux.o)
+                0x000019d8                VAR_AMux_Enable
+ .text.VAR_AMux_Disable
+                0x000019e4        0xc .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(VAR_AMux.o)
+                0x000019e4                VAR_AMux_Disable
+ .text.VAR_AMux_StartEx
+                0x000019f0       0x1c .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(VAR_AMux.o)
+                0x000019f0                VAR_AMux_StartEx
+ .text.AMux_1_Start
+                0x00001a0c       0x20 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(AMux_1.o)
+                0x00001a0c                AMux_1_Start
+ .text.AMux_1_FastSelect
+                0x00001a2c       0x20 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(AMux_1.o)
+                0x00001a2c                AMux_1_FastSelect
+ .text.AMux_1_DisconnectAll
+                0x00001a4c       0x1c .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(AMux_1.o)
+                0x00001a4c                AMux_1_DisconnectAll
+ .text.ADC_1_Init
+                0x00001a68      0x10c .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1.o)
+                0x00001a68                ADC_1_Init
+ .text.ADC_1_Enable
+                0x00001b74       0x24 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1.o)
+                0x00001b74                ADC_1_Enable
+ .text.ADC_1_Start
+                0x00001b98       0x20 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1.o)
+                0x00001b98                ADC_1_Start
+ .text.ADC_1_StartConvert
+                0x00001bb8       0x14 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1.o)
+                0x00001bb8                ADC_1_StartConvert
+ .text.ADC_1_StopConvert
+                0x00001bcc       0x14 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1.o)
+                0x00001bcc                ADC_1_StopConvert
+ .text.ADC_1_GetResult16
+                0x00001be0       0x2c .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1.o)
+                0x00001be0                ADC_1_GetResult16
+ .text.ADC_1_ISR
+                0x00001c0c        0xc .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1_INT.o)
+                0x00001c0c                ADC_1_ISR
+ .text.ADC_1_IRQ_SetVector
+                0x00001c18        0xc .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1_IRQ.o)
+                0x00001c18                ADC_1_IRQ_SetVector
+ .text.ADC_1_IRQ_SetPriority
+                0x00001c24       0x24 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1_IRQ.o)
+                0x00001c24                ADC_1_IRQ_SetPriority
+ .text.ADC_1_IRQ_Enable
+                0x00001c48       0x10 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1_IRQ.o)
+                0x00001c48                ADC_1_IRQ_Enable
+ .text.ADC_1_IRQ_Disable
+                0x00001c58       0x10 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1_IRQ.o)
+                0x00001c58                ADC_1_IRQ_Disable
+ .text.ADC_1_IRQ_StartEx
+                0x00001c68       0x1c .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1_IRQ.o)
+                0x00001c68                ADC_1_IRQ_StartEx
+ .text.LCD_WrCntrlNib
+                0x00001c84       0x34 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(LCD.o)
+ .text.LCD_WrDatNib
+                0x00001cb8       0x44 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(LCD.o)
+ .text.LCD_IsReady
+                0x00001cfc       0xb4 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(LCD.o)
+                0x00001cfc                LCD_IsReady
+ .text.LCD_WriteData
+                0x00001db0       0x18 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(LCD.o)
+                0x00001db0                LCD_WriteData
+ .text.LCD_PrintString
+                0x00001dc8       0x1c .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(LCD.o)
+                0x00001dc8                LCD_PrintString
+ .text.LCD_PutChar
+                0x00001de4        0x8 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(LCD.o)
+                0x00001de4                LCD_PutChar
+ .text.LCD_WriteControl
+                0x00001dec       0x18 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(LCD.o)
+                0x00001dec                LCD_WriteControl
+ .text.LCD_Init
+                0x00001e04       0x6c .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(LCD.o)
+                0x00001e04                LCD_Init
+ .text.LCD_Enable
+                0x00001e70       0x14 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(LCD.o)
+                0x00001e70                LCD_Enable
+ .text.LCD_Start
+                0x00001e84       0x20 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(LCD.o)
+                0x00001e84                LCD_Start
+ .text.LCD_Position
+                0x00001ea4       0x3c .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(LCD.o)
+                0x00001ea4                LCD_Position
+ .text.LCD_PrintInt8
+                0x00001ee0       0x20 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(LCD.o)
+                0x00001ee0                LCD_PrintInt8
+ .text.LCD_PrintInt16
+                0x00001f00       0x14 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(LCD.o)
+                0x00001f00                LCD_PrintInt16
+ .text.LCD_PrintInt32
+                0x00001f14       0x1c .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(LCD.o)
+                0x00001f14                LCD_PrintInt32
+ .text.Opamp_1_Init
+                0x00001f30       0x2c .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(Opamp_1.o)
+                0x00001f30                Opamp_1_Init
+ .text.Opamp_1_Enable
+                0x00001f5c       0x1c .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(Opamp_1.o)
+                0x00001f5c                Opamp_1_Enable
+ .text.Opamp_1_Start
+                0x00001f78       0x20 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(Opamp_1.o)
+                0x00001f78                Opamp_1_Start
+ .text.Opamp_1_SetPower
+                0x00001f98       0x1c .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(Opamp_1.o)
+                0x00001f98                Opamp_1_SetPower
+ *fill*         0x00001fb4        0x4 
+ .text          0x00001fb8       0x24 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyBootAsmGnu.o)
+                0x00001fb8                CyDelayCycles
+                0x00001fcc                CyEnterCriticalSection
+                0x00001fd4                CyExitCriticalSection
+ .text.__errno  0x00001fdc        0xc c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-errno.o)
+                0x00001fdc                __errno
+ .text.__libc_init_array
+                0x00001fe8       0x4c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-init.o)
+                0x00001fe8                __libc_init_array
+ .text.memset   0x00002034       0x10 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
+                0x00002034                memset
+ *(.plt)
+ *(.gnu.warning)
+ *(.glue_7t)
+ .glue_7t       0x00002044        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x00002044        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x00002044        0x0 linker stubs
+ *(.bootloader)
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+ *(.gcc_except_table)
+
+.v4_bx          0x00002044        0x0
+ .v4_bx         0x00002044        0x0 linker stubs
+
+.iplt           0x00002044        0x0
+ .iplt          0x00002044        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame       0x00002044        0x4
+ *(.eh_frame)
+ .eh_frame      0x00002044        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+ .eh_frame      0x00002044        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtend.o
+                [!provide]                PROVIDE (__exidx_start, .)
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x00002048                __exidx_end = .
+
+.rodata         0x00002048      0x108
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.str1.4
+                0x00002048       0x3c .\CortexM0\ARM_GCC_541\Debug\mainIDAC+ADC.o
+                                 0x3b (size before relaxing)
+ .rodata        0x00002084       0x54 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .rodata        0x000020d8       0x2e .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+                0x000020d8                cyImoFreqMhz2Reg
+ *fill*         0x00002106        0x2 
+ .rodata        0x00002108       0x10 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(LCD.o)
+ .rodata.str1.1
+                0x00002118        0x2 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+                0x0000211c                . = ALIGN (0x4)
+ *fill*         0x0000211a        0x2 
+ *(.init)
+ .init          0x0000211c        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crti.o
+                0x0000211c                _init
+ .init          0x00002120        0x8 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtn.o
+                0x00002128                . = ALIGN (0x4)
+                0x00002128                __preinit_array_start = .
+ *(.preinit_array)
+                0x00002128                __preinit_array_end = .
+                0x00002128                . = ALIGN (0x4)
+                0x00002128                __init_array_start = .
+ *(SORT(.init_array.*))
+ *(.init_array)
+ .init_array    0x00002128        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+ .init_array    0x0000212c        0x4 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+                0x00002130                __init_array_end = .
+                0x00002130                . = ALIGN (0x4)
+ *(.fini)
+ .fini          0x00002130        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crti.o
+                0x00002130                _fini
+ .fini          0x00002134        0x8 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtn.o
+                0x0000213c                . = ALIGN (0x4)
+                0x0000213c                __fini_array_start = .
+ *(.fini_array)
+ .fini_array    0x0000213c        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+ *(SORT(.fini_array.*))
+                0x00002140                __fini_array_end = .
+                0x00002140                . = ALIGN (0x4)
+ *crtbegin.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *crtend.o(.ctors)
+                0x00002140                . = ALIGN (0x4)
+ *crtbegin.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *crtend.o(.dtors)
+                0x00002140                . = ALIGN (0x4)
+                0x00002140                __cy_regions = .
+                0x00002140        0x4 LONG 0x2150 __cy_region_init_ram
+                0x00002144        0x4 LONG 0x200000c8 __cy_region_start_data
+                0x00002148        0x4 LONG 0x88 __cy_region_init_size_ram
+                0x0000214c        0x4 LONG 0x58 __cy_region_zero_size_ram
+                0x00002150                __cy_regions_end = .
+                0x00002150                . = ALIGN (0x8)
+                0x00002150                _etext = .
+
+.ramvectors     0x20000000       0xc0
+                0x20000000                __cy_region_start_ram = .
+ *(.ramvectors)
+ .ramvectors    0x20000000       0xc0 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+                0x20000000                CyRamVectors
+
+.btldr_run      0x200000c0        0x4
+ *(.bootloaderruntype)
+ .bootloaderruntype
+                0x200000c0        0x4 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+                0x200000c0                cyBtldrRunType
+
+.noinit
+ *(.noinit)
+
+.data           0x200000c8       0x88 load address 0x00002150
+                0x200000c8                __cy_region_start_data = .
+ *(.jcr)
+ .jcr           0x200000c8        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+ .jcr           0x200000c8        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtend.o
+ *(.got.plt)
+ *(.got)
+ *(.shdata)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x200000cc       0x14 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+                0x200000cc                CySysClkPumpConfig
+                0x200000d0                cydelay32kMs
+                0x200000d4                cydelayFreqKhz
+                0x200000d8                cydelayFreqMhz
+                0x200000dc                cydelayFreqHz
+ .data          0x200000e0        0x4 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+ .data          0x200000e4        0x1 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(AMux_1.o)
+ *fill*         0x200000e5        0x3 
+ .data.impure_data
+                0x200000e8       0x60 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+ .data._impure_ptr
+                0x20000148        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+                0x20000148                _impure_ptr
+                0x20000150                . = ALIGN (0x8)
+ *fill*         0x2000014c        0x4 
+ *(.ram)
+                0x20000150                _edata = .
+
+.igot.plt       0x20000150        0x0 load address 0x000021d8
+ .igot.plt      0x20000150        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+
+.bss            0x20000150       0x58 load address 0x000021d8
+                0x20000150                PROVIDE (__bss_start__, .)
+ *(.shbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x20000150       0x1c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+ .bss           0x2000016c        0x1 .\CortexM0\ARM_GCC_541\Debug\mainIDAC+ADC.o
+                0x2000016c                Estado
+ *fill*         0x2000016d        0x3 
+ .bss           0x20000170        0x4 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(IDAC_1.o)
+                0x20000170                IDAC_1_initVar
+ .bss           0x20000174       0x20 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+ .bss           0x20000194        0x1 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1.o)
+                0x20000194                ADC_1_initVar
+ .bss           0x20000195        0x2 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(LCD.o)
+                0x20000195                LCD_enableState
+                0x20000196                LCD_initVar
+ *fill*         0x20000197        0x1 
+ .bss           0x20000198        0x5 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(Opamp_1.o)
+                0x2000019c                Opamp_1_initVar
+ *(COMMON)
+ *fill*         0x2000019d        0x3 
+ COMMON         0x200001a0        0x8 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1.o)
+                0x200001a0                ADC_1_offset
+                0x200001a4                ADC_1_countsPer10Volt
+                0x200001a8                . = ALIGN (0x8)
+ *(.ram.b)
+                0x200001a8                _end = .
+                0x200001a8                __end = .
+                0x200001a8                PROVIDE (end, .)
+                0x200001a8                PROVIDE (__bss_end__, .)
+                0x00002150                __cy_region_init_ram = LOADADDR (.data)
+                0x00000088                __cy_region_init_size_ram = (_edata - ADDR (.data))
+                0x00000058                __cy_region_zero_size_ram = (_end - _edata)
+
+.heap           0x200001a8       0x80 load address 0x000021d8
+                0x200001a8                . = _end
+                0x20000228                . = (. + 0x80)
+ *fill*         0x200001a8       0x80 
+                0x20000228                __cy_heap_limit = .
+
+.stack          0x20000c00      0x400
+                0x20000c00                __cy_stack_limit = .
+                0x20001000                . = (. + 0x400)
+ *fill*         0x20000c00      0x400 
+                0x00000001                ASSERT ((__cy_stack_limit >= __cy_heap_limit), region RAM overflowed with stack)
+
+.cy_checksum_exclude
+                0x00007f80        0x0
+ *(.cy_checksum_exclude)
+                0x00000000                cy_checksum_exclude_size = (CY_APPL_LOADABLE == 0x1)?SIZEOF (.cy_checksum_exclude):0x0
+                0x00000001                ASSERT ((cy_checksum_exclude_size <= CY_CHECKSUM_EXCLUDE_SIZE), CY_BOOT: Section .cy_checksum_exclude size exceedes specified limit.)
+                0xf0000000                cyloadermeta_start = (cy_project_type_bootloader || cy_project_type_app_for_stack_and_copier)?(LENGTH (rom) - CY_METADATA_SIZE):0xf0000000
+
+.cyloadermeta   0xf0000000       0x40
+ *(.cyloadermeta)
+ .cyloadermeta  0xf0000000       0x40 .\CortexM0\ARM_GCC_541\Debug\cybootloader.o
+                0xf0000000                cy_meta_loader
+                0x00007fc0                cyloadablemeta_start = cy_project_type_app_for_stack_and_copier?((LENGTH (rom) - CY_FLASH_ROW_SIZE) - CY_METADATA_SIZE):((LENGTH (rom) - (CY_FLASH_ROW_SIZE * (CY_APPL_NUM - 0x1))) - CY_METADATA_SIZE)
+
+.cyloadablemeta
+                0x00007fc0       0x40
+ *(.cyloadablemeta)
+ .cyloadablemeta
+                0x00007fc0       0x40 .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
+                0x00007fc0                cy_meta_loadable
+
+.cyflashprotect
+                0x90400000       0x20
+ *(.cyflashprotect)
+ .cyflashprotect
+                0x90400000       0x20 .\CortexM0\ARM_GCC_541\Debug\cybootloader.o
+                0x90400000                cy_meta_flashprotect
+
+.cymeta         0x90500000        0xc
+ *(.cymeta)
+ .cymeta        0x90500000        0xc .\CortexM0\ARM_GCC_541\Debug\cybootloader.o
+                0x90500000                cy_metadata
+
+.cychipprotect  0x90600000        0x1
+ *(.cychipprotect)
+ .cychipprotect
+                0x90600000        0x1 .\CortexM0\ARM_GCC_541\Debug\cybootloader.o
+                0x90600000                cy_meta_chipprotect
+
+.rel.dyn        0x00008000        0x0 load address 0x90600004
+ .rel.iplt      0x00008000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x738
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x30 .\CortexM0\ARM_GCC_541\Debug\mainIDAC+ADC.o
+ .debug_aranges
+                0x00000030       0x58 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_aranges
+                0x00000088       0x18 .\CortexM0\ARM_GCC_541\Debug\cybootloader.o
+ .debug_aranges
+                0x000000a0       0x18 .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
+ .debug_aranges
+                0x000000b8       0x48 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .debug_aranges
+                0x00000100       0x40 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(IDAC_1.o)
+ .debug_aranges
+                0x00000140      0x180 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .debug_aranges
+                0x000002c0      0x138 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+ .debug_aranges
+                0x000003f8       0x48 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(SW1_AMux.o)
+ .debug_aranges
+                0x00000440       0x80 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(VAR_AMux.o)
+ .debug_aranges
+                0x000004c0       0x30 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(AMux_1.o)
+ .debug_aranges
+                0x000004f0       0xa8 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1.o)
+ .debug_aranges
+                0x00000598       0x20 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1_INT.o)
+ .debug_aranges
+                0x000005b8       0x80 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1_IRQ.o)
+ .debug_aranges
+                0x00000638       0x98 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(LCD.o)
+ .debug_aranges
+                0x000006d0       0x48 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(Opamp_1.o)
+ .debug_aranges
+                0x00000718       0x20 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyBootAsmGnu.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x40f2
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x43b .\CortexM0\ARM_GCC_541\Debug\mainIDAC+ADC.o
+ .debug_info    0x0000043b      0x44f .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_info    0x0000088a      0x153 .\CortexM0\ARM_GCC_541\Debug\cybootloader.o
+ .debug_info    0x000009dd       0xac .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
+ .debug_info    0x00000a89      0x3b3 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .debug_info    0x00000e3c      0x221 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(IDAC_1.o)
+ .debug_info    0x0000105d      0xaed .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .debug_info    0x00001b4a      0xcfe .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+ .debug_info    0x00002848      0x19d .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(SW1_AMux.o)
+ .debug_info    0x000029e5      0x305 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(VAR_AMux.o)
+ .debug_info    0x00002cea      0x146 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(AMux_1.o)
+ .debug_info    0x00002e30      0x579 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1.o)
+ .debug_info    0x000033a9       0xcb .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1_INT.o)
+ .debug_info    0x00003474      0x305 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1_IRQ.o)
+ .debug_info    0x00003779      0x721 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(LCD.o)
+ .debug_info    0x00003e9a      0x17c .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(Opamp_1.o)
+ .debug_info    0x00004016       0xdc .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyBootAsmGnu.o)
+
+.debug_abbrev   0x00000000     0x12c9
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0xd5 .\CortexM0\ARM_GCC_541\Debug\mainIDAC+ADC.o
+ .debug_abbrev  0x000000d5      0x1cf .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_abbrev  0x000002a4       0x77 .\CortexM0\ARM_GCC_541\Debug\cybootloader.o
+ .debug_abbrev  0x0000031b       0x5d .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
+ .debug_abbrev  0x00000378      0x1e8 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .debug_abbrev  0x00000560       0xa3 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(IDAC_1.o)
+ .debug_abbrev  0x00000603      0x1d3 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .debug_abbrev  0x000007d6      0x210 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+ .debug_abbrev  0x000009e6       0xc8 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(SW1_AMux.o)
+ .debug_abbrev  0x00000aae      0x19a .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(VAR_AMux.o)
+ .debug_abbrev  0x00000c48       0xb1 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(AMux_1.o)
+ .debug_abbrev  0x00000cf9      0x184 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1.o)
+ .debug_abbrev  0x00000e7d       0x65 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1_INT.o)
+ .debug_abbrev  0x00000ee2      0x19a .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1_IRQ.o)
+ .debug_abbrev  0x0000107c      0x171 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(LCD.o)
+ .debug_abbrev  0x000011ed       0xc8 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(Opamp_1.o)
+ .debug_abbrev  0x000012b5       0x14 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyBootAsmGnu.o)
+
+.debug_line     0x00000000     0x1a30
+ *(.debug_line)
+ .debug_line    0x00000000      0x120 .\CortexM0\ARM_GCC_541\Debug\mainIDAC+ADC.o
+ .debug_line    0x00000120      0x1b4 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_line    0x000002d4       0x53 .\CortexM0\ARM_GCC_541\Debug\cybootloader.o
+ .debug_line    0x00000327      0x141 .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
+ .debug_line    0x00000468      0x238 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .debug_line    0x000006a0       0xc4 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(IDAC_1.o)
+ .debug_line    0x00000764      0x460 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .debug_line    0x00000bc4      0x466 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+ .debug_line    0x0000102a       0xc0 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(SW1_AMux.o)
+ .debug_line    0x000010ea      0x150 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(VAR_AMux.o)
+ .debug_line    0x0000123a       0xad .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(AMux_1.o)
+ .debug_line    0x000012e7      0x27e .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1.o)
+ .debug_line    0x00001565       0x64 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1_INT.o)
+ .debug_line    0x000015c9      0x155 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1_IRQ.o)
+ .debug_line    0x0000171e      0x1e6 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(LCD.o)
+ .debug_line    0x00001904       0xc3 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(Opamp_1.o)
+ .debug_line    0x000019c7       0x69 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyBootAsmGnu.o)
+
+.debug_frame    0x00000000     0x1364
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x68 .\CortexM0\ARM_GCC_541\Debug\mainIDAC+ADC.o
+ .debug_frame   0x00000068       0xd8 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_frame   0x00000140       0xbc .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .debug_frame   0x000001fc       0x9c .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(IDAC_1.o)
+ .debug_frame   0x00000298      0x3e0 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .debug_frame   0x00000678      0x3a8 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+ .debug_frame   0x00000a20       0x70 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(SW1_AMux.o)
+ .debug_frame   0x00000a90      0x110 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(VAR_AMux.o)
+ .debug_frame   0x00000ba0       0x64 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(AMux_1.o)
+ .debug_frame   0x00000c04      0x1b0 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1.o)
+ .debug_frame   0x00000db4       0x20 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1_INT.o)
+ .debug_frame   0x00000dd4      0x110 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1_IRQ.o)
+ .debug_frame   0x00000ee4      0x1f0 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(LCD.o)
+ .debug_frame   0x000010d4       0x7c .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(Opamp_1.o)
+ .debug_frame   0x00001150       0x20 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_udivsi3.o)
+ .debug_frame   0x00001170       0x20 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_divsi3.o)
+ .debug_frame   0x00001190       0x34 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_muldi3.o)
+ .debug_frame   0x000011c4       0x30 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(bpabi.o)
+ .debug_frame   0x000011f4       0x3c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(divsf3.o)
+ .debug_frame   0x00001230       0x38 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(mulsf3.o)
+ .debug_frame   0x00001268       0x2c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(floatsisf.o)
+ .debug_frame   0x00001294       0x3c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_divdi3.o)
+ .debug_frame   0x000012d0       0x20 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-errno.o)
+ .debug_frame   0x000012f0       0x28 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o)
+ .debug_frame   0x00001318       0x2c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-init.o)
+ .debug_frame   0x00001344       0x20 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
+
+.debug_str      0x00000000     0x1799
+ *(.debug_str)
+ .debug_str     0x00000000      0x343 .\CortexM0\ARM_GCC_541\Debug\mainIDAC+ADC.o
+                                0x389 (size before relaxing)
+ .debug_str     0x00000343      0x165 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+                                0x369 (size before relaxing)
+ .debug_str     0x000004a8       0x78 .\CortexM0\ARM_GCC_541\Debug\cybootloader.o
+                                0x239 (size before relaxing)
+ .debug_str     0x00000520       0x3f .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
+                                0x1f0 (size before relaxing)
+ .debug_str     0x0000055f      0x149 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+                                0x35c (size before relaxing)
+ .debug_str     0x000006a8       0xab .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(IDAC_1.o)
+                                0x2ad (size before relaxing)
+ .debug_str     0x00000753      0x495 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+                                0x702 (size before relaxing)
+ .debug_str     0x00000be8      0x527 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+                                0x789 (size before relaxing)
+ .debug_str     0x0000110f       0xa8 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(SW1_AMux.o)
+                                0x297 (size before relaxing)
+ .debug_str     0x000011b7      0x10e .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(VAR_AMux.o)
+                                0x360 (size before relaxing)
+ .debug_str     0x000012c5       0x38 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(AMux_1.o)
+                                0x244 (size before relaxing)
+ .debug_str     0x000012fd      0x1b7 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1.o)
+                                0x43e (size before relaxing)
+ .debug_str     0x000014b4       0x2d .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1_INT.o)
+                                0x20d (size before relaxing)
+ .debug_str     0x000014e1       0xfb .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1_IRQ.o)
+                                0x36e (size before relaxing)
+ .debug_str     0x000015dc      0x12d .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(LCD.o)
+                                0x378 (size before relaxing)
+ .debug_str     0x00001709       0x90 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(Opamp_1.o)
+                                0x274 (size before relaxing)
+
+.debug_loc      0x00000000     0x1c8f
+ *(.debug_loc)
+ .debug_loc     0x00000000       0x5c .\CortexM0\ARM_GCC_541\Debug\mainIDAC+ADC.o
+ .debug_loc     0x0000005c      0x136 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_loc     0x00000192      0x14f .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .debug_loc     0x000002e1       0xb5 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(IDAC_1.o)
+ .debug_loc     0x00000396      0x599 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .debug_loc     0x0000092f      0x9b5 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+ .debug_loc     0x000012e4       0xa2 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(SW1_AMux.o)
+ .debug_loc     0x00001386       0x82 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(VAR_AMux.o)
+ .debug_loc     0x00001408       0x4b .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(AMux_1.o)
+ .debug_loc     0x00001453      0x3b6 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1.o)
+ .debug_loc     0x00001809       0x82 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1_IRQ.o)
+ .debug_loc     0x0000188b      0x3e3 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(LCD.o)
+ .debug_loc     0x00001c6e       0x21 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(Opamp_1.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_ranges   0x00000000      0x608
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0x20 .\CortexM0\ARM_GCC_541\Debug\mainIDAC+ADC.o
+ .debug_ranges  0x00000020       0x48 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_ranges  0x00000068       0x38 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .debug_ranges  0x000000a0       0x30 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(IDAC_1.o)
+ .debug_ranges  0x000000d0      0x170 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .debug_ranges  0x00000240      0x128 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+ .debug_ranges  0x00000368       0x38 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(SW1_AMux.o)
+ .debug_ranges  0x000003a0       0x70 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(VAR_AMux.o)
+ .debug_ranges  0x00000410       0x20 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(AMux_1.o)
+ .debug_ranges  0x00000430       0x98 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1.o)
+ .debug_ranges  0x000004c8       0x10 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1_INT.o)
+ .debug_ranges  0x000004d8       0x70 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1_IRQ.o)
+ .debug_ranges  0x00000548       0x88 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(LCD.o)
+ .debug_ranges  0x000005d0       0x38 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(Opamp_1.o)
+
+.comment        0x00000000       0x6e
+ .comment       0x00000000       0x6e .\CortexM0\ARM_GCC_541\Debug\mainIDAC+ADC.o
+                                 0x6f (size before relaxing)
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\cybootloader.o
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(IDAC_1.o)
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(SW1_AMux.o)
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(VAR_AMux.o)
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(AMux_1.o)
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1.o)
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1_INT.o)
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1_IRQ.o)
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(LCD.o)
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(Opamp_1.o)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+.ARM.attributes
+                0x00000000       0x28
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x00000000       0x1e c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crti.o
+ .ARM.attributes
+                0x0000001e       0x2c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+ .ARM.attributes
+                0x0000004a       0x1b c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .ARM.attributes
+                0x00000065       0x31 .\CortexM0\ARM_GCC_541\Debug\mainIDAC+ADC.o
+ .ARM.attributes
+                0x00000096       0x31 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .ARM.attributes
+                0x000000c7       0x31 .\CortexM0\ARM_GCC_541\Debug\cybootloader.o
+ .ARM.attributes
+                0x000000f8       0x31 .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
+ .ARM.attributes
+                0x00000129       0x31 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .ARM.attributes
+                0x0000015a       0x31 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(IDAC_1.o)
+ .ARM.attributes
+                0x0000018b       0x31 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLib.o)
+ .ARM.attributes
+                0x000001bc       0x31 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyLFClk.o)
+ .ARM.attributes
+                0x000001ed       0x31 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(SW1_AMux.o)
+ .ARM.attributes
+                0x0000021e       0x31 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(VAR_AMux.o)
+ .ARM.attributes
+                0x0000024f       0x31 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(AMux_1.o)
+ .ARM.attributes
+                0x00000280       0x31 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1.o)
+ .ARM.attributes
+                0x000002b1       0x31 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1_INT.o)
+ .ARM.attributes
+                0x000002e2       0x31 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(ADC_1_IRQ.o)
+ .ARM.attributes
+                0x00000313       0x31 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(LCD.o)
+ .ARM.attributes
+                0x00000344       0x31 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(Opamp_1.o)
+ .ARM.attributes
+                0x00000375       0x21 .\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.a(CyBootAsmGnu.o)
+ .ARM.attributes
+                0x00000396       0x1e c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x000003b4       0x1e c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_divsi3.o)
+ .ARM.attributes
+                0x000003d2       0x1e c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x000003f0       0x1e c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_aeabi_ldivmod.o)
+ .ARM.attributes
+                0x0000040e       0x2c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_muldi3.o)
+ .ARM.attributes
+                0x0000043a       0x2c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(bpabi.o)
+ .ARM.attributes
+                0x00000466       0x2c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(divsf3.o)
+ .ARM.attributes
+                0x00000492       0x2c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(mulsf3.o)
+ .ARM.attributes
+                0x000004be       0x2c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(floatsisf.o)
+ .ARM.attributes
+                0x000004ea       0x1e c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_clzsi2.o)
+ .ARM.attributes
+                0x00000508       0x2c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_divdi3.o)
+ .ARM.attributes
+                0x00000534       0x1e c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_clzdi2.o)
+ .ARM.attributes
+                0x00000552       0x2c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-errno.o)
+ .ARM.attributes
+                0x0000057e       0x2c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o)
+ .ARM.attributes
+                0x000005aa       0x2c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+ .ARM.attributes
+                0x000005d6       0x2c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-init.o)
+ .ARM.attributes
+                0x00000602       0x2c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
+ .ARM.attributes
+                0x0000062e       0x2c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtend.o
+ .ARM.attributes
+                0x0000065a       0x1e c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtn.o
+
+/DISCARD/
+ *(.note.GNU-stack)
+OUTPUT(D:\ESCRITORIO\Tesis MIB\Proyecto de Tesis\electroestimulador\PSoC\electroestimulador\Pruebas electroestimulador\prueba Control IDAC+ADC.cydsn\CortexM0\ARM_GCC_541\Debug\prueba Control IDAC+ADC.elf elf32-littlearm)

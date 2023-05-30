@@ -1,0 +1,1062 @@
+Archive member included to satisfy reference by file (symbol)
+
+.\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+                              .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o (CyIntEnable)
+.\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+                              .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o (CySysWdtIsr)
+.\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+                              .\CortexM0\ARM_GCC_541\Debug\mainTCPWM.o (PWM_1_Stop)
+.\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_SW.o)
+                              .\CortexM0\ARM_GCC_541\Debug\mainTCPWM.o (Pin_SW_ClearInterrupt)
+.\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_INT_CC.o)
+                              .\CortexM0\ARM_GCC_541\Debug\mainTCPWM.o (Pin_INT_CC_Write)
+.\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_INT_TC.o)
+                              .\CortexM0\ARM_GCC_541\Debug\mainTCPWM.o (Pin_INT_TC_Write)
+.\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_INT.o)
+                              .\CortexM0\ARM_GCC_541\Debug\mainTCPWM.o (PWM_INT_StartEx)
+.\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(SW_INT.o)
+                              .\CortexM0\ARM_GCC_541\Debug\mainTCPWM.o (SW_INT_StartEx)
+.\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyBootAsmGnu.o)
+                              .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o) (CyDelayCycles)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_udivsi3.o)
+                              .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o) (__aeabi_uidiv)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_dvmd_tls.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_udivsi3.o) (__aeabi_idiv0)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-errno.o)
+                              .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o (__errno)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o (exit)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o) (_global_impure_ptr)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-init.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o (__libc_init_array)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o (memset)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crti.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crti.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crti.o
+ .data          0x00000000        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+ .text          0x00000000       0x78 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .ARM.extab     0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .ARM.exidx     0x00000000        0x8 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\mainTCPWM.o
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\mainTCPWM.o
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .data          0x00000000        0x4 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .text._exit    0x00000000        0xc .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .text._sbrk    0x00000000       0x30 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\cybootloader.o
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\cybootloader.o
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\cybootloader.o
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .bss           0x00000000       0x18 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .text.CySysClkImoStart
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .text.CySysClkImoStop
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .text.CySysClkWriteHfclkDirect
+                0x00000000       0x20 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .text.CySysEnablePumpClock
+                0x00000000       0x38 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .text.CySysClkGetSysclkSource
+                0x00000000       0x1c .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .text.CySysClkWriteSysclkDiv
+                0x00000000       0x30 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .text.CySysLvdDisable
+                0x00000000       0x20 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .text.CySysLvdGetInterruptSource
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .text.CySysLvdClearInterrupt
+                0x00000000        0xc .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .text.CySysGetResetReason
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .text.CyDisableInts
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .text.CyEnableInts
+                0x00000000        0xc .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .text.CyIntGetState
+                0x00000000       0x18 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .text.CyIntDisable
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .text.CyIntSetPending
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .text.CyIntClearPending
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .text.CyIntSetSysVector
+                0x00000000       0x20 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .text.CyIntGetSysVector
+                0x00000000       0x1c .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .text.CyIntGetVector
+                0x00000000       0x20 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .text.CyIntSetPriority
+                0x00000000       0x4c .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .text.CyIntGetPriority
+                0x00000000       0x2c .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .text.CySoftwareReset
+                0x00000000       0x18 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .text.CyDelay  0x00000000       0x30 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .text.CySysLvdEnable
+                0x00000000       0x44 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .text.CyDelayFreq
+                0x00000000       0x4c .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .text.CySysTickStop
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .text.CySysTickEnableInterrupt
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .text.CySysTickEnable
+                0x00000000       0x18 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .text.CySysTickDisableInterrupt
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .text.CySysTickSetReload
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .text.CySysTickGetReload
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .text.CySysTickGetValue
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .text.CySysTickGetCountFlag
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .text.CySysTickServiceCallbacks
+                0x00000000       0x28 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .text.CySysTickClear
+                0x00000000        0xc .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .text.CySysTickInit
+                0x00000000       0x40 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .text.CySysTickStart
+                0x00000000       0x20 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .text.CySysTickSetCallback
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .text.CySysTickGetCallback
+                0x00000000        0xc .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .text.CyGetUniqueId
+                0x00000000       0x70 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+ .text.CySysClkIloEnabled
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+ .text.CySysClkIloStart
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+ .text.CySysClkIloStartMeasurement
+                0x00000000       0x34 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+ .text.CySysClkIloStopMeasurement
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+ .text.CySysClkIloCompensate
+                0x00000000      0x104 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+ .text.CySysWdtGetEnabledStatus
+                0x00000000       0x24 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+ .text.CySysWdtSetMode
+                0x00000000       0x38 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+ .text.CySysClkLfclkPosedgeRestore
+                0x00000000       0x2c .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+ .text.CySysWdtGetMode
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+ .text.CySysWdtSetClearOnMatch
+                0x00000000       0x34 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+ .text.CySysWdtGetClearOnMatch
+                0x00000000       0x24 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+ .text.CySysWdtEnable
+                0x00000000       0x40 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+ .text.CySysWdtDisable
+                0x00000000       0x44 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+ .text.CySysWdtSetCascade
+                0x00000000       0x34 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+ .text.CySysWdtGetCascade
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+ .text.CySysWdtSetMatch
+                0x00000000       0x38 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+ .text.CySysWdtSetToggleBit
+                0x00000000       0x30 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+ .text.CySysWdtGetToggleBit
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+ .text.CySysWdtGetMatch
+                0x00000000       0x20 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+ .text.CySysWdtGetCount
+                0x00000000       0x3c .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+ .text.CySysClkLfclkPosedgeCatch
+                0x00000000       0x74 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+ .text.CySysClkIloStop
+                0x00000000       0x38 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+ .text.CySysWdtGetInterruptSource
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+ .text.CySysWdtResetCounters
+                0x00000000       0x20 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+ .text.CySysWdtSetInterruptCallback
+                0x00000000       0x20 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+ .text.CySysWdtGetInterruptCallback
+                0x00000000       0x20 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+ .text.CySysWdtEnableCounterIsr
+                0x00000000       0x34 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+ .text.CySysWdtDisableCounterIsr
+                0x00000000       0x28 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+ .text.CySysWatchdogFeed
+                0x00000000       0x60 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+ .text.CySysTimerDelayUntilMatch
+                0x00000000       0x6c .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+ .text.CySysTimerDelay
+                0x00000000       0x3c .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+ .rodata        0x00000000        0xc .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+ .text.PWM_1_SetMode
+                0x00000000       0x28 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+ .text.PWM_1_SetQDMode
+                0x00000000       0x28 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+ .text.PWM_1_SetPrescaler
+                0x00000000       0x28 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+ .text.PWM_1_SetOneShot
+                0x00000000       0x30 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+ .text.PWM_1_SetPWMMode
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+ .text.PWM_1_SetPWMSyncKill
+                0x00000000       0x28 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+ .text.PWM_1_SetPWMStopOnKill
+                0x00000000       0x28 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+ .text.PWM_1_SetPWMDeadTime
+                0x00000000       0x2c .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+ .text.PWM_1_SetPWMInvert
+                0x00000000       0x28 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+ .text.PWM_1_ReadCounter
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+ .text.PWM_1_SetCounterMode
+                0x00000000       0x28 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+ .text.PWM_1_ReadPeriod
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+ .text.PWM_1_SetCompareSwap
+                0x00000000       0x24 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+ .text.PWM_1_WritePeriodBuf
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+ .text.PWM_1_ReadPeriodBuf
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+ .text.PWM_1_SetPeriodSwap
+                0x00000000       0x28 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+ .text.PWM_1_ReadCompare
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+ .text.PWM_1_WriteCompareBuf
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+ .text.PWM_1_ReadCompareBuf
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+ .text.PWM_1_ReadCapture
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+ .text.PWM_1_ReadCaptureBuf
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+ .text.PWM_1_SetCaptureMode
+                0x00000000       0x24 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+ .text.PWM_1_SetReloadMode
+                0x00000000       0x24 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+ .text.PWM_1_SetStartMode
+                0x00000000       0x28 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+ .text.PWM_1_SetStopMode
+                0x00000000       0x24 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+ .text.PWM_1_SetCountMode
+                0x00000000       0x24 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+ .text.PWM_1_ReadStatus
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+ .text.PWM_1_GetInterruptSource
+                0x00000000        0xc .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+ .text.PWM_1_SetInterrupt
+                0x00000000        0xc .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_SW.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_SW.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_SW.o)
+ .text.Pin_SW_SetDriveMode
+                0x00000000       0x18 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_SW.o)
+ .text.Pin_SW_Write
+                0x00000000       0x18 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_SW.o)
+ .text.Pin_SW_Read
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_SW.o)
+ .text.Pin_SW_ReadDataReg
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_SW.o)
+ .text.Pin_SW_SetInterruptMode
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_SW.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_INT_CC.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_INT_CC.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_INT_CC.o)
+ .text.Pin_INT_CC_SetDriveMode
+                0x00000000       0x18 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_INT_CC.o)
+ .text.Pin_INT_CC_ReadDataReg
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_INT_CC.o)
+ .text.Pin_INT_CC_SetInterruptMode
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_INT_CC.o)
+ .text.Pin_INT_CC_ClearInterrupt
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_INT_CC.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_INT_TC.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_INT_TC.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_INT_TC.o)
+ .text.Pin_INT_TC_SetDriveMode
+                0x00000000       0x18 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_INT_TC.o)
+ .text.Pin_INT_TC_ReadDataReg
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_INT_TC.o)
+ .text.Pin_INT_TC_SetInterruptMode
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_INT_TC.o)
+ .text.Pin_INT_TC_ClearInterrupt
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_INT_TC.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_INT.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_INT.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_INT.o)
+ .text.PWM_INT_Interrupt
+                0x00000000        0x4 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_INT.o)
+ .text.PWM_INT_GetVector
+                0x00000000        0xc .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_INT.o)
+ .text.PWM_INT_GetPriority
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_INT.o)
+ .text.PWM_INT_GetState
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_INT.o)
+ .text.PWM_INT_Start
+                0x00000000       0x1c .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_INT.o)
+ .text.PWM_INT_Stop
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_INT.o)
+ .text.PWM_INT_SetPending
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_INT.o)
+ .text.PWM_INT_ClearPending
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_INT.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(SW_INT.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(SW_INT.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(SW_INT.o)
+ .text.SW_INT_Interrupt
+                0x00000000        0x4 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(SW_INT.o)
+ .text.SW_INT_GetVector
+                0x00000000        0xc .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(SW_INT.o)
+ .text.SW_INT_GetPriority
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(SW_INT.o)
+ .text.SW_INT_GetState
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(SW_INT.o)
+ .text.SW_INT_Start
+                0x00000000       0x1c .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(SW_INT.o)
+ .text.SW_INT_Stop
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(SW_INT.o)
+ .text.SW_INT_SetPending
+                0x00000000        0xc .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(SW_INT.o)
+ .text.SW_INT_ClearPending
+                0x00000000        0xc .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(SW_INT.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyBootAsmGnu.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyBootAsmGnu.o)
+ .text          0x00000000      0x114 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_udivsi3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_udivsi3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_udivsi3.o)
+ .text          0x00000000        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_dvmd_tls.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_dvmd_tls.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_dvmd_tls.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-errno.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-errno.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-errno.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o)
+ .text.exit     0x00000000       0x2c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+ .rodata._global_impure_ptr
+                0x00000000        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-init.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-init.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-init.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtend.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtend.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtend.o
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtn.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtn.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+rom              0x00000000         0x00008000         xr
+ram              0x20000000         0x00001000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crti.o
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+START GROUP
+LOAD .\CortexM0\ARM_GCC_541\Debug\mainTCPWM.o
+LOAD .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+LOAD .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
+LOAD .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+LOAD .\CortexM0\ARM_GCC_541\Debug\cybootloader.o
+LOAD .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a
+END GROUP
+START GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a
+END GROUP
+START GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a
+END GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtend.o
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtn.o
+START GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libnosys.a
+END GROUP
+                0x00000000                CY_APPL_ORIGIN = 0x0
+                0x00000080                CY_FLASH_ROW_SIZE = 0x80
+                0x00000001                CY_APPL_NUM = 0x1
+                0x00000001                CY_APPL_MAX = 0x1
+                0x00000040                CY_METADATA_SIZE = 0x40
+                0x00000001                CY_APPL_LOADABLE = 0x1
+                0x00000000                CY_CHECKSUM_EXCLUDE_SIZE = ALIGN (0x0, CY_FLASH_ROW_SIZE)
+                0x00000000                CY_APP_FOR_STACK_AND_COPIER = 0x0
+                [!provide]                PROVIDE (__cy_heap_start, _end)
+                0x00000001                PROVIDE (__cy_region_num, ((__cy_regions_end - __cy_regions) / 0x10))
+                0x20001000                PROVIDE (__cy_stack, (ORIGIN (ram) + LENGTH (ram)))
+                [!provide]                PROVIDE (__cy_heap_end, (__cy_stack - 0x400))
+
+.cybootloader   0x00000000     0x1100
+ *(.cybootloader)
+ .cybootloader  0x00000000     0x1100 .\CortexM0\ARM_GCC_541\Debug\cybootloader.o
+                0x00000000                cy_bootloader
+                0x00001100                appl1_start = CY_APPL_ORIGIN?CY_APPL_ORIGIN:ALIGN (CY_FLASH_ROW_SIZE)
+                0x00004800                appl2_start = (appl1_start + ALIGN ((((LENGTH (rom) - appl1_start) - (0x2 * CY_FLASH_ROW_SIZE)) / 0x2), CY_FLASH_ROW_SIZE))
+                0x00001100                appl_start = (CY_APPL_NUM == 0x1)?appl1_start:appl2_start
+                0x00000000                cy_project_type_bootloader = (appl_start == 0x0)?0x1:0x0
+                0x00000000                cy_project_type_app_for_stack_and_copier = (CY_APP_FOR_STACK_AND_COPIER == 0x1)?0x1:0x0
+
+.text           0x00001100      0x8d4
+ CREATE_OBJECT_SYMBOLS
+                0x00001100                PROVIDE (__cy_interrupt_vector, RomVectors)
+ *(.romvectors)
+ .romvectors    0x00001100       0x10 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+                0x00001100                RomVectors
+                0x00000001                ASSERT ((. != __cy_interrupt_vector), No interrupt vector)
+                0x00000001                ASSERT (CY_APPL_ORIGIN?(SIZEOF (.cybootloader) <= CY_APPL_ORIGIN):0x1, Wrong image location)
+                0x00001110                PROVIDE (__cy_reset, Reset)
+ *(.text.Reset)
+ .text.Reset    0x00001110       0x10 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+                0x00001110                Reset
+                0x00000001                ASSERT ((. != __cy_reset), No reset code)
+ *(.psocinit)
+ .psocinit      0x00001120      0x11c .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+                0x0000118c                cyfitter_cfg
+                0x0000123c                . = MAX (., 0x100)
+ *(.text .text.* .gnu.linkonce.t.*)
+ .text          0x0000123c       0x60 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+ .text.PWM_INT_Handler
+                0x0000129c       0x48 .\CortexM0\ARM_GCC_541\Debug\mainTCPWM.o
+                0x0000129c                PWM_INT_Handler
+ .text.SW_INT_Handler
+                0x000012e4       0x3c .\CortexM0\ARM_GCC_541\Debug\mainTCPWM.o
+                0x000012e4                SW_INT_Handler
+ .text.main     0x00001320       0x28 .\CortexM0\ARM_GCC_541\Debug\mainTCPWM.o
+                0x00001320                main
+ .text.CYMEMZERO
+                0x00001348        0xc .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .text.IntDefaultHandler
+                0x00001354       0x10 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+                0x00001354                IntDefaultHandler
+ .text.Start_c  0x00001364       0x48 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+                0x00001364                Start_c
+ .text.initialize_psoc
+                0x000013ac       0x50 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+                0x000013ac                initialize_psoc
+ .text.CyIntEnable
+                0x000013fc       0x14 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+                0x000013fc                CyIntEnable
+ .text.CyHalt   0x00001410        0x4 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+                0x00001410                CyHalt
+ .text.CyIntSetVector
+                0x00001414       0x24 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+                0x00001414                CyIntSetVector
+ .text.CyDelayUs
+                0x00001438       0x14 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+                0x00001438                CyDelayUs
+ .text.CySysClkWriteImoFreq
+                0x0000144c      0x164 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+                0x0000144c                CySysClkWriteImoFreq
+ .text.CySysWdtLocked
+                0x000015b0       0x14 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+ .text.CySysWdtLock
+                0x000015c4       0x1c .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+                0x000015c4                CySysWdtLock
+ .text.CySysWdtUnlock
+                0x000015e0       0x30 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+                0x000015e0                CySysWdtUnlock
+ .text.CySysWdtClearInterrupt
+                0x00001610       0x4c .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+                0x00001610                CySysWdtClearInterrupt
+ .text.CySysWdtIsr
+                0x0000165c       0xa4 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+                0x0000165c                CySysWdtIsr
+ .text.PWM_1_Stop
+                0x00001700       0x1c .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+                0x00001700                PWM_1_Stop
+ .text.PWM_1_WriteCounter
+                0x0000171c       0x10 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+                0x0000171c                PWM_1_WriteCounter
+ .text.PWM_1_WritePeriod
+                0x0000172c       0x10 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+                0x0000172c                PWM_1_WritePeriod
+ .text.PWM_1_WriteCompare
+                0x0000173c       0x10 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+                0x0000173c                PWM_1_WriteCompare
+ .text.PWM_1_TriggerCommand
+                0x0000174c       0x1c .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+                0x0000174c                PWM_1_TriggerCommand
+ .text.PWM_1_Enable
+                0x00001768       0x24 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+                0x00001768                PWM_1_Enable
+ .text.PWM_1_SetInterruptMode
+                0x0000178c        0xc .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+                0x0000178c                PWM_1_SetInterruptMode
+ .text.PWM_1_Init
+                0x00001798       0x48 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+                0x00001798                PWM_1_Init
+ .text.PWM_1_Start
+                0x000017e0       0x20 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+                0x000017e0                PWM_1_Start
+ .text.PWM_1_GetInterruptSourceMasked
+                0x00001800        0xc .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+                0x00001800                PWM_1_GetInterruptSourceMasked
+ .text.PWM_1_ClearInterrupt
+                0x0000180c        0xc .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+                0x0000180c                PWM_1_ClearInterrupt
+ .text.Pin_SW_ClearInterrupt
+                0x00001818       0x14 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_SW.o)
+                0x00001818                Pin_SW_ClearInterrupt
+ .text.Pin_INT_CC_Write
+                0x0000182c       0x18 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_INT_CC.o)
+                0x0000182c                Pin_INT_CC_Write
+ .text.Pin_INT_CC_Read
+                0x00001844       0x10 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_INT_CC.o)
+                0x00001844                Pin_INT_CC_Read
+ .text.Pin_INT_TC_Write
+                0x00001854       0x18 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_INT_TC.o)
+                0x00001854                Pin_INT_TC_Write
+ .text.Pin_INT_TC_Read
+                0x0000186c       0x10 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_INT_TC.o)
+                0x0000186c                Pin_INT_TC_Read
+ .text.PWM_INT_SetVector
+                0x0000187c        0xc .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_INT.o)
+                0x0000187c                PWM_INT_SetVector
+ .text.PWM_INT_SetPriority
+                0x00001888       0x24 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_INT.o)
+                0x00001888                PWM_INT_SetPriority
+ .text.PWM_INT_Enable
+                0x000018ac       0x10 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_INT.o)
+                0x000018ac                PWM_INT_Enable
+ .text.PWM_INT_Disable
+                0x000018bc       0x10 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_INT.o)
+                0x000018bc                PWM_INT_Disable
+ .text.PWM_INT_StartEx
+                0x000018cc       0x1c .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_INT.o)
+                0x000018cc                PWM_INT_StartEx
+ .text.SW_INT_SetVector
+                0x000018e8        0xc .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(SW_INT.o)
+                0x000018e8                SW_INT_SetVector
+ .text.SW_INT_SetPriority
+                0x000018f4       0x20 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(SW_INT.o)
+                0x000018f4                SW_INT_SetPriority
+ .text.SW_INT_Enable
+                0x00001914        0xc .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(SW_INT.o)
+                0x00001914                SW_INT_Enable
+ .text.SW_INT_Disable
+                0x00001920        0xc .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(SW_INT.o)
+                0x00001920                SW_INT_Disable
+ .text.SW_INT_StartEx
+                0x0000192c       0x1c .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(SW_INT.o)
+                0x0000192c                SW_INT_StartEx
+ .text          0x00001948       0x24 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyBootAsmGnu.o)
+                0x00001948                CyDelayCycles
+                0x0000195c                CyEnterCriticalSection
+                0x00001964                CyExitCriticalSection
+ .text.__errno  0x0000196c        0xc c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-errno.o)
+                0x0000196c                __errno
+ .text.__libc_init_array
+                0x00001978       0x4c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-init.o)
+                0x00001978                __libc_init_array
+ .text.memset   0x000019c4       0x10 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
+                0x000019c4                memset
+ *(.plt)
+ *(.gnu.warning)
+ *(.glue_7t)
+ .glue_7t       0x000019d4        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x000019d4        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x000019d4        0x0 linker stubs
+ *(.bootloader)
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+ *(.gcc_except_table)
+
+.v4_bx          0x000019d4        0x0
+ .v4_bx         0x000019d4        0x0 linker stubs
+
+.iplt           0x000019d4        0x0
+ .iplt          0x000019d4        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame       0x000019d4        0x4
+ *(.eh_frame)
+ .eh_frame      0x000019d4        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+ .eh_frame      0x000019d4        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtend.o
+                [!provide]                PROVIDE (__exidx_start, .)
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x000019d8                __exidx_end = .
+
+.rodata         0x000019d8       0x70
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x000019d8        0xc .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .rodata        0x000019e4       0x2e .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+                0x000019e4                cyImoFreqMhz2Reg
+ .rodata.str1.1
+                0x00001a12        0x2 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+                0x00001a14                . = ALIGN (0x4)
+ *(.init)
+ .init          0x00001a14        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crti.o
+                0x00001a14                _init
+ .init          0x00001a18        0x8 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtn.o
+                0x00001a20                . = ALIGN (0x4)
+                0x00001a20                __preinit_array_start = .
+ *(.preinit_array)
+                0x00001a20                __preinit_array_end = .
+                0x00001a20                . = ALIGN (0x4)
+                0x00001a20                __init_array_start = .
+ *(SORT(.init_array.*))
+ *(.init_array)
+ .init_array    0x00001a20        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+ .init_array    0x00001a24        0x4 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+                0x00001a28                __init_array_end = .
+                0x00001a28                . = ALIGN (0x4)
+ *(.fini)
+ .fini          0x00001a28        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crti.o
+                0x00001a28                _fini
+ .fini          0x00001a2c        0x8 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtn.o
+                0x00001a34                . = ALIGN (0x4)
+                0x00001a34                __fini_array_start = .
+ *(.fini_array)
+ .fini_array    0x00001a34        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+ *(SORT(.fini_array.*))
+                0x00001a38                __fini_array_end = .
+                0x00001a38                . = ALIGN (0x4)
+ *crtbegin.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *crtend.o(.ctors)
+                0x00001a38                . = ALIGN (0x4)
+ *crtbegin.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *crtend.o(.dtors)
+                0x00001a38                . = ALIGN (0x4)
+                0x00001a38                __cy_regions = .
+                0x00001a38        0x4 LONG 0x1a48 __cy_region_init_ram
+                0x00001a3c        0x4 LONG 0x200000c8 __cy_region_start_data
+                0x00001a40        0x4 LONG 0x80 __cy_region_init_size_ram
+                0x00001a44        0x4 LONG 0x48 __cy_region_zero_size_ram
+                0x00001a48                __cy_regions_end = .
+                0x00001a48                . = ALIGN (0x8)
+                0x00001a48                _etext = .
+
+.ramvectors     0x20000000       0xc0
+                0x20000000                __cy_region_start_ram = .
+ *(.ramvectors)
+ .ramvectors    0x20000000       0xc0 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+                0x20000000                CyRamVectors
+
+.btldr_run      0x200000c0        0x4
+ *(.bootloaderruntype)
+ .bootloaderruntype
+                0x200000c0        0x4 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+                0x200000c0                cyBtldrRunType
+
+.noinit
+ *(.noinit)
+
+.data           0x200000c8       0x80 load address 0x00001a48
+                0x200000c8                __cy_region_start_data = .
+ *(.jcr)
+ .jcr           0x200000c8        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+ .jcr           0x200000c8        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtend.o
+ *(.got.plt)
+ *(.got)
+ *(.shdata)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x200000cc       0x14 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+                0x200000cc                CySysClkPumpConfig
+                0x200000d0                cydelay32kMs
+                0x200000d4                cydelayFreqKhz
+                0x200000d8                cydelayFreqMhz
+                0x200000dc                cydelayFreqHz
+ .data          0x200000e0        0x4 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+ .data.impure_data
+                0x200000e4       0x60 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+ .data._impure_ptr
+                0x20000144        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+                0x20000144                _impure_ptr
+                0x20000148                . = ALIGN (0x8)
+ *(.ram)
+                0x20000148                _edata = .
+
+.igot.plt       0x20000148        0x0 load address 0x00001ac8
+ .igot.plt      0x20000148        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+
+.bss            0x20000148       0x48 load address 0x00001ac8
+                0x20000148                PROVIDE (__bss_start__, .)
+ *(.shbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x20000148       0x1c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+ .bss           0x20000164        0x1 .\CortexM0\ARM_GCC_541\Debug\mainTCPWM.o
+                0x20000164                estado
+ *fill*         0x20000165        0x3 
+ .bss           0x20000168       0x20 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+ .bss           0x20000188        0x1 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+                0x20000188                PWM_1_initVar
+ *(COMMON)
+                0x20000190                . = ALIGN (0x8)
+ *fill*         0x20000189        0x7 
+ *(.ram.b)
+                0x20000190                _end = .
+                0x20000190                __end = .
+                0x20000190                PROVIDE (end, .)
+                0x20000190                PROVIDE (__bss_end__, .)
+                0x00001a48                __cy_region_init_ram = LOADADDR (.data)
+                0x00000080                __cy_region_init_size_ram = (_edata - ADDR (.data))
+                0x00000048                __cy_region_zero_size_ram = (_end - _edata)
+
+.heap           0x20000190       0x80 load address 0x00001ac8
+                0x20000190                . = _end
+                0x20000210                . = (. + 0x80)
+ *fill*         0x20000190       0x80 
+                0x20000210                __cy_heap_limit = .
+
+.stack          0x20000c00      0x400
+                0x20000c00                __cy_stack_limit = .
+                0x20001000                . = (. + 0x400)
+ *fill*         0x20000c00      0x400 
+                0x00000001                ASSERT ((__cy_stack_limit >= __cy_heap_limit), region RAM overflowed with stack)
+
+.cy_checksum_exclude
+                0x00007f80        0x0
+ *(.cy_checksum_exclude)
+                0x00000000                cy_checksum_exclude_size = (CY_APPL_LOADABLE == 0x1)?SIZEOF (.cy_checksum_exclude):0x0
+                0x00000001                ASSERT ((cy_checksum_exclude_size <= CY_CHECKSUM_EXCLUDE_SIZE), CY_BOOT: Section .cy_checksum_exclude size exceedes specified limit.)
+                0xf0000000                cyloadermeta_start = (cy_project_type_bootloader || cy_project_type_app_for_stack_and_copier)?(LENGTH (rom) - CY_METADATA_SIZE):0xf0000000
+
+.cyloadermeta   0xf0000000       0x40
+ *(.cyloadermeta)
+ .cyloadermeta  0xf0000000       0x40 .\CortexM0\ARM_GCC_541\Debug\cybootloader.o
+                0xf0000000                cy_meta_loader
+                0x00007fc0                cyloadablemeta_start = cy_project_type_app_for_stack_and_copier?((LENGTH (rom) - CY_FLASH_ROW_SIZE) - CY_METADATA_SIZE):((LENGTH (rom) - (CY_FLASH_ROW_SIZE * (CY_APPL_NUM - 0x1))) - CY_METADATA_SIZE)
+
+.cyloadablemeta
+                0x00007fc0       0x40
+ *(.cyloadablemeta)
+ .cyloadablemeta
+                0x00007fc0       0x40 .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
+                0x00007fc0                cy_meta_loadable
+
+.cyflashprotect
+                0x90400000       0x20
+ *(.cyflashprotect)
+ .cyflashprotect
+                0x90400000       0x20 .\CortexM0\ARM_GCC_541\Debug\cybootloader.o
+                0x90400000                cy_meta_flashprotect
+
+.cymeta         0x90500000        0xc
+ *(.cymeta)
+ .cymeta        0x90500000        0xc .\CortexM0\ARM_GCC_541\Debug\cybootloader.o
+                0x90500000                cy_metadata
+
+.cychipprotect  0x90600000        0x1
+ *(.cychipprotect)
+ .cychipprotect
+                0x90600000        0x1 .\CortexM0\ARM_GCC_541\Debug\cybootloader.o
+                0x90600000                cy_meta_chipprotect
+
+.rel.dyn        0x00008000        0x0 load address 0x90600004
+ .rel.iplt      0x00008000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x6e0
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x30 .\CortexM0\ARM_GCC_541\Debug\mainTCPWM.o
+ .debug_aranges
+                0x00000030       0x30 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_aranges
+                0x00000060       0x18 .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
+ .debug_aranges
+                0x00000078       0x48 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .debug_aranges
+                0x000000c0       0x18 .\CortexM0\ARM_GCC_541\Debug\cybootloader.o
+ .debug_aranges
+                0x000000d8      0x180 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .debug_aranges
+                0x00000258      0x138 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+ .debug_aranges
+                0x00000390      0x158 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+ .debug_aranges
+                0x000004e8       0x48 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_SW.o)
+ .debug_aranges
+                0x00000530       0x48 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_INT_CC.o)
+ .debug_aranges
+                0x00000578       0x48 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_INT_TC.o)
+ .debug_aranges
+                0x000005c0       0x80 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_INT.o)
+ .debug_aranges
+                0x00000640       0x80 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(SW_INT.o)
+ .debug_aranges
+                0x000006c0       0x20 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyBootAsmGnu.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x3778
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x2ab .\CortexM0\ARM_GCC_541\Debug\mainTCPWM.o
+ .debug_info    0x000002ab      0x279 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_info    0x00000524       0xac .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
+ .debug_info    0x000005d0      0x3b3 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .debug_info    0x00000983      0x153 .\CortexM0\ARM_GCC_541\Debug\cybootloader.o
+ .debug_info    0x00000ad6      0xaed .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .debug_info    0x000015c3      0xcfe .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+ .debug_info    0x000022c1      0x90a .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+ .debug_info    0x00002bcb      0x19d .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_SW.o)
+ .debug_info    0x00002d68      0x19d .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_INT_CC.o)
+ .debug_info    0x00002f05      0x19d .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_INT_TC.o)
+ .debug_info    0x000030a2      0x305 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_INT.o)
+ .debug_info    0x000033a7      0x305 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(SW_INT.o)
+ .debug_info    0x000036ac       0xcc .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyBootAsmGnu.o)
+
+.debug_abbrev   0x00000000      0xf89
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0xe1 .\CortexM0\ARM_GCC_541\Debug\mainTCPWM.o
+ .debug_abbrev  0x000000e1      0x150 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_abbrev  0x00000231       0x5d .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
+ .debug_abbrev  0x0000028e      0x1e8 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .debug_abbrev  0x00000476       0x77 .\CortexM0\ARM_GCC_541\Debug\cybootloader.o
+ .debug_abbrev  0x000004ed      0x1d3 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .debug_abbrev  0x000006c0      0x210 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+ .debug_abbrev  0x000008d0      0x119 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+ .debug_abbrev  0x000009e9       0xc8 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_SW.o)
+ .debug_abbrev  0x00000ab1       0xc8 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_INT_CC.o)
+ .debug_abbrev  0x00000b79       0xc8 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_INT_TC.o)
+ .debug_abbrev  0x00000c41      0x19a .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_INT.o)
+ .debug_abbrev  0x00000ddb      0x19a .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(SW_INT.o)
+ .debug_abbrev  0x00000f75       0x14 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyBootAsmGnu.o)
+
+.debug_line     0x00000000     0x1781
+ *(.debug_line)
+ .debug_line    0x00000000       0xf2 .\CortexM0\ARM_GCC_541\Debug\mainTCPWM.o
+ .debug_line    0x000000f2      0x133 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_line    0x00000225      0x141 .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
+ .debug_line    0x00000366      0x238 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .debug_line    0x0000059e       0x53 .\CortexM0\ARM_GCC_541\Debug\cybootloader.o
+ .debug_line    0x000005f1      0x460 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .debug_line    0x00000a51      0x466 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+ .debug_line    0x00000eb7      0x37e .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+ .debug_line    0x00001235       0xbe .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_SW.o)
+ .debug_line    0x000012f3       0xc2 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_INT_CC.o)
+ .debug_line    0x000013b5       0xc2 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_INT_TC.o)
+ .debug_line    0x00001477      0x153 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_INT.o)
+ .debug_line    0x000015ca      0x14e .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(SW_INT.o)
+ .debug_line    0x00001718       0x69 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyBootAsmGnu.o)
+
+.debug_frame    0x00000000     0x10d4
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x64 .\CortexM0\ARM_GCC_541\Debug\mainTCPWM.o
+ .debug_frame   0x00000064       0x68 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_frame   0x000000cc       0xbc .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .debug_frame   0x00000188      0x3e0 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .debug_frame   0x00000568      0x3a8 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+ .debug_frame   0x00000910      0x3a0 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+ .debug_frame   0x00000cb0       0x70 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_SW.o)
+ .debug_frame   0x00000d20       0x70 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_INT_CC.o)
+ .debug_frame   0x00000d90       0x70 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_INT_TC.o)
+ .debug_frame   0x00000e00      0x110 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_INT.o)
+ .debug_frame   0x00000f10      0x110 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(SW_INT.o)
+ .debug_frame   0x00001020       0x20 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_udivsi3.o)
+ .debug_frame   0x00001040       0x20 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-errno.o)
+ .debug_frame   0x00001060       0x28 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o)
+ .debug_frame   0x00001088       0x2c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-init.o)
+ .debug_frame   0x000010b4       0x20 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
+
+.debug_str      0x00000000     0x1672
+ *(.debug_str)
+ .debug_str     0x00000000      0x292 .\CortexM0\ARM_GCC_541\Debug\mainTCPWM.o
+                                0x2d2 (size before relaxing)
+ .debug_str     0x00000292       0xb5 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+                                0x286 (size before relaxing)
+ .debug_str     0x00000347       0x3f .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
+                                0x1e0 (size before relaxing)
+ .debug_str     0x00000386      0x14f .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+                                0x34c (size before relaxing)
+ .debug_str     0x000004d5       0x78 .\CortexM0\ARM_GCC_541\Debug\cybootloader.o
+                                0x229 (size before relaxing)
+ .debug_str     0x0000054d      0x4c6 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+                                0x6f2 (size before relaxing)
+ .debug_str     0x00000a13      0x530 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+                                0x779 (size before relaxing)
+ .debug_str     0x00000f43      0x39b .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+                                0x5ed (size before relaxing)
+ .debug_str     0x000012de       0x9c .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_SW.o)
+                                0x279 (size before relaxing)
+ .debug_str     0x0000137a       0x89 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_INT_CC.o)
+                                0x295 (size before relaxing)
+ .debug_str     0x00001403       0x89 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_INT_TC.o)
+                                0x295 (size before relaxing)
+ .debug_str     0x0000148c      0x101 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_INT.o)
+                                0x342 (size before relaxing)
+ .debug_str     0x0000158d       0xe5 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(SW_INT.o)
+                                0x334 (size before relaxing)
+
+.debug_loc      0x00000000     0x19ac
+ *(.debug_loc)
+ .debug_loc     0x00000000       0x35 .\CortexM0\ARM_GCC_541\Debug\mainTCPWM.o
+ .debug_loc     0x00000035       0xa9 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_loc     0x000000de      0x14f .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .debug_loc     0x0000022d      0x599 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .debug_loc     0x000007c6      0x9b5 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+ .debug_loc     0x0000117b      0x547 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+ .debug_loc     0x000016c2       0xa2 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_SW.o)
+ .debug_loc     0x00001764       0xa2 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_INT_CC.o)
+ .debug_loc     0x00001806       0xa2 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_INT_TC.o)
+ .debug_loc     0x000018a8       0x82 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_INT.o)
+ .debug_loc     0x0000192a       0x82 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(SW_INT.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_ranges   0x00000000      0x5e0
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0x20 .\CortexM0\ARM_GCC_541\Debug\mainTCPWM.o
+ .debug_ranges  0x00000020       0x20 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_ranges  0x00000040       0x38 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .debug_ranges  0x00000078      0x170 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .debug_ranges  0x000001e8      0x128 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+ .debug_ranges  0x00000310      0x148 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+ .debug_ranges  0x00000458       0x38 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_SW.o)
+ .debug_ranges  0x00000490       0x38 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_INT_CC.o)
+ .debug_ranges  0x000004c8       0x38 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_INT_TC.o)
+ .debug_ranges  0x00000500       0x70 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_INT.o)
+ .debug_ranges  0x00000570       0x70 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(SW_INT.o)
+
+.comment        0x00000000       0x6e
+ .comment       0x00000000       0x6e .\CortexM0\ARM_GCC_541\Debug\mainTCPWM.o
+                                 0x6f (size before relaxing)
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\cybootloader.o
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_SW.o)
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_INT_CC.o)
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_INT_TC.o)
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_INT.o)
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(SW_INT.o)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+.ARM.attributes
+                0x00000000       0x28
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x00000000       0x1e c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crti.o
+ .ARM.attributes
+                0x0000001e       0x2c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+ .ARM.attributes
+                0x0000004a       0x1b c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .ARM.attributes
+                0x00000065       0x31 .\CortexM0\ARM_GCC_541\Debug\mainTCPWM.o
+ .ARM.attributes
+                0x00000096       0x31 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .ARM.attributes
+                0x000000c7       0x31 .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
+ .ARM.attributes
+                0x000000f8       0x31 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .ARM.attributes
+                0x00000129       0x31 .\CortexM0\ARM_GCC_541\Debug\cybootloader.o
+ .ARM.attributes
+                0x0000015a       0x31 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLib.o)
+ .ARM.attributes
+                0x0000018b       0x31 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyLFClk.o)
+ .ARM.attributes
+                0x000001bc       0x31 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_1.o)
+ .ARM.attributes
+                0x000001ed       0x31 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_SW.o)
+ .ARM.attributes
+                0x0000021e       0x31 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_INT_CC.o)
+ .ARM.attributes
+                0x0000024f       0x31 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(Pin_INT_TC.o)
+ .ARM.attributes
+                0x00000280       0x31 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(PWM_INT.o)
+ .ARM.attributes
+                0x000002b1       0x31 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(SW_INT.o)
+ .ARM.attributes
+                0x000002e2       0x21 .\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.a(CyBootAsmGnu.o)
+ .ARM.attributes
+                0x00000303       0x1e c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x00000321       0x1e c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x0000033f       0x2c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-errno.o)
+ .ARM.attributes
+                0x0000036b       0x2c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o)
+ .ARM.attributes
+                0x00000397       0x2c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+ .ARM.attributes
+                0x000003c3       0x2c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-init.o)
+ .ARM.attributes
+                0x000003ef       0x2c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
+ .ARM.attributes
+                0x0000041b       0x2c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtend.o
+ .ARM.attributes
+                0x00000447       0x1e c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtn.o
+
+/DISCARD/
+ *(.note.GNU-stack)
+OUTPUT(D:\ESCRITORIO\Tesis MIB\Proyecto de Tesis\electroestimulador\PSoC\electroestimulador\WorkspaceMIB2\Prueba PWM con TCPWM.cydsn\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.elf elf32-littlearm)

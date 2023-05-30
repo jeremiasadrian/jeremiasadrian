@@ -1,0 +1,23 @@
+(DELAYFILE
+ (SDFVERSION "IEEE 1497 4.0")
+ (DATE "2020-12-19T11:18:13Z")
+ (DESIGN "prueba VDAC_Rampa")
+ (VENDOR "Cypress Semiconductor")
+ (PROGRAM "PSoC Creator")
+ (VERSION " 4.4")
+ (DIVIDER .)
+ (TIMESCALE 1 ns)
+ (CELL
+  (CELLTYPE "prueba VDAC_Rampa")
+  (INSTANCE *)
+  (DELAY
+   (ABSOLUTE
+    (INTERCONNECT ClockBlock.hfclk ONOFF_RAMPA.clock (0.000:0.000:0.000))
+    (INTERCONNECT SW1_RAMPA.interrupt ONOFF_RAMPA.interrupt (1.000:1.000:1.000))
+    (INTERCONNECT __ONE__.q Vpos\(0\).pin_input (0.000:0.000:0.000))
+    (INTERCONNECT __ONE__.q \\IDAC_1\:cy_psoc4_idac\\.en (0.000:0.000:0.000))
+    (INTERCONNECT SW1_RAMPA\(0\)_PAD SW1_RAMPA\(0\).pad_in (0.000:0.000:0.000))
+   )
+  )
+ )
+)

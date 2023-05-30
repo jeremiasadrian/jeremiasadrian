@@ -1,0 +1,647 @@
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\cccg2vEh.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m0
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 0
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"main.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.main,"ax",%progbits
+  20              		.align	2
+  21              		.global	main
+  22              		.code	16
+  23              		.thumb_func
+  24              		.type	main, %function
+  25              	main:
+  26              	.LFB32:
+  27              		.file 1 "main.c"
+   1:main.c        **** #include <project.h>
+   2:main.c        **** 
+   3:main.c        **** int main(void)
+   4:main.c        **** {
+  28              		.loc 1 4 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32 0000 10B5     		push	{r4, lr}
+  33              		.cfi_def_cfa_offset 8
+  34              		.cfi_offset 4, -8
+  35              		.cfi_offset 14, -4
+  36              	.LVL0:
+   5:main.c        ****     uint16 valor=0;
+   6:main.c        ****     /*uint32 CapSense_LINEARSLIDER0_LS=0;*/
+   7:main.c        ****     CyGlobalIntEnable; /* Enable global interrupts. */
+  37              		.loc 1 7 0
+  38              		.syntax divided
+  39              	@ 7 "main.c" 1
+  40 0002 62B6     		CPSIE   i
+  41              	@ 0 "" 2
+   8:main.c        **** 
+   9:main.c        ****     /* inicializo el modulo CapSense, la "baselines" VER, e inicio el primer escaneo */
+  10:main.c        ****     CapSense_Start();
+  42              		.loc 1 10 0
+  43              		.thumb
+  44              		.syntax unified
+  45 0004 FFF7FEFF 		bl	CapSense_Start
+  46              	.LVL1:
+  11:main.c        ****     CapSense_InitializeAllBaselines(); 
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\cccg2vEh.s 			page 2
+
+
+  47              		.loc 1 11 0
+  48 0008 FFF7FEFF 		bl	CapSense_InitializeAllBaselines
+  49              	.LVL2:
+  12:main.c        ****     CapSense_ScanEnabledWidgets();
+  50              		.loc 1 12 0
+  51 000c FFF7FEFF 		bl	CapSense_ScanEnabledWidgets
+  52              	.LVL3:
+  13:main.c        ****     
+  14:main.c        ****     /* inicializo el modulo PWM*/
+  15:main.c        ****     PWM_1_Start();
+  53              		.loc 1 15 0
+  54 0010 FFF7FEFF 		bl	PWM_1_Start
+  55              	.LVL4:
+  56              	.L2:
+  16:main.c        ****     /*Bucle de lectura de la linea capacitiva y actualización del Duty del LED en función del res
+  17:main.c        ****     while(1)
+  18:main.c        ****     {
+  19:main.c        ****      if(CapSense_IsBusy() == 0)   /* pregunta si termino el escaneo */
+  57              		.loc 1 19 0
+  58 0014 FFF7FEFF 		bl	CapSense_IsBusy
+  59              	.LVL5:
+  60 0018 0028     		cmp	r0, #0
+  61 001a FBD1     		bne	.L2
+  20:main.c        ****      {
+  21:main.c        ****       valor=CapSense_GetCentroidPos(CapSense_LINEARSLIDER0__LS);
+  62              		.loc 1 21 0
+  63 001c FFF7FEFF 		bl	CapSense_GetCentroidPos
+  64              	.LVL6:
+  22:main.c        ****       if(valor != 0xFFFF)
+  65              		.loc 1 22 0
+  66 0020 044B     		ldr	r3, .L5
+  67 0022 9842     		cmp	r0, r3
+  68 0024 01D0     		beq	.L3
+  23:main.c        ****         PWM_1_WriteCompare(valor); /* actualiza el ciclo de trabajo del LED en función de la posic
+  69              		.loc 1 23 0
+  70 0026 FFF7FEFF 		bl	PWM_1_WriteCompare
+  71              	.LVL7:
+  72              	.L3:
+  24:main.c        ****       CapSense_UpdateEnabledBaselines();
+  73              		.loc 1 24 0
+  74 002a FFF7FEFF 		bl	CapSense_UpdateEnabledBaselines
+  75              	.LVL8:
+  25:main.c        ****       CapSense_ScanEnabledWidgets();
+  76              		.loc 1 25 0
+  77 002e FFF7FEFF 		bl	CapSense_ScanEnabledWidgets
+  78              	.LVL9:
+  79 0032 EFE7     		b	.L2
+  80              	.L6:
+  81              		.align	2
+  82              	.L5:
+  83 0034 FFFF0000 		.word	65535
+  84              		.cfi_endproc
+  85              	.LFE32:
+  86              		.size	main, .-main
+  87              		.text
+  88              	.Letext0:
+  89              		.file 2 "Generated_Source\\PSoC4/CapSense.h"
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\cccg2vEh.s 			page 3
+
+
+  90              		.file 3 "Generated_Source\\PSoC4/CapSense_CSHL.h"
+  91              		.file 4 "Generated_Source\\PSoC4/PWM_1.h"
+  92              		.file 5 "Generated_Source\\PSoC4/cytypes.h"
+  93              		.section	.debug_info,"",%progbits
+  94              	.Ldebug_info0:
+  95 0000 6B010000 		.4byte	0x16b
+  96 0004 0400     		.2byte	0x4
+  97 0006 00000000 		.4byte	.Ldebug_abbrev0
+  98 000a 04       		.byte	0x4
+  99 000b 01       		.uleb128 0x1
+ 100 000c 0E010000 		.4byte	.LASF22
+ 101 0010 0C       		.byte	0xc
+ 102 0011 3B000000 		.4byte	.LASF23
+ 103 0015 EA010000 		.4byte	.LASF24
+ 104 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 105 001d 00000000 		.4byte	0
+ 106 0021 00000000 		.4byte	.Ldebug_line0
+ 107 0025 02       		.uleb128 0x2
+ 108 0026 01       		.byte	0x1
+ 109 0027 06       		.byte	0x6
+ 110 0028 AF010000 		.4byte	.LASF0
+ 111 002c 02       		.uleb128 0x2
+ 112 002d 01       		.byte	0x1
+ 113 002e 08       		.byte	0x8
+ 114 002f AF000000 		.4byte	.LASF1
+ 115 0033 02       		.uleb128 0x2
+ 116 0034 02       		.byte	0x2
+ 117 0035 05       		.byte	0x5
+ 118 0036 58020000 		.4byte	.LASF2
+ 119 003a 02       		.uleb128 0x2
+ 120 003b 02       		.byte	0x2
+ 121 003c 07       		.byte	0x7
+ 122 003d 9C010000 		.4byte	.LASF3
+ 123 0041 02       		.uleb128 0x2
+ 124 0042 04       		.byte	0x4
+ 125 0043 05       		.byte	0x5
+ 126 0044 DE000000 		.4byte	.LASF4
+ 127 0048 02       		.uleb128 0x2
+ 128 0049 04       		.byte	0x4
+ 129 004a 07       		.byte	0x7
+ 130 004b 7A000000 		.4byte	.LASF5
+ 131 004f 02       		.uleb128 0x2
+ 132 0050 08       		.byte	0x8
+ 133 0051 05       		.byte	0x5
+ 134 0052 00000000 		.4byte	.LASF6
+ 135 0056 02       		.uleb128 0x2
+ 136 0057 08       		.byte	0x8
+ 137 0058 07       		.byte	0x7
+ 138 0059 8C000000 		.4byte	.LASF7
+ 139 005d 03       		.uleb128 0x3
+ 140 005e 04       		.byte	0x4
+ 141 005f 05       		.byte	0x5
+ 142 0060 696E7400 		.ascii	"int\000"
+ 143 0064 02       		.uleb128 0x2
+ 144 0065 04       		.byte	0x4
+ 145 0066 07       		.byte	0x7
+ 146 0067 0E000000 		.4byte	.LASF8
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\cccg2vEh.s 			page 4
+
+
+ 147 006b 04       		.uleb128 0x4
+ 148 006c 62020000 		.4byte	.LASF25
+ 149 0070 05       		.byte	0x5
+ 150 0071 FC01     		.2byte	0x1fc
+ 151 0073 3A000000 		.4byte	0x3a
+ 152 0077 02       		.uleb128 0x2
+ 153 0078 04       		.byte	0x4
+ 154 0079 04       		.byte	0x4
+ 155 007a A3000000 		.4byte	.LASF9
+ 156 007e 02       		.uleb128 0x2
+ 157 007f 08       		.byte	0x8
+ 158 0080 04       		.byte	0x4
+ 159 0081 E7000000 		.4byte	.LASF10
+ 160 0085 02       		.uleb128 0x2
+ 161 0086 01       		.byte	0x1
+ 162 0087 08       		.byte	0x8
+ 163 0088 BD000000 		.4byte	.LASF11
+ 164 008c 02       		.uleb128 0x2
+ 165 008d 08       		.byte	0x8
+ 166 008e 04       		.byte	0x4
+ 167 008f DE010000 		.4byte	.LASF12
+ 168 0093 02       		.uleb128 0x2
+ 169 0094 04       		.byte	0x4
+ 170 0095 07       		.byte	0x7
+ 171 0096 69020000 		.4byte	.LASF13
+ 172 009a 05       		.uleb128 0x5
+ 173 009b 5A000000 		.4byte	.LASF26
+ 174 009f 01       		.byte	0x1
+ 175 00a0 03       		.byte	0x3
+ 176 00a1 5D000000 		.4byte	0x5d
+ 177 00a5 00000000 		.4byte	.LFB32
+ 178 00a9 38000000 		.4byte	.LFE32-.LFB32
+ 179 00ad 01       		.uleb128 0x1
+ 180 00ae 9C       		.byte	0x9c
+ 181 00af 14010000 		.4byte	0x114
+ 182 00b3 06       		.uleb128 0x6
+ 183 00b4 A9000000 		.4byte	.LASF27
+ 184 00b8 01       		.byte	0x1
+ 185 00b9 05       		.byte	0x5
+ 186 00ba 6B000000 		.4byte	0x6b
+ 187 00be 00000000 		.4byte	.LLST0
+ 188 00c2 07       		.uleb128 0x7
+ 189 00c3 08000000 		.4byte	.LVL1
+ 190 00c7 14010000 		.4byte	0x114
+ 191 00cb 07       		.uleb128 0x7
+ 192 00cc 0C000000 		.4byte	.LVL2
+ 193 00d0 1F010000 		.4byte	0x11f
+ 194 00d4 07       		.uleb128 0x7
+ 195 00d5 10000000 		.4byte	.LVL3
+ 196 00d9 2A010000 		.4byte	0x12a
+ 197 00dd 07       		.uleb128 0x7
+ 198 00de 14000000 		.4byte	.LVL4
+ 199 00e2 35010000 		.4byte	0x135
+ 200 00e6 07       		.uleb128 0x7
+ 201 00e7 18000000 		.4byte	.LVL5
+ 202 00eb 41010000 		.4byte	0x141
+ 203 00ef 07       		.uleb128 0x7
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\cccg2vEh.s 			page 5
+
+
+ 204 00f0 20000000 		.4byte	.LVL6
+ 205 00f4 4C010000 		.4byte	0x14c
+ 206 00f8 07       		.uleb128 0x7
+ 207 00f9 2A000000 		.4byte	.LVL7
+ 208 00fd 57010000 		.4byte	0x157
+ 209 0101 07       		.uleb128 0x7
+ 210 0102 2E000000 		.4byte	.LVL8
+ 211 0106 63010000 		.4byte	0x163
+ 212 010a 07       		.uleb128 0x7
+ 213 010b 32000000 		.4byte	.LVL9
+ 214 010f 2A010000 		.4byte	0x12a
+ 215 0113 00       		.byte	0
+ 216 0114 08       		.uleb128 0x8
+ 217 0115 6B000000 		.4byte	.LASF14
+ 218 0119 6B000000 		.4byte	.LASF14
+ 219 011d 02       		.byte	0x2
+ 220 011e 99       		.byte	0x99
+ 221 011f 08       		.uleb128 0x8
+ 222 0120 1B000000 		.4byte	.LASF15
+ 223 0124 1B000000 		.4byte	.LASF15
+ 224 0128 03       		.byte	0x3
+ 225 0129 AB       		.byte	0xab
+ 226 012a 08       		.uleb128 0x8
+ 227 012b C2000000 		.4byte	.LASF16
+ 228 012f C2000000 		.4byte	.LASF16
+ 229 0133 02       		.byte	0x2
+ 230 0134 A2       		.byte	0xa2
+ 231 0135 09       		.uleb128 0x9
+ 232 0136 5F000000 		.4byte	.LASF17
+ 233 013a 5F000000 		.4byte	.LASF17
+ 234 013e 04       		.byte	0x4
+ 235 013f 3201     		.2byte	0x132
+ 236 0141 08       		.uleb128 0x8
+ 237 0142 BB010000 		.4byte	.LASF18
+ 238 0146 BB010000 		.4byte	.LASF18
+ 239 014a 02       		.byte	0x2
+ 240 014b 9F       		.byte	0x9f
+ 241 014c 08       		.uleb128 0x8
+ 242 014d 42000000 		.4byte	.LASF19
+ 243 0151 42000000 		.4byte	.LASF19
+ 244 0155 03       		.byte	0x3
+ 245 0156 E2       		.byte	0xe2
+ 246 0157 09       		.uleb128 0x9
+ 247 0158 CB010000 		.4byte	.LASF20
+ 248 015c CB010000 		.4byte	.LASF20
+ 249 0160 04       		.byte	0x4
+ 250 0161 5501     		.2byte	0x155
+ 251 0163 08       		.uleb128 0x8
+ 252 0164 EE000000 		.4byte	.LASF21
+ 253 0168 EE000000 		.4byte	.LASF21
+ 254 016c 03       		.byte	0x3
+ 255 016d AF       		.byte	0xaf
+ 256 016e 00       		.byte	0
+ 257              		.section	.debug_abbrev,"",%progbits
+ 258              	.Ldebug_abbrev0:
+ 259 0000 01       		.uleb128 0x1
+ 260 0001 11       		.uleb128 0x11
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\cccg2vEh.s 			page 6
+
+
+ 261 0002 01       		.byte	0x1
+ 262 0003 25       		.uleb128 0x25
+ 263 0004 0E       		.uleb128 0xe
+ 264 0005 13       		.uleb128 0x13
+ 265 0006 0B       		.uleb128 0xb
+ 266 0007 03       		.uleb128 0x3
+ 267 0008 0E       		.uleb128 0xe
+ 268 0009 1B       		.uleb128 0x1b
+ 269 000a 0E       		.uleb128 0xe
+ 270 000b 55       		.uleb128 0x55
+ 271 000c 17       		.uleb128 0x17
+ 272 000d 11       		.uleb128 0x11
+ 273 000e 01       		.uleb128 0x1
+ 274 000f 10       		.uleb128 0x10
+ 275 0010 17       		.uleb128 0x17
+ 276 0011 00       		.byte	0
+ 277 0012 00       		.byte	0
+ 278 0013 02       		.uleb128 0x2
+ 279 0014 24       		.uleb128 0x24
+ 280 0015 00       		.byte	0
+ 281 0016 0B       		.uleb128 0xb
+ 282 0017 0B       		.uleb128 0xb
+ 283 0018 3E       		.uleb128 0x3e
+ 284 0019 0B       		.uleb128 0xb
+ 285 001a 03       		.uleb128 0x3
+ 286 001b 0E       		.uleb128 0xe
+ 287 001c 00       		.byte	0
+ 288 001d 00       		.byte	0
+ 289 001e 03       		.uleb128 0x3
+ 290 001f 24       		.uleb128 0x24
+ 291 0020 00       		.byte	0
+ 292 0021 0B       		.uleb128 0xb
+ 293 0022 0B       		.uleb128 0xb
+ 294 0023 3E       		.uleb128 0x3e
+ 295 0024 0B       		.uleb128 0xb
+ 296 0025 03       		.uleb128 0x3
+ 297 0026 08       		.uleb128 0x8
+ 298 0027 00       		.byte	0
+ 299 0028 00       		.byte	0
+ 300 0029 04       		.uleb128 0x4
+ 301 002a 16       		.uleb128 0x16
+ 302 002b 00       		.byte	0
+ 303 002c 03       		.uleb128 0x3
+ 304 002d 0E       		.uleb128 0xe
+ 305 002e 3A       		.uleb128 0x3a
+ 306 002f 0B       		.uleb128 0xb
+ 307 0030 3B       		.uleb128 0x3b
+ 308 0031 05       		.uleb128 0x5
+ 309 0032 49       		.uleb128 0x49
+ 310 0033 13       		.uleb128 0x13
+ 311 0034 00       		.byte	0
+ 312 0035 00       		.byte	0
+ 313 0036 05       		.uleb128 0x5
+ 314 0037 2E       		.uleb128 0x2e
+ 315 0038 01       		.byte	0x1
+ 316 0039 3F       		.uleb128 0x3f
+ 317 003a 19       		.uleb128 0x19
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\cccg2vEh.s 			page 7
+
+
+ 318 003b 03       		.uleb128 0x3
+ 319 003c 0E       		.uleb128 0xe
+ 320 003d 3A       		.uleb128 0x3a
+ 321 003e 0B       		.uleb128 0xb
+ 322 003f 3B       		.uleb128 0x3b
+ 323 0040 0B       		.uleb128 0xb
+ 324 0041 27       		.uleb128 0x27
+ 325 0042 19       		.uleb128 0x19
+ 326 0043 49       		.uleb128 0x49
+ 327 0044 13       		.uleb128 0x13
+ 328 0045 8701     		.uleb128 0x87
+ 329 0047 19       		.uleb128 0x19
+ 330 0048 11       		.uleb128 0x11
+ 331 0049 01       		.uleb128 0x1
+ 332 004a 12       		.uleb128 0x12
+ 333 004b 06       		.uleb128 0x6
+ 334 004c 40       		.uleb128 0x40
+ 335 004d 18       		.uleb128 0x18
+ 336 004e 9742     		.uleb128 0x2117
+ 337 0050 19       		.uleb128 0x19
+ 338 0051 01       		.uleb128 0x1
+ 339 0052 13       		.uleb128 0x13
+ 340 0053 00       		.byte	0
+ 341 0054 00       		.byte	0
+ 342 0055 06       		.uleb128 0x6
+ 343 0056 34       		.uleb128 0x34
+ 344 0057 00       		.byte	0
+ 345 0058 03       		.uleb128 0x3
+ 346 0059 0E       		.uleb128 0xe
+ 347 005a 3A       		.uleb128 0x3a
+ 348 005b 0B       		.uleb128 0xb
+ 349 005c 3B       		.uleb128 0x3b
+ 350 005d 0B       		.uleb128 0xb
+ 351 005e 49       		.uleb128 0x49
+ 352 005f 13       		.uleb128 0x13
+ 353 0060 02       		.uleb128 0x2
+ 354 0061 17       		.uleb128 0x17
+ 355 0062 00       		.byte	0
+ 356 0063 00       		.byte	0
+ 357 0064 07       		.uleb128 0x7
+ 358 0065 898201   		.uleb128 0x4109
+ 359 0068 00       		.byte	0
+ 360 0069 11       		.uleb128 0x11
+ 361 006a 01       		.uleb128 0x1
+ 362 006b 31       		.uleb128 0x31
+ 363 006c 13       		.uleb128 0x13
+ 364 006d 00       		.byte	0
+ 365 006e 00       		.byte	0
+ 366 006f 08       		.uleb128 0x8
+ 367 0070 2E       		.uleb128 0x2e
+ 368 0071 00       		.byte	0
+ 369 0072 3F       		.uleb128 0x3f
+ 370 0073 19       		.uleb128 0x19
+ 371 0074 3C       		.uleb128 0x3c
+ 372 0075 19       		.uleb128 0x19
+ 373 0076 6E       		.uleb128 0x6e
+ 374 0077 0E       		.uleb128 0xe
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\cccg2vEh.s 			page 8
+
+
+ 375 0078 03       		.uleb128 0x3
+ 376 0079 0E       		.uleb128 0xe
+ 377 007a 3A       		.uleb128 0x3a
+ 378 007b 0B       		.uleb128 0xb
+ 379 007c 3B       		.uleb128 0x3b
+ 380 007d 0B       		.uleb128 0xb
+ 381 007e 00       		.byte	0
+ 382 007f 00       		.byte	0
+ 383 0080 09       		.uleb128 0x9
+ 384 0081 2E       		.uleb128 0x2e
+ 385 0082 00       		.byte	0
+ 386 0083 3F       		.uleb128 0x3f
+ 387 0084 19       		.uleb128 0x19
+ 388 0085 3C       		.uleb128 0x3c
+ 389 0086 19       		.uleb128 0x19
+ 390 0087 6E       		.uleb128 0x6e
+ 391 0088 0E       		.uleb128 0xe
+ 392 0089 03       		.uleb128 0x3
+ 393 008a 0E       		.uleb128 0xe
+ 394 008b 3A       		.uleb128 0x3a
+ 395 008c 0B       		.uleb128 0xb
+ 396 008d 3B       		.uleb128 0x3b
+ 397 008e 05       		.uleb128 0x5
+ 398 008f 00       		.byte	0
+ 399 0090 00       		.byte	0
+ 400 0091 00       		.byte	0
+ 401              		.section	.debug_loc,"",%progbits
+ 402              	.Ldebug_loc0:
+ 403              	.LLST0:
+ 404 0000 02000000 		.4byte	.LVL0
+ 405 0004 14000000 		.4byte	.LVL4
+ 406 0008 0200     		.2byte	0x2
+ 407 000a 30       		.byte	0x30
+ 408 000b 9F       		.byte	0x9f
+ 409 000c 20000000 		.4byte	.LVL6
+ 410 0010 29000000 		.4byte	.LVL7-1
+ 411 0014 0100     		.2byte	0x1
+ 412 0016 50       		.byte	0x50
+ 413 0017 00000000 		.4byte	0
+ 414 001b 00000000 		.4byte	0
+ 415              		.section	.debug_aranges,"",%progbits
+ 416 0000 1C000000 		.4byte	0x1c
+ 417 0004 0200     		.2byte	0x2
+ 418 0006 00000000 		.4byte	.Ldebug_info0
+ 419 000a 04       		.byte	0x4
+ 420 000b 00       		.byte	0
+ 421 000c 0000     		.2byte	0
+ 422 000e 0000     		.2byte	0
+ 423 0010 00000000 		.4byte	.LFB32
+ 424 0014 38000000 		.4byte	.LFE32-.LFB32
+ 425 0018 00000000 		.4byte	0
+ 426 001c 00000000 		.4byte	0
+ 427              		.section	.debug_ranges,"",%progbits
+ 428              	.Ldebug_ranges0:
+ 429 0000 00000000 		.4byte	.LFB32
+ 430 0004 38000000 		.4byte	.LFE32
+ 431 0008 00000000 		.4byte	0
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\cccg2vEh.s 			page 9
+
+
+ 432 000c 00000000 		.4byte	0
+ 433              		.section	.debug_line,"",%progbits
+ 434              	.Ldebug_line0:
+ 435 0000 8B000000 		.section	.debug_str,"MS",%progbits,1
+ 435      02006D00 
+ 435      00000201 
+ 435      FB0E0D00 
+ 435      01010101 
+ 436              	.LASF6:
+ 437 0000 6C6F6E67 		.ascii	"long long int\000"
+ 437      206C6F6E 
+ 437      6720696E 
+ 437      7400
+ 438              	.LASF8:
+ 439 000e 756E7369 		.ascii	"unsigned int\000"
+ 439      676E6564 
+ 439      20696E74 
+ 439      00
+ 440              	.LASF15:
+ 441 001b 43617053 		.ascii	"CapSense_InitializeAllBaselines\000"
+ 441      656E7365 
+ 441      5F496E69 
+ 441      7469616C 
+ 441      697A6541 
+ 442              	.LASF23:
+ 443 003b 6D61696E 		.ascii	"main.c\000"
+ 443      2E6300
+ 444              	.LASF19:
+ 445 0042 43617053 		.ascii	"CapSense_GetCentroidPos\000"
+ 445      656E7365 
+ 445      5F476574 
+ 445      43656E74 
+ 445      726F6964 
+ 446              	.LASF26:
+ 447 005a 6D61696E 		.ascii	"main\000"
+ 447      00
+ 448              	.LASF17:
+ 449 005f 50574D5F 		.ascii	"PWM_1_Start\000"
+ 449      315F5374 
+ 449      61727400 
+ 450              	.LASF14:
+ 451 006b 43617053 		.ascii	"CapSense_Start\000"
+ 451      656E7365 
+ 451      5F537461 
+ 451      727400
+ 452              	.LASF5:
+ 453 007a 6C6F6E67 		.ascii	"long unsigned int\000"
+ 453      20756E73 
+ 453      69676E65 
+ 453      6420696E 
+ 453      7400
+ 454              	.LASF7:
+ 455 008c 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 455      206C6F6E 
+ 455      6720756E 
+ 455      7369676E 
+ 455      65642069 
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\cccg2vEh.s 			page 10
+
+
+ 456              	.LASF9:
+ 457 00a3 666C6F61 		.ascii	"float\000"
+ 457      7400
+ 458              	.LASF27:
+ 459 00a9 76616C6F 		.ascii	"valor\000"
+ 459      7200
+ 460              	.LASF1:
+ 461 00af 756E7369 		.ascii	"unsigned char\000"
+ 461      676E6564 
+ 461      20636861 
+ 461      7200
+ 462              	.LASF11:
+ 463 00bd 63686172 		.ascii	"char\000"
+ 463      00
+ 464              	.LASF16:
+ 465 00c2 43617053 		.ascii	"CapSense_ScanEnabledWidgets\000"
+ 465      656E7365 
+ 465      5F536361 
+ 465      6E456E61 
+ 465      626C6564 
+ 466              	.LASF4:
+ 467 00de 6C6F6E67 		.ascii	"long int\000"
+ 467      20696E74 
+ 467      00
+ 468              	.LASF10:
+ 469 00e7 646F7562 		.ascii	"double\000"
+ 469      6C6500
+ 470              	.LASF21:
+ 471 00ee 43617053 		.ascii	"CapSense_UpdateEnabledBaselines\000"
+ 471      656E7365 
+ 471      5F557064 
+ 471      61746545 
+ 471      6E61626C 
+ 472              	.LASF22:
+ 473 010e 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 473      43313120 
+ 473      352E342E 
+ 473      31203230 
+ 473      31363036 
+ 474 0141 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 474      20726576 
+ 474      6973696F 
+ 474      6E203233 
+ 474      37373135 
+ 475 0174 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 475      66756E63 
+ 475      74696F6E 
+ 475      2D736563 
+ 475      74696F6E 
+ 476              	.LASF3:
+ 477 019c 73686F72 		.ascii	"short unsigned int\000"
+ 477      7420756E 
+ 477      7369676E 
+ 477      65642069 
+ 477      6E7400
+ 478              	.LASF0:
+ 479 01af 7369676E 		.ascii	"signed char\000"
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\cccg2vEh.s 			page 11
+
+
+ 479      65642063 
+ 479      68617200 
+ 480              	.LASF18:
+ 481 01bb 43617053 		.ascii	"CapSense_IsBusy\000"
+ 481      656E7365 
+ 481      5F497342 
+ 481      75737900 
+ 482              	.LASF20:
+ 483 01cb 50574D5F 		.ascii	"PWM_1_WriteCompare\000"
+ 483      315F5772 
+ 483      69746543 
+ 483      6F6D7061 
+ 483      726500
+ 484              	.LASF12:
+ 485 01de 6C6F6E67 		.ascii	"long double\000"
+ 485      20646F75 
+ 485      626C6500 
+ 486              	.LASF24:
+ 487 01ea 443A5C45 		.ascii	"D:\\ESCRITORIO\\Tesis MIB\\Proyecto de Tesis\\elect"
+ 487      53435249 
+ 487      544F5249 
+ 487      4F5C5465 
+ 487      73697320 
+ 488 0219 726F6573 		.ascii	"roestimulador\\PSoC\\PRUEBAS\\SCB_Bootloader\\prueb"
+ 488      74696D75 
+ 488      6C61646F 
+ 488      725C5053 
+ 488      6F435C50 
+ 489 0248 61436170 		.ascii	"aCapSense.cydsn\000"
+ 489      53656E73 
+ 489      652E6379 
+ 489      64736E00 
+ 490              	.LASF2:
+ 491 0258 73686F72 		.ascii	"short int\000"
+ 491      7420696E 
+ 491      7400
+ 492              	.LASF25:
+ 493 0262 75696E74 		.ascii	"uint16\000"
+ 493      313600
+ 494              	.LASF13:
+ 495 0269 73697A65 		.ascii	"sizetype\000"
+ 495      74797065 
+ 495      00
+ 496              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

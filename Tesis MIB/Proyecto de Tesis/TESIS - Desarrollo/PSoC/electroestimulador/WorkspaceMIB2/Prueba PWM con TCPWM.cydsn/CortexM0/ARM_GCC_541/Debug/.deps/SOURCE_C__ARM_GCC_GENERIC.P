@@ -1,0 +1,68 @@
+D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/CortexM0/ARM_GCC_541/Debug/mainTCPWM.o : D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/Bootloadable_1.h D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/Clock_1.h D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/CyFlash.h D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/CyLFClk.h D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/CyLib.h D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/PWM_1.h D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/PWM_INT.h D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/PWM_NEG.h D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/PWM_NEG_aliases.h D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/PWM_POS.h D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/PWM_POS_aliases.h D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/Pin_INT_CC.h D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/Pin_INT_CC_aliases.h D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/Pin_INT_TC.h D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/Pin_INT_TC_aliases.h D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/Pin_SW.h D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/Pin_SW_aliases.h D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/SW_INT.h D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/cmsis_armcc.h D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/cmsis_compiler.h D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/cmsis_gcc.h D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/core_cm0.h D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/core_cm0_psoc4.h D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/cyPm.h D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/cy_em_eeprom.h D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/cydevice_trm.h D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/cydisabledsheets.h D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/cyfitter.h D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/cyfitter_cfg.h D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/cypins.h D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/cytypes.h D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/project.h D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/mainTCPWM.c 
+
+D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/Bootloadable_1.h : 
+
+D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/Clock_1.h : 
+
+D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/CyFlash.h : 
+
+D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/CyLFClk.h : 
+
+D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/CyLib.h : 
+
+D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/PWM_1.h : 
+
+D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/PWM_INT.h : 
+
+D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/PWM_NEG.h : 
+
+D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/PWM_NEG_aliases.h : 
+
+D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/PWM_POS.h : 
+
+D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/PWM_POS_aliases.h : 
+
+D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/Pin_INT_CC.h : 
+
+D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/Pin_INT_CC_aliases.h : 
+
+D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/Pin_INT_TC.h : 
+
+D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/Pin_INT_TC_aliases.h : 
+
+D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/Pin_SW.h : 
+
+D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/Pin_SW_aliases.h : 
+
+D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/SW_INT.h : 
+
+D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/cmsis_armcc.h : 
+
+D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/cmsis_compiler.h : 
+
+D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/cmsis_gcc.h : 
+
+D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/core_cm0.h : 
+
+D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/core_cm0_psoc4.h : 
+
+D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/cyPm.h : 
+
+D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/cy_em_eeprom.h : 
+
+D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/cydevice_trm.h : 
+
+D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/cydisabledsheets.h : 
+
+D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/cyfitter.h : 
+
+D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/cyfitter_cfg.h : 
+
+D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/cypins.h : 
+
+D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/cytypes.h : 
+
+D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/Generated_Source/PSoC4/project.h : 
+
+D:/ESCRITORIO/Tesis\ MIB/Proyecto\ de\ Tesis/electroestimulador/PSoC/electroestimulador/WorkspaceMIB2/Prueba\ PWM\ con\ TCPWM.cydsn/mainTCPWM.c : 
+

@@ -1,0 +1,14 @@
+--------------- Build Started: 11/29/2020 20:08:23 Project: prueba AO, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+The code generation step is up to date.
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/mainAO.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c mainAO.c -o .\CortexM0\ARM_GCC_541\Debug\mainAO.o
+arm-none-eabi-ar.exe -rs ".\CortexM0\ARM_GCC_541\Debug\prueba AO.a" .\CortexM0\ARM_GCC_541\Debug\Bootloadable_1.o .\CortexM0\ARM_GCC_541\Debug\CyFlash.o .\CortexM0\ARM_GCC_541\Debug\CyLib.o .\CortexM0\ARM_GCC_541\Debug\cyPm.o .\CortexM0\ARM_GCC_541\Debug\cyutils.o .\CortexM0\ARM_GCC_541\Debug\CyLFClk.o .\CortexM0\ARM_GCC_541\Debug\cy_em_eeprom.o .\CortexM0\ARM_GCC_541\Debug\Opamp.o .\CortexM0\ARM_GCC_541\Debug\Opamp_PM.o .\CortexM0\ARM_GCC_541\Debug\Vout.o .\CortexM0\ARM_GCC_541\Debug\Vout_PM.o .\CortexM0\ARM_GCC_541\Debug\Vpos.o .\CortexM0\ARM_GCC_541\Debug\Vpos_PM.o .\CortexM0\ARM_GCC_541\Debug\Vinv.o .\CortexM0\ARM_GCC_541\Debug\Vinv_PM.o .\CortexM0\ARM_GCC_541\Debug\CyBootAsmGnu.o
+arm-none-eabi-ar.exe: creating .\CortexM0\ARM_GCC_541\Debug\prueba AO.a
+arm-none-eabi-gcc.exe -Wl,--start-group -o "D:\ESCRITORIO\Tesis MIB\Proyecto de Tesis\electroestimulador\PSoC\electroestimulador\Pruebas electroestimulador\prueba AO.cydsn\CortexM0\ARM_GCC_541\Debug\prueba AO.elf" .\CortexM0\ARM_GCC_541\Debug\mainAO.o .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o .\CortexM0\ARM_GCC_541\Debug\cybootloader.o .\CortexM0\ARM_GCC_541\Debug\cymetadata.o .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o ".\CortexM0\ARM_GCC_541\Debug\prueba AO.a" -mcpu=cortex-m0 -mthumb -L Generated_Source\PSoC4 "-Wl,-Map,.\CortexM0\ARM_GCC_541\Debug/prueba AO.map" -T Generated_Source\PSoC4\cm0gcc.ld -specs=nano.specs -Wl,--gc-sections -g -ffunction-sections -Og -ffat-lto-objects -Wl,--end-group
+cyelftool.exe -B "D:\ESCRITORIO\Tesis MIB\Proyecto de Tesis\electroestimulador\PSoC\electroestimulador\Pruebas electroestimulador\prueba AO.cydsn\CortexM0\ARM_GCC_541\Debug\prueba AO.elf" --flash_row_size 128 --flash_size 32768 --flash_offset 0x00000000 --flash_array_size 32768
+No ELF section .cychecksum found, creating one
+Application checksum calculated and stored in ELF section .cychecksum
+Checksum calculated and stored in ELF section .cymeta
+cyelftool.exe -S "D:\ESCRITORIO\Tesis MIB\Proyecto de Tesis\electroestimulador\PSoC\electroestimulador\Pruebas electroestimulador\prueba AO.cydsn\CortexM0\ARM_GCC_541\Debug\prueba AO.elf"
+Flash used: 6376 of 32768 bytes (19,5 %). Bootloader: 4352 bytes. Application: 1896 bytes. Metadata: 128 bytes.
+SRAM used: 1548 of 4096 bytes (37,8 %). Stack: 1024 bytes. Heap: 128 bytes.
+--------------- Build Succeeded: 11/29/2020 20:08:25 ---------------

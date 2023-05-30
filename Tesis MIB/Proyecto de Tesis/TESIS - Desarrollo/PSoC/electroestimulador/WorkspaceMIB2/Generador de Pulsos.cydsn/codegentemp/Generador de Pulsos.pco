@@ -1,0 +1,30 @@
+# Generador de Pulsos
+# 2020-12-27 08:48:01Z
+
+set_location "ClockGenBlock" m0s8clockgenblockcell -1 -1 0
+set_location "ClockBlock" m0s8clockblockcell -1 -1 0
+set_io "Val_Peri(0)" iocell 2 2
+set_io "Val_duty(0)" iocell 2 1
+set_io "Val_Vout(0)" iocell 2 0
+set_io "IDAC_Pos(0)" iocell 1 4
+set_io "IDAC_Neg(0)" iocell 1 2
+set_location "PIN_SW" logicalport -1 -1 0
+set_io "PIN_SW(0)" iocell 0 7
+set_io "\LCD:LCDPort(0)\" iocell 0 0
+set_io "\LCD:LCDPort(1)\" iocell 0 1
+set_io "\LCD:LCDPort(2)\" iocell 0 2
+set_io "\LCD:LCDPort(3)\" iocell 0 3
+set_io "\LCD:LCDPort(4)\" iocell 0 4
+set_io "\LCD:LCDPort(5)\" iocell 0 5
+set_io "\LCD:LCDPort(6)\" iocell 0 6
+set_io "PWM_V0(0)" iocell 1 6
+set_location "\PWM:cy_m0s8_tcpwm_1\" m0s8tcpwmcell -1 -1 0
+set_location "__ONE__" 0 1 0 0
+set_location "\IDAC:cy_psoc4_idac\" p4csidac8cell -1 -1 0
+set_location "\ADC:IRQ\" interrupt -1 -1 14
+set_location "\ADC:cy_psoc4_sar\" p4sarcell -1 -1 0
+set_location "PWM_INT" interrupt -1 -1 16
+set_location "SW_INT" interrupt -1 -1 0
+set_location "\Timer_1:cy_m0s8_tcpwm_1\" m0s8tcpwmcell -1 -1 1
+set_location "TIMER_INT" interrupt -1 -1 17
+set_location "ADC_INTAux" interrupt -1 -1 1

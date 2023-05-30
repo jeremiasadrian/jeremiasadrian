@@ -1,0 +1,1519 @@
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccktkG7c.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m0
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 0
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"mainIDAC+ADC.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.VAR_AMux_Handler,"ax",%progbits
+  20              		.align	2
+  21              		.global	VAR_AMux_Handler
+  22              		.code	16
+  23              		.thumb_func
+  24              		.type	VAR_AMux_Handler, %function
+  25              	VAR_AMux_Handler:
+  26              	.LFB32:
+  27              		.file 1 "mainIDAC+ADC.c"
+   1:mainIDAC+ADC.c **** /*===============================================================================
+   2:mainIDAC+ADC.c ****     Prueba de modulo IDAC+ADC
+   3:mainIDAC+ADC.c ****     Este programa confirgura el valor de IDAC en función del resultado de una
+   4:mainIDAC+ADC.c ****     conversión AD de una potenciometro con una frecuencua de actualización
+   5:mainIDAC+ADC.c ****     de 10Hz (100ms), eso de ejecuta mediante una interrución de fin de comversión.
+   6:mainIDAC+ADC.c ****     Paralelamente se ejecuta una interrución cuando el pulsador SW1 de oprime,
+   7:mainIDAC+ADC.c ****     en esta subrrutina sa salida del IDAC se sequencia mediente un AMux entre dos 
+   8:mainIDAC+ADC.c ****     salidas y la desconección, rotando en estos tres estados.
+   9:mainIDAC+ADC.c ****     El estado de la salida en texto y los valores obtenidos del ADC y enviados
+  10:mainIDAC+ADC.c ****     al IDAC son en valor Hexadecimal son visualizados en una pantalla LCD de 2x16.
+  11:mainIDAC+ADC.c ****  ================================================================================*/
+  12:mainIDAC+ADC.c **** #include "project.h"
+  13:mainIDAC+ADC.c **** 
+  14:mainIDAC+ADC.c **** uint8 Estado=0;
+  15:mainIDAC+ADC.c **** CY_ISR(VAR_AMux_Handler)
+  16:mainIDAC+ADC.c **** {
+  28              		.loc 1 16 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32 0000 10B5     		push	{r4, lr}
+  33              		.cfi_def_cfa_offset 8
+  34              		.cfi_offset 4, -8
+  35              		.cfi_offset 14, -4
+  17:mainIDAC+ADC.c ****     switch(Estado)
+  36              		.loc 1 17 0
+  37 0002 1B4B     		ldr	r3, .L8
+  38 0004 1B78     		ldrb	r3, [r3]
+  39 0006 012B     		cmp	r3, #1
+  40 0008 0FD0     		beq	.L3
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccktkG7c.s 			page 2
+
+
+  41 000a 002B     		cmp	r3, #0
+  42 000c 02D0     		beq	.L4
+  43 000e 022B     		cmp	r3, #2
+  44 0010 16D0     		beq	.L5
+  45 0012 1EE0     		b	.L2
+  46              	.L4:
+  18:mainIDAC+ADC.c ****     {
+  19:mainIDAC+ADC.c ****      case 0:
+  20:mainIDAC+ADC.c ****         AMux_1_Select(0);
+  47              		.loc 1 20 0
+  48 0014 0020     		movs	r0, #0
+  49 0016 FFF7FEFF 		bl	AMux_1_FastSelect
+  50              	.LVL0:
+  21:mainIDAC+ADC.c ****         LCD_Position(0,0);
+  51              		.loc 1 21 0
+  52 001a 0021     		movs	r1, #0
+  53 001c 0020     		movs	r0, #0
+  54 001e FFF7FEFF 		bl	LCD_Position
+  55              	.LVL1:
+  22:mainIDAC+ADC.c ****         LCD_PrintString("Salida negativa");
+  56              		.loc 1 22 0
+  57 0022 1448     		ldr	r0, .L8+4
+  58 0024 FFF7FEFF 		bl	LCD_PrintString
+  59              	.LVL2:
+  23:mainIDAC+ADC.c ****         break;
+  60              		.loc 1 23 0
+  61 0028 13E0     		b	.L2
+  62              	.L3:
+  24:mainIDAC+ADC.c ****      case 1:
+  25:mainIDAC+ADC.c ****         AMux_1_Select(1);
+  63              		.loc 1 25 0
+  64 002a 0120     		movs	r0, #1
+  65 002c FFF7FEFF 		bl	AMux_1_FastSelect
+  66              	.LVL3:
+  26:mainIDAC+ADC.c ****         LCD_Position(0,0);
+  67              		.loc 1 26 0
+  68 0030 0021     		movs	r1, #0
+  69 0032 0020     		movs	r0, #0
+  70 0034 FFF7FEFF 		bl	LCD_Position
+  71              	.LVL4:
+  27:mainIDAC+ADC.c ****         LCD_PrintString("Salida positiva");
+  72              		.loc 1 27 0
+  73 0038 0F48     		ldr	r0, .L8+8
+  74 003a FFF7FEFF 		bl	LCD_PrintString
+  75              	.LVL5:
+  28:mainIDAC+ADC.c ****         break;
+  76              		.loc 1 28 0
+  77 003e 08E0     		b	.L2
+  78              	.L5:
+  29:mainIDAC+ADC.c ****      case 2:
+  30:mainIDAC+ADC.c ****         AMux_1_DisconnectAll();
+  79              		.loc 1 30 0
+  80 0040 FFF7FEFF 		bl	AMux_1_DisconnectAll
+  81              	.LVL6:
+  31:mainIDAC+ADC.c ****         LCD_Position(0,0);
+  82              		.loc 1 31 0
+  83 0044 0021     		movs	r1, #0
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccktkG7c.s 			page 3
+
+
+  84 0046 0020     		movs	r0, #0
+  85 0048 FFF7FEFF 		bl	LCD_Position
+  86              	.LVL7:
+  32:mainIDAC+ADC.c ****         LCD_PrintString("Salidas desc.  ");
+  87              		.loc 1 32 0
+  88 004c 0B48     		ldr	r0, .L8+12
+  89 004e FFF7FEFF 		bl	LCD_PrintString
+  90              	.LVL8:
+  91              	.L2:
+  33:mainIDAC+ADC.c ****         break;    
+  34:mainIDAC+ADC.c ****     }
+  35:mainIDAC+ADC.c ****     if(Estado>=2)
+  92              		.loc 1 35 0
+  93 0052 074B     		ldr	r3, .L8
+  94 0054 1B78     		ldrb	r3, [r3]
+  95 0056 012B     		cmp	r3, #1
+  96 0058 03D9     		bls	.L6
+  36:mainIDAC+ADC.c ****      Estado=0;
+  97              		.loc 1 36 0
+  98 005a 0022     		movs	r2, #0
+  99 005c 044B     		ldr	r3, .L8
+ 100 005e 1A70     		strb	r2, [r3]
+ 101 0060 02E0     		b	.L7
+ 102              	.L6:
+  37:mainIDAC+ADC.c ****     else
+  38:mainIDAC+ADC.c ****      Estado++;
+ 103              		.loc 1 38 0
+ 104 0062 0133     		adds	r3, r3, #1
+ 105 0064 024A     		ldr	r2, .L8
+ 106 0066 1370     		strb	r3, [r2]
+ 107              	.L7:
+  39:mainIDAC+ADC.c ****     SW1_AMux_ClearInterrupt();
+ 108              		.loc 1 39 0
+ 109 0068 FFF7FEFF 		bl	SW1_AMux_ClearInterrupt
+ 110              	.LVL9:
+  40:mainIDAC+ADC.c **** }
+ 111              		.loc 1 40 0
+ 112              		@ sp needed
+ 113 006c 10BD     		pop	{r4, pc}
+ 114              	.L9:
+ 115 006e C046     		.align	2
+ 116              	.L8:
+ 117 0070 00000000 		.word	.LANCHOR0
+ 118 0074 00000000 		.word	.LC1
+ 119 0078 10000000 		.word	.LC3
+ 120 007c 20000000 		.word	.LC5
+ 121              		.cfi_endproc
+ 122              	.LFE32:
+ 123              		.size	VAR_AMux_Handler, .-VAR_AMux_Handler
+ 124              		.section	.text.ADC_1_IRQ_Handler,"ax",%progbits
+ 125              		.align	2
+ 126              		.global	ADC_1_IRQ_Handler
+ 127              		.code	16
+ 128              		.thumb_func
+ 129              		.type	ADC_1_IRQ_Handler, %function
+ 130              	ADC_1_IRQ_Handler:
+ 131              	.LFB33:
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccktkG7c.s 			page 4
+
+
+  41:mainIDAC+ADC.c **** 
+  42:mainIDAC+ADC.c **** CY_ISR(ADC_1_IRQ_Handler)
+  43:mainIDAC+ADC.c **** {
+ 132              		.loc 1 43 0
+ 133              		.cfi_startproc
+ 134              		@ args = 0, pretend = 0, frame = 0
+ 135              		@ frame_needed = 0, uses_anonymous_args = 0
+ 136 0000 70B5     		push	{r4, r5, r6, lr}
+ 137              		.cfi_def_cfa_offset 16
+ 138              		.cfi_offset 4, -16
+ 139              		.cfi_offset 5, -12
+ 140              		.cfi_offset 6, -8
+ 141              		.cfi_offset 14, -4
+ 142              	.LVL10:
+  44:mainIDAC+ADC.c ****     int16 Cont_IDAC=0;
+  45:mainIDAC+ADC.c ****     uint32 IDAC_out=0;
+  46:mainIDAC+ADC.c ****     uint32 intr_status;
+  47:mainIDAC+ADC.c ****     intr_status = ADC_1_SAR_INTR_REG;
+ 143              		.loc 1 47 0
+ 144 0002 0D4D     		ldr	r5, .L11
+ 145 0004 2E68     		ldr	r6, [r5]
+ 146              	.LVL11:
+  48:mainIDAC+ADC.c ****     ADC_1_StopConvert();
+ 147              		.loc 1 48 0
+ 148 0006 FFF7FEFF 		bl	ADC_1_StopConvert
+ 149              	.LVL12:
+  49:mainIDAC+ADC.c ****     Cont_IDAC = ADC_1_GetResult16(0);
+ 150              		.loc 1 49 0
+ 151 000a 0020     		movs	r0, #0
+ 152 000c FFF7FEFF 		bl	ADC_1_GetResult16
+ 153              	.LVL13:
+ 154 0010 0400     		movs	r4, r0
+ 155              	.LVL14:
+  50:mainIDAC+ADC.c ****     IDAC_out=Cont_IDAC;
+  51:mainIDAC+ADC.c ****     IDAC_1_SetValue(IDAC_out);
+ 156              		.loc 1 51 0
+ 157 0012 FFF7FEFF 		bl	IDAC_1_SetValue
+ 158              	.LVL15:
+  52:mainIDAC+ADC.c ****     ADC_1_SAR_INTR_REG = intr_status;
+ 159              		.loc 1 52 0
+ 160 0016 2E60     		str	r6, [r5]
+  53:mainIDAC+ADC.c ****     LCD_Position(1,0);
+ 161              		.loc 1 53 0
+ 162 0018 0021     		movs	r1, #0
+ 163 001a 0120     		movs	r0, #1
+ 164 001c FFF7FEFF 		bl	LCD_Position
+ 165              	.LVL16:
+  54:mainIDAC+ADC.c ****     LCD_PrintInt16(Cont_IDAC);
+ 166              		.loc 1 54 0
+ 167 0020 A0B2     		uxth	r0, r4
+ 168 0022 FFF7FEFF 		bl	LCD_PrintInt16
+ 169              	.LVL17:
+  55:mainIDAC+ADC.c ****     LCD_Position(1,6);
+ 170              		.loc 1 55 0
+ 171 0026 0621     		movs	r1, #6
+ 172 0028 0120     		movs	r0, #1
+ 173 002a FFF7FEFF 		bl	LCD_Position
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccktkG7c.s 			page 5
+
+
+ 174              	.LVL18:
+  56:mainIDAC+ADC.c ****     LCD_PrintInt32(IDAC_out);
+ 175              		.loc 1 56 0
+ 176 002e 2000     		movs	r0, r4
+ 177 0030 FFF7FEFF 		bl	LCD_PrintInt32
+ 178              	.LVL19:
+  57:mainIDAC+ADC.c **** }
+ 179              		.loc 1 57 0
+ 180              		@ sp needed
+ 181              	.LVL20:
+ 182              	.LVL21:
+ 183 0034 70BD     		pop	{r4, r5, r6, pc}
+ 184              	.L12:
+ 185 0036 C046     		.align	2
+ 186              	.L11:
+ 187 0038 10021A40 		.word	1075446288
+ 188              		.cfi_endproc
+ 189              	.LFE33:
+ 190              		.size	ADC_1_IRQ_Handler, .-ADC_1_IRQ_Handler
+ 191              		.section	.text.main,"ax",%progbits
+ 192              		.align	2
+ 193              		.global	main
+ 194              		.code	16
+ 195              		.thumb_func
+ 196              		.type	main, %function
+ 197              	main:
+ 198              	.LFB34:
+  58:mainIDAC+ADC.c **** 
+  59:mainIDAC+ADC.c **** int main()
+  60:mainIDAC+ADC.c **** {
+ 199              		.loc 1 60 0
+ 200              		.cfi_startproc
+ 201              		@ Volatile: function does not return.
+ 202              		@ args = 0, pretend = 0, frame = 0
+ 203              		@ frame_needed = 0, uses_anonymous_args = 0
+ 204 0000 10B5     		push	{r4, lr}
+ 205              		.cfi_def_cfa_offset 8
+ 206              		.cfi_offset 4, -8
+ 207              		.cfi_offset 14, -4
+  61:mainIDAC+ADC.c ****     CyGlobalIntEnable;
+ 208              		.loc 1 61 0
+ 209              		.syntax divided
+ 210              	@ 61 "mainIDAC+ADC.c" 1
+ 211 0002 62B6     		CPSIE   i
+ 212              	@ 0 "" 2
+  62:mainIDAC+ADC.c ****     ADC_1_Start();
+ 213              		.loc 1 62 0
+ 214              		.thumb
+ 215              		.syntax unified
+ 216 0004 FFF7FEFF 		bl	ADC_1_Start
+ 217              	.LVL22:
+  63:mainIDAC+ADC.c ****     ADC_1_IRQ_Enable();
+ 218              		.loc 1 63 0
+ 219 0008 FFF7FEFF 		bl	ADC_1_IRQ_Enable
+ 220              	.LVL23:
+  64:mainIDAC+ADC.c ****     IDAC_1_Start();
+ 221              		.loc 1 64 0
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccktkG7c.s 			page 6
+
+
+ 222 000c FFF7FEFF 		bl	IDAC_1_Start
+ 223              	.LVL24:
+  65:mainIDAC+ADC.c ****     AMux_1_Start();
+ 224              		.loc 1 65 0
+ 225 0010 FFF7FEFF 		bl	AMux_1_Start
+ 226              	.LVL25:
+  66:mainIDAC+ADC.c ****     Opamp_1_Start();
+ 227              		.loc 1 66 0
+ 228 0014 FFF7FEFF 		bl	Opamp_1_Start
+ 229              	.LVL26:
+  67:mainIDAC+ADC.c ****     Opamp_1_SetPower(Opamp_1_HIGHPOWER);
+ 230              		.loc 1 67 0
+ 231 0018 0320     		movs	r0, #3
+ 232 001a FFF7FEFF 		bl	Opamp_1_SetPower
+ 233              	.LVL27:
+  68:mainIDAC+ADC.c ****     LCD_Start();
+ 234              		.loc 1 68 0
+ 235 001e FFF7FEFF 		bl	LCD_Start
+ 236              	.LVL28:
+  69:mainIDAC+ADC.c ****     LCD_Position(0,0);
+ 237              		.loc 1 69 0
+ 238 0022 0021     		movs	r1, #0
+ 239 0024 0020     		movs	r0, #0
+ 240 0026 FFF7FEFF 		bl	LCD_Position
+ 241              	.LVL29:
+  70:mainIDAC+ADC.c ****     LCD_PrintString("Prueba LCD");
+ 242              		.loc 1 70 0
+ 243 002a 0748     		ldr	r0, .L15
+ 244 002c FFF7FEFF 		bl	LCD_PrintString
+ 245              	.LVL30:
+  71:mainIDAC+ADC.c ****     VAR_AMux_StartEx(VAR_AMux_Handler);
+ 246              		.loc 1 71 0
+ 247 0030 0648     		ldr	r0, .L15+4
+ 248 0032 FFF7FEFF 		bl	VAR_AMux_StartEx
+ 249              	.LVL31:
+  72:mainIDAC+ADC.c ****     ADC_1_IRQ_StartEx(ADC_1_IRQ_Handler);
+ 250              		.loc 1 72 0
+ 251 0036 0648     		ldr	r0, .L15+8
+ 252 0038 FFF7FEFF 		bl	ADC_1_IRQ_StartEx
+ 253              	.LVL32:
+ 254              	.L14:
+  73:mainIDAC+ADC.c **** 	while(1)
+  74:mainIDAC+ADC.c ****     {
+  75:mainIDAC+ADC.c ****         CyDelay(100);
+ 255              		.loc 1 75 0 discriminator 1
+ 256 003c 6420     		movs	r0, #100
+ 257 003e FFF7FEFF 		bl	CyDelay
+ 258              	.LVL33:
+  76:mainIDAC+ADC.c ****         ADC_1_StartConvert();
+ 259              		.loc 1 76 0 discriminator 1
+ 260 0042 FFF7FEFF 		bl	ADC_1_StartConvert
+ 261              	.LVL34:
+ 262 0046 F9E7     		b	.L14
+ 263              	.L16:
+ 264              		.align	2
+ 265              	.L15:
+ 266 0048 30000000 		.word	.LC7
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccktkG7c.s 			page 7
+
+
+ 267 004c 00000000 		.word	VAR_AMux_Handler
+ 268 0050 00000000 		.word	ADC_1_IRQ_Handler
+ 269              		.cfi_endproc
+ 270              	.LFE34:
+ 271              		.size	main, .-main
+ 272              		.global	Estado
+ 273              		.section	.rodata.str1.4,"aMS",%progbits,1
+ 274              		.align	2
+ 275              	.LC1:
+ 276 0000 53616C69 		.ascii	"Salida negativa\000"
+ 276      6461206E 
+ 276      65676174 
+ 276      69766100 
+ 277              	.LC3:
+ 278 0010 53616C69 		.ascii	"Salida positiva\000"
+ 278      64612070 
+ 278      6F736974 
+ 278      69766100 
+ 279              	.LC5:
+ 280 0020 53616C69 		.ascii	"Salidas desc.  \000"
+ 280      64617320 
+ 280      64657363 
+ 280      2E202000 
+ 281              	.LC7:
+ 282 0030 50727565 		.ascii	"Prueba LCD\000"
+ 282      6261204C 
+ 282      434400
+ 283              		.bss
+ 284              		.set	.LANCHOR0,. + 0
+ 285              		.type	Estado, %object
+ 286              		.size	Estado, 1
+ 287              	Estado:
+ 288 0000 00       		.space	1
+ 289              		.text
+ 290              	.Letext0:
+ 291              		.file 2 "Generated_Source\\PSoC4/cytypes.h"
+ 292              		.file 3 "Generated_Source\\PSoC4/AMux_1.h"
+ 293              		.file 4 "Generated_Source\\PSoC4/LCD.h"
+ 294              		.file 5 "Generated_Source\\PSoC4/SW1_AMux.h"
+ 295              		.file 6 "Generated_Source\\PSoC4/ADC_1.h"
+ 296              		.file 7 "Generated_Source\\PSoC4/IDAC_1.h"
+ 297              		.file 8 "Generated_Source\\PSoC4/ADC_1_IRQ.h"
+ 298              		.file 9 "Generated_Source\\PSoC4/Opamp_1.h"
+ 299              		.file 10 "Generated_Source\\PSoC4/VAR_AMux.h"
+ 300              		.file 11 "Generated_Source\\PSoC4/CyLib.h"
+ 301              		.section	.debug_info,"",%progbits
+ 302              	.Ldebug_info0:
+ 303 0000 37040000 		.4byte	0x437
+ 304 0004 0400     		.2byte	0x4
+ 305 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 306 000a 04       		.byte	0x4
+ 307 000b 01       		.uleb128 0x1
+ 308 000c 4C020000 		.4byte	.LASF44
+ 309 0010 0C       		.byte	0xc
+ 310 0011 68030000 		.4byte	.LASF45
+ 311 0015 AD010000 		.4byte	.LASF46
+ 312 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccktkG7c.s 			page 8
+
+
+ 313 001d 00000000 		.4byte	0
+ 314 0021 00000000 		.4byte	.Ldebug_line0
+ 315 0025 02       		.uleb128 0x2
+ 316 0026 01       		.byte	0x1
+ 317 0027 06       		.byte	0x6
+ 318 0028 46030000 		.4byte	.LASF0
+ 319 002c 02       		.uleb128 0x2
+ 320 002d 01       		.byte	0x1
+ 321 002e 08       		.byte	0x8
+ 322 002f AB000000 		.4byte	.LASF1
+ 323 0033 02       		.uleb128 0x2
+ 324 0034 02       		.byte	0x2
+ 325 0035 05       		.byte	0x5
+ 326 0036 0F030000 		.4byte	.LASF2
+ 327 003a 02       		.uleb128 0x2
+ 328 003b 02       		.byte	0x2
+ 329 003c 07       		.byte	0x7
+ 330 003d 55000000 		.4byte	.LASF3
+ 331 0041 02       		.uleb128 0x2
+ 332 0042 04       		.byte	0x4
+ 333 0043 05       		.byte	0x5
+ 334 0044 2A030000 		.4byte	.LASF4
+ 335 0048 02       		.uleb128 0x2
+ 336 0049 04       		.byte	0x4
+ 337 004a 07       		.byte	0x7
+ 338 004b E3000000 		.4byte	.LASF5
+ 339 004f 02       		.uleb128 0x2
+ 340 0050 08       		.byte	0x8
+ 341 0051 05       		.byte	0x5
+ 342 0052 E3020000 		.4byte	.LASF6
+ 343 0056 02       		.uleb128 0x2
+ 344 0057 08       		.byte	0x8
+ 345 0058 07       		.byte	0x7
+ 346 0059 77010000 		.4byte	.LASF7
+ 347 005d 03       		.uleb128 0x3
+ 348 005e 04       		.byte	0x4
+ 349 005f 05       		.byte	0x5
+ 350 0060 696E7400 		.ascii	"int\000"
+ 351 0064 02       		.uleb128 0x2
+ 352 0065 04       		.byte	0x4
+ 353 0066 07       		.byte	0x7
+ 354 0067 6D000000 		.4byte	.LASF8
+ 355 006b 04       		.uleb128 0x4
+ 356 006c 01010000 		.4byte	.LASF9
+ 357 0070 02       		.byte	0x2
+ 358 0071 FB01     		.2byte	0x1fb
+ 359 0073 2C000000 		.4byte	0x2c
+ 360 0077 04       		.uleb128 0x4
+ 361 0078 5E010000 		.4byte	.LASF10
+ 362 007c 02       		.byte	0x2
+ 363 007d FD01     		.2byte	0x1fd
+ 364 007f 48000000 		.4byte	0x48
+ 365 0083 04       		.uleb128 0x4
+ 366 0084 DD000000 		.4byte	.LASF11
+ 367 0088 02       		.byte	0x2
+ 368 0089 FF01     		.2byte	0x1ff
+ 369 008b 33000000 		.4byte	0x33
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccktkG7c.s 			page 9
+
+
+ 370 008f 02       		.uleb128 0x2
+ 371 0090 04       		.byte	0x4
+ 372 0091 04       		.byte	0x4
+ 373 0092 8C000000 		.4byte	.LASF12
+ 374 0096 02       		.uleb128 0x2
+ 375 0097 08       		.byte	0x8
+ 376 0098 04       		.byte	0x4
+ 377 0099 07010000 		.4byte	.LASF13
+ 378 009d 02       		.uleb128 0x2
+ 379 009e 01       		.byte	0x1
+ 380 009f 08       		.byte	0x8
+ 381 00a0 68000000 		.4byte	.LASF14
+ 382 00a4 04       		.uleb128 0x4
+ 383 00a5 00000000 		.4byte	.LASF15
+ 384 00a9 02       		.byte	0x2
+ 385 00aa A702     		.2byte	0x2a7
+ 386 00ac B0000000 		.4byte	0xb0
+ 387 00b0 05       		.uleb128 0x5
+ 388 00b1 77000000 		.4byte	0x77
+ 389 00b5 02       		.uleb128 0x2
+ 390 00b6 08       		.byte	0x8
+ 391 00b7 04       		.byte	0x4
+ 392 00b8 3A030000 		.4byte	.LASF16
+ 393 00bc 02       		.uleb128 0x2
+ 394 00bd 04       		.byte	0x4
+ 395 00be 07       		.byte	0x7
+ 396 00bf DA020000 		.4byte	.LASF17
+ 397 00c3 06       		.uleb128 0x6
+ 398 00c4 19030000 		.4byte	.LASF18
+ 399 00c8 01       		.byte	0x1
+ 400 00c9 0F       		.byte	0xf
+ 401 00ca 00000000 		.4byte	.LFB32
+ 402 00ce 80000000 		.4byte	.LFE32-.LFB32
+ 403 00d2 01       		.uleb128 0x1
+ 404 00d3 9C       		.byte	0x9c
+ 405 00d4 9E010000 		.4byte	0x19e
+ 406 00d8 07       		.uleb128 0x7
+ 407 00d9 1A000000 		.4byte	.LVL0
+ 408 00dd 53030000 		.4byte	0x353
+ 409 00e1 EB000000 		.4byte	0xeb
+ 410 00e5 08       		.uleb128 0x8
+ 411 00e6 01       		.uleb128 0x1
+ 412 00e7 50       		.byte	0x50
+ 413 00e8 01       		.uleb128 0x1
+ 414 00e9 30       		.byte	0x30
+ 415 00ea 00       		.byte	0
+ 416 00eb 07       		.uleb128 0x7
+ 417 00ec 22000000 		.4byte	.LVL1
+ 418 00f0 5E030000 		.4byte	0x35e
+ 419 00f4 03010000 		.4byte	0x103
+ 420 00f8 08       		.uleb128 0x8
+ 421 00f9 01       		.uleb128 0x1
+ 422 00fa 50       		.byte	0x50
+ 423 00fb 01       		.uleb128 0x1
+ 424 00fc 30       		.byte	0x30
+ 425 00fd 08       		.uleb128 0x8
+ 426 00fe 01       		.uleb128 0x1
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccktkG7c.s 			page 10
+
+
+ 427 00ff 51       		.byte	0x51
+ 428 0100 01       		.uleb128 0x1
+ 429 0101 30       		.byte	0x30
+ 430 0102 00       		.byte	0
+ 431 0103 07       		.uleb128 0x7
+ 432 0104 28000000 		.4byte	.LVL2
+ 433 0108 69030000 		.4byte	0x369
+ 434 010c 1A010000 		.4byte	0x11a
+ 435 0110 08       		.uleb128 0x8
+ 436 0111 01       		.uleb128 0x1
+ 437 0112 50       		.byte	0x50
+ 438 0113 05       		.uleb128 0x5
+ 439 0114 03       		.byte	0x3
+ 440 0115 00000000 		.4byte	.LC1
+ 441 0119 00       		.byte	0
+ 442 011a 07       		.uleb128 0x7
+ 443 011b 30000000 		.4byte	.LVL3
+ 444 011f 53030000 		.4byte	0x353
+ 445 0123 2D010000 		.4byte	0x12d
+ 446 0127 08       		.uleb128 0x8
+ 447 0128 01       		.uleb128 0x1
+ 448 0129 50       		.byte	0x50
+ 449 012a 01       		.uleb128 0x1
+ 450 012b 31       		.byte	0x31
+ 451 012c 00       		.byte	0
+ 452 012d 07       		.uleb128 0x7
+ 453 012e 38000000 		.4byte	.LVL4
+ 454 0132 5E030000 		.4byte	0x35e
+ 455 0136 45010000 		.4byte	0x145
+ 456 013a 08       		.uleb128 0x8
+ 457 013b 01       		.uleb128 0x1
+ 458 013c 50       		.byte	0x50
+ 459 013d 01       		.uleb128 0x1
+ 460 013e 30       		.byte	0x30
+ 461 013f 08       		.uleb128 0x8
+ 462 0140 01       		.uleb128 0x1
+ 463 0141 51       		.byte	0x51
+ 464 0142 01       		.uleb128 0x1
+ 465 0143 30       		.byte	0x30
+ 466 0144 00       		.byte	0
+ 467 0145 07       		.uleb128 0x7
+ 468 0146 3E000000 		.4byte	.LVL5
+ 469 014a 69030000 		.4byte	0x369
+ 470 014e 5C010000 		.4byte	0x15c
+ 471 0152 08       		.uleb128 0x8
+ 472 0153 01       		.uleb128 0x1
+ 473 0154 50       		.byte	0x50
+ 474 0155 05       		.uleb128 0x5
+ 475 0156 03       		.byte	0x3
+ 476 0157 10000000 		.4byte	.LC3
+ 477 015b 00       		.byte	0
+ 478 015c 09       		.uleb128 0x9
+ 479 015d 44000000 		.4byte	.LVL6
+ 480 0161 74030000 		.4byte	0x374
+ 481 0165 07       		.uleb128 0x7
+ 482 0166 4C000000 		.4byte	.LVL7
+ 483 016a 5E030000 		.4byte	0x35e
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccktkG7c.s 			page 11
+
+
+ 484 016e 7D010000 		.4byte	0x17d
+ 485 0172 08       		.uleb128 0x8
+ 486 0173 01       		.uleb128 0x1
+ 487 0174 50       		.byte	0x50
+ 488 0175 01       		.uleb128 0x1
+ 489 0176 30       		.byte	0x30
+ 490 0177 08       		.uleb128 0x8
+ 491 0178 01       		.uleb128 0x1
+ 492 0179 51       		.byte	0x51
+ 493 017a 01       		.uleb128 0x1
+ 494 017b 30       		.byte	0x30
+ 495 017c 00       		.byte	0
+ 496 017d 07       		.uleb128 0x7
+ 497 017e 52000000 		.4byte	.LVL8
+ 498 0182 69030000 		.4byte	0x369
+ 499 0186 94010000 		.4byte	0x194
+ 500 018a 08       		.uleb128 0x8
+ 501 018b 01       		.uleb128 0x1
+ 502 018c 50       		.byte	0x50
+ 503 018d 05       		.uleb128 0x5
+ 504 018e 03       		.byte	0x3
+ 505 018f 20000000 		.4byte	.LC5
+ 506 0193 00       		.byte	0
+ 507 0194 09       		.uleb128 0x9
+ 508 0195 6C000000 		.4byte	.LVL9
+ 509 0199 7F030000 		.4byte	0x37f
+ 510 019d 00       		.byte	0
+ 511 019e 06       		.uleb128 0x6
+ 512 019f 77030000 		.4byte	.LASF19
+ 513 01a3 01       		.byte	0x1
+ 514 01a4 2A       		.byte	0x2a
+ 515 01a5 00000000 		.4byte	.LFB33
+ 516 01a9 3C000000 		.4byte	.LFE33-.LFB33
+ 517 01ad 01       		.uleb128 0x1
+ 518 01ae 9C       		.byte	0x9c
+ 519 01af 65020000 		.4byte	0x265
+ 520 01b3 0A       		.uleb128 0xa
+ 521 01b4 7A000000 		.4byte	.LASF20
+ 522 01b8 01       		.byte	0x1
+ 523 01b9 2C       		.byte	0x2c
+ 524 01ba 83000000 		.4byte	0x83
+ 525 01be 00000000 		.4byte	.LLST0
+ 526 01c2 0A       		.uleb128 0xa
+ 527 01c3 5F030000 		.4byte	.LASF21
+ 528 01c7 01       		.byte	0x1
+ 529 01c8 2D       		.byte	0x2d
+ 530 01c9 77000000 		.4byte	0x77
+ 531 01cd 1F000000 		.4byte	.LLST1
+ 532 01d1 0A       		.uleb128 0xa
+ 533 01d2 F5000000 		.4byte	.LASF22
+ 534 01d6 01       		.byte	0x1
+ 535 01d7 2E       		.byte	0x2e
+ 536 01d8 77000000 		.4byte	0x77
+ 537 01dc 49000000 		.4byte	.LLST2
+ 538 01e0 09       		.uleb128 0x9
+ 539 01e1 0A000000 		.4byte	.LVL12
+ 540 01e5 8A030000 		.4byte	0x38a
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccktkG7c.s 			page 12
+
+
+ 541 01e9 07       		.uleb128 0x7
+ 542 01ea 10000000 		.4byte	.LVL13
+ 543 01ee 95030000 		.4byte	0x395
+ 544 01f2 FC010000 		.4byte	0x1fc
+ 545 01f6 08       		.uleb128 0x8
+ 546 01f7 01       		.uleb128 0x1
+ 547 01f8 50       		.byte	0x50
+ 548 01f9 01       		.uleb128 0x1
+ 549 01fa 30       		.byte	0x30
+ 550 01fb 00       		.byte	0
+ 551 01fc 07       		.uleb128 0x7
+ 552 01fd 16000000 		.4byte	.LVL15
+ 553 0201 A0030000 		.4byte	0x3a0
+ 554 0205 10020000 		.4byte	0x210
+ 555 0209 08       		.uleb128 0x8
+ 556 020a 01       		.uleb128 0x1
+ 557 020b 50       		.byte	0x50
+ 558 020c 02       		.uleb128 0x2
+ 559 020d 74       		.byte	0x74
+ 560 020e 00       		.sleb128 0
+ 561 020f 00       		.byte	0
+ 562 0210 07       		.uleb128 0x7
+ 563 0211 20000000 		.4byte	.LVL16
+ 564 0215 5E030000 		.4byte	0x35e
+ 565 0219 28020000 		.4byte	0x228
+ 566 021d 08       		.uleb128 0x8
+ 567 021e 01       		.uleb128 0x1
+ 568 021f 50       		.byte	0x50
+ 569 0220 01       		.uleb128 0x1
+ 570 0221 31       		.byte	0x31
+ 571 0222 08       		.uleb128 0x8
+ 572 0223 01       		.uleb128 0x1
+ 573 0224 51       		.byte	0x51
+ 574 0225 01       		.uleb128 0x1
+ 575 0226 30       		.byte	0x30
+ 576 0227 00       		.byte	0
+ 577 0228 07       		.uleb128 0x7
+ 578 0229 26000000 		.4byte	.LVL17
+ 579 022d AB030000 		.4byte	0x3ab
+ 580 0231 3C020000 		.4byte	0x23c
+ 581 0235 08       		.uleb128 0x8
+ 582 0236 01       		.uleb128 0x1
+ 583 0237 50       		.byte	0x50
+ 584 0238 02       		.uleb128 0x2
+ 585 0239 74       		.byte	0x74
+ 586 023a 00       		.sleb128 0
+ 587 023b 00       		.byte	0
+ 588 023c 07       		.uleb128 0x7
+ 589 023d 2E000000 		.4byte	.LVL18
+ 590 0241 5E030000 		.4byte	0x35e
+ 591 0245 54020000 		.4byte	0x254
+ 592 0249 08       		.uleb128 0x8
+ 593 024a 01       		.uleb128 0x1
+ 594 024b 50       		.byte	0x50
+ 595 024c 01       		.uleb128 0x1
+ 596 024d 31       		.byte	0x31
+ 597 024e 08       		.uleb128 0x8
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccktkG7c.s 			page 13
+
+
+ 598 024f 01       		.uleb128 0x1
+ 599 0250 51       		.byte	0x51
+ 600 0251 01       		.uleb128 0x1
+ 601 0252 36       		.byte	0x36
+ 602 0253 00       		.byte	0
+ 603 0254 0B       		.uleb128 0xb
+ 604 0255 34000000 		.4byte	.LVL19
+ 605 0259 B6030000 		.4byte	0x3b6
+ 606 025d 08       		.uleb128 0x8
+ 607 025e 01       		.uleb128 0x1
+ 608 025f 50       		.byte	0x50
+ 609 0260 02       		.uleb128 0x2
+ 610 0261 74       		.byte	0x74
+ 611 0262 00       		.sleb128 0
+ 612 0263 00       		.byte	0
+ 613 0264 00       		.byte	0
+ 614 0265 0C       		.uleb128 0xc
+ 615 0266 65010000 		.4byte	.LASF47
+ 616 026a 01       		.byte	0x1
+ 617 026b 3B       		.byte	0x3b
+ 618 026c 5D000000 		.4byte	0x5d
+ 619 0270 00000000 		.4byte	.LFB34
+ 620 0274 54000000 		.4byte	.LFE34-.LFB34
+ 621 0278 01       		.uleb128 0x1
+ 622 0279 9C       		.byte	0x9c
+ 623 027a 42030000 		.4byte	0x342
+ 624 027e 09       		.uleb128 0x9
+ 625 027f 08000000 		.4byte	.LVL22
+ 626 0283 C1030000 		.4byte	0x3c1
+ 627 0287 09       		.uleb128 0x9
+ 628 0288 0C000000 		.4byte	.LVL23
+ 629 028c CC030000 		.4byte	0x3cc
+ 630 0290 09       		.uleb128 0x9
+ 631 0291 10000000 		.4byte	.LVL24
+ 632 0295 D7030000 		.4byte	0x3d7
+ 633 0299 09       		.uleb128 0x9
+ 634 029a 14000000 		.4byte	.LVL25
+ 635 029e E2030000 		.4byte	0x3e2
+ 636 02a2 09       		.uleb128 0x9
+ 637 02a3 18000000 		.4byte	.LVL26
+ 638 02a7 ED030000 		.4byte	0x3ed
+ 639 02ab 07       		.uleb128 0x7
+ 640 02ac 1E000000 		.4byte	.LVL27
+ 641 02b0 F8030000 		.4byte	0x3f8
+ 642 02b4 BE020000 		.4byte	0x2be
+ 643 02b8 08       		.uleb128 0x8
+ 644 02b9 01       		.uleb128 0x1
+ 645 02ba 50       		.byte	0x50
+ 646 02bb 01       		.uleb128 0x1
+ 647 02bc 33       		.byte	0x33
+ 648 02bd 00       		.byte	0
+ 649 02be 09       		.uleb128 0x9
+ 650 02bf 22000000 		.4byte	.LVL28
+ 651 02c3 03040000 		.4byte	0x403
+ 652 02c7 07       		.uleb128 0x7
+ 653 02c8 2A000000 		.4byte	.LVL29
+ 654 02cc 5E030000 		.4byte	0x35e
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccktkG7c.s 			page 14
+
+
+ 655 02d0 DF020000 		.4byte	0x2df
+ 656 02d4 08       		.uleb128 0x8
+ 657 02d5 01       		.uleb128 0x1
+ 658 02d6 50       		.byte	0x50
+ 659 02d7 01       		.uleb128 0x1
+ 660 02d8 30       		.byte	0x30
+ 661 02d9 08       		.uleb128 0x8
+ 662 02da 01       		.uleb128 0x1
+ 663 02db 51       		.byte	0x51
+ 664 02dc 01       		.uleb128 0x1
+ 665 02dd 30       		.byte	0x30
+ 666 02de 00       		.byte	0
+ 667 02df 07       		.uleb128 0x7
+ 668 02e0 30000000 		.4byte	.LVL30
+ 669 02e4 69030000 		.4byte	0x369
+ 670 02e8 F6020000 		.4byte	0x2f6
+ 671 02ec 08       		.uleb128 0x8
+ 672 02ed 01       		.uleb128 0x1
+ 673 02ee 50       		.byte	0x50
+ 674 02ef 05       		.uleb128 0x5
+ 675 02f0 03       		.byte	0x3
+ 676 02f1 30000000 		.4byte	.LC7
+ 677 02f5 00       		.byte	0
+ 678 02f6 07       		.uleb128 0x7
+ 679 02f7 36000000 		.4byte	.LVL31
+ 680 02fb 0E040000 		.4byte	0x40e
+ 681 02ff 0D030000 		.4byte	0x30d
+ 682 0303 08       		.uleb128 0x8
+ 683 0304 01       		.uleb128 0x1
+ 684 0305 50       		.byte	0x50
+ 685 0306 05       		.uleb128 0x5
+ 686 0307 03       		.byte	0x3
+ 687 0308 00000000 		.4byte	VAR_AMux_Handler
+ 688 030c 00       		.byte	0
+ 689 030d 07       		.uleb128 0x7
+ 690 030e 3C000000 		.4byte	.LVL32
+ 691 0312 19040000 		.4byte	0x419
+ 692 0316 24030000 		.4byte	0x324
+ 693 031a 08       		.uleb128 0x8
+ 694 031b 01       		.uleb128 0x1
+ 695 031c 50       		.byte	0x50
+ 696 031d 05       		.uleb128 0x5
+ 697 031e 03       		.byte	0x3
+ 698 031f 00000000 		.4byte	ADC_1_IRQ_Handler
+ 699 0323 00       		.byte	0
+ 700 0324 07       		.uleb128 0x7
+ 701 0325 42000000 		.4byte	.LVL33
+ 702 0329 24040000 		.4byte	0x424
+ 703 032d 38030000 		.4byte	0x338
+ 704 0331 08       		.uleb128 0x8
+ 705 0332 01       		.uleb128 0x1
+ 706 0333 50       		.byte	0x50
+ 707 0334 02       		.uleb128 0x2
+ 708 0335 08       		.byte	0x8
+ 709 0336 64       		.byte	0x64
+ 710 0337 00       		.byte	0
+ 711 0338 09       		.uleb128 0x9
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccktkG7c.s 			page 15
+
+
+ 712 0339 46000000 		.4byte	.LVL34
+ 713 033d 2F040000 		.4byte	0x42f
+ 714 0341 00       		.byte	0
+ 715 0342 0D       		.uleb128 0xd
+ 716 0343 33030000 		.4byte	.LASF48
+ 717 0347 01       		.byte	0x1
+ 718 0348 0E       		.byte	0xe
+ 719 0349 6B000000 		.4byte	0x6b
+ 720 034d 05       		.uleb128 0x5
+ 721 034e 03       		.byte	0x3
+ 722 034f 00000000 		.4byte	Estado
+ 723 0353 0E       		.uleb128 0xe
+ 724 0354 CB000000 		.4byte	.LASF23
+ 725 0358 CB000000 		.4byte	.LASF23
+ 726 035c 03       		.byte	0x3
+ 727 035d 27       		.byte	0x27
+ 728 035e 0E       		.uleb128 0xe
+ 729 035f 8E010000 		.4byte	.LASF24
+ 730 0363 8E010000 		.4byte	.LASF24
+ 731 0367 04       		.byte	0x4
+ 732 0368 3D       		.byte	0x3d
+ 733 0369 0E       		.uleb128 0xe
+ 734 036a 26010000 		.4byte	.LASF25
+ 735 036e 26010000 		.4byte	.LASF25
+ 736 0372 04       		.byte	0x4
+ 737 0373 3C       		.byte	0x3c
+ 738 0374 0E       		.uleb128 0xe
+ 739 0375 36010000 		.4byte	.LASF26
+ 740 0379 36010000 		.4byte	.LASF26
+ 741 037d 03       		.byte	0x3
+ 742 037e 54       		.byte	0x54
+ 743 037f 0E       		.uleb128 0xe
+ 744 0380 0E010000 		.4byte	.LASF27
+ 745 0384 0E010000 		.4byte	.LASF27
+ 746 0388 05       		.byte	0x5
+ 747 0389 39       		.byte	0x39
+ 748 038a 0E       		.uleb128 0xe
+ 749 038b F1020000 		.4byte	.LASF28
+ 750 038f F1020000 		.4byte	.LASF28
+ 751 0393 06       		.byte	0x6
+ 752 0394 9E       		.byte	0x9e
+ 753 0395 0E       		.uleb128 0xe
+ 754 0396 B9000000 		.4byte	.LASF29
+ 755 039a B9000000 		.4byte	.LASF29
+ 756 039e 06       		.byte	0x6
+ 757 039f A0       		.byte	0xa0
+ 758 03a0 0E       		.uleb128 0xe
+ 759 03a1 17000000 		.4byte	.LASF30
+ 760 03a5 17000000 		.4byte	.LASF30
+ 761 03a9 07       		.byte	0x7
+ 762 03aa 54       		.byte	0x54
+ 763 03ab 0E       		.uleb128 0xe
+ 764 03ac 9C000000 		.4byte	.LASF31
+ 765 03b0 9C000000 		.4byte	.LASF31
+ 766 03b4 04       		.byte	0x4
+ 767 03b5 5E       		.byte	0x5e
+ 768 03b6 0E       		.uleb128 0xe
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccktkG7c.s 			page 16
+
+
+ 769 03b7 38000000 		.4byte	.LASF32
+ 770 03bb 38000000 		.4byte	.LASF32
+ 771 03bf 04       		.byte	0x4
+ 772 03c0 5F       		.byte	0x5f
+ 773 03c1 0E       		.uleb128 0xe
+ 774 03c2 03030000 		.4byte	.LASF33
+ 775 03c6 03030000 		.4byte	.LASF33
+ 776 03ca 06       		.byte	0x6
+ 777 03cb 99       		.byte	0x99
+ 778 03cc 0E       		.uleb128 0xe
+ 779 03cd 27000000 		.4byte	.LASF34
+ 780 03d1 27000000 		.4byte	.LASF34
+ 781 03d5 08       		.byte	0x8
+ 782 03d6 23       		.byte	0x23
+ 783 03d7 0E       		.uleb128 0xe
+ 784 03d8 6A010000 		.4byte	.LASF35
+ 785 03dc 6A010000 		.4byte	.LASF35
+ 786 03e0 07       		.byte	0x7
+ 787 03e1 52       		.byte	0x52
+ 788 03e2 0E       		.uleb128 0xe
+ 789 03e3 52030000 		.4byte	.LASF36
+ 790 03e7 52030000 		.4byte	.LASF36
+ 791 03eb 03       		.byte	0x3
+ 792 03ec 25       		.byte	0x25
+ 793 03ed 0E       		.uleb128 0xe
+ 794 03ee 47000000 		.4byte	.LASF37
+ 795 03f2 47000000 		.4byte	.LASF37
+ 796 03f6 09       		.byte	0x9
+ 797 03f7 29       		.byte	0x29
+ 798 03f8 0E       		.uleb128 0xe
+ 799 03f9 3B020000 		.4byte	.LASF38
+ 800 03fd 3B020000 		.4byte	.LASF38
+ 801 0401 09       		.byte	0x9
+ 802 0402 2B       		.byte	0x2b
+ 803 0403 0E       		.uleb128 0xe
+ 804 0404 92000000 		.4byte	.LASF39
+ 805 0408 92000000 		.4byte	.LASF39
+ 806 040c 04       		.byte	0x4
+ 807 040d 38       		.byte	0x38
+ 808 040e 0E       		.uleb128 0xe
+ 809 040f 06000000 		.4byte	.LASF40
+ 810 0413 06000000 		.4byte	.LASF40
+ 811 0417 0A       		.byte	0xa
+ 812 0418 18       		.byte	0x18
+ 813 0419 0E       		.uleb128 0xe
+ 814 041a 9B010000 		.4byte	.LASF41
+ 815 041e 9B010000 		.4byte	.LASF41
+ 816 0422 08       		.byte	0x8
+ 817 0423 18       		.byte	0x18
+ 818 0424 0E       		.uleb128 0xe
+ 819 0425 84000000 		.4byte	.LASF42
+ 820 0429 84000000 		.4byte	.LASF42
+ 821 042d 0B       		.byte	0xb
+ 822 042e EC       		.byte	0xec
+ 823 042f 0E       		.uleb128 0xe
+ 824 0430 4B010000 		.4byte	.LASF43
+ 825 0434 4B010000 		.4byte	.LASF43
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccktkG7c.s 			page 17
+
+
+ 826 0438 06       		.byte	0x6
+ 827 0439 9D       		.byte	0x9d
+ 828 043a 00       		.byte	0
+ 829              		.section	.debug_abbrev,"",%progbits
+ 830              	.Ldebug_abbrev0:
+ 831 0000 01       		.uleb128 0x1
+ 832 0001 11       		.uleb128 0x11
+ 833 0002 01       		.byte	0x1
+ 834 0003 25       		.uleb128 0x25
+ 835 0004 0E       		.uleb128 0xe
+ 836 0005 13       		.uleb128 0x13
+ 837 0006 0B       		.uleb128 0xb
+ 838 0007 03       		.uleb128 0x3
+ 839 0008 0E       		.uleb128 0xe
+ 840 0009 1B       		.uleb128 0x1b
+ 841 000a 0E       		.uleb128 0xe
+ 842 000b 55       		.uleb128 0x55
+ 843 000c 17       		.uleb128 0x17
+ 844 000d 11       		.uleb128 0x11
+ 845 000e 01       		.uleb128 0x1
+ 846 000f 10       		.uleb128 0x10
+ 847 0010 17       		.uleb128 0x17
+ 848 0011 00       		.byte	0
+ 849 0012 00       		.byte	0
+ 850 0013 02       		.uleb128 0x2
+ 851 0014 24       		.uleb128 0x24
+ 852 0015 00       		.byte	0
+ 853 0016 0B       		.uleb128 0xb
+ 854 0017 0B       		.uleb128 0xb
+ 855 0018 3E       		.uleb128 0x3e
+ 856 0019 0B       		.uleb128 0xb
+ 857 001a 03       		.uleb128 0x3
+ 858 001b 0E       		.uleb128 0xe
+ 859 001c 00       		.byte	0
+ 860 001d 00       		.byte	0
+ 861 001e 03       		.uleb128 0x3
+ 862 001f 24       		.uleb128 0x24
+ 863 0020 00       		.byte	0
+ 864 0021 0B       		.uleb128 0xb
+ 865 0022 0B       		.uleb128 0xb
+ 866 0023 3E       		.uleb128 0x3e
+ 867 0024 0B       		.uleb128 0xb
+ 868 0025 03       		.uleb128 0x3
+ 869 0026 08       		.uleb128 0x8
+ 870 0027 00       		.byte	0
+ 871 0028 00       		.byte	0
+ 872 0029 04       		.uleb128 0x4
+ 873 002a 16       		.uleb128 0x16
+ 874 002b 00       		.byte	0
+ 875 002c 03       		.uleb128 0x3
+ 876 002d 0E       		.uleb128 0xe
+ 877 002e 3A       		.uleb128 0x3a
+ 878 002f 0B       		.uleb128 0xb
+ 879 0030 3B       		.uleb128 0x3b
+ 880 0031 05       		.uleb128 0x5
+ 881 0032 49       		.uleb128 0x49
+ 882 0033 13       		.uleb128 0x13
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccktkG7c.s 			page 18
+
+
+ 883 0034 00       		.byte	0
+ 884 0035 00       		.byte	0
+ 885 0036 05       		.uleb128 0x5
+ 886 0037 35       		.uleb128 0x35
+ 887 0038 00       		.byte	0
+ 888 0039 49       		.uleb128 0x49
+ 889 003a 13       		.uleb128 0x13
+ 890 003b 00       		.byte	0
+ 891 003c 00       		.byte	0
+ 892 003d 06       		.uleb128 0x6
+ 893 003e 2E       		.uleb128 0x2e
+ 894 003f 01       		.byte	0x1
+ 895 0040 3F       		.uleb128 0x3f
+ 896 0041 19       		.uleb128 0x19
+ 897 0042 03       		.uleb128 0x3
+ 898 0043 0E       		.uleb128 0xe
+ 899 0044 3A       		.uleb128 0x3a
+ 900 0045 0B       		.uleb128 0xb
+ 901 0046 3B       		.uleb128 0x3b
+ 902 0047 0B       		.uleb128 0xb
+ 903 0048 27       		.uleb128 0x27
+ 904 0049 19       		.uleb128 0x19
+ 905 004a 11       		.uleb128 0x11
+ 906 004b 01       		.uleb128 0x1
+ 907 004c 12       		.uleb128 0x12
+ 908 004d 06       		.uleb128 0x6
+ 909 004e 40       		.uleb128 0x40
+ 910 004f 18       		.uleb128 0x18
+ 911 0050 9742     		.uleb128 0x2117
+ 912 0052 19       		.uleb128 0x19
+ 913 0053 01       		.uleb128 0x1
+ 914 0054 13       		.uleb128 0x13
+ 915 0055 00       		.byte	0
+ 916 0056 00       		.byte	0
+ 917 0057 07       		.uleb128 0x7
+ 918 0058 898201   		.uleb128 0x4109
+ 919 005b 01       		.byte	0x1
+ 920 005c 11       		.uleb128 0x11
+ 921 005d 01       		.uleb128 0x1
+ 922 005e 31       		.uleb128 0x31
+ 923 005f 13       		.uleb128 0x13
+ 924 0060 01       		.uleb128 0x1
+ 925 0061 13       		.uleb128 0x13
+ 926 0062 00       		.byte	0
+ 927 0063 00       		.byte	0
+ 928 0064 08       		.uleb128 0x8
+ 929 0065 8A8201   		.uleb128 0x410a
+ 930 0068 00       		.byte	0
+ 931 0069 02       		.uleb128 0x2
+ 932 006a 18       		.uleb128 0x18
+ 933 006b 9142     		.uleb128 0x2111
+ 934 006d 18       		.uleb128 0x18
+ 935 006e 00       		.byte	0
+ 936 006f 00       		.byte	0
+ 937 0070 09       		.uleb128 0x9
+ 938 0071 898201   		.uleb128 0x4109
+ 939 0074 00       		.byte	0
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccktkG7c.s 			page 19
+
+
+ 940 0075 11       		.uleb128 0x11
+ 941 0076 01       		.uleb128 0x1
+ 942 0077 31       		.uleb128 0x31
+ 943 0078 13       		.uleb128 0x13
+ 944 0079 00       		.byte	0
+ 945 007a 00       		.byte	0
+ 946 007b 0A       		.uleb128 0xa
+ 947 007c 34       		.uleb128 0x34
+ 948 007d 00       		.byte	0
+ 949 007e 03       		.uleb128 0x3
+ 950 007f 0E       		.uleb128 0xe
+ 951 0080 3A       		.uleb128 0x3a
+ 952 0081 0B       		.uleb128 0xb
+ 953 0082 3B       		.uleb128 0x3b
+ 954 0083 0B       		.uleb128 0xb
+ 955 0084 49       		.uleb128 0x49
+ 956 0085 13       		.uleb128 0x13
+ 957 0086 02       		.uleb128 0x2
+ 958 0087 17       		.uleb128 0x17
+ 959 0088 00       		.byte	0
+ 960 0089 00       		.byte	0
+ 961 008a 0B       		.uleb128 0xb
+ 962 008b 898201   		.uleb128 0x4109
+ 963 008e 01       		.byte	0x1
+ 964 008f 11       		.uleb128 0x11
+ 965 0090 01       		.uleb128 0x1
+ 966 0091 31       		.uleb128 0x31
+ 967 0092 13       		.uleb128 0x13
+ 968 0093 00       		.byte	0
+ 969 0094 00       		.byte	0
+ 970 0095 0C       		.uleb128 0xc
+ 971 0096 2E       		.uleb128 0x2e
+ 972 0097 01       		.byte	0x1
+ 973 0098 3F       		.uleb128 0x3f
+ 974 0099 19       		.uleb128 0x19
+ 975 009a 03       		.uleb128 0x3
+ 976 009b 0E       		.uleb128 0xe
+ 977 009c 3A       		.uleb128 0x3a
+ 978 009d 0B       		.uleb128 0xb
+ 979 009e 3B       		.uleb128 0x3b
+ 980 009f 0B       		.uleb128 0xb
+ 981 00a0 49       		.uleb128 0x49
+ 982 00a1 13       		.uleb128 0x13
+ 983 00a2 8701     		.uleb128 0x87
+ 984 00a4 19       		.uleb128 0x19
+ 985 00a5 11       		.uleb128 0x11
+ 986 00a6 01       		.uleb128 0x1
+ 987 00a7 12       		.uleb128 0x12
+ 988 00a8 06       		.uleb128 0x6
+ 989 00a9 40       		.uleb128 0x40
+ 990 00aa 18       		.uleb128 0x18
+ 991 00ab 9742     		.uleb128 0x2117
+ 992 00ad 19       		.uleb128 0x19
+ 993 00ae 01       		.uleb128 0x1
+ 994 00af 13       		.uleb128 0x13
+ 995 00b0 00       		.byte	0
+ 996 00b1 00       		.byte	0
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccktkG7c.s 			page 20
+
+
+ 997 00b2 0D       		.uleb128 0xd
+ 998 00b3 34       		.uleb128 0x34
+ 999 00b4 00       		.byte	0
+ 1000 00b5 03       		.uleb128 0x3
+ 1001 00b6 0E       		.uleb128 0xe
+ 1002 00b7 3A       		.uleb128 0x3a
+ 1003 00b8 0B       		.uleb128 0xb
+ 1004 00b9 3B       		.uleb128 0x3b
+ 1005 00ba 0B       		.uleb128 0xb
+ 1006 00bb 49       		.uleb128 0x49
+ 1007 00bc 13       		.uleb128 0x13
+ 1008 00bd 3F       		.uleb128 0x3f
+ 1009 00be 19       		.uleb128 0x19
+ 1010 00bf 02       		.uleb128 0x2
+ 1011 00c0 18       		.uleb128 0x18
+ 1012 00c1 00       		.byte	0
+ 1013 00c2 00       		.byte	0
+ 1014 00c3 0E       		.uleb128 0xe
+ 1015 00c4 2E       		.uleb128 0x2e
+ 1016 00c5 00       		.byte	0
+ 1017 00c6 3F       		.uleb128 0x3f
+ 1018 00c7 19       		.uleb128 0x19
+ 1019 00c8 3C       		.uleb128 0x3c
+ 1020 00c9 19       		.uleb128 0x19
+ 1021 00ca 6E       		.uleb128 0x6e
+ 1022 00cb 0E       		.uleb128 0xe
+ 1023 00cc 03       		.uleb128 0x3
+ 1024 00cd 0E       		.uleb128 0xe
+ 1025 00ce 3A       		.uleb128 0x3a
+ 1026 00cf 0B       		.uleb128 0xb
+ 1027 00d0 3B       		.uleb128 0x3b
+ 1028 00d1 0B       		.uleb128 0xb
+ 1029 00d2 00       		.byte	0
+ 1030 00d3 00       		.byte	0
+ 1031 00d4 00       		.byte	0
+ 1032              		.section	.debug_loc,"",%progbits
+ 1033              	.Ldebug_loc0:
+ 1034              	.LLST0:
+ 1035 0000 02000000 		.4byte	.LVL10
+ 1036 0004 12000000 		.4byte	.LVL14
+ 1037 0008 0200     		.2byte	0x2
+ 1038 000a 30       		.byte	0x30
+ 1039 000b 9F       		.byte	0x9f
+ 1040 000c 12000000 		.4byte	.LVL14
+ 1041 0010 15000000 		.4byte	.LVL15-1
+ 1042 0014 0100     		.2byte	0x1
+ 1043 0016 50       		.byte	0x50
+ 1044 0017 00000000 		.4byte	0
+ 1045 001b 00000000 		.4byte	0
+ 1046              	.LLST1:
+ 1047 001f 02000000 		.4byte	.LVL10
+ 1048 0023 12000000 		.4byte	.LVL14
+ 1049 0027 0200     		.2byte	0x2
+ 1050 0029 30       		.byte	0x30
+ 1051 002a 9F       		.byte	0x9f
+ 1052 002b 12000000 		.4byte	.LVL14
+ 1053 002f 15000000 		.4byte	.LVL15-1
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccktkG7c.s 			page 21
+
+
+ 1054 0033 0100     		.2byte	0x1
+ 1055 0035 50       		.byte	0x50
+ 1056 0036 15000000 		.4byte	.LVL15-1
+ 1057 003a 34000000 		.4byte	.LVL20
+ 1058 003e 0100     		.2byte	0x1
+ 1059 0040 54       		.byte	0x54
+ 1060 0041 00000000 		.4byte	0
+ 1061 0045 00000000 		.4byte	0
+ 1062              	.LLST2:
+ 1063 0049 06000000 		.4byte	.LVL11
+ 1064 004d 34000000 		.4byte	.LVL21
+ 1065 0051 0100     		.2byte	0x1
+ 1066 0053 56       		.byte	0x56
+ 1067 0054 00000000 		.4byte	0
+ 1068 0058 00000000 		.4byte	0
+ 1069              		.section	.debug_aranges,"",%progbits
+ 1070 0000 2C000000 		.4byte	0x2c
+ 1071 0004 0200     		.2byte	0x2
+ 1072 0006 00000000 		.4byte	.Ldebug_info0
+ 1073 000a 04       		.byte	0x4
+ 1074 000b 00       		.byte	0
+ 1075 000c 0000     		.2byte	0
+ 1076 000e 0000     		.2byte	0
+ 1077 0010 00000000 		.4byte	.LFB32
+ 1078 0014 80000000 		.4byte	.LFE32-.LFB32
+ 1079 0018 00000000 		.4byte	.LFB33
+ 1080 001c 3C000000 		.4byte	.LFE33-.LFB33
+ 1081 0020 00000000 		.4byte	.LFB34
+ 1082 0024 54000000 		.4byte	.LFE34-.LFB34
+ 1083 0028 00000000 		.4byte	0
+ 1084 002c 00000000 		.4byte	0
+ 1085              		.section	.debug_ranges,"",%progbits
+ 1086              	.Ldebug_ranges0:
+ 1087 0000 00000000 		.4byte	.LFB32
+ 1088 0004 80000000 		.4byte	.LFE32
+ 1089 0008 00000000 		.4byte	.LFB33
+ 1090 000c 3C000000 		.4byte	.LFE33
+ 1091 0010 00000000 		.4byte	.LFB34
+ 1092 0014 54000000 		.4byte	.LFE34
+ 1093 0018 00000000 		.4byte	0
+ 1094 001c 00000000 		.4byte	0
+ 1095              		.section	.debug_line,"",%progbits
+ 1096              	.Ldebug_line0:
+ 1097 0000 1C010000 		.section	.debug_str,"MS",%progbits,1
+ 1097      0200B800 
+ 1097      00000201 
+ 1097      FB0E0D00 
+ 1097      01010101 
+ 1098              	.LASF15:
+ 1099 0000 72656733 		.ascii	"reg32\000"
+ 1099      3200
+ 1100              	.LASF40:
+ 1101 0006 5641525F 		.ascii	"VAR_AMux_StartEx\000"
+ 1101      414D7578 
+ 1101      5F537461 
+ 1101      72744578 
+ 1101      00
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccktkG7c.s 			page 22
+
+
+ 1102              	.LASF30:
+ 1103 0017 49444143 		.ascii	"IDAC_1_SetValue\000"
+ 1103      5F315F53 
+ 1103      65745661 
+ 1103      6C756500 
+ 1104              	.LASF34:
+ 1105 0027 4144435F 		.ascii	"ADC_1_IRQ_Enable\000"
+ 1105      315F4952 
+ 1105      515F456E 
+ 1105      61626C65 
+ 1105      00
+ 1106              	.LASF32:
+ 1107 0038 4C43445F 		.ascii	"LCD_PrintInt32\000"
+ 1107      5072696E 
+ 1107      74496E74 
+ 1107      333200
+ 1108              	.LASF37:
+ 1109 0047 4F70616D 		.ascii	"Opamp_1_Start\000"
+ 1109      705F315F 
+ 1109      53746172 
+ 1109      7400
+ 1110              	.LASF3:
+ 1111 0055 73686F72 		.ascii	"short unsigned int\000"
+ 1111      7420756E 
+ 1111      7369676E 
+ 1111      65642069 
+ 1111      6E7400
+ 1112              	.LASF14:
+ 1113 0068 63686172 		.ascii	"char\000"
+ 1113      00
+ 1114              	.LASF8:
+ 1115 006d 756E7369 		.ascii	"unsigned int\000"
+ 1115      676E6564 
+ 1115      20696E74 
+ 1115      00
+ 1116              	.LASF20:
+ 1117 007a 436F6E74 		.ascii	"Cont_IDAC\000"
+ 1117      5F494441 
+ 1117      4300
+ 1118              	.LASF42:
+ 1119 0084 43794465 		.ascii	"CyDelay\000"
+ 1119      6C617900 
+ 1120              	.LASF12:
+ 1121 008c 666C6F61 		.ascii	"float\000"
+ 1121      7400
+ 1122              	.LASF39:
+ 1123 0092 4C43445F 		.ascii	"LCD_Start\000"
+ 1123      53746172 
+ 1123      7400
+ 1124              	.LASF31:
+ 1125 009c 4C43445F 		.ascii	"LCD_PrintInt16\000"
+ 1125      5072696E 
+ 1125      74496E74 
+ 1125      313600
+ 1126              	.LASF1:
+ 1127 00ab 756E7369 		.ascii	"unsigned char\000"
+ 1127      676E6564 
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccktkG7c.s 			page 23
+
+
+ 1127      20636861 
+ 1127      7200
+ 1128              	.LASF29:
+ 1129 00b9 4144435F 		.ascii	"ADC_1_GetResult16\000"
+ 1129      315F4765 
+ 1129      74526573 
+ 1129      756C7431 
+ 1129      3600
+ 1130              	.LASF23:
+ 1131 00cb 414D7578 		.ascii	"AMux_1_FastSelect\000"
+ 1131      5F315F46 
+ 1131      61737453 
+ 1131      656C6563 
+ 1131      7400
+ 1132              	.LASF11:
+ 1133 00dd 696E7431 		.ascii	"int16\000"
+ 1133      3600
+ 1134              	.LASF5:
+ 1135 00e3 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1135      20756E73 
+ 1135      69676E65 
+ 1135      6420696E 
+ 1135      7400
+ 1136              	.LASF22:
+ 1137 00f5 696E7472 		.ascii	"intr_status\000"
+ 1137      5F737461 
+ 1137      74757300 
+ 1138              	.LASF9:
+ 1139 0101 75696E74 		.ascii	"uint8\000"
+ 1139      3800
+ 1140              	.LASF13:
+ 1141 0107 646F7562 		.ascii	"double\000"
+ 1141      6C6500
+ 1142              	.LASF27:
+ 1143 010e 5357315F 		.ascii	"SW1_AMux_ClearInterrupt\000"
+ 1143      414D7578 
+ 1143      5F436C65 
+ 1143      6172496E 
+ 1143      74657272 
+ 1144              	.LASF25:
+ 1145 0126 4C43445F 		.ascii	"LCD_PrintString\000"
+ 1145      5072696E 
+ 1145      74537472 
+ 1145      696E6700 
+ 1146              	.LASF26:
+ 1147 0136 414D7578 		.ascii	"AMux_1_DisconnectAll\000"
+ 1147      5F315F44 
+ 1147      6973636F 
+ 1147      6E6E6563 
+ 1147      74416C6C 
+ 1148              	.LASF43:
+ 1149 014b 4144435F 		.ascii	"ADC_1_StartConvert\000"
+ 1149      315F5374 
+ 1149      61727443 
+ 1149      6F6E7665 
+ 1149      727400
+ 1150              	.LASF10:
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccktkG7c.s 			page 24
+
+
+ 1151 015e 75696E74 		.ascii	"uint32\000"
+ 1151      333200
+ 1152              	.LASF47:
+ 1153 0165 6D61696E 		.ascii	"main\000"
+ 1153      00
+ 1154              	.LASF35:
+ 1155 016a 49444143 		.ascii	"IDAC_1_Start\000"
+ 1155      5F315F53 
+ 1155      74617274 
+ 1155      00
+ 1156              	.LASF7:
+ 1157 0177 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1157      206C6F6E 
+ 1157      6720756E 
+ 1157      7369676E 
+ 1157      65642069 
+ 1158              	.LASF24:
+ 1159 018e 4C43445F 		.ascii	"LCD_Position\000"
+ 1159      506F7369 
+ 1159      74696F6E 
+ 1159      00
+ 1160              	.LASF41:
+ 1161 019b 4144435F 		.ascii	"ADC_1_IRQ_StartEx\000"
+ 1161      315F4952 
+ 1161      515F5374 
+ 1161      61727445 
+ 1161      7800
+ 1162              	.LASF46:
+ 1163 01ad 443A5C45 		.ascii	"D:\\ESCRITORIO\\Tesis MIB\\Proyecto de Tesis\\elect"
+ 1163      53435249 
+ 1163      544F5249 
+ 1163      4F5C5465 
+ 1163      73697320 
+ 1164 01dc 726F6573 		.ascii	"roestimulador\\PSoC\\electroestimulador\\Pruebas el"
+ 1164      74696D75 
+ 1164      6C61646F 
+ 1164      725C5053 
+ 1164      6F435C65 
+ 1165 020c 65637472 		.ascii	"ectroestimulador\\prueba Control IDAC+ADC.cydsn\000"
+ 1165      6F657374 
+ 1165      696D756C 
+ 1165      61646F72 
+ 1165      5C707275 
+ 1166              	.LASF38:
+ 1167 023b 4F70616D 		.ascii	"Opamp_1_SetPower\000"
+ 1167      705F315F 
+ 1167      53657450 
+ 1167      6F776572 
+ 1167      00
+ 1168              	.LASF44:
+ 1169 024c 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1169      43313120 
+ 1169      352E342E 
+ 1169      31203230 
+ 1169      31363036 
+ 1170 027f 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 1170      20726576 
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccktkG7c.s 			page 25
+
+
+ 1170      6973696F 
+ 1170      6E203233 
+ 1170      37373135 
+ 1171 02b2 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1171      66756E63 
+ 1171      74696F6E 
+ 1171      2D736563 
+ 1171      74696F6E 
+ 1172              	.LASF17:
+ 1173 02da 73697A65 		.ascii	"sizetype\000"
+ 1173      74797065 
+ 1173      00
+ 1174              	.LASF6:
+ 1175 02e3 6C6F6E67 		.ascii	"long long int\000"
+ 1175      206C6F6E 
+ 1175      6720696E 
+ 1175      7400
+ 1176              	.LASF28:
+ 1177 02f1 4144435F 		.ascii	"ADC_1_StopConvert\000"
+ 1177      315F5374 
+ 1177      6F70436F 
+ 1177      6E766572 
+ 1177      7400
+ 1178              	.LASF33:
+ 1179 0303 4144435F 		.ascii	"ADC_1_Start\000"
+ 1179      315F5374 
+ 1179      61727400 
+ 1180              	.LASF2:
+ 1181 030f 73686F72 		.ascii	"short int\000"
+ 1181      7420696E 
+ 1181      7400
+ 1182              	.LASF18:
+ 1183 0319 5641525F 		.ascii	"VAR_AMux_Handler\000"
+ 1183      414D7578 
+ 1183      5F48616E 
+ 1183      646C6572 
+ 1183      00
+ 1184              	.LASF4:
+ 1185 032a 6C6F6E67 		.ascii	"long int\000"
+ 1185      20696E74 
+ 1185      00
+ 1186              	.LASF48:
+ 1187 0333 45737461 		.ascii	"Estado\000"
+ 1187      646F00
+ 1188              	.LASF16:
+ 1189 033a 6C6F6E67 		.ascii	"long double\000"
+ 1189      20646F75 
+ 1189      626C6500 
+ 1190              	.LASF0:
+ 1191 0346 7369676E 		.ascii	"signed char\000"
+ 1191      65642063 
+ 1191      68617200 
+ 1192              	.LASF36:
+ 1193 0352 414D7578 		.ascii	"AMux_1_Start\000"
+ 1193      5F315F53 
+ 1193      74617274 
+ 1193      00
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccktkG7c.s 			page 26
+
+
+ 1194              	.LASF21:
+ 1195 035f 49444143 		.ascii	"IDAC_out\000"
+ 1195      5F6F7574 
+ 1195      00
+ 1196              	.LASF45:
+ 1197 0368 6D61696E 		.ascii	"mainIDAC+ADC.c\000"
+ 1197      49444143 
+ 1197      2B414443 
+ 1197      2E6300
+ 1198              	.LASF19:
+ 1199 0377 4144435F 		.ascii	"ADC_1_IRQ_Handler\000"
+ 1199      315F4952 
+ 1199      515F4861 
+ 1199      6E646C65 
+ 1199      7200
+ 1200              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

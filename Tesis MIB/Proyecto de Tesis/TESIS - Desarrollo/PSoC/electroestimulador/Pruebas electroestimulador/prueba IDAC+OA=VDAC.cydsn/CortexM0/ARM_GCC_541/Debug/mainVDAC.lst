@@ -1,0 +1,744 @@
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccUwt05v.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m0
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 0
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"mainVDAC.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.VAR_IDAC_Handler,"ax",%progbits
+  20              		.align	2
+  21              		.global	VAR_IDAC_Handler
+  22              		.code	16
+  23              		.thumb_func
+  24              		.type	VAR_IDAC_Handler, %function
+  25              	VAR_IDAC_Handler:
+  26              	.LFB32:
+  27              		.file 1 "mainVDAC.c"
+   1:mainVDAC.c    **** /* ========================================
+   2:mainVDAC.c    ****  *
+   3:mainVDAC.c    **** Prueba de modulo IDAC combinado con AO para formar una VDAC.
+   4:mainVDAC.c    ****  *
+   5:mainVDAC.c    ****  * ========================================*/
+   6:mainVDAC.c    **** #include "project.h"
+   7:mainVDAC.c    **** 
+   8:mainVDAC.c    **** uint8 I_OUT=0;
+   9:mainVDAC.c    **** CY_ISR(VAR_IDAC_Handler)
+  10:mainVDAC.c    **** {
+  28              		.loc 1 10 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32 0000 10B5     		push	{r4, lr}
+  33              		.cfi_def_cfa_offset 8
+  34              		.cfi_offset 4, -8
+  35              		.cfi_offset 14, -4
+  11:mainVDAC.c    ****     if(I_OUT>=255)
+  36              		.loc 1 11 0
+  37 0002 0A4B     		ldr	r3, .L4
+  38 0004 1B78     		ldrb	r3, [r3]
+  39 0006 FF2B     		cmp	r3, #255
+  40 0008 03D1     		bne	.L2
+  12:mainVDAC.c    ****      I_OUT=0;
+  41              		.loc 1 12 0
+  42 000a 0022     		movs	r2, #0
+  43 000c 074B     		ldr	r3, .L4
+  44 000e 1A70     		strb	r2, [r3]
+  45 0010 02E0     		b	.L3
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccUwt05v.s 			page 2
+
+
+  46              	.L2:
+  13:mainVDAC.c    ****     else
+  14:mainVDAC.c    ****      I_OUT++;
+  47              		.loc 1 14 0
+  48 0012 0133     		adds	r3, r3, #1
+  49 0014 054A     		ldr	r2, .L4
+  50 0016 1370     		strb	r3, [r2]
+  51              	.L3:
+  15:mainVDAC.c    ****     IDAC_1_SetValue(I_OUT);
+  52              		.loc 1 15 0
+  53 0018 044B     		ldr	r3, .L4
+  54 001a 1878     		ldrb	r0, [r3]
+  55 001c FFF7FEFF 		bl	IDAC_1_SetValue
+  56              	.LVL0:
+  16:mainVDAC.c    ****     SW1_IDAC_ClearInterrupt();
+  57              		.loc 1 16 0
+  58 0020 FFF7FEFF 		bl	SW1_IDAC_ClearInterrupt
+  59              	.LVL1:
+  17:mainVDAC.c    ****     CyDelay(20);
+  60              		.loc 1 17 0
+  61 0024 1420     		movs	r0, #20
+  62 0026 FFF7FEFF 		bl	CyDelay
+  63              	.LVL2:
+  18:mainVDAC.c    **** }
+  64              		.loc 1 18 0
+  65              		@ sp needed
+  66 002a 10BD     		pop	{r4, pc}
+  67              	.L5:
+  68              		.align	2
+  69              	.L4:
+  70 002c 00000000 		.word	.LANCHOR0
+  71              		.cfi_endproc
+  72              	.LFE32:
+  73              		.size	VAR_IDAC_Handler, .-VAR_IDAC_Handler
+  74              		.section	.text.main,"ax",%progbits
+  75              		.align	2
+  76              		.global	main
+  77              		.code	16
+  78              		.thumb_func
+  79              		.type	main, %function
+  80              	main:
+  81              	.LFB33:
+  19:mainVDAC.c    **** 
+  20:mainVDAC.c    **** int main()
+  21:mainVDAC.c    **** {
+  82              		.loc 1 21 0
+  83              		.cfi_startproc
+  84              		@ Volatile: function does not return.
+  85              		@ args = 0, pretend = 0, frame = 0
+  86              		@ frame_needed = 0, uses_anonymous_args = 0
+  87 0000 10B5     		push	{r4, lr}
+  88              		.cfi_def_cfa_offset 8
+  89              		.cfi_offset 4, -8
+  90              		.cfi_offset 14, -4
+  22:mainVDAC.c    ****     CyGlobalIntEnable;
+  91              		.loc 1 22 0
+  92              		.syntax divided
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccUwt05v.s 			page 3
+
+
+  93              	@ 22 "mainVDAC.c" 1
+  94 0002 62B6     		CPSIE   i
+  95              	@ 0 "" 2
+  23:mainVDAC.c    ****     IDAC_1_Start();
+  96              		.loc 1 23 0
+  97              		.thumb
+  98              		.syntax unified
+  99 0004 FFF7FEFF 		bl	IDAC_1_Start
+ 100              	.LVL3:
+  24:mainVDAC.c    ****     Opamp1_Start();
+ 101              		.loc 1 24 0
+ 102 0008 FFF7FEFF 		bl	Opamp1_Start
+ 103              	.LVL4:
+  25:mainVDAC.c    ****     Opamp1_SetPower(Opamp1_HIGHPOWER);
+ 104              		.loc 1 25 0
+ 105 000c 0320     		movs	r0, #3
+ 106 000e FFF7FEFF 		bl	Opamp1_SetPower
+ 107              	.LVL5:
+  26:mainVDAC.c    ****     VAR_IDAC_StartEx(VAR_IDAC_Handler);
+ 108              		.loc 1 26 0
+ 109 0012 0248     		ldr	r0, .L8
+ 110 0014 FFF7FEFF 		bl	VAR_IDAC_StartEx
+ 111              	.LVL6:
+ 112              	.L7:
+ 113 0018 FEE7     		b	.L7
+ 114              	.L9:
+ 115 001a C046     		.align	2
+ 116              	.L8:
+ 117 001c 00000000 		.word	VAR_IDAC_Handler
+ 118              		.cfi_endproc
+ 119              	.LFE33:
+ 120              		.size	main, .-main
+ 121              		.global	I_OUT
+ 122              		.bss
+ 123              		.set	.LANCHOR0,. + 0
+ 124              		.type	I_OUT, %object
+ 125              		.size	I_OUT, 1
+ 126              	I_OUT:
+ 127 0000 00       		.space	1
+ 128              		.text
+ 129              	.Letext0:
+ 130              		.file 2 "Generated_Source\\PSoC4/IDAC_1.h"
+ 131              		.file 3 "Generated_Source\\PSoC4/SW1_IDAC.h"
+ 132              		.file 4 "Generated_Source\\PSoC4/CyLib.h"
+ 133              		.file 5 "Generated_Source\\PSoC4/Opamp1.h"
+ 134              		.file 6 "Generated_Source\\PSoC4/VAR_IDAC.h"
+ 135              		.file 7 "Generated_Source\\PSoC4/cytypes.h"
+ 136              		.section	.debug_info,"",%progbits
+ 137              	.Ldebug_info0:
+ 138 0000 7E010000 		.4byte	0x17e
+ 139 0004 0400     		.2byte	0x4
+ 140 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 141 000a 04       		.byte	0x4
+ 142 000b 01       		.uleb128 0x1
+ 143 000c 82010000 		.4byte	.LASF21
+ 144 0010 0C       		.byte	0xc
+ 145 0011 89000000 		.4byte	.LASF22
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccUwt05v.s 			page 4
+
+
+ 146 0015 AD000000 		.4byte	.LASF23
+ 147 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 148 001d 00000000 		.4byte	0
+ 149 0021 00000000 		.4byte	.Ldebug_line0
+ 150 0025 02       		.uleb128 0x2
+ 151 0026 01       		.byte	0x1
+ 152 0027 06       		.byte	0x6
+ 153 0028 23020000 		.4byte	.LASF0
+ 154 002c 02       		.uleb128 0x2
+ 155 002d 01       		.byte	0x1
+ 156 002e 08       		.byte	0x8
+ 157 002f 9A000000 		.4byte	.LASF1
+ 158 0033 02       		.uleb128 0x2
+ 159 0034 02       		.byte	0x2
+ 160 0035 05       		.byte	0x5
+ 161 0036 3B020000 		.4byte	.LASF2
+ 162 003a 02       		.uleb128 0x2
+ 163 003b 02       		.byte	0x2
+ 164 003c 07       		.byte	0x7
+ 165 003d 10020000 		.4byte	.LASF3
+ 166 0041 02       		.uleb128 0x2
+ 167 0042 04       		.byte	0x4
+ 168 0043 05       		.byte	0x5
+ 169 0044 79010000 		.4byte	.LASF4
+ 170 0048 02       		.uleb128 0x2
+ 171 0049 04       		.byte	0x4
+ 172 004a 07       		.byte	0x7
+ 173 004b 4F000000 		.4byte	.LASF5
+ 174 004f 02       		.uleb128 0x2
+ 175 0050 08       		.byte	0x8
+ 176 0051 05       		.byte	0x5
+ 177 0052 00000000 		.4byte	.LASF6
+ 178 0056 02       		.uleb128 0x2
+ 179 0057 08       		.byte	0x8
+ 180 0058 07       		.byte	0x7
+ 181 0059 72000000 		.4byte	.LASF7
+ 182 005d 03       		.uleb128 0x3
+ 183 005e 04       		.byte	0x4
+ 184 005f 05       		.byte	0x5
+ 185 0060 696E7400 		.ascii	"int\000"
+ 186 0064 02       		.uleb128 0x2
+ 187 0065 04       		.byte	0x4
+ 188 0066 07       		.byte	0x7
+ 189 0067 45020000 		.4byte	.LASF8
+ 190 006b 04       		.uleb128 0x4
+ 191 006c 49000000 		.4byte	.LASF24
+ 192 0070 07       		.byte	0x7
+ 193 0071 FB01     		.2byte	0x1fb
+ 194 0073 2C000000 		.4byte	0x2c
+ 195 0077 02       		.uleb128 0x2
+ 196 0078 04       		.byte	0x4
+ 197 0079 04       		.byte	0x4
+ 198 007a 94000000 		.4byte	.LASF9
+ 199 007e 02       		.uleb128 0x2
+ 200 007f 08       		.byte	0x8
+ 201 0080 04       		.byte	0x4
+ 202 0081 72010000 		.4byte	.LASF10
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccUwt05v.s 			page 5
+
+
+ 203 0085 02       		.uleb128 0x2
+ 204 0086 01       		.byte	0x1
+ 205 0087 08       		.byte	0x8
+ 206 0088 A8000000 		.4byte	.LASF11
+ 207 008c 02       		.uleb128 0x2
+ 208 008d 08       		.byte	0x8
+ 209 008e 04       		.byte	0x4
+ 210 008f 2F020000 		.4byte	.LASF12
+ 211 0093 02       		.uleb128 0x2
+ 212 0094 04       		.byte	0x4
+ 213 0095 07       		.byte	0x7
+ 214 0096 52020000 		.4byte	.LASF13
+ 215 009a 05       		.uleb128 0x5
+ 216 009b 30000000 		.4byte	.LASF25
+ 217 009f 01       		.byte	0x1
+ 218 00a0 09       		.byte	0x9
+ 219 00a1 00000000 		.4byte	.LFB32
+ 220 00a5 30000000 		.4byte	.LFE32-.LFB32
+ 221 00a9 01       		.uleb128 0x1
+ 222 00aa 9C       		.byte	0x9c
+ 223 00ab D1000000 		.4byte	0xd1
+ 224 00af 06       		.uleb128 0x6
+ 225 00b0 20000000 		.4byte	.LVL0
+ 226 00b4 34010000 		.4byte	0x134
+ 227 00b8 06       		.uleb128 0x6
+ 228 00b9 24000000 		.4byte	.LVL1
+ 229 00bd 3F010000 		.4byte	0x13f
+ 230 00c1 07       		.uleb128 0x7
+ 231 00c2 2A000000 		.4byte	.LVL2
+ 232 00c6 4A010000 		.4byte	0x14a
+ 233 00ca 08       		.uleb128 0x8
+ 234 00cb 01       		.uleb128 0x1
+ 235 00cc 50       		.byte	0x50
+ 236 00cd 01       		.uleb128 0x1
+ 237 00ce 44       		.byte	0x44
+ 238 00cf 00       		.byte	0
+ 239 00d0 00       		.byte	0
+ 240 00d1 09       		.uleb128 0x9
+ 241 00d2 2B000000 		.4byte	.LASF26
+ 242 00d6 01       		.byte	0x1
+ 243 00d7 14       		.byte	0x14
+ 244 00d8 5D000000 		.4byte	0x5d
+ 245 00dc 00000000 		.4byte	.LFB33
+ 246 00e0 20000000 		.4byte	.LFE33-.LFB33
+ 247 00e4 01       		.uleb128 0x1
+ 248 00e5 9C       		.byte	0x9c
+ 249 00e6 23010000 		.4byte	0x123
+ 250 00ea 06       		.uleb128 0x6
+ 251 00eb 08000000 		.4byte	.LVL3
+ 252 00ef 55010000 		.4byte	0x155
+ 253 00f3 06       		.uleb128 0x6
+ 254 00f4 0C000000 		.4byte	.LVL4
+ 255 00f8 60010000 		.4byte	0x160
+ 256 00fc 0A       		.uleb128 0xa
+ 257 00fd 12000000 		.4byte	.LVL5
+ 258 0101 6B010000 		.4byte	0x16b
+ 259 0105 0F010000 		.4byte	0x10f
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccUwt05v.s 			page 6
+
+
+ 260 0109 08       		.uleb128 0x8
+ 261 010a 01       		.uleb128 0x1
+ 262 010b 50       		.byte	0x50
+ 263 010c 01       		.uleb128 0x1
+ 264 010d 33       		.byte	0x33
+ 265 010e 00       		.byte	0
+ 266 010f 07       		.uleb128 0x7
+ 267 0110 18000000 		.4byte	.LVL6
+ 268 0114 76010000 		.4byte	0x176
+ 269 0118 08       		.uleb128 0x8
+ 270 0119 01       		.uleb128 0x1
+ 271 011a 50       		.byte	0x50
+ 272 011b 05       		.uleb128 0x5
+ 273 011c 03       		.byte	0x3
+ 274 011d 00000000 		.4byte	VAR_IDAC_Handler
+ 275 0121 00       		.byte	0
+ 276 0122 00       		.byte	0
+ 277 0123 0B       		.uleb128 0xb
+ 278 0124 6C010000 		.4byte	.LASF27
+ 279 0128 01       		.byte	0x1
+ 280 0129 08       		.byte	0x8
+ 281 012a 6B000000 		.4byte	0x6b
+ 282 012e 05       		.uleb128 0x5
+ 283 012f 03       		.byte	0x3
+ 284 0130 00000000 		.4byte	I_OUT
+ 285 0134 0C       		.uleb128 0xc
+ 286 0135 0E000000 		.4byte	.LASF14
+ 287 0139 0E000000 		.4byte	.LASF14
+ 288 013d 02       		.byte	0x2
+ 289 013e 54       		.byte	0x54
+ 290 013f 0C       		.uleb128 0xc
+ 291 0140 54010000 		.4byte	.LASF15
+ 292 0144 54010000 		.4byte	.LASF15
+ 293 0148 03       		.byte	0x3
+ 294 0149 39       		.byte	0x39
+ 295 014a 0C       		.uleb128 0xc
+ 296 014b 41000000 		.4byte	.LASF16
+ 297 014f 41000000 		.4byte	.LASF16
+ 298 0153 04       		.byte	0x4
+ 299 0154 EC       		.byte	0xec
+ 300 0155 0C       		.uleb128 0xc
+ 301 0156 37010000 		.4byte	.LASF17
+ 302 015a 37010000 		.4byte	.LASF17
+ 303 015e 02       		.byte	0x2
+ 304 015f 52       		.byte	0x52
+ 305 0160 0C       		.uleb128 0xc
+ 306 0161 1E000000 		.4byte	.LASF18
+ 307 0165 1E000000 		.4byte	.LASF18
+ 308 0169 05       		.byte	0x5
+ 309 016a 29       		.byte	0x29
+ 310 016b 0C       		.uleb128 0xc
+ 311 016c 44010000 		.4byte	.LASF19
+ 312 0170 44010000 		.4byte	.LASF19
+ 313 0174 05       		.byte	0x5
+ 314 0175 2B       		.byte	0x2b
+ 315 0176 0C       		.uleb128 0xc
+ 316 0177 61000000 		.4byte	.LASF20
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccUwt05v.s 			page 7
+
+
+ 317 017b 61000000 		.4byte	.LASF20
+ 318 017f 06       		.byte	0x6
+ 319 0180 18       		.byte	0x18
+ 320 0181 00       		.byte	0
+ 321              		.section	.debug_abbrev,"",%progbits
+ 322              	.Ldebug_abbrev0:
+ 323 0000 01       		.uleb128 0x1
+ 324 0001 11       		.uleb128 0x11
+ 325 0002 01       		.byte	0x1
+ 326 0003 25       		.uleb128 0x25
+ 327 0004 0E       		.uleb128 0xe
+ 328 0005 13       		.uleb128 0x13
+ 329 0006 0B       		.uleb128 0xb
+ 330 0007 03       		.uleb128 0x3
+ 331 0008 0E       		.uleb128 0xe
+ 332 0009 1B       		.uleb128 0x1b
+ 333 000a 0E       		.uleb128 0xe
+ 334 000b 55       		.uleb128 0x55
+ 335 000c 17       		.uleb128 0x17
+ 336 000d 11       		.uleb128 0x11
+ 337 000e 01       		.uleb128 0x1
+ 338 000f 10       		.uleb128 0x10
+ 339 0010 17       		.uleb128 0x17
+ 340 0011 00       		.byte	0
+ 341 0012 00       		.byte	0
+ 342 0013 02       		.uleb128 0x2
+ 343 0014 24       		.uleb128 0x24
+ 344 0015 00       		.byte	0
+ 345 0016 0B       		.uleb128 0xb
+ 346 0017 0B       		.uleb128 0xb
+ 347 0018 3E       		.uleb128 0x3e
+ 348 0019 0B       		.uleb128 0xb
+ 349 001a 03       		.uleb128 0x3
+ 350 001b 0E       		.uleb128 0xe
+ 351 001c 00       		.byte	0
+ 352 001d 00       		.byte	0
+ 353 001e 03       		.uleb128 0x3
+ 354 001f 24       		.uleb128 0x24
+ 355 0020 00       		.byte	0
+ 356 0021 0B       		.uleb128 0xb
+ 357 0022 0B       		.uleb128 0xb
+ 358 0023 3E       		.uleb128 0x3e
+ 359 0024 0B       		.uleb128 0xb
+ 360 0025 03       		.uleb128 0x3
+ 361 0026 08       		.uleb128 0x8
+ 362 0027 00       		.byte	0
+ 363 0028 00       		.byte	0
+ 364 0029 04       		.uleb128 0x4
+ 365 002a 16       		.uleb128 0x16
+ 366 002b 00       		.byte	0
+ 367 002c 03       		.uleb128 0x3
+ 368 002d 0E       		.uleb128 0xe
+ 369 002e 3A       		.uleb128 0x3a
+ 370 002f 0B       		.uleb128 0xb
+ 371 0030 3B       		.uleb128 0x3b
+ 372 0031 05       		.uleb128 0x5
+ 373 0032 49       		.uleb128 0x49
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccUwt05v.s 			page 8
+
+
+ 374 0033 13       		.uleb128 0x13
+ 375 0034 00       		.byte	0
+ 376 0035 00       		.byte	0
+ 377 0036 05       		.uleb128 0x5
+ 378 0037 2E       		.uleb128 0x2e
+ 379 0038 01       		.byte	0x1
+ 380 0039 3F       		.uleb128 0x3f
+ 381 003a 19       		.uleb128 0x19
+ 382 003b 03       		.uleb128 0x3
+ 383 003c 0E       		.uleb128 0xe
+ 384 003d 3A       		.uleb128 0x3a
+ 385 003e 0B       		.uleb128 0xb
+ 386 003f 3B       		.uleb128 0x3b
+ 387 0040 0B       		.uleb128 0xb
+ 388 0041 27       		.uleb128 0x27
+ 389 0042 19       		.uleb128 0x19
+ 390 0043 11       		.uleb128 0x11
+ 391 0044 01       		.uleb128 0x1
+ 392 0045 12       		.uleb128 0x12
+ 393 0046 06       		.uleb128 0x6
+ 394 0047 40       		.uleb128 0x40
+ 395 0048 18       		.uleb128 0x18
+ 396 0049 9742     		.uleb128 0x2117
+ 397 004b 19       		.uleb128 0x19
+ 398 004c 01       		.uleb128 0x1
+ 399 004d 13       		.uleb128 0x13
+ 400 004e 00       		.byte	0
+ 401 004f 00       		.byte	0
+ 402 0050 06       		.uleb128 0x6
+ 403 0051 898201   		.uleb128 0x4109
+ 404 0054 00       		.byte	0
+ 405 0055 11       		.uleb128 0x11
+ 406 0056 01       		.uleb128 0x1
+ 407 0057 31       		.uleb128 0x31
+ 408 0058 13       		.uleb128 0x13
+ 409 0059 00       		.byte	0
+ 410 005a 00       		.byte	0
+ 411 005b 07       		.uleb128 0x7
+ 412 005c 898201   		.uleb128 0x4109
+ 413 005f 01       		.byte	0x1
+ 414 0060 11       		.uleb128 0x11
+ 415 0061 01       		.uleb128 0x1
+ 416 0062 31       		.uleb128 0x31
+ 417 0063 13       		.uleb128 0x13
+ 418 0064 00       		.byte	0
+ 419 0065 00       		.byte	0
+ 420 0066 08       		.uleb128 0x8
+ 421 0067 8A8201   		.uleb128 0x410a
+ 422 006a 00       		.byte	0
+ 423 006b 02       		.uleb128 0x2
+ 424 006c 18       		.uleb128 0x18
+ 425 006d 9142     		.uleb128 0x2111
+ 426 006f 18       		.uleb128 0x18
+ 427 0070 00       		.byte	0
+ 428 0071 00       		.byte	0
+ 429 0072 09       		.uleb128 0x9
+ 430 0073 2E       		.uleb128 0x2e
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccUwt05v.s 			page 9
+
+
+ 431 0074 01       		.byte	0x1
+ 432 0075 3F       		.uleb128 0x3f
+ 433 0076 19       		.uleb128 0x19
+ 434 0077 03       		.uleb128 0x3
+ 435 0078 0E       		.uleb128 0xe
+ 436 0079 3A       		.uleb128 0x3a
+ 437 007a 0B       		.uleb128 0xb
+ 438 007b 3B       		.uleb128 0x3b
+ 439 007c 0B       		.uleb128 0xb
+ 440 007d 49       		.uleb128 0x49
+ 441 007e 13       		.uleb128 0x13
+ 442 007f 8701     		.uleb128 0x87
+ 443 0081 19       		.uleb128 0x19
+ 444 0082 11       		.uleb128 0x11
+ 445 0083 01       		.uleb128 0x1
+ 446 0084 12       		.uleb128 0x12
+ 447 0085 06       		.uleb128 0x6
+ 448 0086 40       		.uleb128 0x40
+ 449 0087 18       		.uleb128 0x18
+ 450 0088 9742     		.uleb128 0x2117
+ 451 008a 19       		.uleb128 0x19
+ 452 008b 01       		.uleb128 0x1
+ 453 008c 13       		.uleb128 0x13
+ 454 008d 00       		.byte	0
+ 455 008e 00       		.byte	0
+ 456 008f 0A       		.uleb128 0xa
+ 457 0090 898201   		.uleb128 0x4109
+ 458 0093 01       		.byte	0x1
+ 459 0094 11       		.uleb128 0x11
+ 460 0095 01       		.uleb128 0x1
+ 461 0096 31       		.uleb128 0x31
+ 462 0097 13       		.uleb128 0x13
+ 463 0098 01       		.uleb128 0x1
+ 464 0099 13       		.uleb128 0x13
+ 465 009a 00       		.byte	0
+ 466 009b 00       		.byte	0
+ 467 009c 0B       		.uleb128 0xb
+ 468 009d 34       		.uleb128 0x34
+ 469 009e 00       		.byte	0
+ 470 009f 03       		.uleb128 0x3
+ 471 00a0 0E       		.uleb128 0xe
+ 472 00a1 3A       		.uleb128 0x3a
+ 473 00a2 0B       		.uleb128 0xb
+ 474 00a3 3B       		.uleb128 0x3b
+ 475 00a4 0B       		.uleb128 0xb
+ 476 00a5 49       		.uleb128 0x49
+ 477 00a6 13       		.uleb128 0x13
+ 478 00a7 3F       		.uleb128 0x3f
+ 479 00a8 19       		.uleb128 0x19
+ 480 00a9 02       		.uleb128 0x2
+ 481 00aa 18       		.uleb128 0x18
+ 482 00ab 00       		.byte	0
+ 483 00ac 00       		.byte	0
+ 484 00ad 0C       		.uleb128 0xc
+ 485 00ae 2E       		.uleb128 0x2e
+ 486 00af 00       		.byte	0
+ 487 00b0 3F       		.uleb128 0x3f
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccUwt05v.s 			page 10
+
+
+ 488 00b1 19       		.uleb128 0x19
+ 489 00b2 3C       		.uleb128 0x3c
+ 490 00b3 19       		.uleb128 0x19
+ 491 00b4 6E       		.uleb128 0x6e
+ 492 00b5 0E       		.uleb128 0xe
+ 493 00b6 03       		.uleb128 0x3
+ 494 00b7 0E       		.uleb128 0xe
+ 495 00b8 3A       		.uleb128 0x3a
+ 496 00b9 0B       		.uleb128 0xb
+ 497 00ba 3B       		.uleb128 0x3b
+ 498 00bb 0B       		.uleb128 0xb
+ 499 00bc 00       		.byte	0
+ 500 00bd 00       		.byte	0
+ 501 00be 00       		.byte	0
+ 502              		.section	.debug_aranges,"",%progbits
+ 503 0000 24000000 		.4byte	0x24
+ 504 0004 0200     		.2byte	0x2
+ 505 0006 00000000 		.4byte	.Ldebug_info0
+ 506 000a 04       		.byte	0x4
+ 507 000b 00       		.byte	0
+ 508 000c 0000     		.2byte	0
+ 509 000e 0000     		.2byte	0
+ 510 0010 00000000 		.4byte	.LFB32
+ 511 0014 30000000 		.4byte	.LFE32-.LFB32
+ 512 0018 00000000 		.4byte	.LFB33
+ 513 001c 20000000 		.4byte	.LFE33-.LFB33
+ 514 0020 00000000 		.4byte	0
+ 515 0024 00000000 		.4byte	0
+ 516              		.section	.debug_ranges,"",%progbits
+ 517              	.Ldebug_ranges0:
+ 518 0000 00000000 		.4byte	.LFB32
+ 519 0004 30000000 		.4byte	.LFE32
+ 520 0008 00000000 		.4byte	.LFB33
+ 521 000c 20000000 		.4byte	.LFE33
+ 522 0010 00000000 		.4byte	0
+ 523 0014 00000000 		.4byte	0
+ 524              		.section	.debug_line,"",%progbits
+ 525              	.Ldebug_line0:
+ 526 0000 B4000000 		.section	.debug_str,"MS",%progbits,1
+ 526      02008400 
+ 526      00000201 
+ 526      FB0E0D00 
+ 526      01010101 
+ 527              	.LASF6:
+ 528 0000 6C6F6E67 		.ascii	"long long int\000"
+ 528      206C6F6E 
+ 528      6720696E 
+ 528      7400
+ 529              	.LASF14:
+ 530 000e 49444143 		.ascii	"IDAC_1_SetValue\000"
+ 530      5F315F53 
+ 530      65745661 
+ 530      6C756500 
+ 531              	.LASF18:
+ 532 001e 4F70616D 		.ascii	"Opamp1_Start\000"
+ 532      70315F53 
+ 532      74617274 
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccUwt05v.s 			page 11
+
+
+ 532      00
+ 533              	.LASF26:
+ 534 002b 6D61696E 		.ascii	"main\000"
+ 534      00
+ 535              	.LASF25:
+ 536 0030 5641525F 		.ascii	"VAR_IDAC_Handler\000"
+ 536      49444143 
+ 536      5F48616E 
+ 536      646C6572 
+ 536      00
+ 537              	.LASF16:
+ 538 0041 43794465 		.ascii	"CyDelay\000"
+ 538      6C617900 
+ 539              	.LASF24:
+ 540 0049 75696E74 		.ascii	"uint8\000"
+ 540      3800
+ 541              	.LASF5:
+ 542 004f 6C6F6E67 		.ascii	"long unsigned int\000"
+ 542      20756E73 
+ 542      69676E65 
+ 542      6420696E 
+ 542      7400
+ 543              	.LASF20:
+ 544 0061 5641525F 		.ascii	"VAR_IDAC_StartEx\000"
+ 544      49444143 
+ 544      5F537461 
+ 544      72744578 
+ 544      00
+ 545              	.LASF7:
+ 546 0072 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 546      206C6F6E 
+ 546      6720756E 
+ 546      7369676E 
+ 546      65642069 
+ 547              	.LASF22:
+ 548 0089 6D61696E 		.ascii	"mainVDAC.c\000"
+ 548      56444143 
+ 548      2E6300
+ 549              	.LASF9:
+ 550 0094 666C6F61 		.ascii	"float\000"
+ 550      7400
+ 551              	.LASF1:
+ 552 009a 756E7369 		.ascii	"unsigned char\000"
+ 552      676E6564 
+ 552      20636861 
+ 552      7200
+ 553              	.LASF11:
+ 554 00a8 63686172 		.ascii	"char\000"
+ 554      00
+ 555              	.LASF23:
+ 556 00ad 443A5C45 		.ascii	"D:\\ESCRITORIO\\Tesis MIB\\Proyecto de Tesis\\elect"
+ 556      53435249 
+ 556      544F5249 
+ 556      4F5C5465 
+ 556      73697320 
+ 557 00dc 726F6573 		.ascii	"roestimulador\\PSoC\\electroestimulador\\Pruebas el"
+ 557      74696D75 
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccUwt05v.s 			page 12
+
+
+ 557      6C61646F 
+ 557      725C5053 
+ 557      6F435C65 
+ 558 010c 65637472 		.ascii	"ectroestimulador\\prueba IDAC+OA=VDAC.cydsn\000"
+ 558      6F657374 
+ 558      696D756C 
+ 558      61646F72 
+ 558      5C707275 
+ 559              	.LASF17:
+ 560 0137 49444143 		.ascii	"IDAC_1_Start\000"
+ 560      5F315F53 
+ 560      74617274 
+ 560      00
+ 561              	.LASF19:
+ 562 0144 4F70616D 		.ascii	"Opamp1_SetPower\000"
+ 562      70315F53 
+ 562      6574506F 
+ 562      77657200 
+ 563              	.LASF15:
+ 564 0154 5357315F 		.ascii	"SW1_IDAC_ClearInterrupt\000"
+ 564      49444143 
+ 564      5F436C65 
+ 564      6172496E 
+ 564      74657272 
+ 565              	.LASF27:
+ 566 016c 495F4F55 		.ascii	"I_OUT\000"
+ 566      5400
+ 567              	.LASF10:
+ 568 0172 646F7562 		.ascii	"double\000"
+ 568      6C6500
+ 569              	.LASF4:
+ 570 0179 6C6F6E67 		.ascii	"long int\000"
+ 570      20696E74 
+ 570      00
+ 571              	.LASF21:
+ 572 0182 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 572      43313120 
+ 572      352E342E 
+ 572      31203230 
+ 572      31363036 
+ 573 01b5 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 573      20726576 
+ 573      6973696F 
+ 573      6E203233 
+ 573      37373135 
+ 574 01e8 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 574      66756E63 
+ 574      74696F6E 
+ 574      2D736563 
+ 574      74696F6E 
+ 575              	.LASF3:
+ 576 0210 73686F72 		.ascii	"short unsigned int\000"
+ 576      7420756E 
+ 576      7369676E 
+ 576      65642069 
+ 576      6E7400
+ 577              	.LASF0:
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccUwt05v.s 			page 13
+
+
+ 578 0223 7369676E 		.ascii	"signed char\000"
+ 578      65642063 
+ 578      68617200 
+ 579              	.LASF12:
+ 580 022f 6C6F6E67 		.ascii	"long double\000"
+ 580      20646F75 
+ 580      626C6500 
+ 581              	.LASF2:
+ 582 023b 73686F72 		.ascii	"short int\000"
+ 582      7420696E 
+ 582      7400
+ 583              	.LASF8:
+ 584 0245 756E7369 		.ascii	"unsigned int\000"
+ 584      676E6564 
+ 584      20696E74 
+ 584      00
+ 585              	.LASF13:
+ 586 0252 73697A65 		.ascii	"sizetype\000"
+ 586      74797065 
+ 586      00
+ 587              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

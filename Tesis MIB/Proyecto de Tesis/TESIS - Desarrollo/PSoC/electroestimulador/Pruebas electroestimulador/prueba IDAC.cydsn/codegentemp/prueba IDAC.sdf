@@ -1,0 +1,23 @@
+(DELAYFILE
+ (SDFVERSION "IEEE 1497 4.0")
+ (DATE "2020-12-19T11:17:35Z")
+ (DESIGN "prueba IDAC")
+ (VENDOR "Cypress Semiconductor")
+ (PROGRAM "PSoC Creator")
+ (VERSION " 4.4")
+ (DIVIDER .)
+ (TIMESCALE 1 ns)
+ (CELL
+  (CELLTYPE "prueba IDAC")
+  (INSTANCE *)
+  (DELAY
+   (ABSOLUTE
+    (INTERCONNECT ClockBlock.hfclk VAR_IDAC.clock (0.000:0.000:0.000))
+    (INTERCONNECT SW1_IDAC.interrupt VAR_IDAC.interrupt (1.000:1.000:1.000))
+    (INTERCONNECT __ONE__.q Iout_1\(0\).pin_input (0.000:0.000:0.000))
+    (INTERCONNECT __ONE__.q \\IDAC_1\:cy_psoc4_idac\\.en (0.000:0.000:0.000))
+    (INTERCONNECT SW1_IDAC\(0\)_PAD SW1_IDAC\(0\).pad_in (0.000:0.000:0.000))
+   )
+  )
+ )
+)

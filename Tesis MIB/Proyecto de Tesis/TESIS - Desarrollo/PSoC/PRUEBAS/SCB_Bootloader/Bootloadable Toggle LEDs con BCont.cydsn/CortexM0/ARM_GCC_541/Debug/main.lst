@@ -1,0 +1,467 @@
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccdx6ylf.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m0
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 6
+  11              		.eabi_attribute 34, 0
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"main.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.CONT_INT_Handler,"ax",%progbits
+  20              		.align	2
+  21              		.global	CONT_INT_Handler
+  22              		.code	16
+  23              		.thumb_func
+  24              		.type	CONT_INT_Handler, %function
+  25              	CONT_INT_Handler:
+  26              	.LFB32:
+  27              		.file 1 "main.c"
+   1:main.c        **** /******************************************************************************
+   2:main.c        **** * Project Name		: Bootloadable Toggle LED con M0 ISR
+   3:main.c        **** * File Name			: main.c
+   4:main.c        **** * Device Used		: CY8C4245AXI-483
+   5:main.c        **** * Software Used		: PSoC Creator 4.4
+   6:main.c        **** * Related Hardware	: CY8CKIT-049-42xx PSoC 4 Prototyping Kit */
+   7:main.c        **** /******************************************************************************
+   8:main.c        **** *                           THEORY OF OPERATION
+   9:main.c        **** * La nada misma. 
+  10:main.c        **** * Default UART Port Configuration for bootloading the PSoC 4 in CY8CKIT-049-42xx
+  11:main.c        **** * Baud Rate : 115200 bps
+  12:main.c        **** * Data Bits : 8
+  13:main.c        **** * Stop Bits : 1
+  14:main.c        **** * Parity    : None
+  15:main.c        **** ******************************************************************************/
+  16:main.c        **** #include <project.h>
+  17:main.c        **** 
+  18:main.c        **** CY_ISR(CONT_INT_Handler)
+  19:main.c        **** {
+  28              		.loc 1 19 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 1, uses_anonymous_args = 0
+  32 0000 80B5     		push	{r7, lr}
+  33              		.cfi_def_cfa_offset 8
+  34              		.cfi_offset 7, -8
+  35              		.cfi_offset 14, -4
+  36 0002 00AF     		add	r7, sp, #0
+  37              		.cfi_def_cfa_register 7
+  20:main.c        ****     PinEXT2_Write(~PinEXT2_Read());
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccdx6ylf.s 			page 2
+
+
+  38              		.loc 1 20 0
+  39 0004 FFF7FEFF 		bl	PinEXT2_Read
+  40 0008 0300     		movs	r3, r0
+  41 000a DB43     		mvns	r3, r3
+  42 000c DBB2     		uxtb	r3, r3
+  43 000e 1800     		movs	r0, r3
+  44 0010 FFF7FEFF 		bl	PinEXT2_Write
+  21:main.c        ****     CyDelay(250);
+  45              		.loc 1 21 0
+  46 0014 FA20     		movs	r0, #250
+  47 0016 FFF7FEFF 		bl	CyDelay
+  22:main.c        **** }
+  48              		.loc 1 22 0
+  49 001a C046     		nop
+  50 001c BD46     		mov	sp, r7
+  51              		@ sp needed
+  52 001e 80BD     		pop	{r7, pc}
+  53              		.cfi_endproc
+  54              	.LFE32:
+  55              		.size	CONT_INT_Handler, .-CONT_INT_Handler
+  56              		.section	.text.main,"ax",%progbits
+  57              		.align	2
+  58              		.global	main
+  59              		.code	16
+  60              		.thumb_func
+  61              		.type	main, %function
+  62              	main:
+  63              	.LFB33:
+  23:main.c        **** 
+  24:main.c        **** int main()
+  25:main.c        **** {
+  64              		.loc 1 25 0
+  65              		.cfi_startproc
+  66              		@ args = 0, pretend = 0, frame = 0
+  67              		@ frame_needed = 1, uses_anonymous_args = 0
+  68 0000 80B5     		push	{r7, lr}
+  69              		.cfi_def_cfa_offset 8
+  70              		.cfi_offset 7, -8
+  71              		.cfi_offset 14, -4
+  72 0002 00AF     		add	r7, sp, #0
+  73              		.cfi_def_cfa_register 7
+  26:main.c        ****     CyGlobalIntEnable;
+  74              		.loc 1 26 0
+  75              		.syntax divided
+  76              	@ 26 "main.c" 1
+  77 0004 62B6     		CPSIE   i
+  78              	@ 0 "" 2
+  27:main.c        ****     CONT_INT_StartEx(CONT_INT_Handler);
+  79              		.loc 1 27 0
+  80              		.thumb
+  81              		.syntax unified
+  82 0006 024B     		ldr	r3, .L4
+  83 0008 1800     		movs	r0, r3
+  84 000a FFF7FEFF 		bl	CONT_INT_StartEx
+  85              	.L3:
+  28:main.c        **** 	while(1)
+  29:main.c        ****     {}
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccdx6ylf.s 			page 3
+
+
+  86              		.loc 1 29 0 discriminator 1
+  87 000e FEE7     		b	.L3
+  88              	.L5:
+  89              		.align	2
+  90              	.L4:
+  91 0010 00000000 		.word	CONT_INT_Handler
+  92              		.cfi_endproc
+  93              	.LFE33:
+  94              		.size	main, .-main
+  95              		.text
+  96              	.Letext0:
+  97              		.section	.debug_info,"",%progbits
+  98              	.Ldebug_info0:
+  99 0000 B1000000 		.4byte	0xb1
+ 100 0004 0400     		.2byte	0x4
+ 101 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 102 000a 04       		.byte	0x4
+ 103 000b 01       		.uleb128 0x1
+ 104 000c 41010000 		.4byte	.LASF16
+ 105 0010 0C       		.byte	0xc
+ 106 0011 1B000000 		.4byte	.LASF17
+ 107 0015 27000000 		.4byte	.LASF18
+ 108 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 109 001d 00000000 		.4byte	0
+ 110 0021 00000000 		.4byte	.Ldebug_line0
+ 111 0025 02       		.uleb128 0x2
+ 112 0026 01       		.byte	0x1
+ 113 0027 06       		.byte	0x6
+ 114 0028 1F010000 		.4byte	.LASF0
+ 115 002c 02       		.uleb128 0x2
+ 116 002d 01       		.byte	0x1
+ 117 002e 08       		.byte	0x8
+ 118 002f E9000000 		.4byte	.LASF1
+ 119 0033 02       		.uleb128 0x2
+ 120 0034 02       		.byte	0x2
+ 121 0035 05       		.byte	0x5
+ 122 0036 37010000 		.4byte	.LASF2
+ 123 003a 02       		.uleb128 0x2
+ 124 003b 02       		.byte	0x2
+ 125 003c 07       		.byte	0x7
+ 126 003d 0C010000 		.4byte	.LASF3
+ 127 0041 02       		.uleb128 0x2
+ 128 0042 04       		.byte	0x4
+ 129 0043 05       		.byte	0x5
+ 130 0044 FC000000 		.4byte	.LASF4
+ 131 0048 02       		.uleb128 0x2
+ 132 0049 04       		.byte	0x4
+ 133 004a 07       		.byte	0x7
+ 134 004b BA000000 		.4byte	.LASF5
+ 135 004f 02       		.uleb128 0x2
+ 136 0050 08       		.byte	0x8
+ 137 0051 05       		.byte	0x5
+ 138 0052 00000000 		.4byte	.LASF6
+ 139 0056 02       		.uleb128 0x2
+ 140 0057 08       		.byte	0x8
+ 141 0058 07       		.byte	0x7
+ 142 0059 CC000000 		.4byte	.LASF7
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccdx6ylf.s 			page 4
+
+
+ 143 005d 03       		.uleb128 0x3
+ 144 005e 04       		.byte	0x4
+ 145 005f 05       		.byte	0x5
+ 146 0060 696E7400 		.ascii	"int\000"
+ 147 0064 02       		.uleb128 0x2
+ 148 0065 04       		.byte	0x4
+ 149 0066 07       		.byte	0x7
+ 150 0067 0E000000 		.4byte	.LASF8
+ 151 006b 02       		.uleb128 0x2
+ 152 006c 04       		.byte	0x4
+ 153 006d 04       		.byte	0x4
+ 154 006e E3000000 		.4byte	.LASF9
+ 155 0072 02       		.uleb128 0x2
+ 156 0073 08       		.byte	0x8
+ 157 0074 04       		.byte	0x4
+ 158 0075 05010000 		.4byte	.LASF10
+ 159 0079 02       		.uleb128 0x2
+ 160 007a 01       		.byte	0x1
+ 161 007b 08       		.byte	0x8
+ 162 007c F7000000 		.4byte	.LASF11
+ 163 0080 02       		.uleb128 0x2
+ 164 0081 08       		.byte	0x8
+ 165 0082 04       		.byte	0x4
+ 166 0083 2B010000 		.4byte	.LASF12
+ 167 0087 02       		.uleb128 0x2
+ 168 0088 04       		.byte	0x4
+ 169 0089 07       		.byte	0x7
+ 170 008a CF010000 		.4byte	.LASF13
+ 171 008e 04       		.uleb128 0x4
+ 172 008f A9000000 		.4byte	.LASF14
+ 173 0093 01       		.byte	0x1
+ 174 0094 12       		.byte	0x12
+ 175 0095 00000000 		.4byte	.LFB32
+ 176 0099 20000000 		.4byte	.LFE32-.LFB32
+ 177 009d 01       		.uleb128 0x1
+ 178 009e 9C       		.byte	0x9c
+ 179 009f 05       		.uleb128 0x5
+ 180 00a0 22000000 		.4byte	.LASF15
+ 181 00a4 01       		.byte	0x1
+ 182 00a5 18       		.byte	0x18
+ 183 00a6 5D000000 		.4byte	0x5d
+ 184 00aa 00000000 		.4byte	.LFB33
+ 185 00ae 14000000 		.4byte	.LFE33-.LFB33
+ 186 00b2 01       		.uleb128 0x1
+ 187 00b3 9C       		.byte	0x9c
+ 188 00b4 00       		.byte	0
+ 189              		.section	.debug_abbrev,"",%progbits
+ 190              	.Ldebug_abbrev0:
+ 191 0000 01       		.uleb128 0x1
+ 192 0001 11       		.uleb128 0x11
+ 193 0002 01       		.byte	0x1
+ 194 0003 25       		.uleb128 0x25
+ 195 0004 0E       		.uleb128 0xe
+ 196 0005 13       		.uleb128 0x13
+ 197 0006 0B       		.uleb128 0xb
+ 198 0007 03       		.uleb128 0x3
+ 199 0008 0E       		.uleb128 0xe
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccdx6ylf.s 			page 5
+
+
+ 200 0009 1B       		.uleb128 0x1b
+ 201 000a 0E       		.uleb128 0xe
+ 202 000b 55       		.uleb128 0x55
+ 203 000c 17       		.uleb128 0x17
+ 204 000d 11       		.uleb128 0x11
+ 205 000e 01       		.uleb128 0x1
+ 206 000f 10       		.uleb128 0x10
+ 207 0010 17       		.uleb128 0x17
+ 208 0011 00       		.byte	0
+ 209 0012 00       		.byte	0
+ 210 0013 02       		.uleb128 0x2
+ 211 0014 24       		.uleb128 0x24
+ 212 0015 00       		.byte	0
+ 213 0016 0B       		.uleb128 0xb
+ 214 0017 0B       		.uleb128 0xb
+ 215 0018 3E       		.uleb128 0x3e
+ 216 0019 0B       		.uleb128 0xb
+ 217 001a 03       		.uleb128 0x3
+ 218 001b 0E       		.uleb128 0xe
+ 219 001c 00       		.byte	0
+ 220 001d 00       		.byte	0
+ 221 001e 03       		.uleb128 0x3
+ 222 001f 24       		.uleb128 0x24
+ 223 0020 00       		.byte	0
+ 224 0021 0B       		.uleb128 0xb
+ 225 0022 0B       		.uleb128 0xb
+ 226 0023 3E       		.uleb128 0x3e
+ 227 0024 0B       		.uleb128 0xb
+ 228 0025 03       		.uleb128 0x3
+ 229 0026 08       		.uleb128 0x8
+ 230 0027 00       		.byte	0
+ 231 0028 00       		.byte	0
+ 232 0029 04       		.uleb128 0x4
+ 233 002a 2E       		.uleb128 0x2e
+ 234 002b 00       		.byte	0
+ 235 002c 3F       		.uleb128 0x3f
+ 236 002d 19       		.uleb128 0x19
+ 237 002e 03       		.uleb128 0x3
+ 238 002f 0E       		.uleb128 0xe
+ 239 0030 3A       		.uleb128 0x3a
+ 240 0031 0B       		.uleb128 0xb
+ 241 0032 3B       		.uleb128 0x3b
+ 242 0033 0B       		.uleb128 0xb
+ 243 0034 27       		.uleb128 0x27
+ 244 0035 19       		.uleb128 0x19
+ 245 0036 11       		.uleb128 0x11
+ 246 0037 01       		.uleb128 0x1
+ 247 0038 12       		.uleb128 0x12
+ 248 0039 06       		.uleb128 0x6
+ 249 003a 40       		.uleb128 0x40
+ 250 003b 18       		.uleb128 0x18
+ 251 003c 9642     		.uleb128 0x2116
+ 252 003e 19       		.uleb128 0x19
+ 253 003f 00       		.byte	0
+ 254 0040 00       		.byte	0
+ 255 0041 05       		.uleb128 0x5
+ 256 0042 2E       		.uleb128 0x2e
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccdx6ylf.s 			page 6
+
+
+ 257 0043 00       		.byte	0
+ 258 0044 3F       		.uleb128 0x3f
+ 259 0045 19       		.uleb128 0x19
+ 260 0046 03       		.uleb128 0x3
+ 261 0047 0E       		.uleb128 0xe
+ 262 0048 3A       		.uleb128 0x3a
+ 263 0049 0B       		.uleb128 0xb
+ 264 004a 3B       		.uleb128 0x3b
+ 265 004b 0B       		.uleb128 0xb
+ 266 004c 49       		.uleb128 0x49
+ 267 004d 13       		.uleb128 0x13
+ 268 004e 11       		.uleb128 0x11
+ 269 004f 01       		.uleb128 0x1
+ 270 0050 12       		.uleb128 0x12
+ 271 0051 06       		.uleb128 0x6
+ 272 0052 40       		.uleb128 0x40
+ 273 0053 18       		.uleb128 0x18
+ 274 0054 9642     		.uleb128 0x2116
+ 275 0056 19       		.uleb128 0x19
+ 276 0057 00       		.byte	0
+ 277 0058 00       		.byte	0
+ 278 0059 00       		.byte	0
+ 279              		.section	.debug_aranges,"",%progbits
+ 280 0000 24000000 		.4byte	0x24
+ 281 0004 0200     		.2byte	0x2
+ 282 0006 00000000 		.4byte	.Ldebug_info0
+ 283 000a 04       		.byte	0x4
+ 284 000b 00       		.byte	0
+ 285 000c 0000     		.2byte	0
+ 286 000e 0000     		.2byte	0
+ 287 0010 00000000 		.4byte	.LFB32
+ 288 0014 20000000 		.4byte	.LFE32-.LFB32
+ 289 0018 00000000 		.4byte	.LFB33
+ 290 001c 14000000 		.4byte	.LFE33-.LFB33
+ 291 0020 00000000 		.4byte	0
+ 292 0024 00000000 		.4byte	0
+ 293              		.section	.debug_ranges,"",%progbits
+ 294              	.Ldebug_ranges0:
+ 295 0000 00000000 		.4byte	.LFB32
+ 296 0004 20000000 		.4byte	.LFE32
+ 297 0008 00000000 		.4byte	.LFB33
+ 298 000c 14000000 		.4byte	.LFE33
+ 299 0010 00000000 		.4byte	0
+ 300 0014 00000000 		.4byte	0
+ 301              		.section	.debug_line,"",%progbits
+ 302              	.Ldebug_line0:
+ 303 0000 4B000000 		.section	.debug_str,"MS",%progbits,1
+ 303      02001D00 
+ 303      00000201 
+ 303      FB0E0D00 
+ 303      01010101 
+ 304              	.LASF6:
+ 305 0000 6C6F6E67 		.ascii	"long long int\000"
+ 305      206C6F6E 
+ 305      6720696E 
+ 305      7400
+ 306              	.LASF8:
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccdx6ylf.s 			page 7
+
+
+ 307 000e 756E7369 		.ascii	"unsigned int\000"
+ 307      676E6564 
+ 307      20696E74 
+ 307      00
+ 308              	.LASF17:
+ 309 001b 6D61696E 		.ascii	"main.c\000"
+ 309      2E6300
+ 310              	.LASF15:
+ 311 0022 6D61696E 		.ascii	"main\000"
+ 311      00
+ 312              	.LASF18:
+ 313 0027 443A5C45 		.ascii	"D:\\ESCRITORIO\\Tesis MIB\\Proyecto de Tesis\\elect"
+ 313      53435249 
+ 313      544F5249 
+ 313      4F5C5465 
+ 313      73697320 
+ 314 0056 726F6573 		.ascii	"roestimulador\\PSoC\\PRUEBAS\\SCB_Bootloader\\Bootl"
+ 314      74696D75 
+ 314      6C61646F 
+ 314      725C5053 
+ 314      6F435C50 
+ 315 0085 6F616461 		.ascii	"oadable Toggle LEDs con BCont.cydsn\000"
+ 315      626C6520 
+ 315      546F6767 
+ 315      6C65204C 
+ 315      45447320 
+ 316              	.LASF14:
+ 317 00a9 434F4E54 		.ascii	"CONT_INT_Handler\000"
+ 317      5F494E54 
+ 317      5F48616E 
+ 317      646C6572 
+ 317      00
+ 318              	.LASF5:
+ 319 00ba 6C6F6E67 		.ascii	"long unsigned int\000"
+ 319      20756E73 
+ 319      69676E65 
+ 319      6420696E 
+ 319      7400
+ 320              	.LASF7:
+ 321 00cc 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 321      206C6F6E 
+ 321      6720756E 
+ 321      7369676E 
+ 321      65642069 
+ 322              	.LASF9:
+ 323 00e3 666C6F61 		.ascii	"float\000"
+ 323      7400
+ 324              	.LASF1:
+ 325 00e9 756E7369 		.ascii	"unsigned char\000"
+ 325      676E6564 
+ 325      20636861 
+ 325      7200
+ 326              	.LASF11:
+ 327 00f7 63686172 		.ascii	"char\000"
+ 327      00
+ 328              	.LASF4:
+ 329 00fc 6C6F6E67 		.ascii	"long int\000"
+ARM GAS  C:\Users\Jeremias\AppData\Local\Temp\ccdx6ylf.s 			page 8
+
+
+ 329      20696E74 
+ 329      00
+ 330              	.LASF10:
+ 331 0105 646F7562 		.ascii	"double\000"
+ 331      6C6500
+ 332              	.LASF3:
+ 333 010c 73686F72 		.ascii	"short unsigned int\000"
+ 333      7420756E 
+ 333      7369676E 
+ 333      65642069 
+ 333      6E7400
+ 334              	.LASF0:
+ 335 011f 7369676E 		.ascii	"signed char\000"
+ 335      65642063 
+ 335      68617200 
+ 336              	.LASF12:
+ 337 012b 6C6F6E67 		.ascii	"long double\000"
+ 337      20646F75 
+ 337      626C6500 
+ 338              	.LASF2:
+ 339 0137 73686F72 		.ascii	"short int\000"
+ 339      7420696E 
+ 339      7400
+ 340              	.LASF16:
+ 341 0141 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 341      43313120 
+ 341      352E342E 
+ 341      31203230 
+ 341      31363036 
+ 342 0174 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 342      20726576 
+ 342      6973696F 
+ 342      6E203233 
+ 342      37373135 
+ 343 01a7 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 343      66756E63 
+ 343      74696F6E 
+ 343      2D736563 
+ 343      74696F6E 
+ 344              	.LASF13:
+ 345 01cf 73697A65 		.ascii	"sizetype\000"
+ 345      74797065 
+ 345      00
+ 346              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

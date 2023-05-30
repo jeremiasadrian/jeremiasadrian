@@ -1,0 +1,9 @@
+# Prueba PWM con TCPWM
+# 2020-12-21 21:37:30Z
+
+set_location "ClockGenBlock" m0s8clockgenblockcell -1 -1 0
+set_io "PWM_POS(0)" iocell 1 0
+set_io "Pin_SW(0)" iocell 0 7
+set_io "PWM_NEG(0)" iocell 1 1
+set_io "Pin_INT_CC(0)" iocell 1 5
+set_io "Pin_INT_TC(0)" iocell 1 6

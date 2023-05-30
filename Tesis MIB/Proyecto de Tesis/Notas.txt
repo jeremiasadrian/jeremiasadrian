@@ -1,0 +1,39 @@
+ver Ingeniería Bionica.
+Ver Centro de Diseño y Manofactura de la Facultad de Ingeniería (Mexico)
+Ver Federacion Internacional de Robotica
+Ver materiales de memoria de forma (alambre muscular)
+Ver Tecnología Háptica
+
+Papers:
+
+1: fundamentacion.
+2: conceptos basicos.
+3: aplicaciones.
+
+Ver Weber 1990 (definiciones sobre tacto)
+Ver concepto de Corporización
+Ver Laboratorios Haptics Engineering
+Ver TUI (Tactile User Interface)
+Ver Tacticones (mensajes de textos en vibraciones)
+
+CONTROL PROPORCIONAL DE FUERZA EN PROTESIS
+
+[2] P. J. Kyberd and P. H. Chappell, “The Southampton Hand: an
+intelligent myoelectric prosthesis.,” JRRD, 31(4), 326–334, 1994.
+
+SISTEMA PARA PREVENIR EL DESLIZ DE OBJETOS DE LA MANO PROSTETICA 
+
+[3] E. D. Engeberg and S. Meek, “Improved grasp force sensitivity for
+prosthetic hands through force-derivative feedback,” IEEE Trans
+Biomed Eng, 55(2), 817–821, 2008.
+
+REALIMENTACIÓN TACTIL 
+
+[13] K. A. Kaczmarek, J. G. Webster, P. Bach-y-Rita, and W. J.
+Tompkins, “Electrotactile and vibrotactile displays for sensory
+substitution systems,” IEEE Trans Biomed Eng, 38(1), pp. 1–16,
+1991.
+
+ETIMULACION TACTIL
+
+Buscar trabajo del Gabinete de Tpecnología Medica de la Universidad de San Juan del 2010.

@@ -1,0 +1,8 @@
+D:\ESCRITORIO\Tesis MIB\Proyecto de Tesis\electroestimulador\PSoC\PRUEBAS\SCB_Bootloader\UART_Bootloader.cydsn\UART_Bootloader.cyprj|94dfff20-c4ac-46e1-95e9-b1210f21a24c
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|4d95c834-d250-4949-b433-d4cac928346c
+C:\Users\Jeremias\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|cc651d69-3b50-4bc7-a7b2-304b24186539
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|723b2660-c0bc-4fca-aa3b-4d4055656403
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|a347bae6-1e0a-4c3d-9e10-77e3324e2e32
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|6339e270-a39c-4d68-96de-c5a006d7b541
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|4bd59789-aa38-4954-b2c2-ccc40b18ff31
+D:\ESCRITORIO\Tesis MIB\Proyecto de Tesis\electroestimulador\PSoC\PRUEBAS\SCB_Bootloader\Bootloadable Blinking LED.cydsn\Bootloadable Blinking LED.cyprj|a013515e-43ea-414a-afb6-d23b27465b1a
