@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="WorkspaceMIB2\Electroestimulador\TopDesign">
+<ExpandedNodeIds>
+<v>WorkspaceMIB2</v>
+<v>WorkspaceMIB2\Electroestimulador</v>
+<v>WorkspaceMIB2\Electroestimulador\TopDesign</v>
+<v>WorkspaceMIB2\Electroestimulador\Electroestimulador.cydwr</v>
+<v>WorkspaceMIB2\Electroestimulador\Electroestimulador.cydwr\Pins</v>
+<v>WorkspaceMIB2\Electroestimulador\Electroestimulador.cydwr\Analog</v>
+<v>WorkspaceMIB2\Electroestimulador\Electroestimulador.cydwr\Clocks</v>
+<v>WorkspaceMIB2\Electroestimulador\Electroestimulador.cydwr\Interrupts</v>
+<v>WorkspaceMIB2\Electroestimulador\Electroestimulador.cydwr\System</v>
+<v>WorkspaceMIB2\Electroestimulador\Electroestimulador.cydwr\Directives</v>
+<v>WorkspaceMIB2\Electroestimulador\Electroestimulador.cydwr\Flash Security</v>
+<v>WorkspaceMIB2\Electroestimulador\Header Files</v>
+<v>WorkspaceMIB2\Electroestimulador\Header Files\cyapicallbacks.h</v>
+<v>WorkspaceMIB2\Electroestimulador\Source Files</v>
+<v>WorkspaceMIB2\Electroestimulador\Source Files\Electroestimulador-main.c</v>
+<v>WorkspaceMIB2\Electroestimulador\Generated_Source\PSoC4</v>
+<v>WorkspaceMIB2\Generador de Pulsos\TopDesign</v>
+<v>WorkspaceMIB2\Generador de Pulsos\Generador de Pulsos.cydwr\Pins</v>
+<v>WorkspaceMIB2\Generador de Pulsos\Generador de Pulsos.cydwr\Analog</v>
+<v>WorkspaceMIB2\Generador de Pulsos\Generador de Pulsos.cydwr\Clocks</v>
+<v>WorkspaceMIB2\Generador de Pulsos\Generador de Pulsos.cydwr\Interrupts</v>
+<v>WorkspaceMIB2\Generador de Pulsos\Generador de Pulsos.cydwr\System</v>
+<v>WorkspaceMIB2\Generador de Pulsos\Generador de Pulsos.cydwr\Directives</v>
+<v>WorkspaceMIB2\Generador de Pulsos\Generador de Pulsos.cydwr\Flash Security</v>
+<v>WorkspaceMIB2\Generador de Pulsos\Header Files\cyapicallbacks.h</v>
+<v>WorkspaceMIB2\Generador de Pulsos\Source Files\mainGenPul.c</v>
+<v>WorkspaceMIB2\Generador de Pulsos\Generated_Source\PSoC4</v>
+<v>WorkspaceMIB2\Generador de Pulsos\Generated_Source\PSoC4\ADC</v>
+<v>WorkspaceMIB2\Generador de Pulsos\Generated_Source\PSoC4\ADC_intClock</v>
+<v>WorkspaceMIB2\Generador de Pulsos\Generated_Source\PSoC4\Clock_1</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\TopDesign</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\Prueba de sensor FSR.cydwr</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\Prueba de sensor FSR.cydwr\Pins</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\Prueba de sensor FSR.cydwr\Analog</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\Prueba de sensor FSR.cydwr\Clocks</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\Prueba de sensor FSR.cydwr\Interrupts</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\Prueba de sensor FSR.cydwr\System</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\Prueba de sensor FSR.cydwr\Directives</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\Prueba de sensor FSR.cydwr\Flash Security</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\Header Files\cyapicallbacks.h</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\Source Files</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\Source Files\mainFSR.c</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\Generated_Source\PSoC4</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\TopDesign</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\Prueba PWM con TCPWM.cydwr</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\Prueba PWM con TCPWM.cydwr\Pins</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\Prueba PWM con TCPWM.cydwr\Analog</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\Prueba PWM con TCPWM.cydwr\Clocks</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\Prueba PWM con TCPWM.cydwr\Interrupts</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\Prueba PWM con TCPWM.cydwr\System</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\Prueba PWM con TCPWM.cydwr\Directives</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\Prueba PWM con TCPWM.cydwr\Flash Security</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\Header Files</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\Header Files\cyapicallbacks.h</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\Source Files</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\Source Files\mainTCPWM.c</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\Generated_Source\PSoC4</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\TopDesign</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\prueba PWM_UDB.cydwr</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\prueba PWM_UDB.cydwr\Pins</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\prueba PWM_UDB.cydwr\Analog</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\prueba PWM_UDB.cydwr\Clocks</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\prueba PWM_UDB.cydwr\Interrupts</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\prueba PWM_UDB.cydwr\System</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\prueba PWM_UDB.cydwr\Directives</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\prueba PWM_UDB.cydwr\Flash Security</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\Header Files</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\Header Files\cyapicallbacks.h</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\Source Files</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\Source Files\mainPWM.c</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\Generated_Source\PSoC4</v>
+<v>WorkspaceMIB2\UART_Bootloader\TopDesign</v>
+<v>WorkspaceMIB2\UART_Bootloader\UART_Bootloader.cydwr</v>
+<v>WorkspaceMIB2\UART_Bootloader\UART_Bootloader.cydwr\Pins</v>
+<v>WorkspaceMIB2\UART_Bootloader\UART_Bootloader.cydwr\Analog</v>
+<v>WorkspaceMIB2\UART_Bootloader\UART_Bootloader.cydwr\Clocks</v>
+<v>WorkspaceMIB2\UART_Bootloader\UART_Bootloader.cydwr\Interrupts</v>
+<v>WorkspaceMIB2\UART_Bootloader\UART_Bootloader.cydwr\System</v>
+<v>WorkspaceMIB2\UART_Bootloader\UART_Bootloader.cydwr\Directives</v>
+<v>WorkspaceMIB2\UART_Bootloader\UART_Bootloader.cydwr\Flash Security</v>
+<v>WorkspaceMIB2\UART_Bootloader\Source Files</v>
+<v>WorkspaceMIB2\UART_Bootloader\Source Files\main.c</v>
+<v>WorkspaceMIB2\UART_Bootloader\Source Files\UART_Btldr.c</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>WorkspaceMIB2</v>
+<v>WorkspaceMIB2\Electroestimulador</v>
+<v>WorkspaceMIB2\Electroestimulador\TopDesign</v>
+<v>WorkspaceMIB2\Electroestimulador\Electroestimulador.cydwr</v>
+<v>WorkspaceMIB2\Electroestimulador\Electroestimulador.cydwr\Pins</v>
+<v>WorkspaceMIB2\Electroestimulador\Electroestimulador.cydwr\Analog</v>
+<v>WorkspaceMIB2\Electroestimulador\Electroestimulador.cydwr\Clocks</v>
+<v>WorkspaceMIB2\Electroestimulador\Electroestimulador.cydwr\Interrupts</v>
+<v>WorkspaceMIB2\Electroestimulador\Electroestimulador.cydwr\System</v>
+<v>WorkspaceMIB2\Electroestimulador\Electroestimulador.cydwr\Directives</v>
+<v>WorkspaceMIB2\Electroestimulador\Electroestimulador.cydwr\Flash Security</v>
+<v>WorkspaceMIB2\Electroestimulador\Header Files</v>
+<v>WorkspaceMIB2\Electroestimulador\Header Files\cyapicallbacks.h</v>
+<v>WorkspaceMIB2\Electroestimulador\Source Files</v>
+<v>WorkspaceMIB2\Electroestimulador\Source Files\Electroestimulador-main.c</v>
+<v>WorkspaceMIB2\Electroestimulador\Generated_Source</v>
+<v>WorkspaceMIB2\Generador de Pulsos</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM</v>
+<v>WorkspaceMIB2\prueba PWM_UDB</v>
+<v>WorkspaceMIB2\UART_Bootloader</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="WorkspaceMIB2\Generador de Pulsos\TopDesign\TopDesign.cysch">
+<ExpandedNodeIds>
+<v>WorkspaceMIB2</v>
+<v>WorkspaceMIB2\Electroestimulador</v>
+<v>WorkspaceMIB2\Electroestimulador\TopDesign</v>
+<v>WorkspaceMIB2\Electroestimulador\TopDesign\TopDesign.cysch</v>
+<v>WorkspaceMIB2\Generador de Pulsos</v>
+<v>WorkspaceMIB2\Generador de Pulsos\TopDesign</v>
+<v>WorkspaceMIB2\Generador de Pulsos\TopDesign\TopDesign.cysch</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\TopDesign</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\TopDesign\TopDesign.cysch</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\TopDesign</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\TopDesign\TopDesign.cysch</v>
+<v>WorkspaceMIB2\prueba PWM_UDB</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\TopDesign</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\TopDesign\TopDesign.cysch</v>
+<v>WorkspaceMIB2\UART_Bootloader</v>
+<v>WorkspaceMIB2\UART_Bootloader\TopDesign</v>
+<v>WorkspaceMIB2\UART_Bootloader\TopDesign\TopDesign.cysch</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>WorkspaceMIB2</v>
+<v>WorkspaceMIB2\Electroestimulador</v>
+<v>WorkspaceMIB2\Electroestimulador\TopDesign</v>
+<v>WorkspaceMIB2\Electroestimulador\TopDesign\TopDesign.cysch</v>
+<v>WorkspaceMIB2\Generador de Pulsos</v>
+<v>WorkspaceMIB2\Generador de Pulsos\TopDesign</v>
+<v>WorkspaceMIB2\Generador de Pulsos\TopDesign\TopDesign.cysch</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\TopDesign</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\TopDesign\TopDesign.cysch</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\TopDesign</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\TopDesign\TopDesign.cysch</v>
+<v>WorkspaceMIB2\prueba PWM_UDB</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\TopDesign</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\TopDesign\TopDesign.cysch</v>
+<v>WorkspaceMIB2\UART_Bootloader</v>
+<v>WorkspaceMIB2\UART_Bootloader\TopDesign</v>
+<v>WorkspaceMIB2\UART_Bootloader\TopDesign\TopDesign.cysch</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>WorkspaceMIB2</v>
+<v>WorkspaceMIB2\Electroestimulador</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\ACEP_INT.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\AMux.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\Bootloadable_1.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\Clock_1.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\Cm0Start.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\Comp_1.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\Comp_1_PM.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\cybootloader.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLFClk.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\DEC_INT.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\Electroestimulador-main.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\IDAC_1.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\IDAC_1_PM.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\IDAC_Neg.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\IDAC_Neg_PM.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\IDAC_Pos.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\IDAC_Pos_PM.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\INC_INT.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\LCD.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\LCD_LCDPort.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\LCD_LCDPort_PM.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\LCD_PM.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\PIN_ACEP.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\PIN_ACEP_PM.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\PIN_DEC.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\PIN_DEC_PM.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\PIN_INC.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\PIN_INC_PM.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\Pin_PWM.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\Pin_PWM_PM.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM_INT.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM_PM.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\Vi_inv.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\Vi_inv_PM.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\Vi_ninv.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\Vi_ninv_PM.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\Vo.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\Vo_PM.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Electroestimulador.cyacd</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Electroestimulador.elf</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Electroestimulador.hex</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Electroestimulador.map</v>
+<v>WorkspaceMIB2\Electroestimulador\Electroestimulador.gpdsc</v>
+<v>WorkspaceMIB2\Electroestimulador\Electroestimulador.rpt</v>
+<v>WorkspaceMIB2\Electroestimulador\Electroestimulador_timing.html</v>
+<v>WorkspaceMIB2\Generador de Pulsos</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_INT.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_INTAux.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_intClock.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_IRQ.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_PM.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\AMux.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\Bootloadable_1.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\Clock_1.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\Cm0Start.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\cybootloader.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLFClk.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\IDAC.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\IDAC_Neg.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\IDAC_Neg_PM.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\IDAC_PM.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\IDAC_Pos.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\IDAC_Pos_PM.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\LCD.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\LCD_LCDPort.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\LCD_LCDPort_PM.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\LCD_PM.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\mainGenPul.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\PIN_SW.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\PIN_SW_PM.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM_INT.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM_PM.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM_V0.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM_V0_PM.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\SW_INT.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\Timer_1.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\Timer_1_PM.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\TIMER_INT.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\Val_duty.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\Val_duty_PM.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\Val_Peri.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\Val_Peri_PM.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\Val_Vout.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Listing Files\Val_Vout_PM.lst</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Generador de Pulsos.cyacd</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Generador de Pulsos.elf</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Generador de Pulsos.hex</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CortexM0\ARM_GCC_541\Debug\Generador de Pulsos.map</v>
+<v>WorkspaceMIB2\Generador de Pulsos\Generador de Pulsos.gpdsc</v>
+<v>WorkspaceMIB2\Generador de Pulsos\Generador de Pulsos.rpt</v>
+<v>WorkspaceMIB2\Generador de Pulsos\Generador de Pulsos_timing.html</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\CortexM0</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\CortexM0\ARM_GCC_541</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\CortexM0\ARM_GCC_541\Debug</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\CortexM0\ARM_GCC_541\Debug\Listing Files</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\CortexM0\ARM_GCC_541\Debug\Listing Files\Bootloadable_1.lst</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\CortexM0\ARM_GCC_541\Debug\Listing Files\Cm0Start.lst</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\CortexM0\ARM_GCC_541\Debug\Listing Files\Comp_1.lst</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\CortexM0\ARM_GCC_541\Debug\Listing Files\Comp_1_PM.lst</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\CortexM0\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\CortexM0\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\CortexM0\ARM_GCC_541\Debug\Listing Files\cybootloader.lst</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\CortexM0\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\CortexM0\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLFClk.lst</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\CortexM0\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\CortexM0\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\CortexM0\ARM_GCC_541\Debug\Listing Files\mainFSR.lst</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\CortexM0\ARM_GCC_541\Debug\Listing Files\Vi_inv.lst</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\CortexM0\ARM_GCC_541\Debug\Listing Files\Vi_inv_PM.lst</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\CortexM0\ARM_GCC_541\Debug\Listing Files\Vi_ninv.lst</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\CortexM0\ARM_GCC_541\Debug\Listing Files\Vi_ninv_PM.lst</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\CortexM0\ARM_GCC_541\Debug\Listing Files\Vo.lst</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\CortexM0\ARM_GCC_541\Debug\Listing Files\Vo_PM.lst</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\CortexM0\ARM_GCC_541\Debug\Prueba de sensor FSR.cyacd</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\CortexM0\ARM_GCC_541\Debug\Prueba de sensor FSR.elf</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\CortexM0\ARM_GCC_541\Debug\Prueba de sensor FSR.hex</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\CortexM0\ARM_GCC_541\Debug\Prueba de sensor FSR.map</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\Prueba de sensor FSR.gpdsc</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\Prueba de sensor FSR.rpt</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\Prueba de sensor FSR_timing.html</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\CortexM0</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\CortexM0\ARM_GCC_541</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\CortexM0\ARM_GCC_541\Debug</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\CortexM0\ARM_GCC_541\Debug\Listing Files</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\CortexM0\ARM_GCC_541\Debug\Listing Files\Bootloadable_1.lst</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\CortexM0\ARM_GCC_541\Debug\Listing Files\Clock_1.lst</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\CortexM0\ARM_GCC_541\Debug\Listing Files\Cm0Start.lst</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\CortexM0\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\CortexM0\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\CortexM0\ARM_GCC_541\Debug\Listing Files\cybootloader.lst</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\CortexM0\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\CortexM0\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLFClk.lst</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\CortexM0\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\CortexM0\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\CortexM0\ARM_GCC_541\Debug\Listing Files\mainTCPWM.lst</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\CortexM0\ARM_GCC_541\Debug\Listing Files\Pin_INT_CC.lst</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\CortexM0\ARM_GCC_541\Debug\Listing Files\Pin_INT_CC_PM.lst</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\CortexM0\ARM_GCC_541\Debug\Listing Files\Pin_INT_TC.lst</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\CortexM0\ARM_GCC_541\Debug\Listing Files\Pin_INT_TC_PM.lst</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\CortexM0\ARM_GCC_541\Debug\Listing Files\Pin_SW.lst</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\CortexM0\ARM_GCC_541\Debug\Listing Files\Pin_SW_PM.lst</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM_1.lst</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM_1_PM.lst</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM_INT.lst</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM_NEG.lst</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM_NEG_PM.lst</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM_POS.lst</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM_POS_PM.lst</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\CortexM0\ARM_GCC_541\Debug\Listing Files\SW_INT.lst</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.cyacd</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.elf</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.hex</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\CortexM0\ARM_GCC_541\Debug\Prueba PWM con TCPWM.map</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\Prueba PWM con TCPWM.gpdsc</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\Prueba PWM con TCPWM.rpt</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\Prueba PWM con TCPWM_timing.html</v>
+<v>WorkspaceMIB2\prueba PWM_UDB</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\CortexM0</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\CortexM0\ARM_GCC_541</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\CortexM0\ARM_GCC_541\Debug</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\CortexM0\ARM_GCC_541\Debug\Listing Files</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\CortexM0\ARM_GCC_541\Debug\Listing Files\Bootloadable_1.lst</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\CortexM0\ARM_GCC_541\Debug\Listing Files\Clock_1.lst</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\CortexM0\ARM_GCC_541\Debug\Listing Files\Cm0Start.lst</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\CortexM0\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\CortexM0\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\CortexM0\ARM_GCC_541\Debug\Listing Files\cybootloader.lst</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\CortexM0\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\CortexM0\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLFClk.lst</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\CortexM0\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\CortexM0\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\CortexM0\ARM_GCC_541\Debug\Listing Files\DUTY_INT.lst</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_OnB.lst</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_OnB_PM.lst</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\CortexM0\ARM_GCC_541\Debug\Listing Files\mainPWM.lst</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\CortexM0\ARM_GCC_541\Debug\Listing Files\PERIODO_INT.lst</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\CortexM0\ARM_GCC_541\Debug\Listing Files\Pin_Ext1.lst</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\CortexM0\ARM_GCC_541\Debug\Listing Files\Pin_Ext1_PM.lst</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\CortexM0\ARM_GCC_541\Debug\Listing Files\Pin_Ext2.lst</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\CortexM0\ARM_GCC_541\Debug\Listing Files\Pin_Ext2_PM.lst</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\CortexM0\ARM_GCC_541\Debug\Listing Files\Pin_SWOnB.lst</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\CortexM0\ARM_GCC_541\Debug\Listing Files\Pin_SWOnB_PM.lst</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM.lst</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM_PM.lst</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\CortexM0\ARM_GCC_541\Debug\Listing Files\SW_INT.lst</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\CortexM0\ARM_GCC_541\Debug\prueba PWM_UDB.cyacd</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\CortexM0\ARM_GCC_541\Debug\prueba PWM_UDB.elf</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\CortexM0\ARM_GCC_541\Debug\prueba PWM_UDB.hex</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\CortexM0\ARM_GCC_541\Debug\prueba PWM_UDB.map</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\prueba PWM_UDB.gpdsc</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\prueba PWM_UDB.rpt</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\prueba PWM_UDB_timing.html</v>
+<v>WorkspaceMIB2\UART_Bootloader</v>
+<v>WorkspaceMIB2\UART_Bootloader\UART_Bootloader.gpdsc</v>
+<v>WorkspaceMIB2\UART_Bootloader\UART_Bootloader.rpt</v>
+<v>WorkspaceMIB2\UART_Bootloader\UART_Bootloader_timing.html</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>WorkspaceMIB2</v>
+<v>WorkspaceMIB2\Electroestimulador</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\ACEP_INT.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\AMux.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\Bootloadable_1.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\Clock_1.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\Cm0Start.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\Comp_1.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\Comp_1_PM.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\cybootloader.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLFClk.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\DEC_INT.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\Electroestimulador-main.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\IDAC_1.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\IDAC_1_PM.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\IDAC_Neg.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\IDAC_Neg_PM.lst</v>
+<v>WorkspaceMIB2\Electroestimulador\CortexM0\ARM_GCC_541\Debug\Listing Files\IDAC_Pos.lst</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>WorkspaceMIB2</v>
+<v>WorkspaceMIB2\Electroestimulador</v>
+<v>WorkspaceMIB2\Electroestimulador\PSoC 4 Architecture TRM</v>
+<v>WorkspaceMIB2\Electroestimulador\PSoC 4200 Family Datasheet</v>
+<v>WorkspaceMIB2\Electroestimulador\System Reference Guides</v>
+<v>WorkspaceMIB2\Electroestimulador\System Reference Guides\cy_boot_v6_0</v>
+<v>WorkspaceMIB2\Electroestimulador\System Reference Guides\cy_lfclk_v1_20</v>
+<v>WorkspaceMIB2\Electroestimulador\AMux_v1_80.pdf</v>
+<v>WorkspaceMIB2\Electroestimulador\Bootloadable_v1_60.pdf</v>
+<v>WorkspaceMIB2\Electroestimulador\CharLCD_v2_20.pdf</v>
+<v>WorkspaceMIB2\Electroestimulador\Comp_P4_v1_20.pdf</v>
+<v>WorkspaceMIB2\Electroestimulador\cy_clock_v2_20.pdf</v>
+<v>WorkspaceMIB2\Electroestimulador\cy_isr_v1_70</v>
+<v>WorkspaceMIB2\Electroestimulador\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
+<v>WorkspaceMIB2\Electroestimulador\cy_pins_v2_20</v>
+<v>WorkspaceMIB2\Electroestimulador\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>WorkspaceMIB2\Electroestimulador\Diode_v1_0</v>
+<v>WorkspaceMIB2\Electroestimulador\Diode_v1_0\Diode_v1_0.pdf</v>
+<v>WorkspaceMIB2\Electroestimulador\ExtOpAmp_v1_0</v>
+<v>WorkspaceMIB2\Electroestimulador\ExtOpAmp_v1_0\ExtOpAmp_v1_0.pdf</v>
+<v>WorkspaceMIB2\Electroestimulador\Gnd_v1_0</v>
+<v>WorkspaceMIB2\Electroestimulador\Gnd_v1_0\Gnd_v1_0.pdf</v>
+<v>WorkspaceMIB2\Electroestimulador\IDAC_P4_v1_10.pdf</v>
+<v>WorkspaceMIB2\Electroestimulador\NPN_v1_0</v>
+<v>WorkspaceMIB2\Electroestimulador\NPN_v1_0\NPN_v1_0.pdf</v>
+<v>WorkspaceMIB2\Electroestimulador\PhotoResistor_v1_0.pdf</v>
+<v>WorkspaceMIB2\Electroestimulador\PNP_v1_0</v>
+<v>WorkspaceMIB2\Electroestimulador\PNP_v1_0\PNP_v1_0.pdf</v>
+<v>WorkspaceMIB2\Electroestimulador\Potentiometer_v1_0</v>
+<v>WorkspaceMIB2\Electroestimulador\Potentiometer_v1_0\Potentiometer_v1_0.pdf</v>
+<v>WorkspaceMIB2\Electroestimulador\Power_v1_0</v>
+<v>WorkspaceMIB2\Electroestimulador\Power_v1_0\Power_v1_0.pdf</v>
+<v>WorkspaceMIB2\Electroestimulador\Resistor_v1_0</v>
+<v>WorkspaceMIB2\Electroestimulador\Resistor_v1_0\Resistor_v1_0.pdf</v>
+<v>WorkspaceMIB2\Electroestimulador\SwitchSPST_v1_0</v>
+<v>WorkspaceMIB2\Electroestimulador\SwitchSPST_v1_0\SwitchSPST_v1_0.pdf</v>
+<v>WorkspaceMIB2\Electroestimulador\TCPWM_P4_v2_10.pdf</v>
+<v>WorkspaceMIB2\Generador de Pulsos</v>
+<v>WorkspaceMIB2\Generador de Pulsos\PSoC 4 Architecture TRM</v>
+<v>WorkspaceMIB2\Generador de Pulsos\PSoC 4200 Family Datasheet</v>
+<v>WorkspaceMIB2\Generador de Pulsos\System Reference Guides</v>
+<v>WorkspaceMIB2\Generador de Pulsos\System Reference Guides\cy_boot_v6_0</v>
+<v>WorkspaceMIB2\Generador de Pulsos\System Reference Guides\cy_lfclk_v1_20</v>
+<v>WorkspaceMIB2\Generador de Pulsos\ADC_SAR_SEQ_P4_v2_50.pdf</v>
+<v>WorkspaceMIB2\Generador de Pulsos\AMux_v1_80.pdf</v>
+<v>WorkspaceMIB2\Generador de Pulsos\Bootloadable_v1_60.pdf</v>
+<v>WorkspaceMIB2\Generador de Pulsos\CharLCD_v2_20.pdf</v>
+<v>WorkspaceMIB2\Generador de Pulsos\cy_clock_v2_20.pdf</v>
+<v>WorkspaceMIB2\Generador de Pulsos\cy_isr_v1_70</v>
+<v>WorkspaceMIB2\Generador de Pulsos\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
+<v>WorkspaceMIB2\Generador de Pulsos\cy_pins_v2_20</v>
+<v>WorkspaceMIB2\Generador de Pulsos\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>WorkspaceMIB2\Generador de Pulsos\IDAC_P4_v1_10.pdf</v>
+<v>WorkspaceMIB2\Generador de Pulsos\TCPWM_P4_v2_10</v>
+<v>WorkspaceMIB2\Generador de Pulsos\TCPWM_P4_v2_10\TCPWM_P4_v2_10.pdf</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\PSoC 4 Architecture TRM</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\PSoC 4200 Family Datasheet</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\System Reference Guides</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\System Reference Guides\cy_boot_v6_0</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\System Reference Guides\cy_lfclk_v1_20</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\Bootloadable_v1_60.pdf</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\Comp_P4_v1_20.pdf</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\cy_pins_v2_20</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\Gnd_v1_0</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\Gnd_v1_0\Gnd_v1_0.pdf</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\PhotoResistor_v1_0.pdf</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\Power_v1_0</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\Power_v1_0\Power_v1_0.pdf</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\Resistor_v1_0</v>
+<v>WorkspaceMIB2\Prueba de sensor FSR\Resistor_v1_0\Resistor_v1_0.pdf</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\PSoC 4 Architecture TRM</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\PSoC 4200 Family Datasheet</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\System Reference Guides</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\System Reference Guides\cy_boot_v6_0</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\System Reference Guides\cy_lfclk_v1_20</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\Bootloadable_v1_60.pdf</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\cy_clock_v2_20.pdf</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\cy_isr_v1_70</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\cy_pins_v2_20</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\Gnd_v1_0</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\Gnd_v1_0\Gnd_v1_0.pdf</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\Resistor_v1_0</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\Resistor_v1_0\Resistor_v1_0.pdf</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\SwitchSPST_v1_0.pdf</v>
+<v>WorkspaceMIB2\Prueba PWM con TCPWM\TCPWM_P4_v2_10.pdf</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\PSoC 4 Architecture TRM</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\PSoC 4200 Family Datasheet</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\System Reference Guides</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\System Reference Guides\cy_boot_v6_0</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\System Reference Guides\cy_lfclk_v1_20</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\Bootloadable_v1_60.pdf</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\cy_clock_v2_20.pdf</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\cy_isr_v1_70</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\cy_pins_v2_20</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\Gnd_v1_0</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\Gnd_v1_0\Gnd_v1_0.pdf</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\LED_v1_0</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\LED_v1_0\LED_v1_0.pdf</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\PWM_v3_30.pdf</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\Resistor_v1_0</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\Resistor_v1_0\Resistor_v1_0.pdf</v>
+<v>WorkspaceMIB2\prueba PWM_UDB\SwitchSPST_v1_0.pdf</v>
+<v>WorkspaceMIB2\UART_Bootloader</v>
+<v>WorkspaceMIB2\UART_Bootloader\PSoC 4 Architecture TRM</v>
+<v>WorkspaceMIB2\UART_Bootloader\PSoC 4200 Family Datasheet</v>
+<v>WorkspaceMIB2\UART_Bootloader\System Reference Guides</v>
+<v>WorkspaceMIB2\UART_Bootloader\System Reference Guides\cy_boot_v6_0</v>
+<v>WorkspaceMIB2\UART_Bootloader\System Reference Guides\cy_lfclk_v1_20</v>
+<v>WorkspaceMIB2\UART_Bootloader\Bootloader_v1_60.pdf</v>
+<v>WorkspaceMIB2\UART_Bootloader\cy_clock_v2_20.pdf</v>
+<v>WorkspaceMIB2\UART_Bootloader\cy_pins_v2_20</v>
+<v>WorkspaceMIB2\UART_Bootloader\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>WorkspaceMIB2\UART_Bootloader\Gnd_v1_0</v>
+<v>WorkspaceMIB2\UART_Bootloader\Gnd_v1_0\Gnd_v1_0.pdf</v>
+<v>WorkspaceMIB2\UART_Bootloader\LED_v1_0.pdf</v>
+<v>WorkspaceMIB2\UART_Bootloader\OneTerminal</v>
+<v>WorkspaceMIB2\UART_Bootloader\OneTerminal\OneTerminal.pdf</v>
+<v>WorkspaceMIB2\UART_Bootloader\Resistor_v1_0.pdf</v>
+<v>WorkspaceMIB2\UART_Bootloader\SCB_P4_v4_0.pdf</v>
+<v>WorkspaceMIB2\UART_Bootloader\SwitchSPST_v1_0.pdf</v>
+<v>WorkspaceMIB2\UART_Bootloader\TCPWM_P4_v2_10.pdf</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>WorkspaceMIB2</v>
+<v>WorkspaceMIB2\Electroestimulador</v>
+<v>WorkspaceMIB2\Electroestimulador\PSoC 4 Architecture TRM</v>
+<v>WorkspaceMIB2\Electroestimulador\PSoC 4200 Family Datasheet</v>
+<v>WorkspaceMIB2\Electroestimulador\System Reference Guides</v>
+<v>WorkspaceMIB2\Electroestimulador\System Reference Guides\cy_boot_v6_0</v>
+<v>WorkspaceMIB2\Electroestimulador\System Reference Guides\cy_lfclk_v1_20</v>
+<v>WorkspaceMIB2\Electroestimulador\AMux_v1_80.pdf</v>
+<v>WorkspaceMIB2\Electroestimulador\Bootloadable_v1_60.pdf</v>
+<v>WorkspaceMIB2\Electroestimulador\CharLCD_v2_20.pdf</v>
+<v>WorkspaceMIB2\Electroestimulador\Comp_P4_v1_20.pdf</v>
+<v>WorkspaceMIB2\Electroestimulador\cy_clock_v2_20.pdf</v>
+<v>WorkspaceMIB2\Electroestimulador\cy_isr_v1_70</v>
+<v>WorkspaceMIB2\Electroestimulador\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
+<v>WorkspaceMIB2\Electroestimulador\cy_pins_v2_20</v>
+<v>WorkspaceMIB2\Electroestimulador\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>WorkspaceMIB2\Electroestimulador\Diode_v1_0</v>
+<v>WorkspaceMIB2\Electroestimulador\Diode_v1_0\Diode_v1_0.pdf</v>
+<v>WorkspaceMIB2\Electroestimulador\ExtOpAmp_v1_0</v>
+<v>WorkspaceMIB2\Electroestimulador\ExtOpAmp_v1_0\ExtOpAmp_v1_0.pdf</v>
+<v>WorkspaceMIB2\Electroestimulador\Gnd_v1_0</v>
+<v>WorkspaceMIB2\Electroestimulador\Gnd_v1_0\Gnd_v1_0.pdf</v>
+<v>WorkspaceMIB2\Electroestimulador\IDAC_P4_v1_10.pdf</v>
+<v>WorkspaceMIB2\Electroestimulador\NPN_v1_0</v>
+<v>WorkspaceMIB2\Electroestimulador\NPN_v1_0\NPN_v1_0.pdf</v>
+<v>WorkspaceMIB2\Electroestimulador\PhotoResistor_v1_0.pdf</v>
+<v>WorkspaceMIB2\Electroestimulador\PNP_v1_0</v>
+<v>WorkspaceMIB2\Electroestimulador\PNP_v1_0\PNP_v1_0.pdf</v>
+<v>WorkspaceMIB2\Electroestimulador\Potentiometer_v1_0</v>
+<v>WorkspaceMIB2\Electroestimulador\Potentiometer_v1_0\Potentiometer_v1_0.pdf</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+<dataGuid v="5f2be1a5-0687-4501-bb8c-cf21cb8211bf">
+<CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf type_name="CyDesigner.Common.ProjMgmt.GUI.CyBookmarkData" version="1">
+<indicators />
+</CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf>
+</dataGuid>
+<dataGuid v="6c335137-fa19-46ce-bc2d-2fbeb6d5f2a2">
+<CyGuid_70084457-cd6a-4593-9ed0-7f6eeb432dc2 type_name="CyDesigner.Common.ProjMgmt.GUI.CyDependenciesCustomData" version="1">
+<dictName v="..\..\PRUEBAS\SCB_Bootloader\pruebaCapSense.cydsn\pruebaCapSense.cyprj">
+<listName />
+</dictName>
+</CyGuid_70084457-cd6a-4593-9ed0-7f6eeb432dc2>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs>
+<name v=".\Electroestimulador.cydsn\Electroestimulador.cydwr" />
+<name v=".\Electroestimulador.cydsn\Electroestimulador-main.c" />
+<name v=".\Electroestimulador.cydsn\TopDesign\TopDesign.cysch" />
+</OpenDocs>
+<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
+
+  Actipro Docking/MDI for WinForms
+  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
+  http://www.actiprosoftware.com
+
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Vertical"><TabbedMdiContainer Size="1084, 466" SelectedTabbedMdiWindow="383f4998-88ec-487a-9885-4e1e4da33c2d"><DocumentWindow Key="C:\Users\Jeremias\Documents\GitHub\jeremiasadrian\Tesis MIB\Proyecto de Tesis\TESIS - Desarrollo\PSoC\electroestimulador\WorkspaceMIB2\Electroestimulador.cydsn\Electroestimulador.cydwr" Guid="383f4998-88ec-487a-9885-4e1e4da33c2d" /><DocumentWindow Key="C:\Users\Jeremias\Documents\GitHub\jeremiasadrian\Tesis MIB\Proyecto de Tesis\TESIS - Desarrollo\PSoC\electroestimulador\WorkspaceMIB2\Electroestimulador.cydsn\Electroestimulador-main.c" Guid="bcc929f0-d05e-4d76-85df-8ddc45cc7519" /><DocumentWindow Key="C:\Users\Jeremias\Documents\GitHub\jeremiasadrian\Tesis MIB\Proyecto de Tesis\TESIS - Desarrollo\PSoC\electroestimulador\WorkspaceMIB2\Electroestimulador.cydsn\TopDesign\TopDesign.cysch" Guid="acbc8520-2c42-40a4-8389-50623d66398c" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+<config v="" />
+<AutoUpdate v="true" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>
