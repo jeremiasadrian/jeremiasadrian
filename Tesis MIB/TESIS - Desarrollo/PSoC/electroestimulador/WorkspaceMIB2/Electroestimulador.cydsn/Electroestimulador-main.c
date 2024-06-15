@@ -154,7 +154,7 @@ CY_ISR(ACEP_INT_Handler) //Subrutina del boton ACEPTAR/PARAR del menu.
                 LCD_PrintString(printFREQ);
                 LCD_Position(1,0);
                 LCD_PrintString("Ic=12uA INICIAR?");
-                Iout = 5;
+                Iout = 25;      //TOCADO 2-4-2024 20:26, CAMBIADO DE 5 A 25
                 break;
         case 4: PWM_Start();
                 periodo = 450000/FREQ;  //Cálculo del valor a cargar en el periodo del TCPWM en función de clock de 450kHz.
@@ -227,9 +227,9 @@ CY_ISR(DEC_INT_Handler) //Subrutina del boton DECREMENTAR del menu.
                  default: break;
                 }
                 break;
-        case 4: Iout=Iout-5;
-                if(Iout<10)
-                    Iout=10;
+        case 4: Iout=Iout-25; //TOCADO 2-4-2024 20:26, CAMBIADO DE 5 A 25
+                if(Iout<25) //TOCADO 2-4-2024 20:26, CAMBIADO DE 10 A 25
+                    Iout=25; //TOCADO 2-4-2024 20:26, CAMBIADO DE 10 A 25
                 else{}
                 Ic = Iout;
                 LCD_Position(0,3);
@@ -290,9 +290,9 @@ CY_ISR(INC_INT_Handler) //Subrutina del boton INCREMENTAR del menu.
                  default: break;
                 }
                 break;
-        case 4: Iout=Iout+5;
-                if(Iout>255)
-                    Iout=255;
+        case 4: Iout=Iout+25; //TOCADO 2-4-2024 20:26, CAMBIADO DE 5 A 25
+                if(Iout>255) //TOCADO 2-4-2024 20:26, CAMBIADO DE 5 A 25
+                    Iout=250; //TOCADO 2-4-2024 20:26, CAMBIADO DE 255 A 250
                 else{}
                 Ic = Iout;
                 LCD_Position(0,3);

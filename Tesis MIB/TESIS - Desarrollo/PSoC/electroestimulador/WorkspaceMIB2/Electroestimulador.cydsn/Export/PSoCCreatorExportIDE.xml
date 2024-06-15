@@ -25,7 +25,7 @@
       <Tool Name="postbuild" Command="" Options="" />
     </Toolchain>
   </Toolchains>
-  <Project Name="Electroestimulador" Path="D:\Tesis MIB\Proyecto de Tesis\TESIS - Desarrollo\PSoC\electroestimulador\WorkspaceMIB2\Electroestimulador.cydsn" Version="6.0" Type="Bootloadable">
+  <Project Name="Electroestimulador" Path="C:\Users\Jeremias\Documents\GitHub\jeremiasadrian\Tesis MIB\TESIS - Desarrollo\PSoC\electroestimulador\WorkspaceMIB2\Electroestimulador.cydsn" Version="6.0" Type="Bootloadable">
     <CMSIS_SVD_File>Electroestimulador.svd</CMSIS_SVD_File>
     <Datasheet />
     <LinkerFiles>
@@ -34,14 +34,14 @@
       <LinkerFile Toolchain="ARM IAR Generic">.\Generated_Source\PSoC4\Cm0Iar.icf</LinkerFile>
     </LinkerFiles>
     <Folders>
-      <Folder BuildType="STRICT" Path="D:\Tesis MIB\Proyecto de Tesis\TESIS - Desarrollo\PSoC\electroestimulador\WorkspaceMIB2\Electroestimulador.cydsn">
-        <Files Root="D:\Tesis MIB\Proyecto de Tesis\TESIS - Desarrollo\PSoC\electroestimulador\WorkspaceMIB2\Electroestimulador.cydsn">
+      <Folder BuildType="STRICT" Path="C:\Users\Jeremias\Documents\GitHub\jeremiasadrian\Tesis MIB\TESIS - Desarrollo\PSoC\electroestimulador\WorkspaceMIB2\Electroestimulador.cydsn">
+        <Files Root="C:\Users\Jeremias\Documents\GitHub\jeremiasadrian\Tesis MIB\TESIS - Desarrollo\PSoC\electroestimulador\WorkspaceMIB2\Electroestimulador.cydsn">
           <File BuildType="BUILD" Toolchain="">Electroestimulador-main.c</File>
           <File BuildType="BUILD" Toolchain="">cyapicallbacks.h</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="D:\Tesis MIB\Proyecto de Tesis\TESIS - Desarrollo\PSoC\electroestimulador\WorkspaceMIB2\Electroestimulador.cydsn\Generated_Source\PSoC4">
-        <Files Root="D:\Tesis MIB\Proyecto de Tesis\TESIS - Desarrollo\PSoC\electroestimulador\WorkspaceMIB2\Electroestimulador.cydsn">
+      <Folder BuildType="STRICT" Path="C:\Users\Jeremias\Documents\GitHub\jeremiasadrian\Tesis MIB\TESIS - Desarrollo\PSoC\electroestimulador\WorkspaceMIB2\Electroestimulador.cydsn\Generated_Source\PSoC4">
+        <Files Root="C:\Users\Jeremias\Documents\GitHub\jeremiasadrian\Tesis MIB\TESIS - Desarrollo\PSoC\electroestimulador\WorkspaceMIB2\Electroestimulador.cydsn">
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\cyfitter_cfg.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\cyfitter_cfg.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\cybootloader.icf</File>
@@ -156,34 +156,34 @@
         </Files>
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\codegentemp">
-        <Files Root="D:\Tesis MIB\Proyecto de Tesis\TESIS - Desarrollo\PSoC\electroestimulador\WorkspaceMIB2\Electroestimulador.cydsn" />
+        <Files Root="C:\Users\Jeremias\Documents\GitHub\jeremiasadrian\Tesis MIB\TESIS - Desarrollo\PSoC\electroestimulador\WorkspaceMIB2\Electroestimulador.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\ARM_GCC_441">
-        <Files Root="D:\Tesis MIB\Proyecto de Tesis\TESIS - Desarrollo\PSoC\electroestimulador\WorkspaceMIB2\Electroestimulador.cydsn" />
+        <Files Root="C:\Users\Jeremias\Documents\GitHub\jeremiasadrian\Tesis MIB\TESIS - Desarrollo\PSoC\electroestimulador\WorkspaceMIB2\Electroestimulador.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\ARM_GCC_473">
-        <Files Root="D:\Tesis MIB\Proyecto de Tesis\TESIS - Desarrollo\PSoC\electroestimulador\WorkspaceMIB2\Electroestimulador.cydsn" />
+        <Files Root="C:\Users\Jeremias\Documents\GitHub\jeremiasadrian\Tesis MIB\TESIS - Desarrollo\PSoC\electroestimulador\WorkspaceMIB2\Electroestimulador.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\DP8051_Keil_952">
-        <Files Root="D:\Tesis MIB\Proyecto de Tesis\TESIS - Desarrollo\PSoC\electroestimulador\WorkspaceMIB2\Electroestimulador.cydsn" />
+        <Files Root="C:\Users\Jeremias\Documents\GitHub\jeremiasadrian\Tesis MIB\TESIS - Desarrollo\PSoC\electroestimulador\WorkspaceMIB2\Electroestimulador.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\DP8051">
-        <Files Root="D:\Tesis MIB\Proyecto de Tesis\TESIS - Desarrollo\PSoC\electroestimulador\WorkspaceMIB2\Electroestimulador.cydsn" />
+        <Files Root="C:\Users\Jeremias\Documents\GitHub\jeremiasadrian\Tesis MIB\TESIS - Desarrollo\PSoC\electroestimulador\WorkspaceMIB2\Electroestimulador.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM0">
-        <Files Root="D:\Tesis MIB\Proyecto de Tesis\TESIS - Desarrollo\PSoC\electroestimulador\WorkspaceMIB2\Electroestimulador.cydsn" />
+        <Files Root="C:\Users\Jeremias\Documents\GitHub\jeremiasadrian\Tesis MIB\TESIS - Desarrollo\PSoC\electroestimulador\WorkspaceMIB2\Electroestimulador.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM0p">
-        <Files Root="D:\Tesis MIB\Proyecto de Tesis\TESIS - Desarrollo\PSoC\electroestimulador\WorkspaceMIB2\Electroestimulador.cydsn" />
+        <Files Root="C:\Users\Jeremias\Documents\GitHub\jeremiasadrian\Tesis MIB\TESIS - Desarrollo\PSoC\electroestimulador\WorkspaceMIB2\Electroestimulador.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM3">
-        <Files Root="D:\Tesis MIB\Proyecto de Tesis\TESIS - Desarrollo\PSoC\electroestimulador\WorkspaceMIB2\Electroestimulador.cydsn" />
+        <Files Root="C:\Users\Jeremias\Documents\GitHub\jeremiasadrian\Tesis MIB\TESIS - Desarrollo\PSoC\electroestimulador\WorkspaceMIB2\Electroestimulador.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM4">
-        <Files Root="D:\Tesis MIB\Proyecto de Tesis\TESIS - Desarrollo\PSoC\electroestimulador\WorkspaceMIB2\Electroestimulador.cydsn" />
+        <Files Root="C:\Users\Jeremias\Documents\GitHub\jeremiasadrian\Tesis MIB\TESIS - Desarrollo\PSoC\electroestimulador\WorkspaceMIB2\Electroestimulador.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM7">
-        <Files Root="D:\Tesis MIB\Proyecto de Tesis\TESIS - Desarrollo\PSoC\electroestimulador\WorkspaceMIB2\Electroestimulador.cydsn" />
+        <Files Root="C:\Users\Jeremias\Documents\GitHub\jeremiasadrian\Tesis MIB\TESIS - Desarrollo\PSoC\electroestimulador\WorkspaceMIB2\Electroestimulador.cydsn" />
       </Folder>
     </Folders>
   </Project>

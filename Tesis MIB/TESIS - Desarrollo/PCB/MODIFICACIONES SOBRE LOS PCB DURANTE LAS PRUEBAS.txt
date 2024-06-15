@@ -1,0 +1,3 @@
+FUENTE DE CORRIENTES: Reemplazo R10 de 3k3 a 6k8 y RV4 de 5k a 20k (PARA AUMENTAR EL RANGO DE CALIBRACIÓN DE LA CORRIENTE POSITIVA).
+
+FUENTE DE ALIMENTACIÓN: Reemplazo R17 de 5k1 a un potenciometro de 10k para poder calibrar la tension de referencia y por ende la tensión de salida sobre la que se toma la realimentación.

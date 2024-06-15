@@ -1,5 +1,5 @@
--- Project:   D:\Tesis MIB\Proyecto de Tesis\TESIS - Desarrollo\PSoC\electroestimulador\WorkspaceMIB2\Electroestimulador.cydsn\Electroestimulador.cyprj
--- Generated: 12/18/2022 10:26:41
+-- Project:   C:\Users\Jeremias\Documents\GitHub\jeremiasadrian\Tesis MIB\TESIS - Desarrollo\PSoC\electroestimulador\WorkspaceMIB2\Electroestimulador.cydsn\Electroestimulador.cyprj
+-- Generated: 04/02/2024 20:29:17
 -- PSoC Creator  4.4
 
 ENTITY Electroestimulador IS

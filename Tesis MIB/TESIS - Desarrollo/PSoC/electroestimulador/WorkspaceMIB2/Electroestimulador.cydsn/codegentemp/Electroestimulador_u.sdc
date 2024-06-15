@@ -1,3 +1,3 @@
-# Component constraints for D:\Tesis MIB\Proyecto de Tesis\TESIS - Desarrollo\PSoC\electroestimulador\WorkspaceMIB2\Electroestimulador.cydsn\TopDesign\TopDesign.cysch
-# Project: D:\Tesis MIB\Proyecto de Tesis\TESIS - Desarrollo\PSoC\electroestimulador\WorkspaceMIB2\Electroestimulador.cydsn\Electroestimulador.cyprj
-# Date: Sun, 18 Dec 2022 13:26:35 GMT
+# Component constraints for C:\Users\Jeremias\Documents\GitHub\jeremiasadrian\Tesis MIB\TESIS - Desarrollo\PSoC\electroestimulador\WorkspaceMIB2\Electroestimulador.cydsn\TopDesign\TopDesign.cysch
+# Project: C:\Users\Jeremias\Documents\GitHub\jeremiasadrian\Tesis MIB\TESIS - Desarrollo\PSoC\electroestimulador\WorkspaceMIB2\Electroestimulador.cydsn\Electroestimulador.cyprj
+# Date: Tue, 02 Apr 2024 23:29:12 GMT

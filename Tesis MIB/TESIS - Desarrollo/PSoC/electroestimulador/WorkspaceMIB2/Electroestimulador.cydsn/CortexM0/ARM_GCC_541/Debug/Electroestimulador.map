@@ -1352,45 +1352,45 @@ END GROUP
  .debug_frame   0x00001a74       0x20 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-nano-msizer.o)
  .debug_frame   0x00001a94       0x48 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-reent.o)
 
-.debug_str      0x00000000     0x1dbe
+.debug_str      0x00000000     0x1e4c
  *(.debug_str)
- .debug_str     0x00000000      0x404 .\CortexM0\ARM_GCC_541\Debug\Electroestimulador-main.o
-                                0x449 (size before relaxing)
- .debug_str     0x00000404      0x167 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_str     0x00000000      0x421 .\CortexM0\ARM_GCC_541\Debug\Electroestimulador-main.o
+                                0x466 (size before relaxing)
+ .debug_str     0x00000421      0x1d8 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
                                 0x348 (size before relaxing)
- .debug_str     0x0000056b       0x78 .\CortexM0\ARM_GCC_541\Debug\cybootloader.o
+ .debug_str     0x000005f9       0x78 .\CortexM0\ARM_GCC_541\Debug\cybootloader.o
                                 0x21c (size before relaxing)
- .debug_str     0x000005e3       0xbb .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
+ .debug_str     0x00000671       0xbb .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
                                 0x1de (size before relaxing)
- .debug_str     0x0000069e      0x149 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .debug_str     0x0000072c      0x149 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
                                 0x33f (size before relaxing)
- .debug_str     0x000007e7       0x34 .\CortexM0\ARM_GCC_541\Debug\Electroestimulador.a(AMux.o)
+ .debug_str     0x00000875       0x34 .\CortexM0\ARM_GCC_541\Debug\Electroestimulador.a(AMux.o)
                                 0x219 (size before relaxing)
- .debug_str     0x0000081b      0x13f .\CortexM0\ARM_GCC_541\Debug\Electroestimulador.a(LCD.o)
+ .debug_str     0x000008a9      0x13f .\CortexM0\ARM_GCC_541\Debug\Electroestimulador.a(LCD.o)
                                 0x35b (size before relaxing)
- .debug_str     0x0000095a      0x362 .\CortexM0\ARM_GCC_541\Debug\Electroestimulador.a(PWM.o)
+ .debug_str     0x000009e8      0x362 .\CortexM0\ARM_GCC_541\Debug\Electroestimulador.a(PWM.o)
                                 0x58c (size before relaxing)
- .debug_str     0x00000cbc      0x119 .\CortexM0\ARM_GCC_541\Debug\Electroestimulador.a(PWM_INT.o)
+ .debug_str     0x00000d4a      0x119 .\CortexM0\ARM_GCC_541\Debug\Electroestimulador.a(PWM_INT.o)
                                 0x335 (size before relaxing)
- .debug_str     0x00000dd5       0x55 .\CortexM0\ARM_GCC_541\Debug\Electroestimulador.a(IDAC_1.o)
+ .debug_str     0x00000e63       0x55 .\CortexM0\ARM_GCC_541\Debug\Electroestimulador.a(IDAC_1.o)
                                 0x290 (size before relaxing)
- .debug_str     0x00000e2a       0xa8 .\CortexM0\ARM_GCC_541\Debug\Electroestimulador.a(PIN_ACEP.o)
+ .debug_str     0x00000eb8       0xa8 .\CortexM0\ARM_GCC_541\Debug\Electroestimulador.a(PIN_ACEP.o)
                                 0x27a (size before relaxing)
- .debug_str     0x00000ed2       0xff .\CortexM0\ARM_GCC_541\Debug\Electroestimulador.a(ACEP_INT.o)
+ .debug_str     0x00000f60       0xff .\CortexM0\ARM_GCC_541\Debug\Electroestimulador.a(ACEP_INT.o)
                                 0x343 (size before relaxing)
- .debug_str     0x00000fd1       0x7e .\CortexM0\ARM_GCC_541\Debug\Electroestimulador.a(PIN_INC.o)
+ .debug_str     0x0000105f       0x7e .\CortexM0\ARM_GCC_541\Debug\Electroestimulador.a(PIN_INC.o)
                                 0x273 (size before relaxing)
- .debug_str     0x0000104f       0x7e .\CortexM0\ARM_GCC_541\Debug\Electroestimulador.a(PIN_DEC.o)
+ .debug_str     0x000010dd       0x7e .\CortexM0\ARM_GCC_541\Debug\Electroestimulador.a(PIN_DEC.o)
                                 0x273 (size before relaxing)
- .debug_str     0x000010cd       0xf2 .\CortexM0\ARM_GCC_541\Debug\Electroestimulador.a(INC_INT.o)
+ .debug_str     0x0000115b       0xf2 .\CortexM0\ARM_GCC_541\Debug\Electroestimulador.a(INC_INT.o)
                                 0x335 (size before relaxing)
- .debug_str     0x000011bf       0xf2 .\CortexM0\ARM_GCC_541\Debug\Electroestimulador.a(DEC_INT.o)
+ .debug_str     0x0000124d       0xf2 .\CortexM0\ARM_GCC_541\Debug\Electroestimulador.a(DEC_INT.o)
                                 0x335 (size before relaxing)
- .debug_str     0x000012b1      0x461 .\CortexM0\ARM_GCC_541\Debug\Electroestimulador.a(CyLib.o)
+ .debug_str     0x0000133f      0x461 .\CortexM0\ARM_GCC_541\Debug\Electroestimulador.a(CyLib.o)
                                 0x6e5 (size before relaxing)
- .debug_str     0x00001712      0x522 .\CortexM0\ARM_GCC_541\Debug\Electroestimulador.a(CyLFClk.o)
+ .debug_str     0x000017a0      0x522 .\CortexM0\ARM_GCC_541\Debug\Electroestimulador.a(CyLFClk.o)
                                 0x76c (size before relaxing)
- .debug_str     0x00001c34      0x18a .\CortexM0\ARM_GCC_541\Debug\Electroestimulador.a(Comp_1.o)
+ .debug_str     0x00001cc2      0x18a .\CortexM0\ARM_GCC_541\Debug\Electroestimulador.a(Comp_1.o)
                                 0x3af (size before relaxing)
 
 .debug_loc      0x00000000     0x20e7
@@ -1571,4 +1571,4 @@ END GROUP
 
 /DISCARD/
  *(.note.GNU-stack)
-OUTPUT(D:\Tesis MIB\Proyecto de Tesis\TESIS - Desarrollo\PSoC\electroestimulador\WorkspaceMIB2\Electroestimulador.cydsn\CortexM0\ARM_GCC_541\Debug\Electroestimulador.elf elf32-littlearm)
+OUTPUT(C:\Users\Jeremias\Documents\GitHub\jeremiasadrian\Tesis MIB\TESIS - Desarrollo\PSoC\electroestimulador\WorkspaceMIB2\Electroestimulador.cydsn\CortexM0\ARM_GCC_541\Debug\Electroestimulador.elf elf32-littlearm)
