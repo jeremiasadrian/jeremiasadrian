@@ -161,22 +161,22 @@ CY_ISR(ACEP_INT_Handler) //Subrutina del boton ACEPTAR/PARAR del menu.
                 compVal = (450000*TIc)/1000000; //Cálculo del valor a cargar en el registro de comparación del TCPWM en función de clock de 450kHz.
                 PWM_WritePeriod(periodo);   //Instrucciones para aceptar los valores selecionados.
                 PWM_WriteCompare(compVal);
-                IDAC_1_Start();
                 LCD_ClearDisplay();
                 LCD_Position(0,0);
-                LCD_PrintString("Ic=    uA  >ON< ");
+                LCD_PrintString("%Io=    %  >ON< ");
                 Ic = Iout;
                 LCD_Position(0,3);
                 sprintf(printIc,"%3d",Ic);
                 LCD_PrintString(printIc);
                 LCD_Position(1,0);
                 LCD_PrintString("Pulse ACEP p fin");
+                IDAC_1_Start();
                 IDAC_1_SetValue(Iout);
                 break;
         default: break;
     }
     PIN_ACEP_ClearInterrupt();
-    CyDelay(50);
+    CyDelay(50);         //Retardo antirebote de 50 milisegundos
 }
 
 CY_ISR(DEC_INT_Handler) //Subrutina del boton DECREMENTAR del menu.
@@ -239,7 +239,7 @@ CY_ISR(DEC_INT_Handler) //Subrutina del boton DECREMENTAR del menu.
         default: break;
     }
     PIN_DEC_ClearInterrupt();
-    CyDelay(50);
+    CyDelay(50);         //Retardo antirebote de 50 milisegundos
 }
 
 CY_ISR(INC_INT_Handler) //Subrutina del boton INCREMENTAR del menu.
@@ -302,10 +302,10 @@ CY_ISR(INC_INT_Handler) //Subrutina del boton INCREMENTAR del menu.
         default: break;
     }
     PIN_INC_ClearInterrupt();
-    CyDelay(50);
+    CyDelay(50);        //Retardo antirebote de 50 milisegundos
 }
 
-CY_ISR(PWM_INT_Handler) //Subrutina del cambio de estado de la señal.
+CY_ISR(PWM_INT_Handler) //Subrutina del cambio de estado de la señal y actualización del IDAC.
 {
     uint32 estadoINT_PWM = 0;
     estadoINT_PWM = PWM_GetInterruptSource();
