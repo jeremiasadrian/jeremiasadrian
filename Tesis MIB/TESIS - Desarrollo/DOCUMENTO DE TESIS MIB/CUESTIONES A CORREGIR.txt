@@ -1,0 +1,7 @@
+CAP 1
+Aclarar que el subindice c de Ic es por "corriente catodica"
+Aclarar que las corrientes saliente estimulan los moecaorreceptores con axones paralelos y las entrantes los perpendiculares (o al reves).
+CAP 2
+VER resistencias del fototransistores de los MOSFET, bajar de 4k7 y 10k a 330 y 2k2 respectivamente.
+MODIFICAR el potenciometro del tiempo mierto por uno de 1k y que no supere los 500 ohm de la hoja de datos.
+MODIFICAR la resistencia RT del SG3525 de 27k a una de 39k para bajas la frecuencia de trabaja del trafo de 500 Hz a 380 Hz para disminuir las perdidas.
