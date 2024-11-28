@@ -15,14 +15,12 @@ CAPITULO 3
 
 Cargas de prueba
 -Gráficos a realizar:
-	3 g-- Corriente positiva por carga para los tres TIc para cada DT (150, 200, 300), en función del estado del IDAC.
-	3 g-- Corriente negativa por carga para los tres TIc (150, 200, 300), en función del estado del IDAC.
-	1 g-- Corriente positiva (promedio de los tres TIc) para las 3 cargas, en función del estado del IDAC.
-	1 g-- Corriente negativa para las 3 cargas, en función del estado del IDAC.
+	1 g-- Corriente negativa por carga para los tres TIc (150, 200, 300), en función del estado del IDAC.
+	1 g-- Corrientes negativas (tres: una por cada ciclo de trabajo (DT)) promedio para las 3 cargas, en función del estado del IDAC, con la variancia de: la suma de los valores promedio de las 3 corrientes medidas para cada carga en cada valor de IDAC en un mismo DC (ciclo de trabajo), de las tres cargas (9 valores de corriente para cada estado del IDAC de un mismo DC).
+	3 g-- Corriente positiva promedio para las 3 cargas, en función del estado del IDAC, con la variancia de: la suma de los valores promedio de las 9 corrientes medidas para cada carga en cada valor de IDAC, de las tres cargas (27 valores de corriente para cada estado del IDAC).
+	1 g-- Corriente positiva (promedio de los tres TIc) para las 3 cargas para cada DT, en función del estado del IDAC.
 	1 g-- Tensión media sobre la carga para las 3 cargas, en función del estado del IDAC.
 	1 g-- Tensión pico a pico de AT para las 3 cargas, en función del estado del IDAC.
-	1 g-- Corriente positiva promedio para las 3 cargas, en función del estado del IDAC, con la variancia de: la suma de los valores promedio de las 9 corrientes medidas para cada carga en cada valor de IDAC, de las tres cargas (27 valores de corriente para cada estado del IDAC).
-	1 g-- Corrientes negativas (tres: una por cada ciclo de trabajo (DT)) promedio para las 3 cargas, en función del estado del IDAC, con la variancia de: la suma de los valores promedio de las 3 corrientes medidas para cada carga en cada valor de IDAC en un mismo DC (ciclo de trabajo), de las tres cargas (9 valores de corriente para cada estado del IDAC de un mismo DC). A DIFERENCIA DEL ANTEULTIMO GRAFICO, ESTE TENDRA TRES CURVAS, UNA POR CADA CICLO DE TRABAJO.
 
---- EN TOTAL 12 GRAFICOS PARA EL ENSAYO CON CARGAS DE PRUEBA.
+--- EN TOTAL 8 GRAFICOS PARA EL ENSAYO CON CARGAS DE PRUEBA.
 
