@@ -4532,6 +4532,12 @@
 		(uuid "0264a7ee-a3cf-43a3-b2cd-074de573f87f")
 	)
 	(junction
+		(at 121.92 129.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "03af90e5-209a-41e4-bea2-a416d71df540")
+	)
+	(junction
 		(at 129.54 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4778,12 +4784,6 @@
 		(uuid "bac5110d-5cac-4aec-9661-44f3b3382db1")
 	)
 	(junction
-		(at 123.19 129.54)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "baf6259c-d509-4792-a467-fd6f1212bcea")
-	)
-	(junction
 		(at 115.57 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4902,10 +4902,6 @@
 		(uuid "2a240ae5-0c2e-4560-96bf-775a8757e0bb")
 	)
 	(no_connect
-		(at 119.38 133.35)
-		(uuid "52f550a2-cedd-4e13-9352-aee4be66d56b")
-	)
-	(no_connect
 		(at 130.81 124.46)
 		(uuid "6552585d-adc9-4662-bea4-42acc6b2eb6c")
 	)
@@ -4968,6 +4964,16 @@
 			(type default)
 		)
 		(uuid "018952a2-beb7-4390-a5e9-ccdd5de2c176")
+	)
+	(wire
+		(pts
+			(xy 121.92 129.54) (xy 121.92 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01fc82fb-d4cf-460c-83d4-bb94698b95ba")
 	)
 	(wire
 		(pts
@@ -6011,16 +6017,6 @@
 	)
 	(wire
 		(pts
-			(xy 127 133.35) (xy 129.54 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6142a2ab-98ec-43b9-92f5-e233738112ed")
-	)
-	(wire
-		(pts
 			(xy 115.57 111.76) (xy 120.65 111.76)
 		)
 		(stroke
@@ -6348,16 +6344,6 @@
 			(type default)
 		)
 		(uuid "7c39c8f3-1f5e-43d1-be83-96e00b58acda")
-	)
-	(wire
-		(pts
-			(xy 119.38 129.54) (xy 123.19 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7c75e171-0596-4301-a6f6-41b183cac638")
 	)
 	(wire
 		(pts
@@ -7421,7 +7407,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 129.54) (xy 130.81 129.54)
+			(xy 119.38 129.54) (xy 121.92 129.54)
 		)
 		(stroke
 			(width 0)
@@ -7588,6 +7574,16 @@
 			(type default)
 		)
 		(uuid "ef54d099-d7e0-4a7e-9111-2c96ee2dde67")
+	)
+	(wire
+		(pts
+			(xy 121.92 129.54) (xy 130.81 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef7d8b51-344a-48af-b8a9-0c9649768510")
 	)
 	(wire
 		(pts
@@ -9841,6 +9837,73 @@
 			(project "Puente_H"
 				(path "/557348b5-6217-4385-bfe3-5dcdd45f2644"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 125.73 133.35 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3d14de71-e178-4a05-b9c2-b9366669f737")
+		(property "Reference" "R17"
+			(at 123.19 131.064 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "470"
+			(at 127.508 131.064 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 125.73 131.572 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 125.73 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 125.73 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bc0adc16-cffd-4a6e-b645-d01367b0cc9a")
+		)
+		(pin "2"
+			(uuid "5ea9e052-2677-430f-b9fe-26418bd0aa97")
+		)
+		(instances
+			(project "Puente_H"
+				(path "/557348b5-6217-4385-bfe3-5dcdd45f2644"
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -13810,76 +13873,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Potentiometer")
-		(at 123.19 133.35 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "aff28750-6196-4aa1-8673-3b8688da9188")
-		(property "Reference" "RV1"
-			(at 120.65 135.89 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1k"
-			(at 120.65 138.43 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical"
-			(at 123.19 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 123.19 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 123.19 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "50880059-21ab-407a-ab60-d4838cb4fd82")
-		)
-		(pin "2"
-			(uuid "016c885a-b18b-4050-8b26-fa41f56f09c9")
-		)
-		(pin "3"
-			(uuid "74a051c3-4930-464f-ba15-15442bd47fed")
-		)
-		(instances
-			(project "Puente_H"
-				(path "/557348b5-6217-4385-bfe3-5dcdd45f2644"
-					(reference "RV1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 57.15 153.67 270)
 		(unit 1)
@@ -14496,8 +14489,8 @@
 				)
 			)
 		)
-		(property "Value" "47nF"
-			(at 119.38 128.27 90)
+		(property "Value" "47nF (39nF)"
+			(at 118.11 126.492 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16094,15 +16087,15 @@
 		(dnp no)
 		(uuid "f8e3ce52-ebdb-4765-8904-985a17b67712")
 		(property "Reference" "R18"
-			(at 114.3 122.174 90)
+			(at 112.268 122.936 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "27k"
-			(at 118.618 122.174 90)
+		(property "Value" "39k (37.8k)"
+			(at 115.824 120.904 90)
 			(effects
 				(font
 					(size 1.27 1.27)

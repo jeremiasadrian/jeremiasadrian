@@ -1139,7 +1139,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3772b688-a56b-4dd0-b48e-dd8c9f9648c2")
-		(property "Reference" "#FLG04"
+		(property "Reference" "#FLG05"
 			(at 207.01 90.805 0)
 			(effects
 				(font
@@ -1189,7 +1189,7 @@
 		(instances
 			(project "Control_Fuente_de_Corrientes"
 				(path "/d8b362ed-b66b-443a-9ff8-8e45e9f3933f/eac699cf-0b53-4326-abf6-a0bdacaf6a62"
-					(reference "#FLG04")
+					(reference "#FLG05")
 					(unit 1)
 				)
 			)
@@ -1205,7 +1205,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4998a21d-5c30-42af-a71a-18e7b56c943c")
-		(property "Reference" "#FLG02"
+		(property "Reference" "#FLG06"
 			(at 201.93 95.885 0)
 			(effects
 				(font
@@ -1255,7 +1255,7 @@
 		(instances
 			(project "Control_Fuente_de_Corrientes"
 				(path "/d8b362ed-b66b-443a-9ff8-8e45e9f3933f/eac699cf-0b53-4326-abf6-a0bdacaf6a62"
-					(reference "#FLG02")
+					(reference "#FLG06")
 					(unit 1)
 				)
 			)
@@ -1271,7 +1271,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5a1fc004-fafc-4905-bd2a-fc6048193085")
-		(property "Reference" "#FLG05"
+		(property "Reference" "#FLG02"
 			(at 210.82 50.165 0)
 			(effects
 				(font
@@ -1321,7 +1321,7 @@
 		(instances
 			(project "Control_Fuente_de_Corrientes"
 				(path "/d8b362ed-b66b-443a-9ff8-8e45e9f3933f/eac699cf-0b53-4326-abf6-a0bdacaf6a62"
-					(reference "#FLG05")
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
@@ -1544,7 +1544,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f3cef0b1-540e-4f03-903a-19cd1ad1aac0")
-		(property "Reference" "#FLG06"
+		(property "Reference" "#FLG01"
 			(at 215.9 46.355 0)
 			(effects
 				(font
@@ -1594,7 +1594,7 @@
 		(instances
 			(project "Control_Fuente_de_Corrientes"
 				(path "/d8b362ed-b66b-443a-9ff8-8e45e9f3933f/eac699cf-0b53-4326-abf6-a0bdacaf6a62"
-					(reference "#FLG06")
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
@@ -1610,7 +1610,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f70f232a-c9d3-425a-a69b-5eddcb069cf2")
-		(property "Reference" "#FLG01"
+		(property "Reference" "#FLG04"
 			(at 201.93 60.325 0)
 			(effects
 				(font
@@ -1660,7 +1660,7 @@
 		(instances
 			(project "Control_Fuente_de_Corrientes"
 				(path "/d8b362ed-b66b-443a-9ff8-8e45e9f3933f/eac699cf-0b53-4326-abf6-a0bdacaf6a62"
-					(reference "#FLG01")
+					(reference "#FLG04")
 					(unit 1)
 				)
 			)

@@ -1,0 +1,28 @@
+Propongo el siguiente esquema, tomando como base un documento de 50 páginas como mínimo.
+1) Resumen. (1 pag.)
+2) Introducción. (10 pag.)
+	*Contexto de protesis comerciales.
+	*Contexto de desarrollo en realimentación táctil.
+3) Planteamiendo del problema y propuesta de solución (hipotesis?, ver conceptos de Metodología de Investigación).(2 pag.)
+4) Desarrollo de prototipo.(30 pag.)
+	*Electroestimulador: Control, fuente de corriente y sensor FSR. (10 pag.)
+	*Electroestimulador: Fuente de Alimentación. (10 pag.)
+	*Electroestimulador: Ensayo y calibración con cargas de prueba. (10 pag.)
+5) Prueba piloto sobre sujeto/s no amputado/s.(5 pag.)
+6) Conclusión y perspectivas a futuro.(2 pag.)
+
+CAPITULO 3
+
+Cargas de prueba
+-Gráficos a realizar:
+	3 g-- Corriente positiva por carga para los tres TIc para cada DT (150, 200, 300), en función del estado del IDAC.
+	3 g-- Corriente negativa por carga para los tres TIc (150, 200, 300), en función del estado del IDAC.
+	1 g-- Corriente positiva (promedio de los tres TIc) para las 3 cargas, en función del estado del IDAC.
+	1 g-- Corriente negativa para las 3 cargas, en función del estado del IDAC.
+	1 g-- Tensión media sobre la carga para las 3 cargas, en función del estado del IDAC.
+	1 g-- Tensión pico a pico de AT para las 3 cargas, en función del estado del IDAC.
+	1 g-- Corriente positiva promedio para las 3 cargas, en función del estado del IDAC, con la variancia de: la suma de los valores promedio de las 9 corrientes medidas para cada carga en cada valor de IDAC, de las tres cargas (27 valores de corriente para cada estado del IDAC).
+	1 g-- Corrientes negativas (tres: una por cada ciclo de trabajo (DT)) promedio para las 3 cargas, en función del estado del IDAC, con la variancia de: la suma de los valores promedio de las 3 corrientes medidas para cada carga en cada valor de IDAC en un mismo DC (ciclo de trabajo), de las tres cargas (9 valores de corriente para cada estado del IDAC de un mismo DC). A DIFERENCIA DEL ANTEULTIMO GRAFICO, ESTE TENDRA TRES CURVAS, UNA POR CADA CICLO DE TRABAJO.
+
+--- EN TOTAL 12 GRAFICOS PARA EL ENSAYO CON CARGAS DE PRUEBA.
+

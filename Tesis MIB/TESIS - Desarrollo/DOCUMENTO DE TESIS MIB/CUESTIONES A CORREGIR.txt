@@ -2,6 +2,9 @@ CAP 1
 Aclarar que el subindice c de Ic es por "corriente catodica"
 Aclarar que las corrientes saliente estimulan los moecaorreceptores con axones paralelos y las entrantes los perpendiculares (o al reves).
 CAP 2
+MODIFICAR la interfaz grafica para que se vea el porcentaje de corriente.
 VER resistencias del fototransistores de los MOSFET, bajar de 4k7 y 10k a 330 y 2k2 respectivamente.
-MODIFICAR el potenciometro del tiempo mierto por uno de 1k y que no supere los 500 ohm de la hoja de datos.
-MODIFICAR la resistencia RT del SG3525 de 27k a una de 39k para bajas la frecuencia de trabaja del trafo de 500 Hz a 380 Hz para disminuir las perdidas.
+MODIFICAR el potenciometro del tiempo muerto por uno de 1k y que no supere los 500 ohm de la hoja de datos.
+MODIFICAR la resistencia RT del SG3525 de 27k a una de 39k para bajar la frecuencia de trabajo del trafo de 500 Hz a 380 Hz para disminuir las perdidas.
+AGREGAR el CI LT1054 para generar la alimentación de -12V para los AO, en principio en la plata del PSoC, luego en la plata de fuente.
+MODIFICAR la estructura y calculo del conversor V-I, agregando las resistencias de estabilización, tipos de transistores (MPSA94 y 13001) con la configuracion Darlington para el espejo sumidero.
