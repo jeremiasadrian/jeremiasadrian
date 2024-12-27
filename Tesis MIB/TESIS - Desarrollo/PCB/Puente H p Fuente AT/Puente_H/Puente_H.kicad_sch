@@ -8775,7 +8775,7 @@
 				)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "2k2"
 			(at 111.76 80.01 90)
 			(effects
 				(font
@@ -9459,7 +9459,7 @@
 				)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "2k2"
 			(at 113.03 54.61 90)
 			(effects
 				(font
@@ -9648,7 +9648,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "39f9c112-1daa-4385-9c24-1a388c5457cf")
 		(property "Reference" "#PWR011"
 			(at 110.49 138.43 0)
@@ -9660,7 +9659,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 110.49 137.16 0)
+			(at 108.458 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9852,15 +9851,15 @@
 		(dnp no)
 		(uuid "3d14de71-e178-4a05-b9c2-b9366669f737")
 		(property "Reference" "R17"
-			(at 123.19 131.064 90)
+			(at 126.238 135.89 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "470"
-			(at 127.508 131.064 90)
+		(property "Value" "3k"
+			(at 126.238 138.176 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11395,15 +11394,15 @@
 		(dnp no)
 		(uuid "6a8c8236-292e-4cc3-83d1-61778c755954")
 		(property "Reference" "R13"
-			(at 102.87 62.23 90)
+			(at 104.14 60.706 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "4k7"
-			(at 102.87 66.04 90)
+		(property "Value" "1k"
+			(at 103.378 62.992 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11947,7 +11946,7 @@
 				)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "2k2"
 			(at 186.69 80.01 90)
 			(effects
 				(font
@@ -13344,7 +13343,7 @@
 				)
 			)
 		)
-		(property "Value" "4k7"
+		(property "Value" "1k"
 			(at 105.156 34.798 0)
 			(effects
 				(font
@@ -13480,7 +13479,7 @@
 				)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "2k2"
 			(at 186.69 54.61 90)
 			(effects
 				(font
@@ -14482,7 +14481,7 @@
 		(dnp no)
 		(uuid "c37ded79-a642-47c1-a785-7588acd8d892")
 		(property "Reference" "C8"
-			(at 118.11 130.81 90)
+			(at 113.538 133.096 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14490,7 +14489,7 @@
 			)
 		)
 		(property "Value" "47nF (39nF)"
-			(at 118.11 126.492 90)
+			(at 118.11 135.636 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14626,7 +14625,7 @@
 				)
 			)
 		)
-		(property "Value" "4k7"
+		(property "Value" "1k"
 			(at 199.39 31.75 90)
 			(effects
 				(font
@@ -16087,7 +16086,7 @@
 		(dnp no)
 		(uuid "f8e3ce52-ebdb-4765-8904-985a17b67712")
 		(property "Reference" "R18"
-			(at 112.268 122.936 90)
+			(at 116.332 122.428 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16095,7 +16094,7 @@
 			)
 		)
 		(property "Value" "39k (37.8k)"
-			(at 115.824 120.904 90)
+			(at 118.618 126.746 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16161,7 +16160,7 @@
 				)
 			)
 		)
-		(property "Value" "4k7"
+		(property "Value" "1k"
 			(at 199.39 58.42 90)
 			(effects
 				(font
