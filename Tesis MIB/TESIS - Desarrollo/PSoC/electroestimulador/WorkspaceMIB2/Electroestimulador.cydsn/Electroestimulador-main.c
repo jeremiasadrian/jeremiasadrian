@@ -1,11 +1,11 @@
 /* ========================================
-    Programa para Electroestimulador.
+    Programa para Electroestimulador_V1.
 ======================================== */
     
 #include <project.h>
 #include <stdio.h>
     
-uint8 estadoSIS = 0;    //Bandera de estado: 0 = reiniciado; 1 = configuración de TIc; 2 = configuración de Fx; 3 = configurado; 4 = en operación.
+uint8 estadoSIS = 0;    //Bandera de estado: 0 = reiniciado; 1 = configuración de TIc; 2 = configuración de FREQ.; 3 = configurado; 4 = en operación.
 uint16 TIc = 0;         //Valor de TIc: 1=150us; 2=160us; 3=170us;....; 15=290us; 16=300us.
 uint8 TIc_sel=0;        //Bandera de señalización del valor de TIc selecionado.
 uint16 F1 = 0;          //Valor de la F1 asicoada al TIc seleccionado.
@@ -22,7 +22,8 @@ char8 printF2[4];
 char8 printF3[4];
 char8 printFREQ[4];
 
-CY_ISR(ACEP_INT_Handler) //Subrutina del boton ACEPTAR/PARAR del menu.
+//Subrutina del boton ACEPTAR/PARAR del menu.
+CY_ISR(ACEP_INT_Handler) 
 {
     uint32 compVal;
     uint32 periodo;
@@ -32,7 +33,7 @@ CY_ISR(ACEP_INT_Handler) //Subrutina del boton ACEPTAR/PARAR del menu.
         estadoSIS++;
     switch(estadoSIS)
     {
-        case 1: PWM_Stop();
+        case 1: PWM_Stop();     //Acciones del boton si ESTADO = configuración de TIc.
                 IDAC_1_Stop();
                 AMux_DisconnectAll();
                 LCD_ClearDisplay();
@@ -46,29 +47,29 @@ CY_ISR(ACEP_INT_Handler) //Subrutina del boton ACEPTAR/PARAR del menu.
                 LCD_Position(1,5);
                 LCD_PrintString("us");
                 break;
-        case 2: LCD_ClearDisplay();
+        case 2: LCD_ClearDisplay();     //Acciones del boton si ESTADO = configuración de FREQ.
                 LCD_Position(0,0);
                 LCD_PrintString("Seleccione Freq.");
                 switch(TIc_sel)
                 {
-                 case 0: F1 = 1111;
+                 case 0: F1 = 1111;      //TIc = 150 us.
                          F2 = 714;
                          F3 = 555;
                          break;
                  case 1: 
-                         F1 = 1042;
+                         F1 = 1042;      //TIc = 160 us.
                          F2 = 685;
                          F3 = 521; 
                          break;
-                 case 2: F1 = 980;
+                 case 2: F1 = 980;      //TIc = 170 us.
                          F2 = 658;
                          F3 = 490;  
                          break;
-                 case 3: F1 = 926;
+                 case 3: F1 = 926;      //TIc = 180 us.
                          F2 = 633;
                          F3 = 463; 
                          break;
-                 case 4: F1 = 877;
+                 case 4: F1 = 877;      //TIc = 190 us.
                          F2 = 610;
                          F3 = 439;  
                          break;
@@ -76,7 +77,7 @@ CY_ISR(ACEP_INT_Handler) //Subrutina del boton ACEPTAR/PARAR del menu.
                          F2 = 588;
                          F3 = 417;  
                          break;
-                 case 6: F1 = 794;
+                 case 6: F1 = 794;      //TIc = 210 us.
                          F2 = 568;
                          F3 = 397;
                          break;
@@ -88,27 +89,27 @@ CY_ISR(ACEP_INT_Handler) //Subrutina del boton ACEPTAR/PARAR del menu.
                          F2 = 532;
                          F3 = 362; 
                          break;
-                 case 9: F1 = 695;
+                 case 9: F1 = 695;      //TIc = 240 us.
                           F2 = 515;
                           F3 = 347; 
                           break;
-                 case 10: F1 = 666;
+                 case 10: F1 = 666;     //TIc = 250 us.
                           F2 = 500;
                           F3 = 333;  
                           break;
-                 case 11: F1 = 641;
+                 case 11: F1 = 641;     //TIc = 260 us.
                           F2 = 485;
                           F3 = 320;
                           break;
-                 case 12: F1 = 617;
+                 case 12: F1 = 617;     //TIc = 270 us.
                           F2 = 472;
                           F3 = 309;
                           break;
-                 case 13: F1 = 595;
+                 case 13: F1 = 595;     //TIc = 280 us.
                           F2 = 459;
                           F3 = 298; 
                           break;
-                 case 14: F1 = 575;
+                 case 14: F1 = 575;     //TIc = 290 us.
                           F2 = 446;
                           F3 = 287;
                           break;
@@ -131,7 +132,7 @@ CY_ISR(ACEP_INT_Handler) //Subrutina del boton ACEPTAR/PARAR del menu.
                 LCD_PrintString(printF3);
                 F_sel=1;
                 break;
-        case 3: switch(F_sel)
+        case 3: switch(F_sel)       //Acciones del boton si ESTADO = configurado (presenta valores en pantalla).
                 {
                     case 1: FREQ = F1;
                             break;
@@ -154,13 +155,13 @@ CY_ISR(ACEP_INT_Handler) //Subrutina del boton ACEPTAR/PARAR del menu.
                 LCD_PrintString(printFREQ);
                 LCD_Position(1,0);
                 LCD_PrintString("Ic=12uA INICIAR?");
-                Iout = 25;      //TOCADO 2-4-2024 20:26, CAMBIADO DE 5 A 25
+                Iout = 25;      
                 break;
-        case 4: PWM_Start();
+        case 4: PWM_Start();        //Acciones del boton si ESTADO = en operación...
                 periodo = 450000/FREQ;  //Cálculo del valor a cargar en el periodo del TCPWM en función de clock de 450kHz.
                 compVal = (450000*TIc)/1000000; //Cálculo del valor a cargar en el registro de comparación del TCPWM en función de clock de 450kHz.
-                PWM_WritePeriod(periodo);   //Instrucciones para aceptar los valores selecionados.
-                PWM_WriteCompare(compVal);
+                PWM_WritePeriod(periodo);   //Instrucciones para aceptar los valores seleccionados.
+                PWM_WriteCompare(compVal);  //
                 LCD_ClearDisplay();
                 LCD_Position(0,0);
                 LCD_PrintString("%Io=    %  >ON< ");
@@ -183,7 +184,7 @@ CY_ISR(DEC_INT_Handler) //Subrutina del boton DECREMENTAR del menu.
 {
     switch(estadoSIS)
     {
-        case 1: if(TIc_sel==0)
+        case 1: if(TIc_sel==0)      //Acciones del boton si ESTADO = configuración de TIc.
                     TIc_sel = 15;
                 else
                     TIc_sel--;
@@ -197,7 +198,7 @@ CY_ISR(DEC_INT_Handler) //Subrutina del boton DECREMENTAR del menu.
                 LCD_Position(1,5);
                 LCD_PrintString("us");
                 break;
-        case 2: F_sel--;
+        case 2: F_sel--;        //Acciones del boton si ESTADO = configuración de FREQ.
                 if(F_sel<1)
                     F_sel=3;
                 else{}
@@ -227,9 +228,9 @@ CY_ISR(DEC_INT_Handler) //Subrutina del boton DECREMENTAR del menu.
                  default: break;
                 }
                 break;
-        case 4: Iout=Iout-25; //TOCADO 2-4-2024 20:26, CAMBIADO DE 5 A 25
-                if(Iout<25) //TOCADO 2-4-2024 20:26, CAMBIADO DE 10 A 25
-                    Iout=25; //TOCADO 2-4-2024 20:26, CAMBIADO DE 10 A 25
+        case 4: Iout=Iout-25;       //Acciones del boton si ESTADO = en operación...
+                if(Iout<25) 
+                    Iout=25; 
                 else{}
                 Ic = Iout;
                 LCD_Position(0,3);
@@ -246,7 +247,7 @@ CY_ISR(INC_INT_Handler) //Subrutina del boton INCREMENTAR del menu.
 {
     switch(estadoSIS)
     {
-        case 1: if(TIc_sel==15)
+        case 1: if(TIc_sel==15)     //Acciones del boton si ESTADO = configuración de TIc.
                     TIc_sel = 0;
                 else
                     TIc_sel++;
@@ -260,7 +261,7 @@ CY_ISR(INC_INT_Handler) //Subrutina del boton INCREMENTAR del menu.
                 LCD_Position(1,5);
                 LCD_PrintString("us");
                 break;
-        case 2: F_sel++;
+        case 2: F_sel++;        //Acciones del boton si ESTADO = configuración de FREQ.
                 if(F_sel>3)
                     F_sel=1;
                 else{}
@@ -290,9 +291,9 @@ CY_ISR(INC_INT_Handler) //Subrutina del boton INCREMENTAR del menu.
                  default: break;
                 }
                 break;
-        case 4: Iout=Iout+25; //TOCADO 2-4-2024 20:26, CAMBIADO DE 5 A 25
-                if(Iout>255) //TOCADO 2-4-2024 20:26, CAMBIADO DE 5 A 25
-                    Iout=250; //TOCADO 2-4-2024 20:26, CAMBIADO DE 255 A 250
+        case 4: Iout=Iout+25; //Acciones del boton si ESTADO = en operación...
+                if(Iout>255) 
+                    Iout=250; 
                 else{}
                 Ic = Iout;
                 LCD_Position(0,3);
@@ -331,21 +332,21 @@ CY_ISR(PWM_INT_Handler) //Subrutina del cambio de estado de la señal y actualiz
 
 int main(void)
 {
-    CyGlobalIntEnable; 
-    ACEP_INT_StartEx(ACEP_INT_Handler);
-    DEC_INT_StartEx(DEC_INT_Handler);
-    INC_INT_StartEx(INC_INT_Handler);
-    PWM_INT_StartEx(PWM_INT_Handler);
-    LCD_Start();
-    PWM_Init();
-    IDAC_1_Init();
-    IDAC_1_SetValue(0);
-    AMux_Start();
-    Comp_1_Start();
-    LCD_Position(0,0);
-    LCD_PrintString("Presione ACEPTAR");
-    LCD_Position(1,0);
-    LCD_PrintString("para configurar:");
+    CyGlobalIntEnable;                  ///
+    ACEP_INT_StartEx(ACEP_INT_Handler); ///
+    DEC_INT_StartEx(DEC_INT_Handler);   /// Inicialización de interrupciones
+    INC_INT_StartEx(INC_INT_Handler);   ///
+    PWM_INT_StartEx(PWM_INT_Handler);   ///
+    LCD_Start();                        // Inicialización del Módulo LCD
+    PWM_Init();                         // Inicialización del Módulo TCPWM en modo PWM
+    IDAC_1_Init();                      // Inicialización del Módulo IDAC 1
+    IDAC_1_SetValue(0);                 // Setea valor inicial del IDAC
+    AMux_Start();                       // Inicialización del Módulo AMux
+    Comp_1_Start();                     // Inicialización del Módulo Comparador con Histéresis
+    LCD_Position(0,0);                  ///
+    LCD_PrintString("Presione ACEPTAR");/// Inicializa el LCD y presenta el mensaje inicial
+    LCD_Position(1,0);                  ///
+    LCD_PrintString("para configurar:");///
     while(1)
     {}
 }

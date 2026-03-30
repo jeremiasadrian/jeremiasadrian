@@ -542,16 +542,6 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 87.63) (xy 170.18 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "80ab89dd-1cc2-4b60-9ec9-86c18c80a3ba")
-	)
-	(wire
-		(pts
 			(xy 214.63 97.79) (xy 214.63 100.33)
 		)
 		(stroke
@@ -599,7 +589,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6fe0e8b7-409c-4edf-a108-7ff058176600")
-		(property "Reference" "R18"
+		(property "Reference" "R1"
 			(at 217.932 93.472 0)
 			(effects
 				(font
@@ -669,7 +659,7 @@
 		(instances
 			(project "Bloque de control y FI v2"
 				(path "/d8b362ed-b66b-443a-9ff8-8e45e9f3933f"
-					(reference "R18")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -684,7 +674,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "86344c2f-3625-4d46-b327-9fdbcd81a861")
-		(property "Reference" "J8"
+		(property "Reference" "J2"
 			(at 219.71 90.17 0)
 			(effects
 				(font
@@ -733,7 +723,7 @@
 		(instances
 			(project "Bloque de control y FI v2"
 				(path "/d8b362ed-b66b-443a-9ff8-8e45e9f3933f"
-					(reference "J8")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -905,16 +895,6 @@
 				(justify left top)
 			)
 		)
-		(pin "+5V" input
-			(at 170.18 87.63 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "15dd19f1-3a7e-4d4a-8dd4-4933a028b12f")
-		)
 		(pin "Iout" bidirectional
 			(at 208.28 81.28 0)
 			(effects
@@ -992,16 +972,6 @@
 				)
 				(justify left top)
 			)
-		)
-		(pin "+5V" input
-			(at 156.21 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "f8e8c427-ee21-4d18-8c8c-8147bc61e97b")
 		)
 		(pin "+12V" input
 			(at 156.21 82.55 0)
